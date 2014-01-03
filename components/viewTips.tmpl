@@ -1,0 +1,14 @@
+<script id="tmpl-viewTips" type="text/html">
+	<div class="viewTips" style="{{style}}">
+		<div class="viewTips-top">
+			<div class="icoDiv close"><span class="ico ico-close"></span></div>
+			<div class="title">{{title}}</div>
+		</div>
+		<div class="viewTips-main">
+			<div class="viewTips-content">{{content}}</div>
+		</div>
+		<div class="viewTips-bottom" {{#if doNotShowBtn}}style="display:none"{{/if}}>
+			<div class="SMA-REPORT-VIEWEMAILSPICKERCANCELBUTTON btn cancel">Close</div>
+		</div>
+	</div>
+</script>

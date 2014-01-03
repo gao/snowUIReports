@@ -1,0 +1,156 @@
+<script id="tmpl-exportPicker" type="text/html">
+	<div class="exportPicker" style="right:{{right}}px;top:{{top}}px;{{#if width}}width:{{width}}px{{/if}}">
+		<div class="exportPicker-header">
+			<label>Excel Export</label>
+			<div class="ico icoDel"></div>
+		</div>
+		<div class="exportPicker-main">
+			<div class="column">
+				<div class="column-header">Metrics Categories</div>
+				<div class="column-content">
+					<div class="item"><input name="reportSections" type="checkbox" value="volume"/>Volume</div>
+					<div class="item"><input name="reportSections" type="checkbox" value="disengagement"/>Dis-Engagement</div>
+					<div class="item"><input name="reportSections" type="checkbox" value="engagement"/>Engagement</div>
+					<div class="item"><input name="reportSections" type="checkbox" value="failures"/>Failures</div>
+					<div class="item"><input name="reportSections" type="checkbox" value="ftaf"/>FTAF</div>
+					<div class="item"><input name="reportSections" type="checkbox" value="sharing"/>Sharing</div>
+					<div class="item">&nbsp;</div>
+					<div class="item"><input name="reportSections" type="checkbox" value="links"/>Links</div>
+					<div class="item"><input name="reportSections" type="checkbox" value="deviceusage"/>Device Usage</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="column-header">Breakdowns</div>
+				<div class="column-content">
+					<div class="item"><input name="breakDownBy" type="radio" value="none"/>None</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="domain"/>Domain</div>
+					{{#if hasSubOrganization}}
+					<div class="item"><input name="breakDownBy" type="radio" value="org"/>Organization</div>
+					{{/if}}
+					<div class="item">--- Mailing Based ---</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="mailing"/>Mailing</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="campaign"/>Campaign</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="program"/>Program</div>
+					<div class="item">--- Time Based ---</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="day"/>Day</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="week"/>Week</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="month"/>Month</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="quarter"/>Quarter</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="year"/>Year</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="column-header">SubTotals</div>
+				<div class="column-content">
+					<div class="item"><input name="subTotalBy" type="radio" value="none"/>None</div>
+					<div class="item">--- Mailing Based ---</div>
+					<div class="item"><input name="subTotalBy" type="radio" value="campaign"/>Campaign</div>
+					<div class="item"><input name="subTotalBy" type="radio" value="program"/>Program</div>
+					<div class="item">--- Time Based ---</div>
+					<div class="item"><input name="subTotalBy" type="radio" value="day"/>Day</div>
+					<div class="item"><input name="subTotalBy" type="radio" value="week"/>Week</div>
+					<div class="item"><input name="subTotalBy" type="radio" value="month"/>Month</div>
+					<div class="item"><input name="subTotalBy" type="radio" value="quarter"/>Quarter</div>
+					<div class="item"><input name="subTotalBy" type="radio" value="year"/>Year</div>
+				</div>
+			</div>
+			<div class="cb"></div>
+		</div>
+		<div class="exportPicker-footer">
+			<div class="btn export">Export</div>
+			<div class="btn cancel">Cancel</div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-exportPickerDeliverability" type="text/html">
+	<div class="exportPicker" style="right:{{right}}px;top:{{top}}px;{{#if width}}width:{{width}}px{{/if}}">
+		<div class="exportPicker-header">
+			<label>Excel Export</label>
+			<div class="ico icoDel"></div>
+		</div>
+		<div class="exportPicker-main">
+			<div class="column">
+				<div class="column-header">Metrics Categories</div>
+				<div class="column-content">
+					<!--<div class="item"><input name="reportSections" type="checkbox" value="defers"/>Defers</div>-->
+					<div class="item"><input name="reportSections" type="checkbox" value="failures"/>Failures</div>
+					<div class="item"><input name="reportSections" type="checkbox" value="failureRate"/>Failure Rates</div>
+					<div class="item"><input name="reportSections" type="checkbox" value="failureDetail"/>Failure Detail</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="column-header">Breakdowns</div>
+				<div class="column-content">
+					<div class="item"><input name="breakDownBy" type="radio" value="none"/>None</div>
+					{{#if hasSubOrganization}}
+					<div class="item"><input name="breakDownBy" type="radio" value="org"/>Organization</div>
+					{{/if}}
+					<div class="item"><input name="breakDownBy" type="radio" value="domain"/>Domain</div>
+					<div class="item">--- Sending Based ---</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="ip"/>IP</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="vsg"/>VSG</div>
+					<div class="item">--- Time Based ---</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="day"/>Day</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="week"/>Week</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="month"/>Month</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="quarter"/>Quarter</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="year"/>Year</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="column-header">SubTotals</div>
+				<div class="column-content">
+					<div class="item"><input name="subTotalBy" type="radio" value="none"/>None</div>
+					<div class="item">--- Time Based ---</div>
+					<div class="item"><input name="subTotalBy" type="radio" value="day"/>Day</div>
+					<div class="item"><input name="subTotalBy" type="radio" value="week"/>Week</div>
+					<div class="item"><input name="subTotalBy" type="radio" value="month"/>Month</div>
+					<div class="item"><input name="subTotalBy" type="radio" value="quarter"/>Quarter</div>
+					<div class="item"><input name="subTotalBy" type="radio" value="year"/>Year</div>
+				</div>
+			</div>
+			<div class="cb"></div>
+		</div>
+		<div class="exportPicker-footer">
+			<div class="btn export">Export</div>
+			<div class="btn cancel">Cancel</div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-exportPickerAudience" type="text/html">
+	<div class="exportPicker" style="right:{{right}}px;top:{{top}}px;{{#if width}}width:{{width}}px{{/if}}">
+		<div class="exportPicker-header">
+			<label>Excel Export</label>
+			<div class="ico icoDel"></div>
+		</div>
+		<div class="exportPicker-main">
+			<div class="column">
+				<div class="column-header">Metrics</div>
+				<div class="column-content">
+					<div class="item"><input name="reportSections" type="checkbox" value="size"/>Size</div>
+					<div class="item"><input name="reportSections" type="checkbox" value="domain"/>By Domain</div>
+					{{#equal dataSourceType "ids"}}
+					<div class="item"><input name="reportSections" type="checkbox" value="addressLifetime"/>Address Lifetime</div>
+					{{/equal}}
+				</div>
+			</div>
+			<div class="column" style="margin-left:100px;">
+				<div class="column-header">Breakdowns</div>
+				<div class="column-content">
+					<div class="item"><input name="breakDownBy" type="radio" value="day"/>Day</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="week"/>Week</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="month"/>Month</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="quarter"/>Quarter</div>
+					<div class="item"><input name="breakDownBy" type="radio" value="year"/>Year</div>
+				</div>
+			</div>
+			<div class="cb"></div>
+		</div>
+		<div class="exportPicker-footer">
+			<div class="btn export">Export</div>
+			<div class="btn cancel">Cancel</div>
+		</div>
+	</div>
+</script>

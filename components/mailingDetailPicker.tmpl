@@ -1,0 +1,108 @@
+<script id="tmpl-mailingDetailPicker" type="text/html">
+	<div class="mailingDetailPicker commonPicker old-picker">
+		<div class="icoDiv resizeHandler"></div>
+		<div class="mailingDetailPicker-top commonPicker-top new-close">
+			<div class="icoDiv close"><span class="ico ico-close"></span></div>
+			<div class="title">Select Mailing</div>
+		</div>
+		<div class="mailingDetailPicker-main commonPicker-main">
+			<div class="mailingDetailPicker-content commonPicker-content notab">
+				
+			</div>
+		</div>
+		<div class="mailingDetailPicker-bottom commonPicker-bottom">
+			<div class="SMA-REPORT-MAILINGDETAILPICKERDONEBUTTON btn done">Done</div>
+			<div class="SMA-REPORT-MAILINGDETAILPICKERCANCELBUTTON btn cancel">Cancel</div>
+		</div>
+	</div>
+</script>
+<script id="tmpl-mailingDetailPicker-mailingView" type="text/html">
+	<div class="commonPicker-mailingView mailingDetailPicker-mailingView">
+		<div class="tags">
+			
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-mailingDetailPicker-tag-selectMailingDetails" type="text/html">
+	<div class="tag " data-tag="selectMailingDetails">
+		<div class="tag-content">
+			<div class="availableMailings">
+				<span class="count">0</span> Mailings Available
+			</div>
+			<div class="SMA-REPORT-MAILINGDETAILPICKERFILTER commonPicker-filter mailingDetailPicker-filter">
+				<div class="filter-label mailingDetailPicker-filter-label">Filter by:</div>
+				<div class="filter-fields mailingDetailPicker-filter-fields">
+					<div class="label-field">
+							<div class="label right">Launch Date</div>
+							<div class="field">
+								<span class="sub-field">
+									<select name="launchDate" style="width:154px">
+										<option value="today" >Today</option>
+										<option value="yesterday">Yesterday</option>
+										<option value="last30Days" selected>Last 30 days</option>
+										<option value="last90Days">Last 90 days</option>
+										<option value="last180Days">Last 180 days</option>
+										<option value="last365Days">Last 365 days</option>
+										<option value="all">All</option>
+									</select>
+								</span>
+								<span class="sub-field mt-sub-field">Mailing Type</span>
+								<span class="sub-field">
+									<select name="mailingType" class="mt-select">
+										<option value="all" selected>All</option>
+										<option value="onetime">One Time</option>
+										<option value="recurring">Recurring</option>
+										<option value="abtest">A/B Test</option>
+										<option value="transactional">Transactional</option>
+										{{#if isProgramLicensed}}
+										<option value="program">Lifecycle Program</option>
+										{{/if}}
+										<option value="co">Campaign Optimizer</option>
+									</select>
+								</span>
+							</div>
+					</div>
+					<div class="label-field">
+						<div class="label right">Name</div>
+						<div class="field">
+							<span class="sub-field name float-left">
+								<input name="name" class="fi-text" type="text"/>
+								<span class="keyCancel ico ico-close">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</span>
+							<span class="sub-field float-left"><input class="in-checkbox" type="checkbox" name="includeArchive" />Include Archived Mailings</span>
+						</div>
+					</div>
+				</div>
+				<div class="cb"></div>
+			</div>
+			
+			<div class="SMA-REPORT-MAILINGDETAILPICKERTABLE mailingDetailPicker-table commonPicker-table">
+				<div class="mailingDetailPicker-dataTable">
+					<table class="dataTable" data-type="mailingDetail">
+						<thead>
+							<tr>
+								<th class="sortable" data-column="name"><span class="thSortName">Name</span></th>
+								<th class="sortable" data-column="campaign"><span class="thSortName">Campaign</span></th>
+								<th class="sortable" data-column="type"><span class="thSortName">Type</span></th>
+								<th class="sortable" data-column="launchDate"><span class="thSortName">Launch Date</span></th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-mailingDetailPicker-mailingDetail-table-tr" type="text/html">
+	<tr data-obj.id="{{id}}" data-obj.name="{{name}}"  data-obj.type="{{type}}" class="{{#if isSelected}}checked{{/if}} pointertr">
+		<td class="btnAction" {{#if nameEllipses}}title="{{name}}"{{/if}}>{{#if nameEllipses}}{{nameEllipses}}{{else}}{{name}}{{/if}}</td>
+		<td class="btnAction" {{#if campaignEllipses}}title="{{campaign}}"{{/if}}>{{#if campaignEllipses}}{{campaignEllipses}}{{else}}{{campaign}}{{/if}}</td>
+		<td class="btnAction">{{type}}</td>
+		<td class="btnAction">{{launchDate}}</td>
+	</tr>
+</script>
+

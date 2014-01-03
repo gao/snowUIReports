@@ -1,0 +1,64 @@
+// to be included in all standalone .less
+@import "lesshat.less";
+
+.fitparent{
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.fitvertical{
+  position: absolute;
+  top: 0; bottom: 0;
+}
+
+// Border Radius
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// Box shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+.complex-border-radius(@radius1,@radius2,@radius3,@radius4) {
+  -webkit-border-radius: @radius1 @radius2 @radius3 @radius4;
+     -moz-border-radius: @radius1 @radius2 @radius3 @radius4;
+          border-radius: @radius1 @radius2 @radius3 @radius4;
+}
+
+// Gradients
+#gradient {
+  .vertical(@startColor: #555, @endColor: #333) {
+    background: @startColor;
+    background: -moz-linear-gradient(top, @startColor, @endColor); // FF 3.6+
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d')",@startColor,@endColor)); // IE9 and down
+  }
+  .verticalNotIE(@startColor: #555, @endColor: #333) {
+    background: @startColor;
+    background: -moz-linear-gradient(top, @startColor, @endColor); // FF 3.6+
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+  }
+  .verticalHasIE(@startColor: #555, @endColor: #333) {
+    background: @startColor;
+    background: -moz-linear-gradient(top, @startColor, @endColor); // FF 3.6+
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+    *filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d')",@startColor,@endColor)); // IE9 and down
+  }
+  .vertical-three-colors(@startColor: #00b3ee, @midColor: #7a43b6, @colorStop: 50%, @endColor: #c3325f) {
+    background: @startColor;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), color-stop(@colorStop, @midColor), to(@endColor));
+    background-image: -moz-linear-gradient(top, @startColor, @midColor @colorStop, @endColor);
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d')",@startColor,@endColor)); // IE9 and down, gets no color-stop at all for proper fallback
+  }
+  .vertical-three-colorsNotIE(@startColor: #00b3ee, @midColor: #7a43b6, @colorStop: 50%, @endColor: #c3325f) {
+    background: @startColor;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), color-stop(@colorStop, @midColor), to(@endColor));
+    background-image: -moz-linear-gradient(top, @startColor, @midColor @colorStop, @endColor);
+  }
+}

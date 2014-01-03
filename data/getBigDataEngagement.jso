@@ -1,0 +1,1109 @@
+{
+    "identifier": "id",
+    "itemsCommon": null,
+    "items": [
+        {
+     "data": [
+        {
+            "breakdowns": [
+                {
+                    "name": "year",
+                    "value": 1996
+                },
+                {
+                    "name": "target",
+                    "value": "My Target0"
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing0"
+                }
+            ],
+            "summary": {
+                "opens": 406,
+                "openRate": 1.2,
+                "uniqueOpens": 402,
+                "uniqueOpenRate": 7.3,
+                "clicks": 107,
+                "clickRate": 6.3,
+                "uniqueClicks": 32,
+                "uniqueClickRate": 9.4,
+                "clickToOpen": 3.3,
+                "uniqueClickToOpen": 108
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "launchTime": 10000101019,
+                    "opens": 500,
+                    "openRate": 10.2,
+                    "uniqueOpens": 307,
+                    "uniqueOpenRate": 8.3,
+                    "clicks": 510,
+                    "clickRate": 8.3,
+                    "uniqueClicks": 73,
+                    "uniqueClickRate": 4.4,
+                    "clickToOpen": 14.3,
+                    "uniqueClickToOpen": 308
+                },
+                {
+                    "columnName": "mailing-1",
+                    "launchTime": 10000101018,
+                    "opens": 504,
+                    "openRate": 11.2,
+                    "uniqueOpens": 301,
+                    "uniqueOpenRate": 12.3,
+                    "clicks": 508,
+                    "clickRate": 11.3,
+                    "uniqueClicks": 71,
+                    "uniqueClickRate": 10.4,
+                    "clickToOpen": 14.3,
+                    "uniqueClickToOpen": 304
+                },
+                {
+                    "columnName": "mailing-2",
+                    "launchTime": 10000101017,
+                    "opens": 508,
+                    "openRate": 9.2,
+                    "uniqueOpens": 300,
+                    "uniqueOpenRate": 5.3,
+                    "clicks": 509,
+                    "clickRate": 13.3,
+                    "uniqueClicks": 76,
+                    "uniqueClickRate": 6.4,
+                    "clickToOpen": 7.3,
+                    "uniqueClickToOpen": 305
+                },
+                {
+                    "columnName": "mailing-3",
+                    "launchTime": 10000101016,
+                    "opens": 508,
+                    "openRate": 6.2,
+                    "uniqueOpens": 306,
+                    "uniqueOpenRate": 13.3,
+                    "clicks": 505,
+                    "clickRate": 14.3,
+                    "uniqueClicks": 80,
+                    "uniqueClickRate": 2.4,
+                    "clickToOpen": 10.3,
+                    "uniqueClickToOpen": 306
+                },
+                {
+                    "columnName": "mailing-4",
+                    "launchTime": 10000101015,
+                    "opens": 507,
+                    "openRate": 10.2,
+                    "uniqueOpens": 305,
+                    "uniqueOpenRate": 7.3,
+                    "clicks": 508,
+                    "clickRate": 14.3,
+                    "uniqueClicks": 74,
+                    "uniqueClickRate": 12.4,
+                    "clickToOpen": 10.3,
+                    "uniqueClickToOpen": 301
+                },
+                {
+                    "columnName": "mailing-5",
+                    "launchTime": 10000101014,
+                    "opens": 510,
+                    "openRate": 11.2,
+                    "uniqueOpens": 310,
+                    "uniqueOpenRate": 4.3,
+                    "clicks": 510,
+                    "clickRate": 14.3,
+                    "uniqueClicks": 79,
+                    "uniqueClickRate": 5.4,
+                    "clickToOpen": 4.3,
+                    "uniqueClickToOpen": 309
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "year",
+                    "value": 1997
+                },
+                {
+                    "name": "target",
+                    "value": "My Target1"
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing1"
+                }
+            ],
+            "summary": {
+                "opens": 404,
+                "openRate": 8.2,
+                "uniqueOpens": 407,
+                "uniqueOpenRate": 6.3,
+                "clicks": 109,
+                "clickRate": 7.3,
+                "uniqueClicks": 40,
+                "uniqueClickRate": 3.4,
+                "clickToOpen": 11.3,
+                "uniqueClickToOpen": 109
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "opens": 507,
+                    "openRate": 12.2,
+                    "uniqueOpens": 306,
+                    "uniqueOpenRate": 9.3,
+                    "clicks": 507,
+                    "clickRate": 8.3,
+                    "uniqueClicks": 75,
+                    "uniqueClickRate": 11.4,
+                    "clickToOpen": 10.3,
+                    "uniqueClickToOpen": 301
+                },
+                {
+                    "columnName": "mailing-1",
+                    "opens": 507,
+                    "openRate": 8.2,
+                    "uniqueOpens": 310,
+                    "uniqueOpenRate": 13.3,
+                    "clicks": 500,
+                    "clickRate": 11.3,
+                    "uniqueClicks": 79,
+                    "uniqueClickRate": 7.4,
+                    "clickToOpen": 8.3,
+                    "uniqueClickToOpen": 302
+                },
+                {
+                    "columnName": "mailing-2",
+                    "opens": 508,
+                    "openRate": 6.2,
+                    "uniqueOpens": 310,
+                    "uniqueOpenRate": 6.3,
+                    "clicks": 501,
+                    "clickRate": 15.3,
+                    "uniqueClicks": 71,
+                    "uniqueClickRate": 6.4,
+                    "clickToOpen": 10.3,
+                    "uniqueClickToOpen": 307
+                },
+                {
+                    "columnName": "mailing-3",
+                    "opens": 508,
+                    "openRate": 3.2,
+                    "uniqueOpens": 308,
+                    "uniqueOpenRate": 4.3,
+                    "clicks": 509,
+                    "clickRate": 8.3,
+                    "uniqueClicks": 72,
+                    "uniqueClickRate": 11.4,
+                    "clickToOpen": 7.3,
+                    "uniqueClickToOpen": 300
+                },
+                {
+                    "columnName": "mailing-4",
+                    "opens": 503,
+                    "openRate": 3.2,
+                    "uniqueOpens": 304,
+                    "uniqueOpenRate": 7.3,
+                    "clicks": 502,
+                    "clickRate": 16.3,
+                    "uniqueClicks": 74,
+                    "uniqueClickRate": 11.4,
+                    "clickToOpen": 9.3,
+                    "uniqueClickToOpen": 309
+                },
+                {
+                    "columnName": "mailing-5",
+                    "opens": 508,
+                    "openRate": 10.2,
+                    "uniqueOpens": 307,
+                    "uniqueOpenRate": 5.3,
+                    "clicks": 504,
+                    "clickRate": 15.3,
+                    "uniqueClicks": 78,
+                    "uniqueClickRate": 8.4,
+                    "clickToOpen": 9.3,
+                    "uniqueClickToOpen": 300
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "year",
+                    "value": 1998
+                },
+                {
+                    "name": "target",
+                    "value": "My Target2"
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing2"
+                }
+            ],
+            "summary": {
+                "opens": 407,
+                "openRate": 5.2,
+                "uniqueOpens": 406,
+                "uniqueOpenRate": 8.3,
+                "clicks": 109,
+                "clickRate": 5.3,
+                "uniqueClicks": 31,
+                "uniqueClickRate": 9.4,
+                "clickToOpen": 5.3,
+                "uniqueClickToOpen": 104
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "opens": 509,
+                    "openRate": 2.2,
+                    "uniqueOpens": 300,
+                    "uniqueOpenRate": 12.3,
+                    "clicks": 507,
+                    "clickRate": 8.3,
+                    "uniqueClicks": 75,
+                    "uniqueClickRate": 7.4,
+                    "clickToOpen": 11.3,
+                    "uniqueClickToOpen": 305
+                },
+                {
+                    "columnName": "mailing-1",
+                    "opens": 509,
+                    "openRate": 3.2,
+                    "uniqueOpens": 303,
+                    "uniqueOpenRate": 4.3,
+                    "clicks": 500,
+                    "clickRate": 11.3,
+                    "uniqueClicks": 72,
+                    "uniqueClickRate": 4.4,
+                    "clickToOpen": 13.3,
+                    "uniqueClickToOpen": 304
+                },
+                {
+                    "columnName": "mailing-2",
+                    "opens": 508,
+                    "openRate": 3.2,
+                    "uniqueOpens": 307,
+                    "uniqueOpenRate": 6.3,
+                    "clicks": 506,
+                    "clickRate": 11.3,
+                    "uniqueClicks": 79,
+                    "uniqueClickRate": 5.4,
+                    "clickToOpen": 13.3,
+                    "uniqueClickToOpen": 307
+                },
+                {
+                    "columnName": "mailing-3",
+                    "opens": 508,
+                    "openRate": 10.2,
+                    "uniqueOpens": 304,
+                    "uniqueOpenRate": 8.3,
+                    "clicks": 509,
+                    "clickRate": 9.3,
+                    "uniqueClicks": 77,
+                    "uniqueClickRate": 10.4,
+                    "clickToOpen": 8.3,
+                    "uniqueClickToOpen": 309
+                },
+                {
+                    "columnName": "mailing-4",
+                    "opens": 509,
+                    "openRate": 8.2,
+                    "uniqueOpens": 308,
+                    "uniqueOpenRate": 13.3,
+                    "clicks": 500,
+                    "clickRate": 13.3,
+                    "uniqueClicks": 78,
+                    "uniqueClickRate": 9.4,
+                    "clickToOpen": 8.3,
+                    "uniqueClickToOpen": 307
+                },
+                {
+                    "columnName": "mailing-5",
+                    "opens": 503,
+                    "openRate": 7.2,
+                    "uniqueOpens": 306,
+                    "uniqueOpenRate": 6.3,
+                    "clicks": 507,
+                    "clickRate": 13.3,
+                    "uniqueClicks": 79,
+                    "uniqueClickRate": 9.4,
+                    "clickToOpen": 7.3,
+                    "uniqueClickToOpen": 308
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "year",
+                    "value": 1999
+                },
+                {
+                    "name": "target",
+                    "value": "My Target3"
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing3"
+                }
+            ],
+            "summary": {
+                "opens": 403,
+                "openRate": 8.2,
+                "uniqueOpens": 405,
+                "uniqueOpenRate": 9.3,
+                "clicks": 107,
+                "clickRate": 9.3,
+                "uniqueClicks": 35,
+                "uniqueClickRate": 11.4,
+                "clickToOpen": 2.3,
+                "uniqueClickToOpen": 108
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "opens": 509,
+                    "openRate": 5.2,
+                    "uniqueOpens": 307,
+                    "uniqueOpenRate": 11.3,
+                    "clicks": 504,
+                    "clickRate": 14.3,
+                    "uniqueClicks": 74,
+                    "uniqueClickRate": 8.4,
+                    "clickToOpen": 13.3,
+                    "uniqueClickToOpen": 304
+                },
+                {
+                    "columnName": "mailing-1",
+                    "opens": 503,
+                    "openRate": 3.2,
+                    "uniqueOpens": 300,
+                    "uniqueOpenRate": 13.3,
+                    "clicks": 501,
+                    "clickRate": 7.3,
+                    "uniqueClicks": 72,
+                    "uniqueClickRate": 9.4,
+                    "clickToOpen": 8.3,
+                    "uniqueClickToOpen": 304
+                },
+                {
+                    "columnName": "mailing-2",
+                    "opens": 503,
+                    "openRate": 9.2,
+                    "uniqueOpens": 305,
+                    "uniqueOpenRate": 7.3,
+                    "clicks": 506,
+                    "clickRate": 6.3,
+                    "uniqueClicks": 78,
+                    "uniqueClickRate": 7.4,
+                    "clickToOpen": 11.3,
+                    "uniqueClickToOpen": 303
+                },
+                {
+                    "columnName": "mailing-3",
+                    "opens": 504,
+                    "openRate": 5.2,
+                    "uniqueOpens": 308,
+                    "uniqueOpenRate": 9.3,
+                    "clicks": 506,
+                    "clickRate": 13.3,
+                    "uniqueClicks": 73,
+                    "uniqueClickRate": 9.4,
+                    "clickToOpen": 8.3,
+                    "uniqueClickToOpen": 309
+                },
+                {
+                    "columnName": "mailing-4",
+                    "opens": 504,
+                    "openRate": 7.2,
+                    "uniqueOpens": 305,
+                    "uniqueOpenRate": 4.3,
+                    "clicks": 501,
+                    "clickRate": 9.3,
+                    "uniqueClicks": 74,
+                    "uniqueClickRate": 5.4,
+                    "clickToOpen": 12.3,
+                    "uniqueClickToOpen": 310
+                },
+                {
+                    "columnName": "mailing-5",
+                    "opens": 510,
+                    "openRate": 7.2,
+                    "uniqueOpens": 300,
+                    "uniqueOpenRate": 14.3,
+                    "clicks": 508,
+                    "clickRate": 11.3,
+                    "uniqueClicks": 79,
+                    "uniqueClickRate": 4.4,
+                    "clickToOpen": 5.3,
+                    "uniqueClickToOpen": 310
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "year",
+                    "value": 2000
+                },
+                {
+                    "name": "target",
+                    "value": "My Target4"
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing4"
+                }
+            ],
+            "summary": {
+                "opens": 410,
+                "openRate": 7.2,
+                "uniqueOpens": 401,
+                "uniqueOpenRate": 4.3,
+                "clicks": 102,
+                "clickRate": 8.3,
+                "uniqueClicks": 31,
+                "uniqueClickRate": 7.4,
+                "clickToOpen": 2.3,
+                "uniqueClickToOpen": 105
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "opens": 509,
+                    "openRate": 9.2,
+                    "uniqueOpens": 303,
+                    "uniqueOpenRate": 10.3,
+                    "clicks": 510,
+                    "clickRate": 14.3,
+                    "uniqueClicks": 78,
+                    "uniqueClickRate": 10.4,
+                    "clickToOpen": 7.3,
+                    "uniqueClickToOpen": 304
+                },
+                {
+                    "columnName": "mailing-1",
+                    "opens": 506,
+                    "openRate": 9.2,
+                    "uniqueOpens": 303,
+                    "uniqueOpenRate": 11.3,
+                    "clicks": 503,
+                    "clickRate": 12.3,
+                    "uniqueClicks": 72,
+                    "uniqueClickRate": 5.4,
+                    "clickToOpen": 14.3,
+                    "uniqueClickToOpen": 307
+                },
+                {
+                    "columnName": "mailing-2",
+                    "opens": 503,
+                    "openRate": 2.2,
+                    "uniqueOpens": 306,
+                    "uniqueOpenRate": 9.3,
+                    "clicks": 508,
+                    "clickRate": 15.3,
+                    "uniqueClicks": 78,
+                    "uniqueClickRate": 11.4,
+                    "clickToOpen": 6.3,
+                    "uniqueClickToOpen": 302
+                },
+                {
+                    "columnName": "mailing-3",
+                    "opens": 507,
+                    "openRate": 3.2,
+                    "uniqueOpens": 301,
+                    "uniqueOpenRate": 7.3,
+                    "clicks": 509,
+                    "clickRate": 9.3,
+                    "uniqueClicks": 74,
+                    "uniqueClickRate": 5.4,
+                    "clickToOpen": 6.3,
+                    "uniqueClickToOpen": 309
+                },
+                {
+                    "columnName": "mailing-4",
+                    "opens": 503,
+                    "openRate": 5.2,
+                    "uniqueOpens": 305,
+                    "uniqueOpenRate": 6.3,
+                    "clicks": 501,
+                    "clickRate": 9.3,
+                    "uniqueClicks": 73,
+                    "uniqueClickRate": 6.4,
+                    "clickToOpen": 5.3,
+                    "uniqueClickToOpen": 309
+                },
+                {
+                    "columnName": "mailing-5",
+                    "opens": 503,
+                    "openRate": 2.2,
+                    "uniqueOpens": 301,
+                    "uniqueOpenRate": 14.3,
+                    "clicks": 505,
+                    "clickRate": 8.3,
+                    "uniqueClicks": 80,
+                    "uniqueClickRate": 11.4,
+                    "clickToOpen": 8.3,
+                    "uniqueClickToOpen": 301
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "year",
+                    "value": 2001
+                },
+                {
+                    "name": "target",
+                    "value": "My Target5"
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing5"
+                }
+            ],
+            "summary": {
+                "opens": 403,
+                "openRate": 8.2,
+                "uniqueOpens": 403,
+                "uniqueOpenRate": 8.3,
+                "clicks": 101,
+                "clickRate": 4.3,
+                "uniqueClicks": 31,
+                "uniqueClickRate": 11.4,
+                "clickToOpen": 5.3,
+                "uniqueClickToOpen": 109
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "opens": 502,
+                    "openRate": 2.2,
+                    "uniqueOpens": 301,
+                    "uniqueOpenRate": 7.3,
+                    "clicks": 501,
+                    "clickRate": 13.3,
+                    "uniqueClicks": 70,
+                    "uniqueClickRate": 7.4,
+                    "clickToOpen": 5.3,
+                    "uniqueClickToOpen": 307
+                },
+                {
+                    "columnName": "mailing-1",
+                    "opens": 502,
+                    "openRate": 12.2,
+                    "uniqueOpens": 308,
+                    "uniqueOpenRate": 7.3,
+                    "clicks": 505,
+                    "clickRate": 15.3,
+                    "uniqueClicks": 80,
+                    "uniqueClickRate": 12.4,
+                    "clickToOpen": 4.3,
+                    "uniqueClickToOpen": 302
+                },
+                {
+                    "columnName": "mailing-2",
+                    "opens": 504,
+                    "openRate": 4.2,
+                    "uniqueOpens": 307,
+                    "uniqueOpenRate": 14.3,
+                    "clicks": 501,
+                    "clickRate": 8.3,
+                    "uniqueClicks": 77,
+                    "uniqueClickRate": 6.4,
+                    "clickToOpen": 5.3,
+                    "uniqueClickToOpen": 308
+                },
+                {
+                    "columnName": "mailing-3",
+                    "opens": 507,
+                    "openRate": 5.2,
+                    "uniqueOpens": 301,
+                    "uniqueOpenRate": 9.3,
+                    "clicks": 508,
+                    "clickRate": 11.3,
+                    "uniqueClicks": 73,
+                    "uniqueClickRate": 6.4,
+                    "clickToOpen": 12.3,
+                    "uniqueClickToOpen": 304
+                },
+                {
+                    "columnName": "mailing-4",
+                    "opens": 502,
+                    "openRate": 7.2,
+                    "uniqueOpens": 306,
+                    "uniqueOpenRate": 9.3,
+                    "clicks": 510,
+                    "clickRate": 8.3,
+                    "uniqueClicks": 71,
+                    "uniqueClickRate": 5.4,
+                    "clickToOpen": 6.3,
+                    "uniqueClickToOpen": 305
+                },
+                {
+                    "columnName": "mailing-5",
+                    "opens": 503,
+                    "openRate": 10.2,
+                    "uniqueOpens": 305,
+                    "uniqueOpenRate": 9.3,
+                    "clicks": 504,
+                    "clickRate": 6.3,
+                    "uniqueClicks": 73,
+                    "uniqueClickRate": 10.4,
+                    "clickToOpen": 12.3,
+                    "uniqueClickToOpen": 302
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "year",
+                    "value": 2002
+                },
+                {
+                    "name": "target",
+                    "value": "My Target6"
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing6"
+                }
+            ],
+            "summary": {
+                "opens": 410,
+                "openRate": 3.2,
+                "uniqueOpens": 403,
+                "uniqueOpenRate": 2.3,
+                "clicks": 103,
+                "clickRate": 6.3,
+                "uniqueClicks": 30,
+                "uniqueClickRate": 11.4,
+                "clickToOpen": 11.3,
+                "uniqueClickToOpen": 108
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "opens": 508,
+                    "openRate": 6.2,
+                    "uniqueOpens": 310,
+                    "uniqueOpenRate": 11.3,
+                    "clicks": 503,
+                    "clickRate": 15.3,
+                    "uniqueClicks": 72,
+                    "uniqueClickRate": 6.4,
+                    "clickToOpen": 14.3,
+                    "uniqueClickToOpen": 302
+                },
+                {
+                    "columnName": "mailing-1",
+                    "opens": 510,
+                    "openRate": 8.2,
+                    "uniqueOpens": 304,
+                    "uniqueOpenRate": 9.3,
+                    "clicks": 503,
+                    "clickRate": 8.3,
+                    "uniqueClicks": 74,
+                    "uniqueClickRate": 6.4,
+                    "clickToOpen": 11.3,
+                    "uniqueClickToOpen": 305
+                },
+                {
+                    "columnName": "mailing-2",
+                    "opens": 508,
+                    "openRate": 4.2,
+                    "uniqueOpens": 302,
+                    "uniqueOpenRate": 9.3,
+                    "clicks": 509,
+                    "clickRate": 8.3,
+                    "uniqueClicks": 74,
+                    "uniqueClickRate": 12.4,
+                    "clickToOpen": 11.3,
+                    "uniqueClickToOpen": 309
+                },
+                {
+                    "columnName": "mailing-3",
+                    "opens": 510,
+                    "openRate": 10.2,
+                    "uniqueOpens": 302,
+                    "uniqueOpenRate": 4.3,
+                    "clicks": 501,
+                    "clickRate": 9.3,
+                    "uniqueClicks": 79,
+                    "uniqueClickRate": 2.4,
+                    "clickToOpen": 11.3,
+                    "uniqueClickToOpen": 308
+                },
+                {
+                    "columnName": "mailing-4",
+                    "opens": 502,
+                    "openRate": 3.2,
+                    "uniqueOpens": 303,
+                    "uniqueOpenRate": 13.3,
+                    "clicks": 503,
+                    "clickRate": 7.3,
+                    "uniqueClicks": 76,
+                    "uniqueClickRate": 9.4,
+                    "clickToOpen": 12.3,
+                    "uniqueClickToOpen": 300
+                },
+                {
+                    "columnName": "mailing-5",
+                    "opens": 506,
+                    "openRate": 7.2,
+                    "uniqueOpens": 304,
+                    "uniqueOpenRate": 10.3,
+                    "clicks": 509,
+                    "clickRate": 11.3,
+                    "uniqueClicks": 75,
+                    "uniqueClickRate": 10.4,
+                    "clickToOpen": 12.3,
+                    "uniqueClickToOpen": 302
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "year",
+                    "value": 2003
+                },
+                {
+                    "name": "target",
+                    "value": "My Target7"
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing7"
+                }
+            ],
+            "summary": {
+                "opens": 404,
+                "openRate": 4.2,
+                "uniqueOpens": 410,
+                "uniqueOpenRate": 8.3,
+                "clicks": 101,
+                "clickRate": 4.3,
+                "uniqueClicks": 37,
+                "uniqueClickRate": 3.4,
+                "clickToOpen": 7.3,
+                "uniqueClickToOpen": 105
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "opens": 504,
+                    "openRate": 11.2,
+                    "uniqueOpens": 304,
+                    "uniqueOpenRate": 13.3,
+                    "clicks": 505,
+                    "clickRate": 11.3,
+                    "uniqueClicks": 75,
+                    "uniqueClickRate": 4.4,
+                    "clickToOpen": 11.3,
+                    "uniqueClickToOpen": 305
+                },
+                {
+                    "columnName": "mailing-1",
+                    "opens": 500,
+                    "openRate": 8.2,
+                    "uniqueOpens": 308,
+                    "uniqueOpenRate": 12.3,
+                    "clicks": 508,
+                    "clickRate": 8.3,
+                    "uniqueClicks": 73,
+                    "uniqueClickRate": 6.4,
+                    "clickToOpen": 13.3,
+                    "uniqueClickToOpen": 304
+                },
+                {
+                    "columnName": "mailing-2",
+                    "opens": 507,
+                    "openRate": 6.2,
+                    "uniqueOpens": 307,
+                    "uniqueOpenRate": 9.3,
+                    "clicks": 506,
+                    "clickRate": 16.3,
+                    "uniqueClicks": 78,
+                    "uniqueClickRate": 11.4,
+                    "clickToOpen": 11.3,
+                    "uniqueClickToOpen": 305
+                },
+                {
+                    "columnName": "mailing-3",
+                    "opens": 510,
+                    "openRate": 4.2,
+                    "uniqueOpens": 302,
+                    "uniqueOpenRate": 10.3,
+                    "clicks": 501,
+                    "clickRate": 7.3,
+                    "uniqueClicks": 77,
+                    "uniqueClickRate": 9.4,
+                    "clickToOpen": 13.3,
+                    "uniqueClickToOpen": 306
+                },
+                {
+                    "columnName": "mailing-4",
+                    "opens": 506,
+                    "openRate": 5.2,
+                    "uniqueOpens": 300,
+                    "uniqueOpenRate": 12.3,
+                    "clicks": 505,
+                    "clickRate": 11.3,
+                    "uniqueClicks": 70,
+                    "uniqueClickRate": 6.4,
+                    "clickToOpen": 13.3,
+                    "uniqueClickToOpen": 302
+                },
+                {
+                    "columnName": "mailing-5",
+                    "opens": 508,
+                    "openRate": 3.2,
+                    "uniqueOpens": 301,
+                    "uniqueOpenRate": 10.3,
+                    "clicks": 508,
+                    "clickRate": 9.3,
+                    "uniqueClicks": 72,
+                    "uniqueClickRate": 10.4,
+                    "clickToOpen": 11.3,
+                    "uniqueClickToOpen": 300
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "year",
+                    "value": 2004
+                },
+                {
+                    "name": "target",
+                    "value": "My Target8"
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing8"
+                }
+            ],
+            "summary": {
+                "opens": 405,
+                "openRate": 9.2,
+                "uniqueOpens": 401,
+                "uniqueOpenRate": 3.3,
+                "clicks": 108,
+                "clickRate": 5.3,
+                "uniqueClicks": 33,
+                "uniqueClickRate": 2.4,
+                "clickToOpen": 4.3,
+                "uniqueClickToOpen": 104
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "opens": 507,
+                    "openRate": 2.2,
+                    "uniqueOpens": 302,
+                    "uniqueOpenRate": 8.3,
+                    "clicks": 500,
+                    "clickRate": 13.3,
+                    "uniqueClicks": 78,
+                    "uniqueClickRate": 5.4,
+                    "clickToOpen": 6.3,
+                    "uniqueClickToOpen": 303
+                },
+                {
+                    "columnName": "mailing-1",
+                    "opens": 503,
+                    "openRate": 4.2,
+                    "uniqueOpens": 306,
+                    "uniqueOpenRate": 8.3,
+                    "clicks": 510,
+                    "clickRate": 10.3,
+                    "uniqueClicks": 72,
+                    "uniqueClickRate": 11.4,
+                    "clickToOpen": 11.3,
+                    "uniqueClickToOpen": 308
+                },
+                {
+                    "columnName": "mailing-2",
+                    "opens": 503,
+                    "openRate": 6.2,
+                    "uniqueOpens": 305,
+                    "uniqueOpenRate": 11.3,
+                    "clicks": 504,
+                    "clickRate": 11.3,
+                    "uniqueClicks": 78,
+                    "uniqueClickRate": 3.4,
+                    "clickToOpen": 5.3,
+                    "uniqueClickToOpen": 302
+                },
+                {
+                    "columnName": "mailing-3",
+                    "opens": 506,
+                    "openRate": 7.2,
+                    "uniqueOpens": 305,
+                    "uniqueOpenRate": 14.3,
+                    "clicks": 505,
+                    "clickRate": 8.3,
+                    "uniqueClicks": 73,
+                    "uniqueClickRate": 10.4,
+                    "clickToOpen": 13.3,
+                    "uniqueClickToOpen": 304
+                },
+                {
+                    "columnName": "mailing-4",
+                    "opens": 506,
+                    "openRate": 7.2,
+                    "uniqueOpens": 308,
+                    "uniqueOpenRate": 6.3,
+                    "clicks": 501,
+                    "clickRate": 13.3,
+                    "uniqueClicks": 76,
+                    "uniqueClickRate": 11.4,
+                    "clickToOpen": 14.3,
+                    "uniqueClickToOpen": 302
+                },
+                {
+                    "columnName": "mailing-5",
+                    "opens": 501,
+                    "openRate": 9.2,
+                    "uniqueOpens": 300,
+                    "uniqueOpenRate": 13.3,
+                    "clicks": 510,
+                    "clickRate": 13.3,
+                    "uniqueClicks": 74,
+                    "uniqueClickRate": 11.4,
+                    "clickToOpen": 8.3,
+                    "uniqueClickToOpen": 303
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "year",
+                    "value": 2005
+                },
+                {
+                    "name": "target",
+                    "value": "My Target9"
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing9"
+                }
+            ],
+            "summary": {
+                "opens": 408,
+                "openRate": 5.2,
+                "uniqueOpens": 405,
+                "uniqueOpenRate": 4.3,
+                "clicks": 106,
+                "clickRate": 10.3,
+                "uniqueClicks": 32,
+                "uniqueClickRate": 9.4,
+                "clickToOpen": 7.3,
+                "uniqueClickToOpen": 104
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "opens": 507,
+                    "openRate": 3.2,
+                    "uniqueOpens": 307,
+                    "uniqueOpenRate": 9.3,
+                    "clicks": 509,
+                    "clickRate": 8.3,
+                    "uniqueClicks": 79,
+                    "uniqueClickRate": 9.4,
+                    "clickToOpen": 9.3,
+                    "uniqueClickToOpen": 303
+                },
+                {
+                    "columnName": "mailing-1",
+                    "opens": 501,
+                    "openRate": 6.2,
+                    "uniqueOpens": 306,
+                    "uniqueOpenRate": 9.3,
+                    "clicks": 509,
+                    "clickRate": 13.3,
+                    "uniqueClicks": 73,
+                    "uniqueClickRate": 7.4,
+                    "clickToOpen": 6.3,
+                    "uniqueClickToOpen": 301
+                },
+                {
+                    "columnName": "mailing-2",
+                    "opens": 501,
+                    "openRate": 5.2,
+                    "uniqueOpens": 310,
+                    "uniqueOpenRate": 12.3,
+                    "clicks": 501,
+                    "clickRate": 13.3,
+                    "uniqueClicks": 70,
+                    "uniqueClickRate": 4.4,
+                    "clickToOpen": 6.3,
+                    "uniqueClickToOpen": 305
+                },
+                {
+                    "columnName": "mailing-3",
+                    "opens": 503,
+                    "openRate": 7.2,
+                    "uniqueOpens": 300,
+                    "uniqueOpenRate": 10.3,
+                    "clicks": 504,
+                    "clickRate": 7.3,
+                    "uniqueClicks": 75,
+                    "uniqueClickRate": 6.4,
+                    "clickToOpen": 8.3,
+                    "uniqueClickToOpen": 307
+                },
+                {
+                    "columnName": "mailing-4",
+                    "opens": 502,
+                    "openRate": 3.2,
+                    "uniqueOpens": 301,
+                    "uniqueOpenRate": 5.3,
+                    "clicks": 503,
+                    "clickRate": 15.3,
+                    "uniqueClicks": 75,
+                    "uniqueClickRate": 11.4,
+                    "clickToOpen": 11.3,
+                    "uniqueClickToOpen": 300
+                },
+                {
+                    "columnName": "mailing-5",
+                    "opens": 503,
+                    "openRate": 8.2,
+                    "uniqueOpens": 308,
+                    "uniqueOpenRate": 7.3,
+                    "clicks": 504,
+                    "clickRate": 11.3,
+                    "uniqueClicks": 74,
+                    "uniqueClickRate": 5.4,
+                    "clickToOpen": 13.3,
+                    "uniqueClickToOpen": 306
+                }
+            ]
+        }
+    ],
+            "summary": {
+                "clickRate": 345,
+                "clickToOpen": 30,
+                "clicks": 30,
+                "columnName": null,
+                "openRate": 41.3,
+                "opens": 8000,
+                "uniqueClickRate": 41.3,
+                "uniqueClickToOpen": 40,
+                "uniqueClicks": 1000,
+                "uniqueOpenRate": 67.33,
+                "uniqueOpens": 5500
+            }
+        }
+    ]
+}

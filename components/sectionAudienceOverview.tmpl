@@ -1,0 +1,138 @@
+<script id="tmpl-sectionAudienceOverview" type="text/html">
+	<div class="sectionAudienceOverview">
+	</div>
+</script>
+<script id="tmpl-sectionAudienceOverview-table" type="text/html">
+	<div class="sectionAudienceOverviewTable">
+		<div class="byTitle">Overview by <span class="viewByValue"></span></div> 
+		<div class="SMA-REPORT-SUMMARYSTATISTICSTABLE statsSummary"></div>
+		<div class="sectionAudienceOverviewTable-table">
+		</div>
+	</div>
+</script>
+<script id="tmpl-sectionAudienceOverview-bar" type="text/html">
+	<div class="sectionAudienceOverviewBar">
+		<div class="byTitle">Overview by <span class="viewByValue"></span></div> 
+		<div class="SMA-REPORT-SUMMARYSTATISTICSTABLE statsSummary"></div>
+		<div class="sectionAudienceOverviewBar-table">
+		</div>
+	</div>
+</script>
+<script id="tmpl-sectionAudienceOverview-pie" type="text/html">
+	<div class="sectionAudienceOverviewPie">
+		<div class="byTitle">Overview by <span class="viewByValue"></span></div> 
+		<div class="SMA-REPORT-SUMMARYSTATISTICSTABLE statsSummary"></div>
+		<div class="sectionAudienceOverviewPie-pie">
+		</div>
+	</div>
+</script>
+
+
+<script id="tmpl-sectionAudienceOverviewSummary" type="text/html">
+	<div class="sectionAudienceOverviewSummary">
+		<div class="sectionAudienceOverviewSummary-chart">
+			<div class="viewBy head">
+				<span>View by </span>
+				<span class="SMA-REPORT-VIEWBYDAY action {{#equal viewBy 'day'}}selected{{/equal}}" data-view="day">Day</span>
+				<span class="SMA-REPORT-VIEWBYWEEK action {{#equal viewBy 'week'}}selected{{/equal}}" data-view="week">Week</span>
+				<span class="SMA-REPORT-VIEWBYMONTH action {{#equal viewBy 'month'}}selected{{/equal}}" data-view="month">Month</span>
+				<span class="SMA-REPORT-VIEWBYQUARTER action {{#equal viewBy 'quarter'}}selected{{/equal}}" data-view="quarter">Quarter</span>
+			</div>
+			<div class="chart-content"></div>
+		</div>
+		
+		<div class="sectionAudienceOverviewSummary-bottom">
+			<span class="spanTitle totalSize">Total Size:<span></span></span>
+			<span class="spanTitle engagementBreakDown">Engagement Breakdown</span>
+			<div class="sectionAudienceOverviewSummary-engagementBreakDown table-part">
+				<table >
+					<tr>
+						<th class="name">Segment</th>
+						<th class="count">Count</th>
+						<th class="rate">% change</th>
+						<th class="trends">Count Trends</th>
+						<th class="rate">% of total</th>
+						<th></th>
+					</tr>
+				</table>
+			</div>
+			<span class="spanTitle">Top 5 ISPs</span>
+			<div class="sectionAudienceOverviewSummary-top5ISPs table-part">
+				<table >
+					<tr>
+						<th class="name">ISP Domain</th>
+						<th class="count">Count</th>
+						<th class="rate">% change</th>
+						<th class="trends">Count Trends</th>
+						<th class="rate">% of total</th>
+						<th></th>
+					</tr>
+				</table>
+			</div>
+			<span class="spanTitle addressLifetimeBreakDown">Address Lifetime</span>
+			<div class="sectionAudienceOverviewSummary-addressLifetime table-part">
+				<table >
+					<tr>
+						<th class="name bucket-name">Segment</th>
+						<th class="name median">Median</th>
+						<th class="distribution">Distribution</th>
+						<th class="median-over-time">Median over Time</th>
+					</tr>
+				</table>
+			</div>
+			<div class="cb"></div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-sectionAudienceOverviewSummary-bottom-totalSize" type="text/html">
+	<span>
+		{{summary.total}} ({{#gt summary.percentChange  0 }}+{{/gt}}{{summary.percentChange}}%)
+		{{#equal summary.arrowVal 'no'}}
+			<span class="smr-noArrowBlack">-</span>
+		{{else}}
+			<span class="smr-carouselSpriteIco {{#equal summary.arrowVal 'up'}} smr-arrowUpLargeGreen {{else}} smr-arrowDownLargeRed {{/equal}}" ></span>
+		{{/equal}}
+	</span>
+</script>
+
+<script id="tmpl-sectionAudienceOverviewSummary-bottom-tr" type="text/html">
+	<tr>
+		<td class="name first">{{summaryObj.name}}</td>
+		<td class="count">{{summaryObj.count}}</td>
+		<td class="rate">
+			{{#if summaryObj.percentChange}}
+			   {{#gt summaryObj.percentChange  0 }}+{{/gt}}{{summaryObj.percentChange}}%
+			   {{#equal summaryObj.arrowVal 'no' }}
+				  <span class="smr-noArrowBlack">-</span>
+			   {{else}}
+				  <span class="smr-carouselSpriteIco {{#equal summaryObj.arrowVal 'up'}} smr-arrowUpLargeGreen {{else}} smr-arrowDownLargeRed {{/equal}}" ></span>
+			   {{/equal}}
+			{{else}}
+			   <span class="smr-noArrowBlack">-</span>
+			{{/if}}
+		</td>
+		<td class="sparkLine {{summaryObj.className}}"></td>
+		<td class="rate">{{summaryObj.totalPercent}}%</td>
+		<td class="last">
+			<div class="table-bar">
+				<div class="bar" style="width:{{summaryObj.totalPercent}}%"></div>
+			</div>
+		</td>
+	</tr>
+</script>
+
+<script id="tmpl-sectionAudienceOverviewSummary-bottom-lifetime-tr" type="text/html">
+	<tr>
+		<td class="name first">{{summaryObj.name}}</td>
+		<td class="name">
+			{{#if summaryObj.median}}
+				{{summaryObj.median}}
+			{{else}}
+			   <span class="smr-noArrowBlack">-</span>
+			{{/if}}
+		</td>
+		<td class="sparkBar {{summaryObj.className}}"></td>
+		<td class="sparkLine {{summaryObj.className}}"></td>
+	</tr>
+</script>

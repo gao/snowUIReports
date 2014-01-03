@@ -1,0 +1,176 @@
+<script id="tmpl-dataTable" type="text/html">
+	<div class="dataTableDiv">
+		{{#if title}}
+    		<div class="table-title">{{title}}</div>
+		{{/if}}
+		<table class="{{#if smaclass}}{{smaclass}}{{/if}} dataTable">
+			<thead>
+				<tr></tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<div class="hoverBoxContainer"></div>
+	</div>
+</script>
+<script id="tmpl-dataTable-tableThead" type="text/html">
+	<th class="{{labelCss}} {{#if sortable}}sortable{{/if}} {{#if isBarChart}}barChartTh{{/if}} {{#if isTableOfBarView}}isTableOfBarView{{/if}} {{#if isByDomain}}byDomain{{/if}}" data-column="{{column}}">
+		{{#if isDropDown}}
+			<div class="dropDownSelectMetric">
+				<select name='dropDownSelectMetric'>
+					{{#eachList dropDownList label}}
+						<option value="{{name}}" {{#if isDefault}}selected{{/if}} {{#if isByDomain}}disabled{{/if}}>{{labelName}}</option>
+					{{/eachList}}
+				</select>
+			</div>
+		{{else}}
+			<span>{{label}}</span>
+		{{/if}}
+	</th>
+</script>
+<script id="tmpl-dataTable-tableTbody" type="text/html">
+	<tr>
+	</tr>
+</script>
+<script id="tmpl-dataTable-tableTbody-td" type="text/html">
+	{{#unless isCombination}}
+		<td {{#gtAndTrue combineRowspan 1 combinationTD}} rowspan="{{combineRowspan}}"{{/gtAndTrue}} class="{{first}} {{#if isAlignLeft}}alignLeft{{/if}} {{#if isAlignCenter}}alignCenter{{/if}} {{#if isBindData}}bindData{{/if}} {{#if showHoverBox}}showhover{{/if}}" {{#if showHoverBox}}data-name="{{mailingName}}" data-value="{{hoverBoxVal}}"{{/if}}>
+		{{#if isBarChart}}
+		<div class="bar-chart"  {{#lte value 90}}style="width:{{value}}%"{{/lte}}></div>
+		<div class="bar-percent" >{{value}}{{#if isRate}}%{{/if}}</div>
+		{{else}}
+			{{#equal reportType "deliverabilityDomains"}}
+				{{#if isDomianDrilldownAndOtherCheck}}
+                	<span {{#if haveTitle}}title="{{columnTitle}}"{{/if}} class="mailingNameURL">
+					{{#if isMock}}
+						<a onclick="smr.showDomainDrillDownReport('#reports-container',smr.REPORT_TYPE.DOMAINDRILLDOWN,'{{reportType}}','{{value}}')">{{value}}</a>
+					{{else}}
+						<a href="javascript:sm.comp.tab.TabMgr.openTab('DOMAIN_DELIVERABILITY_DRILLDOWN','fromReportType={{reportType}}&startDate={{startDate}}&endDate={{endDate}}&domainName={{value}}')">{{value}}</a>
+					{{/if}}
+					</span>
+				{{else}}
+					<span>{{value}}</span>
+				{{/if}}
+			{{else}}
+				<span {{#if haveTitle}}title="{{columnTitle}}"{{/if}} {{#if haveColor}}style="color:{{columnColor}}"{{/if}} {{#notEqualAndTrue value 0 isFailureDetailCount}}class="failureDetailCount" data-value="{{failureType}}" data-category="{{failureCategory}}"{{/notEqualAndTrue}} {{#if isUseClassMailingNameURL}}class="mailingNameURL"{{/if}}>
+				{{#if isMailingName}}
+					{{#if isBatchType}}
+						{{#if isMock}}
+						<a href="javascript:smr.showReport('#reports-container',smr.REPORT_TYPE.MAILINGDETAIL,'sectionMailingDetail',null,null,[301],'mailingDetail');">{{value}}</a>
+						{{else}}
+					 	<a href="javascript:sm.app.mailing.MailingMgr.showDetailReport({{mailingId}},'','')">{{value}}</a>
+						{{/if}}
+					{{else}}
+						{{#if isMock}}
+						<a href="javascript:smr.showReport('#reports-container',smr.REPORT_TYPE.MAILINGDETAIL,'sectionMailingDetail',null,null,[400],'mailingDetail');">{{value}}</a>
+						{{else}}
+						<a href="javascript:sm.app.mailing.MailingMgr.showDetailReport({{mailingId}},{{#if startDate}}'{{startDate}}'{{else}}''{{/if}},{{#if endDate}}'{{endDate}}'{{else}}''{{/if}})">{{value}}</a>
+						{{/if}}
+					{{/if}}
+				{{else}}
+					{{#notEqual value "null"}}
+						{{#if isConversionSymbol}}{{conversionCurrency}}{{/if}}
+						{{#if isDomianDrilldown}}
+							{{#notEqual value "other"}}
+		                        {{#if isMock}}
+									<a onclick="smr.showDomainDrillDownReport('#reports-container',smr.REPORT_TYPE.DOMAINDRILLDOWN,'{{reportType}}','{{value}}')">{{value}}</a>
+								{{else}}
+									<a href="javascript:sm.comp.tab.TabMgr.openTab('DOMAIN_DELIVERABILITY_DRILLDOWN','fromReportType={{reportType}}&startDate={{startDate}}&endDate={{endDate}}&domainName={{value}}')">{{value}}</a>
+								{{/if}}
+							{{else}}
+								{{#equal reportType "audience"}}
+		                            <span title="Messages Studio tracks statistics for the largest domains in the target. The remaining domains are grouped together under this entry.">
+		                			    (not tracked)
+		                			</span>
+		                        {{else}}
+								    <span title="Message Studio tracks statistics by domain for a set of often mailed domain names. To change the list of domains that are tracked, please contact support">
+									    (not tracked)
+								    </span>
+		                        {{/equal}}
+		                	{{/notEqual}}
+						{{else}}
+							{{value}}
+						{{/if}}
+						{{#notEqualAndTrue value "N/A" isRate}}%{{/notEqualAndTrue}}
+					{{else}}
+						-
+					{{/notEqual}}
+				{{/if}}
+				{{#bothTrue showOpen opens}}<div class="opens-rate">{{opens}}%</div>{{/bothTrue}}
+			{{/equal}}
+		{{/if}}
+		</td>
+	{{/unless}}
+</script>
+
+<script id="tmpl-section-table-td-hover" type="text/html">
+	<div class="hoverDiv">
+	    <div class="topPart">
+			<span class="titleLabel">Mailing Name:</span><br>
+			<span>{{name}}</span>
+		</div>
+	    <div class="bottomPart">
+	    	<span class="titleLabel">Subject Line:</span><br>
+	    	<span>{{value}}</span>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-dataTable-pagination" type="text/html">
+	<tr class="tfoot">
+	<td class="pagination" colspan="10">
+	{{#gt pageSize 1}}
+	<span class="goto">
+		<span class="gotoBtn">Go to:</span>
+		<input name="gotoPage" type="text" value="{{pageNum}}" />
+	</span>
+	{{/gt}}
+	<span class="showRows">
+		Show Rows
+		<select name="SMA-REPORT-PAGECOUNT pageCount">
+		<option {{#equal pageCount 15}}selected{{/equal}}>15</option>
+		<option {{#equal pageCount 25}}selected{{/equal}}>25</option>
+		<option {{#equal pageCount 50}}selected{{/equal}}>50</option>
+		<option {{#equal pageCount 100}}selected{{/equal}}>100</option>
+		<option {{#equal pageCount 500}}selected{{/equal}}>500</option>
+		<option {{#equal pageCount "all"}}selected{{/equal}}>All</option>
+		</select>
+	</span>
+	<span class="info">{{startRows}} - {{endRows}} of {{sizeCount}}</span>
+	{{#gt pageSize 1}}
+		<span class="nums">
+			<span class="prevStart {{#unless isFirst}}action{{/unless}}">&lt;&lt;</span>
+			<span class="prev {{#unless isFirst}}action{{/unless}}">&lt;</span>
+			{{#equalOr pageNum 1 pageNum 2}}
+				{{#gt pageSize 6}} 
+					{{#listNum 1 6 pageNum}}
+						<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span> 
+					{{/listNum}}
+				{{else}}
+					{{#listNum 1 pageSize pageNum}}
+						<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span>  
+					{{/listNum}}
+				{{/gt}}
+			{{else}}
+				{{#gtSum pageSize pageNum 3}}
+					{{#reListNumber pageNum 2 pageNum 3 pageNum}}
+						<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span> 
+					{{/reListNumber}}
+				{{else}}
+					{{#gt pageSize 6}}
+						{{#reListNumber pageSize 6 pageSize 0 pageNum}}
+							<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span> 
+						{{/reListNumber}}
+					{{else}}
+						{{#listNum 1 pageSize pageNum}}
+							<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span> 
+						{{/listNum}}
+					{{/gt}}
+				{{/gtSum}}
+			{{/equalOr}}
+			<span class="next {{#unless isLast}}action{{/unless}}">&gt;</span>
+			<span class="nextEnd {{#unless isLast}}action{{/unless}}">&gt;&gt;</span>
+		</span>
+	{{/gt}}
+	</td>
+	</tr>
+</script>

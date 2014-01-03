@@ -1,0 +1,269 @@
+<script id="tmpl-pivotTable" type="text/html">
+		<div class="pivotTable">
+			<div class="pivotHeader">
+				<div class="pivotTableMetric">
+					<span class="metric-title">Pivot Report: New</span>
+				</div>
+			</div>
+			
+			<div class="cb"></div>
+			<div class="pivotCondtionPanel pivot-right-left-SMR">
+				<div class="breakdownPanelSMR pivot-left-SMR">
+				
+					<div class="metric-partSMR">
+						<div class="breakdown-title"><span>Pivot Metric</span></div>
+						<div class="breakdown-content">
+							<div class="breakdown-item only last" style="z-index:5;">
+								<span class="breakdown-item-drag-dot" style="visibility:hidden;">&nbsp;</span>
+								<div class="breakdown-item-part breakdown-type">
+									<div class="breakdown-type-select" data-value="0">
+										<span class="metric-name">Select</span><span class="button-ico ico ico-downArrow"></span>
+									</div>
+									<div class="combox-option" style="z-index:6">
+									{{#each metricList}}
+										<a href="javascript:void(0);" value="{{name}}"><span class="select-option-name">{{labelName}}</span></a>
+									{{/each}}
+									</div>
+								</div>
+								<div class="cb"></div>
+							</div>
+						</div><!--/breakdown-content-->
+					</div><!--/metric-partSMR-->
+					
+					<div class="breakdown-partSMR">
+						<div class="breakdown-title"><span>Breakdown by</span></div>
+						<div class="breakdown-content">
+							<div class="breakdown-item only last">
+								<span class="breakdown-item-drag-dot">&nbsp;</span>
+								<div class="breakdown-item-part breakdown-type">
+									<div class="breakdown-type-select" data-value="0">
+										<span class="metric-name">Select</span><span class="button-ico ico ico-downArrow"></span>
+									</div>
+									<div class="combox-option">
+									{{#each breakdown}}
+										<a href="javascript:void(0);" {{#if datebased}}class="datebased"{{/if}} {{#if hasSub}}class="hasSub" sub-name="{{subMenuName}}"{{/if}} value="{{value}}"><span class="select-option-name">{{name}}</span><span class="icon-chevron-right">&nbsp;</span></a>
+									{{/each}}
+									</div>
+								</div>
+								<div class="breakdown-item-part breakdown-delete"><a href="##1" class="ic btnDelete">&nbsp;</a></div>
+								<div class="breakdown-item-part breakdown-add"><a href="##1" class="ic btnAdd">&nbsp;</a></div>
+								<div class="cb"></div>
+							</div>
+						</div><!--/breakdown-content-->
+					</div><!--/breakdown-partSMR-->
+				</div><!--/breakdownPanelSMR-->
+
+				<div class="pivotPanelSMR pivot-right-SMR">
+					<div class="pivot pivotByPanel">
+						<span>Pivot by</span>
+						<div class="breakdown-item-part breakdown-type pivotby">
+							<div class="breakdown-type-select" data-value="0">
+								<span class="metric-name">---- Select</span><span class="button-ico ico ico-downArrow"></span>
+							</div>
+							<div class="combox-option">
+							{{#each pivotBys}}
+								<a href="javascript:void(0);" {{#if datebased}}class="datebased"{{/if}} {{#if hasSub}}class="hasSub" sub-name="{{subMenuName}}"{{/if}} value="{{value}}"><span class="select-option-name">{{name}}</span><span class="icon-chevron-right">&nbsp;</span></a>
+							{{/each}}
+							</div>
+							<div class="combox-option-subsction"></div>
+						</div>
+					</div>
+					<div class="pivot pivotOptionsPanel">
+						<span class="option-ico">&nbsp;</span><a href="##1" class="option-label">Options</a>
+					</div>
+					<div class="pivotColumnControlPanel">
+						<span>Columns:</span>
+						<span class="column-start">1</span>
+						<span>-</span>
+						<span class="column-end">4</span>
+						<span>of</span>
+						<span class="column-total">9</span>
+						<span class="column-control column-prev">&nbsp;</span>
+						<span class="column-control column-next active">&nbsp;</span>
+					</div>
+					<div class="cb"></div>
+				</div><!--/pivotPanelSMR-->
+			</div><!--/pivotCondtionPanel-->
+
+			<div class="cb"></div>
+			<div class="pivotRunReportPanel pivot-right-left-SMR">
+				<div class="pivotRunReport">
+					<div class="breakdownPanelButton pivot-left-SMR"><div class="btn run-report">Generate New Report</div></div>
+					<div class="pivotRunReportMessage pivot-right-SMR"><span>To run a report, select settings(above) first.</span></div>
+				</div>
+				<div class="pivotUpdateReport">
+					<span>Data no longer reflects report settings</span><div class="btn run-report">Generate New Report</div>
+				</div>
+				<div class="pivotSaveReport">
+					<div class="breakdownPanelButton pivot-left-SMR"><div class="btn save-report">Save Report</div></div>
+					<div class="pivotRunReportMessage pivot-right-SMR"><span>Have not implement right now!</span></div>
+				</div>
+			</div><!--/pivotRunReportPanel-->
+			
+			<div class="cb"></div>
+			
+			<div class="pivotDataPart">
+				<div class="pivotSegmentTable">
+					<table class="dataTable">
+						<thead></thead>
+						<tbody></tbody>
+					</table>
+					<div class="pivot-table-bottom">&nbsp;</div>
+				</div>
+
+				<div class="pivotDataTable">
+					<table class="dataTable">
+						<thead></thead>
+						<tbody></tbody>
+					</table>
+					<div class="pivot-table-bottom">&nbsp;</div>
+				</div>
+				<div class="gray-out-pivot"></div>
+			</div>
+			<div class="cb"></div>
+			<div class="report-data-progressBar">
+				<div class="aggregating-gray"></div>
+				<div class="aggregating-data">
+					<div class="aggregating-progress">
+						<div class="aggregating-title"><span>Searching activity detail and aggregating data</span></div>
+						<div class="aggregating-bar"></div>
+					</div>
+				</div>
+			</div>
+	</div><!---/pivotTable----->
+</script>
+
+<script id="tmpl-pivotTable-pivot-sub-combox-option" type="text/html">
+	<div class="combox-option-subsction">
+	{{#each subMenu}}
+		<a href="javascript:void(0);" class="{{#if datebased}}datebased{{/if}} {{#if hasSub}}hasSub{{/if}} {{#if isTagSelection}}tagSelection{{/if}}" {{#if hasSub}}sub-name="{{subMenuName}}"{{/if}} value="{{value}}"><span {{#if ellipse}}data-n="{{name}}"{{/if}} {{#if showTitle}}title="{{#if ellipse}}{{name}}{{/if}}{{#if showDepartment}} Organization: {{department}}{{/if}}"{{/if}} class="select-option-name">{{#if ellipse}}{{ellipse}}{{else}}{{name}}{{/if}}</span><span class="icon-chevron-right">&nbsp;</span></a>
+	{{/each}}
+	</div>
+</script>
+
+<script id="tmpl-pivotTable-pivot-dataTableColoumn-pagination" type="text/html">
+	<div>
+		<span>Columns:</span>
+		<span class="column-start">{{startRows}}</span>
+		<span>-</span>
+		<span class="column-end">{{endRows}}</span>
+		<span>of</span>
+		<span class="column-total">{{sizeCount}}</span>
+		<span class="column-control column-prev {{#unless isFirst}}active{{/unless}}">&nbsp;</span>
+		<span class="column-control column-next {{#unless isLast}}active{{/unless}}">&nbsp;</span>
+	</div>
+</script>
+
+<script id="tmpl-pivotTable-pivot-filter-item" type="text/html">
+	<div class="filter-item last">
+		{{{incl "tmpl-pivotTable-pivot-filter-item-part" dataVal}}}
+		<div class="filter-item-part filter-delete"><a href="##1" class="ic btnDelete">&nbsp;</a></div>
+		<div class="filter-item-part filter-add"><a href="##1" class="ic btnAdd">&nbsp;</a></div>
+		<div class="cb"></div>
+	</div>
+</script>
+
+<script id="tmpl-pivotTable-pivot-filter-item-part" type="text/html">
+	<div class="filter-item-part filter-prop {{#if fp}}filter-type{{/if}}">
+		<select class="filter-prop-select">
+			{{#each filter}}
+				<option value="{{value}}">{{name}}</option>
+			{{/each}}
+		</select>
+	</div>
+</script>
+
+<script id="tmpl-pivotTable-pivot-breakdown-item" type="text/html">
+	<div class="breakdown-item last">
+		<span class="breakdown-item-drag-dot">&nbsp;</span>
+		<div class="breakdown-item-part breakdown-type">
+			<div class="breakdown-type-select" data-value="0">
+				<span class="metric-name">Select</span><span class="button-ico ico ico-downArrow"></span>
+			</div>
+			<div class="combox-option">
+			{{#each breakdown}}
+				<a href="javascript:void(0);" {{#if datebased}}class="datebased"{{/if}} {{#if hasSub}}class="hasSub" sub-name="{{subMenuName}}"{{/if}} value="{{value}}"><span class="select-option-name">{{name}}</span><span class="icon-chevron-right">&nbsp;</span></a>
+			{{/each}}
+			</div>
+		</div>
+		<div class="breakdown-item-part breakdown-delete"><a href="##1" class="ic btnDelete">&nbsp;</a></div>
+		<div class="breakdown-item-part breakdown-add"><a href="##1" class="ic btnAdd">&nbsp;</a></div>
+		<div class="cb"></div>
+	</div>
+</script>
+
+<script id="tmpl-pivotTable-pivot-dataTable-tableThead" type="text/html">
+	<th class="tl{{#if sortable}} sortable{{/if}}{{#if isAlginRight}} alginRight{{/if}}">
+		{{#unless hasControl}}<div class="control"><span class="sort asc">&uarr;</span><span class="sort desc">&darr;</span></div>{{/unless}}
+		<div {{#if ellpsis}}title="{{label}}"{{/if}} class="data-th-label {{#if isAlginRight}}floatRight{{/if}}"><span class="th-label-value">{{ellpsisLabel}}{{#if showRateStuffix}} %{{/if}}{{#if hasControl}}</span><div class="control"><span class="sort asc">&uarr;</span><span class="sort desc">&darr;</span></div>{{/if}}</div>
+		{{#if hasControl}}<div class="control"><a href="##1" class="delete-pivot-col">&nbsp;&nbsp;</a></div>{{/if}}
+	</th>
+</script>
+
+<script id="tmpl-pivotTable-pivot-dataTable-tableTbody" type="text/html">
+	<tr index="{{index}}"></tr>
+</script>
+
+<script id="tmpl-pivotTable-pivot-dataTable-tableTbody-td" type="text/html">
+	<td class="{{#if isAlginRight}}alginRight{{/if}}">
+		<span class="{{#if haveBestVaule}}best{{/if}}" {{#if ellpsis}}title="{{value}}"{{/if}}>{{#if isConversionSymbol}}{{conversionCurrency}}{{/if}}{{#if value}}{{#if ellpsis}}{{ellpsis}}{{else}}{{value}}{{/if}}{{else}}&nbsp;{{/if}}{{#if isRate}}%{{/if}}</span>
+	</td>
+</script>
+
+<script id="tmpl-pivotTable-pivot-dataTable-nodata" type="text/html">
+	<tr><td class="nodata" colspan="{{colspan}}">No Data!</td></tr>
+</script>
+
+<script id="tmpl-pivotTable-pagination" type="text/html">
+	<div class="pivotTable-pagination" data-pageNum="{{pageNum}}">
+	<span class="info">Rows: {{startRows}} - {{endRows}} of {{sizeCount}}</span>
+	{{#gt pageSize 1}}
+		<span class="nums">
+			<span class="prevStart {{#unless isFirst}}action{{/unless}}">&lt;&lt;</span>
+			<span class="prev {{#unless isFirst}}action{{/unless}}">&lt;</span>
+			{{#equalOr pageNum 1 pageNum 2}}
+				{{#gt pageSize 6}} 
+					{{#listNum 1 6 pageNum}}
+						<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span> 
+					{{/listNum}}
+				{{else}}
+					{{#listNum 1 pageSize pageNum}}
+						<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span>  
+					{{/listNum}}
+				{{/gt}}
+			{{else}}
+				{{#gtSum pageSize pageNum 3}}
+					{{#reListNumber pageNum 2 pageNum 3 pageNum}}
+						<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span> 
+					{{/reListNumber}}
+				{{else}}
+					{{#gt pageSize 6}}
+						{{#reListNumber pageSize 6 pageSize 0 pageNum}}
+							<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span> 
+						{{/reListNumber}}
+					{{else}}
+						{{#listNum 1 pageSize pageNum}}
+							<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span> 
+						{{/listNum}}
+					{{/gt}}
+				{{/gtSum}}
+			{{/equalOr}}
+			<span class="next {{#unless isLast}}action{{/unless}}">&gt;</span>
+			<span class="nextEnd {{#unless isLast}}action{{/unless}}">&gt;&gt;</span>
+		</span>
+	{{/gt}}
+		<span class="showRows">
+			<span class="show-label">Show</span>
+			<select name="SMA-REPORT-PAGECOUNT pageCount">
+			<option {{#equal pageCount 10}}selected{{/equal}}>10</option>
+			<option {{#equal pageCount 15}}selected{{/equal}}>15</option>
+			<option {{#equal pageCount 25}}selected{{/equal}}>25</option>
+			<option {{#equal pageCount 50}}selected{{/equal}}>50</option>
+			<option {{#equal pageCount 100}}selected{{/equal}}>100</option>
+			<option {{#equal pageCount 500}}selected{{/equal}}>500</option>
+			<option {{#equal pageCount "all"}}selected{{/equal}}>All</option>
+			</select>
+			<span class="rows-label">Rows</span>
+		</span>
+	</div>
+</script>

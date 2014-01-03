@@ -1,0 +1,316 @@
+{ "identifier" : "id",
+  "items" : [ { 
+		"data":[
+		{ 
+	     	"block":{
+		  		"count" : 100,
+                "failuresByCode" : [ { 
+						"code" : 1000,
+                        "count" : 10900,
+                        "description" : "spam1 complaint",
+                        "rate" : 1.0,
+                        "percentageOfFailure" : 11.0
+                      },
+                      { 
+						"code" : 1002,
+                        "count" : 10800,
+                        "description" : "spam1 complaint2",
+                        "rate" : 2.0,
+                        "percentageOfFailure" : 22.0
+                      } ],
+                "rate" : 11.0
+            },
+           	"date" : "2012-02-01",
+            "defers":{ 
+		  		"count" : 18,
+                "rate" : 5
+            },
+            "delivered":{ 
+		  		"count" : 1100,
+                "rate" : null
+            },
+            "failed" : { 
+	        	"count" : 500,
+                "rate" : 1.0
+            },
+            "hardBounce" : { 
+	          	"count" : 220,
+                "failuresByCode" : [ { 
+						"code" : 2000,
+                        "count" : 10900,
+                        "description" : "spam2 complaint",
+                        "rate" : 21.0,
+                        "percentageOfFailure" : 22.0
+                      },
+                      { 
+						"code" : 2002,
+                        "count" : 10800,
+                        "description" : "spam2 complaint2",
+                        "rate" : 1.0,
+                        "percentageOfFailure" : 10.0
+                      },
+                      { 
+						"code" : 2042,
+                        "count" : 13300,
+                        "description" : "spam2 complaint3",
+                        "rate" : 11.0,
+                        "percentageOfFailure" : 1.0
+                      } ],
+                "rate" : 20.0
+            },
+            "sent" : { 
+	          	"count" : 1000,
+                "rate" : null
+            },
+            "softBounce" : {
+		  		"count" : 1000,
+                "failuresByCode" : null,
+                "rate" : 10.0
+            },
+            "technical" : { 
+	          	"count" : 10,
+                "failuresByCode" : [ { 
+						"code" : 4000,
+                        "count" : 10000,
+                        "description" : "spam complaint",
+                        "rate" : 4.0,
+                        "percentageOfFailure" : 14.0
+                      },
+                      { 
+						"code" : 4002,
+                        "count" : 10400,
+                        "description" : "spam complaint2",
+                        "rate" : 4.5,
+                        "percentageOfFailure" : 14.0
+                      } ],
+                "rate" : 10.0
+            },
+            "unknown" : {
+		  		"count" : 220,
+                "failuresByCode" : null,
+                "rate" : 30.0
+            },
+            "vsgIp" : null,
+            "organization" : "Admin"
+            
+        },
+		{
+			"block":{
+		  		"count" : 100,
+                "failuresByCode" : null,
+                "rate" : 11.0
+            },
+           	"date" : "2012-02-02",
+            "defers":{ 
+		  		"count" : 11,
+                "rate" : 15
+            },
+            "delivered":{ 
+		  		"count" : 180,
+                "rate" : 20
+            },
+            "failed" : { 
+	        	"count" : 1000,
+                "rate" : 11.0
+            },
+            "hardBounce" : { 
+	          	"count" : 400,
+                "failuresByCode" : null,
+                "rate" : 40.0
+            },
+            "sent" : { 
+	          	"count" : 1222,
+                "rate" : null
+            },
+            "softBounce" : {
+		  		"count" : 500,
+                "failuresByCode" : null,
+                "rate" : 10.0
+            },
+            "technical" : { 
+	          	"count" : 10,
+                "failuresByCode" : [ { 
+						"code" : 1000,
+                        "count" : 10000,
+                        "description" : "spam complaint",
+                        "rate" : 1.0,
+                        "percentageOfFailure" : 1.0
+                      } ],
+                "rate" : 30.0
+            },
+            "unknown" : {
+		  		"count" : 520,
+                "failuresByCode" : null,
+                "rate" : 25.0
+            },
+            "vsgIp" : null,
+            "organization" : "Admin1"
+		},
+		{
+			"block":{
+		  		"count" : 100,
+                "failuresByCode" : null,
+                "rate" : 11.0
+            },
+           	"date" : "2012-02-03",
+            "defers":{ 
+		  		"count" : 11,
+                "rate" : 5
+            },
+            "delivered":{ 
+		  		"count" : 180,
+                "rate" : 20
+            },
+            "failed" : { 
+	        	"count" : 1000,
+                "rate" : 10.0
+            },
+            "hardBounce" : { 
+	          	"count" : 300,
+                "failuresByCode" : null,
+                "rate" : 30.0
+            },
+            "sent" : { 
+	          	"count" : 1222,
+                "rate" : null
+            },
+            "softBounce" : {
+		  		"count" : 400,
+                "failuresByCode" : null,
+                "rate" : 40.0
+            },
+            "technical" : { 
+	          	"count" : 10,
+                "failuresByCode" : [ { 
+						"code" : 1000,
+                        "count" : 10000,
+                        "description" : "spam complaint",
+                        "rate" : 1.0,
+                        "percentageOfFailure" : 1.0
+                      } ],
+                "rate" : 10.0
+            },
+            "unknown" : {
+		  		"count" : 50,
+                "failuresByCode" : null,
+                "rate" : 5.0
+            },
+            "vsgIp" : null,
+            "organization" : "Admin2"
+		},
+		{
+			"block":{
+		  		"count" : 1000,
+                "failuresByCode" : null,
+                "rate" : 31.0
+            },
+           	"date" : "2012-02-04",
+            "defers":{ 
+		  		"count" : 15,
+                "rate" : 25
+            },
+            "delivered":{ 
+		  		"count" : 1800,
+                "rate" : 30
+            },
+            "failed" : { 
+	        	"count" : 2000,
+                "rate" : 40.0
+            },
+            "hardBounce" : { 
+	          	"count" : 100,
+                "failuresByCode" : null,
+                "rate" : 10.0
+            },
+            "sent" : { 
+	          	"count" : 1222,
+                "rate" : null
+            },
+            "softBounce" : {
+		  		"count" : 200,
+                "failuresByCode" : null,
+                "rate" : 20.0
+            },
+            "technical" : { 
+	          	"count" : 10,
+                "failuresByCode" : [ { 
+						"code" : 1000,
+                        "count" : 10000,
+                        "description" : "spam complaint",
+                        "rate" : 1.0,
+                        "percentageOfFailure" : 1.0
+                      } ],
+                "rate" : 40.0
+            },
+            "unknown" : {
+		  		"count" : 450,
+                "failuresByCode" : null,
+                "rate" : 45.0
+            },
+            "vsgIp" : null,
+            "organization" : "Admin3"
+		}            
+        ],
+        "summary" : { 
+	    	"block" : { 
+	        	"count" : 1000,
+                "rate" : 10.0
+            },
+            "defers" : {
+	        	"count" : 500,
+                "rate" : 5
+            },
+            "delivered":{ 
+		  		"count" : 180,
+                "rate" : null
+            },
+            "failed" : { 
+	        	"count" : 2000,
+                "rate" : 20.0
+            },
+            "hardBounce" : { 
+	        	"count" : 1000,
+                "rate" : 10.0
+            },
+            "sent" : { 
+	        	"count" : 5000,
+                "rate" : null
+            },
+            "softBounce" : { 
+	        	"count" : 2000,
+                "rate" : 50.0
+            },
+            "technical" : { 
+	        	"count" : 1110,
+                "rate" : 10.0
+            },
+            "topFailuresByDomain" : [
+	        	{ 
+	         		"count" : 100,
+                  	"domain" : "yahoo.com",
+                  	"rate" : 10.0
+                },
+                { 
+                	"count" : 1000,
+                  	"domain" : "gmail.com",
+                  	"rate" : 10.0
+                },
+                { 
+                	"count" : 900,
+                  	"domain" : "live.com",
+                  	"rate" : 9.0
+                },
+                { 
+                	"count" : 800,
+                  	"domain" : "hotmail.com",
+                  	"rate" : 8.0
+                }
+            ],
+            "unknown" : { 
+	        	"count" : 1000,
+                "rate" : 30.0
+            }
+          }
+      } ],
+  "itemsCommon" : null
+}

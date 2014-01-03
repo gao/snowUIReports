@@ -1,0 +1,9 @@
+{"identifier": 'id',
+"itemsCommon":null,
+"items":[
+	{"dataSource":"dataSource1","lastUsed":"23-Aug-2011","id":700,"name":"target1","dataSourceType":"eds"},
+	{"dataSource":"dataSource2","lastUsed":"17-Aug-2011","id":400,"name":"target2","dataSourceType":"ids"},
+	{"dataSource":"dataSource3","lastUsed":"17-Aug-2011","id":301,"name":"target3","dataSourceType":"eds"},
+	{"dataSource":"dataSource4","lastUsed":"22-Apr-2011","id":600,"name":"target4","dataSourceType":"ids"}
+	
+]}

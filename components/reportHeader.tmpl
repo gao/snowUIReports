@@ -1,0 +1,314 @@
+<script id="tmpl-reportHeader" type="text/html">
+	<div class="reportHeader">
+	   <div class="reportHeader-top">
+	   	  <div class="reportHeader-reportName">
+	   	  	{{reportTitle}}
+		  </div>
+		  
+		{{#if isNotDUAndRA}}
+	   	  <div class="reportHeader-selectors">
+	   	  	<div class="SMA-REPORT-MAILINGSELECTOR reportHeader-mailingSelector {{#equal type "ABTest"}}abtest-selector{{/equal}} {{#equal type "audience"}}audience-selector{{/equal}} {{#equal type "mailingDetail"}}mailingDetail-selector{{/equal}}">
+		   	  	{{#equal type "campaignOverview"}}
+					<span class="count">10</span> Campaigns
+				{{else}}
+					{{#equal type "deliverability"}}
+						&nbsp; 
+					{{else}}
+						{{#equal type "deliverabilityDomains"}}
+							All VSGs
+						{{else}}
+							{{#equal type "domainDrillDown"}}
+								<span class="count">0</span> <span class="type">Mailing</span><span class="needS">s</span>
+							{{else}}
+								{{#equal type "audience"}}
+									<span class="count">Target</span><span class="type">:&nbsp;</span><span class="needS"></span>
+								{{else}}
+									{{#equalOr type "mailingDetail" type "ABTest"}}
+										<span class="needS"></span>
+									{{else}}
+										{{#equal type "userInsight"}}
+											<span class="needS"></span>
+										{{else}}
+											<span class="count">0</span> <span class="type">Mailing</span><span class="needS">s</span>
+										{{/equal}}
+									{{/equalOr}}
+								{{/equal}}
+							{{/equal}}
+						{{/equal}}
+					{{/equal}} 
+				{{/equal}}
+				<span class="date"></span>
+			</div>
+            {{#equal type "domainDrillDown"}}
+			<div class="domainName" style="margin-left:35px;">
+				<span class="text">Domain: {{domainName}} </span>
+			</div>
+			{{else}}
+			<div class="edit {{#equal type "mailingDetail"}}editForMDR{{/equal}}">
+				{{#equal showEditIcon "true"}}
+				<span class="pencilIco"></span>
+				{{else}}
+				(<span class="text">Edit</span>)
+				{{/equal}}
+			</div>
+            {{/equal}}
+	   	  </div>
+		{{/if}}
+		
+		{{#equal type "mailingDetail"}}
+		  <div class="reportHeader-period maildetail-period" style="position:relative">
+			<div class="export-print"><span>Export as</span><span class="export"></span></div>
+	   	  	<div class="date-arrow"><div class="reportHeader-date maildetail-date"></div><b class="arrowdown"></b><div class="clear"></div></div>
+			<div class="reportHeader-dateSelector" style="margin-left:-50px;">
+					<div class="date">
+						<div class="dateInputs">
+							<label class="date-range">Date Range:</label>
+							<input type="text" class="dateS" name="startDate" value=""/>
+							<label class="date-to">to</label>
+							<input type="text" class="dateS" name="endDate" value=""/>
+							<div class="btn apply dateSelectorDone">Apply</div>
+						</div>
+					</div>
+					<span class="message"></span>
+					<div class="reportHeaderDateSelect"></div>
+			</div>
+	   	  </div>
+		{{else}}
+			{{#equal type "deviceUsage"}}
+			  <div class="reportHeader-period maildetail-period deviceusage-date" style="position:relative">
+		   	  	<div class="date-arrow"><div class="reportHeader-date maildetail-date"></div><b class="arrowdown"></b><div class="clear"></div></div>
+				<div class="reportHeader-dateSelector" style="margin-left:-20px;">
+						<div class="date">
+							<div class="dateInputs">
+								<div class="selector">
+									<label class="date-range">Date Selector:</label>
+									<select name="dateTypeSelect" class="dateTypeSelect">
+										<option value="last7Days" >Last 7 days</option>
+										<option value="last30Days" >Last 30 days</option>
+										<option value="last60Days">Last 60 days</option>
+										<option value="last180Days">Last 180 days</option>
+										<option value="last365Days">Last 365 days</option>
+										<option value="inCustomDateRange">In custom date range</option>
+									</select>
+									<div class="btn apply dateSelectorDone">Apply</div>
+								</div>
+								<div class="inputor">
+									<label class="date-range">Date Range:</label>
+									<input type="text" class="dateS" name="startDate" value=""/>
+									<label class="date-to">to</label>
+									<input type="text" class="dateS" name="endDate" value=""/>
+								</div>
+							</div>
+						</div>
+						<span class="message"></span>
+						<div class="reportHeaderDateSelect"></div>
+				</div>
+		   	  </div>
+			{{else}}
+			  {{#equal type "userInsight"}}
+			  <div class="reportHeader-findUser" style="position:relative">
+			  	 <div class="find-sec user-page">
+			  	 </div>
+		   	  	 <div class="find-sec"><span class="find-user-label">Find User</span><input placeholder="Recipient Id" class="find-user-input" /><span class="ico ico-find">&nbsp;</span></div>
+		   	  </div>
+		   	  {{else}}
+		   	  <div class="reportHeader-period" style="position:relative">
+		   	  	 <div class="reportHeader-date"></div>
+		   	  </div>
+		   	  {{/equal}}
+			{{/equal}}
+		{{/equal}}
+	   </div><!--/reportHeader-top-->
+
+		{{#equal type "userInsight"}}
+		<div class="reportHeader-info">
+			<span class="info email"></span>
+			<!--
+			<span class="split">|</span>
+			<span class="info">Date Added:&nbsp;<span class="dateAdded"></span></span>
+			-->
+		</div>
+		{{/equal}}
+
+	   {{#if isNotThese}}
+		<div class="reportHeader-nav" {{#equal type "domainDrillDown"}}style="display:none"{{/equal}}>
+			{{#equal type "userInsight"}}
+				<div class="SMA-REPORT-USERINSIGHTOVERVIEW reportHeader-nav-item sel" data-section="sectionUserInsightOverview">Overview</div>
+				<div class="SMA-REPORT-EMAILS reportHeader-nav-item" data-section="sectionEmails">Emails</div>
+			{{else}}
+		   		{{#equal type "deliverability"}}
+					<div class="SMA-REPORT-DELIVERABILITYOVERVIEW reportHeader-nav-item sel" data-section="sectionDeliverabilityOverview">Overview</div>
+					<div class="SMA-REPORT-FAILURES reportHeader-nav-item" data-section="sectionFailures">Failures</div>
+					<!--<div class="reportHeader-nav-item" data-section="sectionDefers">Defers</div>-->
+					<div class="SMA-REPORT-TRENDS reportHeader-nav-item last" data-section="sectionTrends">Trends</div>
+				{{else}}
+					{{#equal type "audience"}}
+						<div class="SMA-REPORT-OVERVIEW reportHeader-nav-item sel" data-section="sectionAudienceOverview">Overview</div>
+						<div class="SMA-REPORT-ENGAGEMENT reportHeader-nav-item" data-section="sectionEngagement">Engagement</div>
+						<div class="SMA-REPORT-TRENDS reportHeader-nav-item last" data-section="sectionTrends">Trends</div>
+					{{else}}
+						{{#equal type "deviceUsage"}}
+							<div class="SMA-REPORT-OVERVIEW reportHeader-nav-item sel" data-section="sectionDeviceUsageOverview">Overview</div>
+							<div class="SMA-REPORT-DAYOFWEEK reportHeader-nav-item" data-section="sectionDayOfWeek">Day of Week</div>
+						{{else}}
+							<div class="SMA-REPORT-OVERVIEW reportHeader-nav-item sel" data-section="sectionOverview">Overview</div>
+				   	  		<div class="SMA-REPORT-VOLUME reportHeader-nav-item" data-section="sectionVolume">Volume</div>
+				   	 		<div class="SMA-REPORT-ENGAGEMENT reportHeader-nav-item" data-section="sectionEngagement">Engagement</div>
+				   	  		<div class="SMA-REPORT-LINKS reportHeader-nav-item" data-section="sectionLinks">Links</div>
+				   	  		<div class="SMA-REPORT-DISENGAGEMENT reportHeader-nav-item" data-section="sectionDisEngagement">Dis-Engagement</div>
+					  		{{#if conversionEnabled}}
+					  			<div class="SMA-REPORT-CONVERSIONS reportHeader-nav-item" data-section="sectionConversions">Conversions</div>
+					 		{{/if}}
+					  		<div class="SMA-REPORT-SHARING reportHeader-nav-item" data-section="sectionSharing">Sharing</div>
+				   	  		<div class="SMA-REPORT-FAILURES reportHeader-nav-item" data-section="sectionFailures">Failures</div>
+					 		<div class="SMA-REPORT-COMPARISON reportHeader-nav-item" data-section="sectionComparison">Comparison</div>
+							{{#equal type "program"}}
+								<div class="SMA-REPORT-EVENTS reportHeader-nav-item" data-section="sectionEvents">Events</div>
+					   	  		<div class="SMA-REPORT-SMS reportHeader-nav-item" data-section="sectionSMS">SMS</div>
+							{{/equal}}
+				   	  		<div class="SMA-REPORT-TRENDS reportHeader-nav-item last" data-section="sectionTrends">Trends</div>
+						{{/equal}}
+					{{/equal}}
+				{{/equal}}
+			{{/equal}}
+	   	</div>
+	   
+	   	{{#notEqual type "deviceUsage"}}
+		   	<div class="reportHeader-toolbar {{#equal type "domainDrillDown"}}reportHeader-nav-top{{/equal}}">
+			   	<div class="reportHeader-toolItems">
+			   	
+			   	    <div class="SMA-REPORT-SELECTDATE toolbar-item reportHeader-selectdate">
+						<div class="reportHeader-period maildetail-period deviceusage-date">
+				   	  		<label>Date Range</label> 
+				   	  		<div class="date-arrow"><div class="reportHeader-date maildetail-date"></div><span class="arrowdown"></span></div>
+							<div class="reportHeader-dateSelector" style="display:none">
+								<div class="date">
+									<div class="dateInputs">
+										<div class="selector">
+											<label class="date-range">Date Selector:</label>
+											<select name="dateTypeSelect" class="dateTypeSelect">
+												<option value='last30Days'>Last 30 days</option>
+												<option value='last60Days'>Last 60 days</option>
+												<option value='last90Days' selected='selected'>Last 90 days</option>
+												<option value='last180Days'>Last 180 days</option>
+												<option value='last365Days'>Last 365 days</option>
+												<option value='thisYear'>This year</option>
+												<option value='lastYear'>Last year</option>
+												<option value='inCustomDateRange'>Custom</option>
+											</select>
+											<div class="btn apply dateSelectorDone">Apply</div>
+										</div>
+										<div class="inputor">
+											<label class="date-range">Date Range:</label>
+											<input type="text" class="dateS" name="startDate" value=""/>
+											<label class="date-to">to</label>
+											<input type="text" class="dateS" name="endDate" value=""/>
+										</div>
+									</div>
+								</div>
+								<span class="message"></span>
+								<div class="reportHeaderDateSelect"></div>
+							</div>
+				   	   </div>
+					</div>
+					
+					<div class="SMA-REPORT-BREAKDOWN toolbar-item reportHeader-breakdown">
+						<label>Breakdown by</label> <div class="toolbar-item-content reportHeader-breakdownCombobox"></div>
+					</div>
+					 {{#notEqual type "userInsight"}}
+					<div class="SMA-REPORT-TOGGLE toolbar-item reportHeader-toggle">
+						<label>View Rates</label> 
+						<div class="toolbar-item-content reportHeader-rateSwitch">
+							<input type="checkbox" />
+						</div>
+					</div>
+					 {{/notEqual}}
+					<div class="SMA-REPORT-DEVICESELECTOR toolbar-item reportHeader-deviceSelector">
+						<label>Show Device</label> 
+						<div class="toolbar-item-content reportHeader-deviceSwitch">
+							<input type="checkbox" />
+						</div>
+					</div>
+					<div class="SMA-REPORT-DYNAMICCONTENT toolbar-item reportHeader-dynamicContentSelector">
+						<label>Dynamic Content</label> 
+						<div class="toolbar-item-content reportHeader-dynamicContentSwitch">
+							<input type="checkbox" />
+						</div>
+						<div class="iconDiv glyphicon icon-help" title="When reporting for dynamic content, click rates are computed using the number of messages a link was inserted in.  The count will differ from the number of messages actually delivered with the link because message bounces are not deducted from the insertion count."></div>
+					</div>
+	
+					<div class="SMA-REPORT-CLINETSELECTOR toolbar-item reportHeader-clientSelector">
+						<label>Show Client</label> 
+						<div class="toolbar-item-content reportHeader-clientSwitch">
+							<input type="checkbox" />
+						</div>
+					</div>
+	
+					<div class="SMA-REPORT-UNIQUESTATSSELECTER toolbar-item reportHeader-uniqueStatsSelector">
+						<label>Show Unique Stats</label>
+						<div class="toolbar-item-content reportHeader-uniqueStatsSwitch">
+							<input type="checkbox" />
+						</div>
+					</div>
+					<div class="SMA-REPORT-SUBSECTION toolbar-item reportHeader-subSection">
+						<label>Sub-Section</label> <div class="toolbar-item-content reportHeader-subSectionCombobox"></div>
+					</div>
+				</div>
+				<div class="reportHeader-toolItems-right">
+					<div class="toolbar-item reportHeader-exportAndPrint">
+						<div class="toolbar-item-content">
+							<div class="SMA-REPORT-OPTIONS btn btnOptions"  title="Options"><span class="option-ico">&nbsp;</span><a href="##1" class="option-label"><span>Options</span></a></div>
+							<div class="SMA-REPORT-EXPORT btn btnExport"  title="Excel Export"><span>Export</span></div>
+							<div class="SMA-REPORT-RECORDSDRILLDOWN btn btnPrint"   title="Individual Records Drilldown"><span class="ico ico-btnPrint"></span></div>
+				   	    </div>
+			   	    </div>
+					{{#equal type "userInsight"}}
+					<div class="SMA-REPORT-TOGGLE toolbar-item reportHeader-toggle">
+						<label>View Rates</label> 
+						<span class="toolbar-item-content reportHeader-rateSwitch">
+							<input type="checkbox" />
+						</span>
+					</div>
+					{{/equal}}
+			   	    {{#notEqual type "userInsight"}}
+					<div class="toolbar-item reportHeader-viewSelector">
+						<div class="toolbar-item-content">
+							<div class="SMA-REPORT-OVERVIEWICON reportsHeader-viewButton summary sel" data-view="summary"><span class="ico ico-view-summary" title="Overview"></span></div>
+							<div class="SMA-REPORT-TABLEVIEWICON reportsHeader-viewButton table" data-view="table"><span class="ico ico-view-table" title="Table View"></span></div>
+							<div class="SMA-REPORT-PIECHARTICON reportsHeader-viewButton pie" data-view="pie"><span class="ico ico-view-pie" title="Pie Chart"></span></div>
+							<div class="SMA-REPORT-BARCHARTICON reportsHeader-viewButton bar" data-view="bar"><span class="ico ico-view-bar" title="Bar Chart"></span></div>
+							<div class="SMA-REPORT-PIVOTVIEWICON reportsHeader-viewButton pivot" data-view="pivot"><span class="ico ico-view-pivot" title="Pivot Table"></span></div>
+					   	</div>
+			   		</div>
+			   		{{/notEqual}}
+				</div>
+		   	</div>
+	   	{{else}}
+	   		<div class="reportHeader-toolbar">
+		   		<div class="reportHeader-toolItems">
+		   			<div class="SMA-REPORT-SHOWCOUNT toolbar-item reportHeader-showCount">
+						<label>Show Count</label> 
+						<div class="toolbar-item-content reportHeader-showCountSwitch">
+							<input type="checkbox" />
+						</div>
+					</div>
+		   		</div>
+	   		</div>
+	   {{/notEqual}} 
+	   
+	   {{/if}} 
+	 
+	</div>
+</script>
+
+<script id="tmpl-reportHeader-userPage" type="text/html">
+  	 {{#if hasControl}}
+	 <input class="current-num" value="{{currentNum}}" />
+  	 <span>of</span>
+  	 <span class="user-count">{{total}}</span>
+  	 <span class="user-control">
+	  	 <span class="ico user-next{{#if haveNext}} active{{/if}}">&nbsp;</span>
+	  	 <span class="ico user-prev{{#if havePrev}} active{{/if}}">&nbsp;</span>
+  	 </span>
+  	 {{/if}}
+</script>

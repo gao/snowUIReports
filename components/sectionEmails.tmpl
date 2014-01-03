@@ -1,0 +1,86 @@
+<script id="tmpl-sectionEmails" type="text/html">
+	<div class="sectionEmails">  
+		
+		<div class="sectionEmails-summary">
+			<div class="byTitle byTitle-table emailSummary">Summary Statistics</div> 
+			<div class="SMA-REPORT-SUMMARYSTATISTICSTABLE statsSummary"></div>
+		</div> 
+		
+		<div class="sectionEmails-tablePart">
+		    <div class="sectionView">
+				<span></span>
+			</div>
+			<div class="sectionTitle">
+				<div class="collapsible exp email-filter">[+] Filter </div>
+				<div class="collapsible col email-filter">[-] Filter by: </div>
+				<div class="email-filter-fields">
+					<table>
+						<tr>
+							<td class="td-right" align="right">Mailing Name</td><td class="td-left">&nbsp;&nbsp;<input type="text" class="mailingname" name="mailingname"/></td>
+							<td class="td-left"><input type="checkbox" class="cbox" value="Opened" name="opened"><label>Opened</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="cbox" value="Clicked" name="clicked"><label>Clicked</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="cbox" value="Converted" name="converted"><label>Converted</label></td>
+						</tr>
+						<tr>
+							<td class="td-right" align="right">Date</td><td class="td-left">&nbsp;&nbsp;<select class="dates" name="dates"><option value="after" selected>after</option ><option value="on">on</option><option value="before">before</option></select>&nbsp;&nbsp;<input type="text" name="dateValue" class="dateValue" value="   /  /    "/></td>
+							<td class="td-left">&nbsp;Revenue&nbsp;&nbsp;<select class="revenues" name="revenues"><option value="D" selected>></option><option value="A">=</option><option value="S"><</option></select>&nbsp;<label class="isCurrency"></label>&nbsp;<input type="text" class="revenueValue" name="revenueValue"/><span class="message"></span></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div class="btn reset resetBtn">Reset</div>
+			</div>
+			<div class="sectionContent">
+				<div class="sectionEmailTable">
+					<table class="dataTable">
+						<thead>
+							<tr></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</script>
+
+<script id="tmpl-sectionContent-dataTable-tableThead-emails" type="text/html">
+	<th class="{{first}} {{#if sortable}}sortable{{/if}}" data-column="{{column}}">
+		<div class="th-label">{{label}}</div>
+	</th>
+</script>
+
+<script id="tmpl-sectionContent-dataTable-tableTbody-emails" type="text/html">
+	<tr>
+	</tr>
+</script>
+
+<script id="tmpl-sectionContent-dataTable-tableTbody-td-emails" type="text/html">
+	{{#if isDraw}}
+		<td class="{{#if isLastRow}}lastRowTd{{/if}} drawType">
+			{{#equal value true}}
+			<div class="viewDraw"></div>
+			{{/equal}}
+		</td>
+	{{else}}
+		<td class="{{#if isLastRow}}lastRowTd{{/if}} {{#if textAlignLeft}}textAlignLeft{{/if}} {{#if textAlignCenter}}textAlignCenter{{/if}}">
+			<span {{#if haveTitle}}title="{{columnTitle}}"{{/if}} {{#if haveColor}}style="color:{{columnColor}}"{{/if}}  {{#if isMailingName}}class="mailingNameURL"{{/if}} {{#if isIcon}}data-name="{{mailingName}}"{{/if}}>
+				{{#if isMailingName}}
+					{{#if isMock}}
+						<a href="javascript:void(0);">{{value}}</a>
+					{{else}}
+						<a href="javascript:sm.comp.list.ListMgr.displayOnListPage({{#if useProgramId}}{{programId}}{{else}}{{id}}{{/if}},'{{#if useProgramId}}{{programName}}{{else}}{{mailingName}}{{/if}}','{{assetType}}')">{{value}}</a>
+					{{/if}}
+				{{else}}
+					{{#if isConversionSymbol}}{{conversionCurrency}}{{/if}}{{value}}
+				{{/if}}
+			</span>
+		</td>
+	{{/if}}
+</script>
+<script id="tmpl-email-dateView" type="text/html">
+	<div class="email-dateView">
+		<div class="tags">
+			
+		</div>
+	</div>
+</script>

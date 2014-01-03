@@ -1,0 +1,121 @@
+.dateSelect{
+	-webkit-user-select:none;
+	position:absolute;
+	background:#f9f7f8;
+	color:#fcfcfc;
+	.border-radius(10px);
+	border:1px solid #9bd0d8;
+	font-size:12px;
+	font-family:Arial;
+	.box-shadow(2px 3px 6px #757575);
+	z-index:23;
+	width:305px;
+	height: 207px;
+}
+.dateSelect .dateSelect-main{
+	position:relative;
+}
+.dateSelect .icos .icoDiv{
+	background-image:none;
+	position:absolute;
+	cursor:pointer;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	top:0;
+	margin:0 0 0 0;
+	border:1px solid #6caab5;
+	.border-radius(10px);
+	#gradient > .vertical-three-colors(#EFF9FA,#D7ECEF,40%,#EFF9FA);
+	color:#294c5f;
+}
+
+.dateSelect .icoDiv.icoLeft{
+	left:5px;
+	top:3px;
+}
+.dateSelect .icoDiv.icoRight{
+	right:1px;
+	top:3px;
+}
+.dateSelect .dateSelect-buttons{
+}
+.dateSelect .dateSelect-buttons .button{
+	float:right;
+	border:1px solid #bfc3c6;
+	padding:2px 15px 2px 15px;
+	margin:4px 15px 4px 0;
+	#gradient > .vertical(#F6F6F4,#ebebeb);
+	cursor:pointer;
+	color:#3d3d3d;
+	.border-radius(15px);
+	line-height:15px;
+}
+
+.dateSelect .dateSelect-buttons .button:hover{
+	#gradient > .vertical-three-colors(#D8F1F5,#B7DEE4,50%,#D8F1F5);
+}
+
+.dateSelect .dateSelect-calendar{
+	display:inline-block;
+	text-align:center;
+	font-weight:bold;
+}
+.dateSelect .dateSelect-calendar .title{	
+	#gradient > .vertical(#9ACFD7,#70b2be);
+	border-right:1px solid #f9f8f4;
+	color:#101010;
+	padding:4px 0 4px 0;
+}
+.dateSelect .dateSelect-calendar:first-child .title{
+    .complex-border-radius(10px,0,0,0);
+}
+.dateSelect .dateSelect-calendar:last-child .title{
+	.complex-border-radius(0,10px,0,0);
+}
+
+.dateSelect table.dateSelect-calendar-table{
+	border-collapse:collapse;
+	margin: 0px auto;
+	width:150px;
+	text-align:center;
+	border-right:1px solid #d5e3e6;
+	border-bottom:1px solid #d5e3e6;
+}
+.dateSelect table.dateSelect-calendar-table th{
+	border-bottom:1px solid #d5e3e6;
+	color:#558e9f;
+	padding:3px 0 3px 0;
+}
+
+.dateSelect table.dateSelect-calendar-table td{
+	color:#312f30;
+	padding:3px 0 3px 0;
+}
+.dateSelect table.dateSelect-calendar-table tr th:first-child{
+	padding:0 0 0 5px;
+}
+.dateSelect table.dateSelect-calendar-table tr td:first-child{
+	padding:0 0 0 5px;
+}
+.dateSelect table.dateSelect-calendar-table tr th:last-child{
+	padding:0 5px 0 0;
+}
+.dateSelect table.dateSelect-calendar-table tr td:last-child{
+	padding:0 5px 0 0;
+}
+
+.dateSelect table.dateSelect-calendar-table td.calendar-date{
+	cursor:pointer;
+}
+.dateSelect table.dateSelect-calendar-table td.gray{
+	cursor:default;
+	color: gray;
+}
+.dateSelect table.dateSelect-calendar-table td.selected{
+	background-color:#aad5de;
+}
+.dateSelect table.dateSelect-calendar-table td.today{
+	color:#e39157;
+}

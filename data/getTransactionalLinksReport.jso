@@ -1,0 +1,33 @@
+{
+	"identifier": 'id',
+	"itemsCommon":null,
+	"items":[{
+    	"namedLinkList":[
+    		{"clickRate":0,"date":"08/05/2011","delivered":2000,"linkId":200,"linkName":"linknameB0","linkUrl":"linkurlB0","mailingId":400,"mailingName":"mailingnameB0","mailingSubject":"mailingsubjectB0","opens":2000,"templateId":400,"templateType":"html","totalClicks":600,"uniqueClicks":800,"insertionCount":null,"uniqueClicksPercent":0,"uniqueClicksRate":0},
+    		{"clickRate":2,"date":"08/06/2011","delivered":2001,"linkId":201,"linkName":"linknameB1","linkUrl":"linkurlB1","mailingId":401,"mailingName":"mailingnameB1","mailingSubject":"mailingsubjectB1","opens":2001,"templateId":401,"templateType":"html","totalClicks":601,"uniqueClicks":801,"insertionCount":0,"uniqueClicksPercent":1,"uniqueClicksRate":2},
+    		{"clickRate":4,"date":"08/07/2011","delivered":2002,"linkId":202,"linkName":"linknameB2","linkUrl":"linkurlB2","mailingId":402,"mailingName":"mailingnameB2","mailingSubject":"mailingsubjectB2","opens":2002,"templateId":402,"templateType":"html","totalClicks":602,"uniqueClicks":802,"insertionCount":1000,"uniqueClicksPercent":2,"uniqueClicksRate":4},
+    		{"clickRate":6,"date":"08/08/2011","delivered":2003,"linkId":203,"linkName":"linknameB3","linkUrl":"linkurlB3","mailingId":403,"mailingName":"mailingnameB3","mailingSubject":"mailingsubjectB3","opens":2003,"templateId":403,"templateType":"html","totalClicks":603,"uniqueClicks":803,"insertionCount":1000,"uniqueClicksPercent":3,"uniqueClicksRate":6},
+    		{"clickRate":8,"date":"08/09/2011","delivered":2004,"linkId":204,"linkName":"linknameB4","linkUrl":"linkurlB4","mailingId":404,"mailingName":"mailingnameB4","mailingSubject":"mailingsubjectB4","opens":2004,"templateId":404,"templateType":"html","totalClicks":604,"uniqueClicks":804,"insertionCount":1000,"uniqueClicksPercent":4,"uniqueClicksRate":8},
+    		{"clickRate":10,"date":"08/10/2011","delivered":2005,"linkId":205,"linkName":"linknameB5","linkUrl":"linkurlB5","mailingId":405,"mailingName":"mailingnameB5","mailingSubject":"mailingsubjectB5","opens":2005,"templateId":405,"templateType":"html","totalClicks":605,"uniqueClicks":805,"insertionCount":1000,"uniqueClicksPercent":5,"uniqueClicksRate":10},
+    		{"clickRate":12,"date":"08/11/2011","delivered":2006,"linkId":206,"linkName":"linknameB6","linkUrl":"linkurlB6","mailingId":406,"mailingName":"mailingnameB6","mailingSubject":"mailingsubjectB6","opens":2006,"templateId":406,"templateType":"html","totalClicks":606,"uniqueClicks":806,"insertionCount":1000,"uniqueClicksPercent":6,"uniqueClicksRate":12},
+    		{"clickRate":14,"date":"08/12/2011","delivered":2007,"linkId":207,"linkName":"linknameB7","linkUrl":"linkurlB7","mailingId":407,"mailingName":"mailingnameB7","mailingSubject":"mailingsubjectB7","opens":2007,"templateId":407,"templateType":"html","totalClicks":607,"uniqueClicks":807,"insertionCount":1000,"uniqueClicksPercent":7,"uniqueClicksRate":14},
+    		{"clickRate":16,"date":"08/13/2011","delivered":2008,"linkId":208,"linkName":"linknameB8","linkUrl":"linkurlB8","mailingId":408,"mailingName":"mailingnameB8","mailingSubject":"mailingsubjectB8","opens":2008,"templateId":408,"templateType":"html","totalClicks":608,"uniqueClicks":808,"insertionCount":1000,"uniqueClicksPercent":8,"uniqueClicksRate":16},
+    		{"clickRate":18,"date":"08/14/2011","delivered":2009,"linkId":209,"linkName":"linknameB9","linkUrl":"linkurlB9","mailingId":409,"mailingName":"mailingnameB9","mailingSubject":"mailingsubjectB9","opens":2009,"templateId":409,"templateType":"html","totalClicks":609,"uniqueClicks":809,"insertionCount":1000,"uniqueClicksPercent":9,"uniqueClicksRate":18},
+    		{"clickRate":20,"date":"08/15/2011","delivered":2010,"linkId":210,"linkName":"linknameB10","linkUrl":"linkurlB10","mailingId":410,"mailingName":"mailingnameB10","mailingSubject":"mailingsubjectB10","opens":2010,"templateId":410,"templateType":"html","totalClicks":610,"uniqueClicks":810,"insertionCount":1000,"uniqueClicksPercent":10,"uniqueClicksRate":20},
+    		{"clickRate":22,"date":"08/16/2011","delivered":2011,"linkId":211,"linkName":"linknameB11","linkUrl":"linkurlB11","mailingId":411,"mailingName":"mailingnameB11","mailingSubject":"mailingsubjectB11","opens":2011,"templateId":411,"templateType":"html","totalClicks":611,"uniqueClicks":811,"insertionCount":1000,"uniqueClicksPercent":11,"uniqueClicksRate":22},
+    		{"clickRate":24,"date":"08/17/2011","delivered":2012,"linkId":212,"linkName":"linknameB12","linkUrl":"linkurlB12","mailingId":412,"mailingName":"mailingnameB12","mailingSubject":"mailingsubjectB12","opens":2012,"templateId":412,"templateType":"html","totalClicks":612,"uniqueClicks":812,"insertionCount":1000,"uniqueClicksPercent":12,"uniqueClicksRate":24},
+    		{"clickRate":26,"date":"08/18/2011","delivered":2013,"linkId":213,"linkName":"linknameB13","linkUrl":"linkurlB13","mailingId":413,"mailingName":"mailingnameB13","mailingSubject":"mailingsubjectB13","opens":2013,"templateId":413,"templateType":"html","totalClicks":613,"uniqueClicks":813,"insertionCount":1000,"uniqueClicksPercent":13,"uniqueClicksRate":26},
+    		{"clickRate":28,"date":"08/19/2011","delivered":2014,"linkId":214,"linkName":"linknameB14","linkUrl":"linkurlB14","mailingId":414,"mailingName":"mailingnameB14","mailingSubject":"mailingsubjectB14","opens":2014,"templateId":414,"templateType":"html","totalClicks":614,"uniqueClicks":814,"insertionCount":1000,"uniqueClicksPercent":14,"uniqueClicksRate":28},
+    		{"clickRate":30,"date":"08/20/2011","delivered":2015,"linkId":215,"linkName":"linknameB15","linkUrl":"linkurlB15","mailingId":415,"mailingName":"mailingnameB15","mailingSubject":"mailingsubjectB15","opens":2015,"templateId":415,"templateType":"html","totalClicks":615,"uniqueClicks":815,"insertionCount":1000,"uniqueClicksPercent":15,"uniqueClicksRate":30},
+    		{"clickRate":32,"date":"08/21/2011","delivered":2016,"linkId":216,"linkName":"linknameB16","linkUrl":"linkurlB16","mailingId":416,"mailingName":"mailingnameB16","mailingSubject":"mailingsubjectB16","opens":2016,"templateId":416,"templateType":"html","totalClicks":616,"uniqueClicks":816,"insertionCount":1000,"uniqueClicksPercent":16,"uniqueClicksRate":32},
+    		{"clickRate":34,"date":"08/22/2011","delivered":2017,"linkId":217,"linkName":"linknameB17","linkUrl":"linkurlB17","mailingId":417,"mailingName":"mailingnameB17","mailingSubject":"mailingsubjectB17","opens":2017,"templateId":417,"templateType":"html","totalClicks":617,"uniqueClicks":817,"insertionCount":1000,"uniqueClicksPercent":17,"uniqueClicksRate":34}
+    	],
+    	"totalClickRate":166.67,
+    	"totalClicks":10,
+    	"totalUniqueClickRate":66.67,
+    	"totalUniqueClicks":4,
+    	"conversionReportEnabled":false
+	}]
+	}
+
+

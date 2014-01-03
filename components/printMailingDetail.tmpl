@@ -1,0 +1,363 @@
+<script id="tmpl-sectionMailingDetail" type="text/html">
+	<div class="sectionMailingDetail">
+		
+		<div class="sectionMailingDetail-headerInfo">
+			<span class="title">Mailing Detail Report:</span> 
+			<span class="mailing-name">${mailingName}</span>
+			{{#equalOr mailingType "Transactional" mailingType "transactional"}}
+				<span class="mailing-date">{{formatDate}}</span>
+			{{/equalOr}}
+			{{#equalOr mailingType "Program" mailingType "program"}}
+				<span class="mailing-date">{{formatDate}}</span>
+			{{/equalOr}}
+		</div>
+
+		<div class="sectionMailingDetail-subjectLine">
+			<span class="title">Subject Line:</span> <span class="titleVal"></span>
+		</div>
+		
+		<div class="sectionMailingDetail-headerSection">
+			
+		</div>
+     
+	 	<div class="sectionMailingDetail-summaryConversionSection mailingDetailPart">
+	 		<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				Summary Statistics
+			</div>
+			<div class="sectionContent">
+				<div class="sectionMailingDetail-summarySection">
+					<div class="sectionTitle-sub">Volume and Engagement</div>
+					<div class="statsSummaryItems"></div>
+				</div>
+				
+				<div class="sectionMailingDetail-conversionSection">
+					<div class="sectionTitle-sub">Conversion</div>
+					<div class="statsSummaryItems"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionMailingDetail-summaryConversionSectionForTransactional mailingDetailPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				Summary Statistics
+			</div>
+			<div class="sectionContent">
+				<div class="sectionMailingDetail-summarySectionForTransactional">
+					<div class="sectionTitle-sub">
+						Volume and Engagement
+					</div>
+					<div class="sectionContent-sub">
+						<div class="summarySectionForTransactionalTable">
+							<table class="dataTableForTransactional">
+							</table>
+						</div>
+					</div>
+				</div>
+				
+				<div class="sectionMailingDetail-conversionSectionForTransactional">
+					<div class="sectionTitle-sub">Conversion</div>
+					<div class="sectionContent-sub">
+						<div class="conversionSectionForTransactionalTable">
+							<table class="dataTableForTransactional">
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionMailingDetail-mailingVSCampaignAveragesSection mailingDetailPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				Mailing Performance vs Campaign Averages
+			</div>
+			<div class="sectionContent">
+				<div class="campaignAveragesSectionTable">
+					<table class="dataTable">
+						<thead>
+							<tr>
+								<th class="name">Metric</th>
+								<th class="rate">Mailing</th>
+								<th class="rate">Campaign</th>
+								<th class="arrow"></th>
+								<th class="rate">Change</th>
+								<th class="bar"></th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionMailingDetail-targetSection mailingDetailPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				Target Performance
+				<span class="targetTypeSelect">
+					View:
+					<input name="targetType" type="radio" value="count" {{#equal targetType "count"}}checked="true"{{/equal}}><span data-value="count">Count</span>
+					<input name="targetType" type="radio" value="rate" {{#equal targetType "rate"}}checked="true"{{/equal}}><span data-value="rate">% (Relative to Volume)</span>
+					<input name="targetType" type="radio" value="percent" {{#equal targetType "percent"}}checked="true"{{/equal}}><span data-value="percent">% (Of Total)</span>
+				</span>
+			</div>
+			<div class="sectionContent">
+				<div class="targetSectionTable">
+					<table class="dataTable">
+						<thead>
+							<tr></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionMailingDetail-failureSection mailingDetailPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				<span>Failure Analysis</span>
+			</div>
+			<div class="sectionContent">
+				<div class="failureSectionTable">
+					<table class="dataTable">
+						<tr>
+							<th class="name">Failure Category</th>
+							<th class="rate">Count</th>
+							<th class="rate">Rate</th>
+							<th class="rate">%</th>
+							<th class="bar"></th>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionMailingDetail-linkSection mailingDetailPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				<span>Link Performance</span>
+				<span class="linkTypeSelect">
+					View:
+					<input name="linkType" type="radio" value="clicks" {{#equal linkType "clicks"}}checked="checked"{{/equal}}><span data-value="clicks">Clicks</span>
+					{{#if isConversionReportEnabledForMDR}}
+						<input name="linkType" type="radio" {{#equal linkType "conversions"}}checked="checked"{{/equal}} value="conversions"><span data-value="conversions">Conversions</span>
+						<input name="linkType" type="radio" {{#equal linkType "both"}}checked="checked"{{/equal}} value="both"><span data-value="both">Both</span>
+					{{/if}}
+				</span>
+			</div>
+			<div class="sectionContent">
+				<div class="linkSectionTable">
+					<table class="dataTable">
+						<thead>
+							<tr></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionMailingDetail-shareSection mailingDetailPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				Share Performance
+			</div>
+			<div class="sectionContent">
+				<div class="shareSectionSummaryAndTable">
+					<div class="sectionSubTitle">Summary Statistics</div>
+					<div class="statsSummaryItems"></div>
+					
+					<div class="sectionSubTitle">Share Offers Performance</div>
+					<div class="shareOffersSectionTable">
+						<table class="dataTable">
+							<thead>
+								<tr></tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionMailingDetail-ftafSection mailingDetailPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				Forward to a Friend Performance
+			</div>
+			<div class="sectionContent">
+				<div class="ftafSectionTable">
+					<div class="sectionSubTitle">Summary Statistics</div>
+					<div class="statsSummaryItems"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="hoverItemContainer"></div>
+		<div class="linkHoverBoxContainer"></div>
+	</div>
+</script>
+
+<script id="tmpl-subjectLine" type="text/html">
+	<span title="{{subject}}">{{subjectEllipses}}</span>
+</script>
+
+<script id="tmpl-headerSection" type="text/html">
+	<div class="headerSection-table">
+		<table>
+			<tr>
+				<td class="labelTd first">Campaign:&nbsp;</td>
+				<td class="value" title="{{summary.campaign}}">{{summary.campaignEllipses}}</td>
+				<td class="labelTd">Status:&nbsp;</td>
+				<td class="value">{{summary.status}}</td>
+				<td class="labelTd">Launched At:&nbsp;</td>
+				<td class="value">{{summary.launchDate}}</td>
+			</tr>
+			<tr>
+				<td class="labelTd first">Mailing Type:&nbsp;</td>
+				<td class="value">{{summary.mailingType}}</td>
+				<td class="labelTd">Report Generated:&nbsp;</td>
+				<td class="value">{{summary.reportGenerated}}</td>
+				<td class="labelTd">Elapsed Time:&nbsp;</td>
+				<td class="value">{{summary.elapsedTime}}</td>
+			</tr>
+		</table>
+	</div>
+</script>
+
+<script id="tmpl-statistic-dataItem" type="text/html">
+	<div class="dataItem {{#if isFirst}}first{{/if}} {{#if isLeftSpace}}dataItemSpace{{/if}}  {{#if isShowHover}}showhover{{/if}} {{#if haveRightRadius}}haveRightRadius{{/if}}" data-value="{{name}}">
+		<div class="mainPart">
+			<div class="dataItem-value">
+				{{#if isConversionSymbol}}{{conversionCurrencyForMDR}}{{/if}}{{val}}{{#if isRate}}%{{/if}}
+			</div>
+			<div class="dataItem-label">{{label}}</div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-mailingVSCampaignAveragesSection-dataTable-tr" type="text/html">
+	{{#equal summaryObj.label "Unsub Rate"}}
+	<tr><td colspan="6" class="noBorder"></td></tr>
+	{{else}}
+		{{#equalAndTrue summaryObj.label "Complaint Rate"  summaryObj.isForTransactional}}
+		<tr><td colspan="6" class="noBorder"></td></tr>
+		{{/equalAndTrue}}
+	{{/equal}}
+	<tr class="{{#equal summaryObj.label 'RPM'}}lastRowTr{{/equal}}">
+		<td class="name">{{summaryObj.label}}</td>
+		<td>
+			{{#if summaryObj.isCurrencySymbol}}{{conversionCurrencyForMDR}}{{/if}}{{summaryObj.mailingVal}}{{#if summaryObj.isRate}}%{{/if}}
+		</td>
+		<td>
+			{{#if summaryObj.isCurrencySymbol}}{{conversionCurrencyForMDR}}{{/if}}{{summaryObj.campaignVal}}{{#if summaryObj.isRate}}%{{/if}}
+		</td>
+		<td class="arrow">
+			{{#equal summaryObj.improvement "unchange"}}
+				<span class="noArrow">-</span>
+			{{else}}
+				<span class="smr-carouselSpriteIco {{#equal summaryObj.improvement 'improve'}} smr-arrowUpLargeGreen {{else}} smr-arrowDownLargeRed {{/equal}}" ></span>
+			{{/equal}}
+		</td>
+		<td>
+			{{#equal summaryObj.improvement "unchange"}}
+				<span>{{summaryObj.changeVal}}%</span>
+			{{else}}
+				<span class="{{#equal summaryObj.improvement 'improve'}}greenFont {{else}} redFont{{/equal}}">{{summaryObj.changeVal}}%</span>
+			{{/equal}}
+		</td>
+		<td>
+			<div class="barDiv">
+				{{#notEqual summaryObj.improvement "unchange"}}
+					<div class="leftBar">
+						{{#equal summaryObj.improvement  'reduce'}}<div class="worsenedBar" {{#lte summaryObj.barWidth 100}}style="width:{{summaryObj.barWidth}}%"{{else}}style="width:100%"{{/lte}}></div>{{else}}<div class="worsenedBarHide"></div>{{/equal}}
+					</div>
+					<div class="rightBar">
+						{{#equal summaryObj.improvement 'improve'}}<div class="improvedBar" {{#lte summaryObj.barWidth 100}}style="width:{{summaryObj.barWidth}}%"{{else}}style="width:100%"{{/lte}}></div>{{else}}<div class="improvedBarHide"></div>{{/equal}}
+					</div>
+				{{/notEqual}}
+			</div>
+		</td>
+	</tr>
+</script>
+
+<script id="tmpl-failureSection-dataTable-tr" type="text/html">
+	<tr>
+		<td class="name">{{summaryObj.label}}</td>
+		<td>
+			{{summaryObj.count}}
+		</td>
+		<td>
+			{{summaryObj.rate}}%
+		</td>
+		<td>
+			{{summaryObj.percentageOfFailure}}%
+		</td>
+		<td>
+			<div class="barDiv">
+				{{#notEqual summaryObj.percentageOfFailure 0}}
+					<div class="normalBar" {{#lte summaryObj.percentageOfFailure 95}}style="width:{{summaryObj.percentageOfFailure}}%"{{else}}style="width:95%"{{/lte}}></div>
+				{{/notEqual}}
+			</div>
+		</td>
+	</tr>
+</script>
+
+<script id="tmpl-sectionContent-dataTable-tableThead" type="text/html">
+	<th class="{{#if sortable}}sortable{{/if}}  {{#if isBarChart}}isBarTh{{/if}} {{#if isBarAndValue}}isBarAndValueTh{{/if}}" data-column="{{column}}">
+		<span>{{label}}</span>
+	</th>
+</script>
+
+<script id="tmpl-sectionContent-dataTable-tableTbody" type="text/html">
+	<tr>
+	</tr>
+</script>
+
+<script id="tmpl-sectionContent-dataTable-tableTbody-td" type="text/html">
+	<td class="{{first}} {{#notEqualAndTrue value 'Total' showHoverBox}}showhover{{/notEqualAndTrue}} {{#if isLastRow}}lastRowTd{{/if}}" {{#if showHoverBox}}data-name="{{value}}" data-value="{{linkUrl}}"{{/if}}>
+		{{#if isBarAndValue}}
+			<span class="barValue">{{#if isConversionSymbol}}{{conversionCurrencyForMDR}}{{/if}}{{value}}{{#if isRate}}%{{/if}}</span>
+			{{#unless isTotalColumn}}
+				<div class="normalBarDiv" >
+					{{#notEqual value 0}}
+						<div class="normalBar"  {{#lte value 90}}style="width:{{value}}%" {{else}} {{#unless value}}style="width:0%;border:0px;"{{/unless}}{{/lte}}></div>
+					{{/notEqual}}
+				</div>
+			{{/unless}}
+		{{else}}
+			{{#if isBarChart}}
+				{{#notEqual value 0}}
+					<div class="normalBar"  {{#lte value 90}}style="width:{{value}}%" {{else}} {{#unless value}}style="width:0%;border:0px;"{{/unless}}{{/lte}}></div>
+				{{/notEqual}}
+			{{else}}
+				<span {{#if haveTitle}}title="{{columnTitle}}"{{/if}}>
+					{{#if isConversionSymbol}}{{conversionCurrencyForMDR}}{{/if}}{{value}}{{#notEqualAndTrue value "N/A" isRate}}%{{/notEqualAndTrue}}
+				</span>
+			{{/if}}
+		{{/if}}
+	</td>
+</script>
+
+<script id="tmpl-sectionContent-dataTable-tr" type="text/html">
+	<tr class="dataTableTr">
+		<td class="name {{#if summaryObj.isHaveLine}}bottomBorder{{/if}} {{#if summaryObj.isShowHover}}showhover{{/if}}" data-value="{{summaryObj.name}}">
+			{{summaryObj.label}}
+		</td>
+		<td class="value {{#if summaryObj.isHaveLine}}bottomBorder{{/if}} {{#if summaryObj.isShowHover}}showhover{{/if}}" data-value="{{summaryObj.name}}">
+			{{#if summaryObj.isConversionSymbol}}{{conversionCurrencyForMDR}}{{/if}}{{summaryObj.value}}{{#if summaryObj.isRate}}%{{/if}}
+		</td>
+		<td class="sparkLine {{summaryObj.name}} {{#if summaryObj.isHaveLine}}bottomBorder{{/if}}"></td>
+	</tr>
+</script>

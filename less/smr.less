@@ -1,0 +1,376 @@
+/* include this css in the production applicaiton */
+
+.cb{
+	clear:both;
+}
+
+.smr.report{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#3c3c3c;
+	padding:0 15px 13px 15px;
+	min-width:1050px;
+	position: relative;
+}
+
+.smr.report .report-data-loading{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:1000;
+	width:100%;
+	height:100%;
+	text-align: center;
+	display: none;
+}
+
+.smr.report .report-data-loading div{
+	margin:0 auto;
+	width:200px;
+	height:200px;
+	.border-radius(5px);
+    margin-top: 80px;
+    background: #333;
+    opacity:0.2;
+	filter:alpha(opacity=20);
+	line-height: 200px;
+	overflow: hidden;
+}
+
+.smr.report .report-data-loading div span{
+	margin-left:5px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+	margin: 80px 0 0 8px;
+	*margin:0 0 0 8px;
+}
+
+.smr.report .report-data-loading div span.loading-data-gif{
+	display: inline-block;
+	width: 30px;
+   	height: 30px;
+    background-image: url("images/loadingData.gif");
+	background-repeat: no-repeat;
+}
+
+.smr.report .report-rendering-gif {
+	display: inline-block;
+	margin: 0 0 0 8px;
+	width: 15px;
+   	height: 15px;
+    background-image: url("images/rendering.gif");
+	background-repeat: no-repeat;
+}
+
+.smr.report .report-data-progressBar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:1000;
+	width:100%;
+	height:100%;
+	text-align: center;
+	display: none;
+}
+.smr.report .report-data-progressBar .aggregating-gray {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	background:#656565;
+	opacity:0.35;
+	filter:alpha(opacity=35);
+	z-index:1005;
+	width:100%;
+	height:100%;
+   .border-radius(5px);
+   text-align: center;
+}
+
+.smr.report .report-data-progressBar .aggregating-data {
+	position:absolute;
+	left:0; right:0; bottom:0; top:0;
+	z-index:1006;
+	width:100%;
+	height:100%;
+   .border-radius(5px);
+   text-align: center;
+}
+
+.smr.report .report-data-progressBar .aggregating-data .aggregating-progress{
+	margin:50px auto;
+	background:#5d5d5d;
+	opacity:0.85;
+	filter:alpha(opacity=85);
+	width: 604px;
+	height: 70px;
+	z-index:6;
+   .border-radius(5px);
+}
+
+.smr.report .report-data-progressBar .aggregating-data .aggregating-progress .aggregating-title{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 12px;
+    text-align: left;
+}
+
+.smr.report .report-data-progressBar .aggregating-data .aggregating-progress .aggregating-bar{
+	background-repeat: no-repeat;
+ 	background-image: url("images/progress_bar.gif");
+ 	height: 15px;
+    margin-left: 12px;
+    width: 580px;
+}
+
+.report .dataTableDiv{
+	margin:0 20px 0 20px;
+	width:98%;
+}
+.report table.dataTable{
+	background-color:#ffffff;
+	border-collapse:collapse;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	width:100%;
+	border-right: 1px solid #ccc;
+}
+
+.report table.dataTable th{
+	height:30px;
+	background:#EDEDED;
+	min-width:80px;
+	padding: 0px 0 0px 5px;
+	font-weight:bold;
+	text-align: left;
+	border:1px solid #C6C6C6;
+	font-size: 10pt;
+}
+
+.report .barChart table.dataTable th{
+	font-size: 13px;
+}
+
+.report table.dataTable th.sortable{
+	cursor:pointer;
+}
+.report table.dataTable th.byDomain{
+	color:gray;
+}
+.report table.dataTable th.barChartTh{
+	width:auto;
+}
+.report table.dataTable th.rows{
+	width:5%;
+	padding: 0px 0 0px 5px;
+	min-width:40px;
+}
+
+.report table.dataTable th span{
+    float: left;
+}
+
+.report table.dataTable th .dropDownSelectMetric{
+    float: left;
+}
+
+.report table.dataTable th .dropDownSelectMetric select{
+    height: 20px;
+    margin-top: 5px;
+}
+
+.report table.dataTable th .ico{
+	float:right;
+	background-image:none;
+	height:16px;
+	width:16px;
+}
+.report table.dataTable td{
+	font-weight:normal;
+	text-align:right;
+	padding: 4px 8px 4px 8px;
+	border:1px solid #C6C6C6;
+}
+.report table.dataTable td.first{
+	text-align:left;
+	padding: 0px 8px 0px 8px;
+}
+
+.report table.dataTable td.alignLeft{
+	text-align:left;
+	padding: 0px 8px 0px 5px;
+}
+
+.report table.dataTable td.alignCenter{
+	text-align:center;
+	padding: 0px 8px 0px 5px;
+}
+
+.report table.dataTable td.pagination{
+	text-align:right;
+}
+
+.report table.dataTable tr:hover td{
+	#gradient > .verticalNotIE(#d3eff3,#a7dee5);
+}
+
+
+.report table.dataTable tr:hover td[rowspan]{
+	background:none; 
+}
+.report table.dataTable tbody tr td.over{
+	#gradient > .verticalNotIE(#d3eff3,#a7dee5);
+}
+.report table.dataTable tbody tr:hover td.over[rowspan]{
+	#gradient > .verticalNotIE(#d3eff3,#a7dee5);
+}
+.report table.dataTable tbody td .failureDetailCount{
+	color: #1E98A7;
+	cursor:pointer;
+}
+.report table.dataTable tbody td .mailingNameURL{
+	cursor:pointer;
+}
+.report table.dataTable tbody td .mailingNameURL a{
+	color: #1E98A7;
+	text-decoration:none;
+}
+
+.report table.dataTable .tfoot:hover td{
+	background:#EDEDED;
+}
+
+/* ---------td hoverbox --------- */
+.hoverBoxContainer {
+ 	z-index:23;
+	position: absolute;
+	margin: 0 0;
+}
+
+.hoverBoxContainer .hoverDiv {
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	.border-radius(10px);
+	border: 1px solid #6d6d6d;
+	padding: 10px;
+	background-color: #ffffff;
+}
+
+.hoverBoxContainer .hoverDiv .topPart {
+	
+}
+
+.hoverBoxContainer .hoverDiv .bottomPart {
+	margin-top:10px;
+}
+
+.hoverBoxContainer .hoverDiv span {
+	margin-left: 10px;
+	font-weight:normal;
+}
+
+.hoverBoxContainer .hoverDiv span.titleLabel {
+	color:#6d6d6d;
+}
+/* ---------/td hoverbox  --------- */
+
+.report table.dataTable .pagination {
+	text-align:right;
+	background-color:#EDEDED;
+}
+.report table.dataTable .pagination .goto .gotoBtn {
+	cursor:pointer;
+}
+.report table.dataTable .pagination .goto input[type="text"] {
+	width:30px;
+	margin: 0 0 0 5px;
+}
+.report table.dataTable .pagination > span {
+	padding:0 20px 0 0;
+}
+
+.report table.dataTable .pagination .action {
+	color:#5588bb;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+.report .report-content{
+	border:1px solid #c6c6c6;
+	background:#ffffff;
+	padding: 0 0 30px 0;
+	.border-radius(0 0 8px 8px);
+}
+
+.report .byTitle{
+	margin:0 20px 0 20px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.report .byTitle.byTitle-table{
+	margin:7px 20px 0 20px;
+	font-size:10.5pt;
+	font-weight:bold;
+	font-family: Arial;
+}
+
+.report .table-title{
+	margin:17px 20px 6px 0;
+	font-size:10.5pt;
+	font-weight:bold;
+	font-family: Arial;
+}
+
+#notTransparentScreen{
+	position:absolute;
+	left:0;right:0;bottom:0;top:0;
+	background:#000000;
+	opacity:.5;
+	filter:alpha(opacity=50);
+	z-index:18;
+}
+
+#transparentScreen{
+	position:absolute;
+	left:0;right:0;bottom:0;top:0;
+	z-index:22;
+}
+
+#transparentScreenForDrillDown{
+	position:absolute;
+	background:#FFFFFF;
+	opacity:0.01;
+	filter:alpha(opacity=1);
+	left:0;right:0;bottom:0;top:0;
+	z-index:2;
+}
+
+.notsupported{
+	z-index:100;
+	margin: 50px auto;
+	width: 600px;
+	background: #ddd;
+	border: dotted 1px #999;
+	color: #770000;
+	text-align: center;
+	padding: 10px;
+}
+
+.notsupported .lable{
+	margin: 10px 0 10px 0;
+}
+.report .noData{
+	margin:0px auto;
+	text-align:center;
+	font-size:18px;
+	color:#999999;
+	font-weight:bold;
+}
+

@@ -1,0 +1,61 @@
+<script id="tmpl-sectionComparison" type="text/html">
+	<div class="sectionComparison"> 
+		<div class="groups"></div>
+		<div class="sectionComparison-view"></div>
+	</div>
+</script>
+
+<script id="tmpl-sectionComparison-sectionComparisonSummary" type="text/html">
+	<div class="SMA-REPORT-COMPARISONSUMMARY sectionComparisonSummary">
+		<div class="sectionComparisonSummary-title">{{setType}} Group Comparison</div>
+		<div class="sectionComparisonSummary-summary">
+			<table>
+				<tr>
+					<th class="first">
+						<div class="thName">Metrics</div>
+					</th>
+					<th class="value">
+						<div class="thName">Group A</div>
+						<div class="line"></div>
+						<div class="group groupA" data-set="compareA">
+							<div class="mailing"><span class="count">0</span><span class="type">Mailing</span><span class="needS">s</span><span class="pencilIco"></span></div>
+							<div class="date"></div>
+							<div class="cb"></div>
+						</div>
+					</th>
+					<th class="value">
+						<div class="thName">Group B</div>
+						<div class="line"></div>
+						<div class="group groupB" data-set="compareB">
+							<div class="mailing"><span class="count">0</span><span class="type">Mailing</span><span class="needS">s</span><span class="pencilIco"></span></div>
+							<div class="date"></div>
+							<div class="cb"></div>
+						</div>
+					</th>
+					<th class="last">
+						<div class="thName">% Change</div>
+					</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-sectionComparison-sectionComparisonSummary-summary-tr" type="text/html">
+	<tr class="{{trCss}}">
+		<td class="first">{{summaryObj.label}}</td>
+		<td class="value">{{#if summaryObj.isCurrency}}{{conversionCurrency}} {{/if}}{{summaryObj.value}} {{#if summaryObj.isRate}}%{{/if}}</td>
+		<td class="value">{{#if summaryObj.isCurrency}}{{conversionCurrency}} {{/if}}{{summaryObj.value2}} {{#if summaryObj.isRate}}%{{/if}}</td>
+		{{#if summaryObj.isNAValue}}
+			<td class="upOrDown last NAvalue">
+				N/A
+			</td>
+		{{else}}
+			<td class="upOrDown last {{#notUndefined summaryObj.upOrDown}} {{#if summaryObj.upOrDown}}redColor{{else}}greenColor{{/if}} {{/notUndefined}}">
+				{{#notUndefined summaryObj.upOrDown}} {{#unless summaryObj.upOrDown}}&nbsp;{{/unless}} {{/notUndefined}}
+				{{summaryObj.change}}% {{#notUndefined summaryObj.upOrDown}} {{#if summaryObj.upOrDown}}<span class="smr-carouselSpriteIco  smr-arrowUpLargeGreen "></span>{{else}}<span class="smr-carouselSpriteIco  smr-arrowDownLargeRed "></span>{{/if}} {{else}}<span class="smr-carouselSpriteNone">&nbsp;</span>{{/notUndefined}}
+			</td>
+		{{/if}}
+	</tr>
+</script>
+

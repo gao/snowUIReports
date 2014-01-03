@@ -1,0 +1,16 @@
+{
+    "identifier": "id",
+    "itemsCommon": null,
+    "items": [
+        {
+            "id": 101,
+            "name": "Catalog1",
+            "department":"Dept1"
+        },
+        {
+            "id": 102,
+            "name": "Catalog2VeryLargeCatelogNameForTheTestThing",
+            "department":"Dept2"
+        }
+    ]
+}

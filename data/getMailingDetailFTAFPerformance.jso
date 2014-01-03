@@ -1,0 +1,14 @@
+{"identifier": 'id',
+"itemsCommon":null,
+"items":[
+	 {
+	   "forwardPanelViews":300,
+	   "forwards":100,
+	   "emailVolume":10343,
+	   "opens":10,
+	   "openRate":10.1,
+	   "clicks":11,
+	   "clickRate":2.2
+	 }
+	]
+}

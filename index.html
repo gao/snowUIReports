@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+	<title>Strong Mail Report</title>
+	
+	<link href="smr-demo-only.css"  rel="stylesheet" type="text/css" />
+	<!-- INCLUDE THIS -->
+	<link href="css/all.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.render.js"></script>
+	<script type="text/javascript" src="js/jquery.dragsort.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sparkline.min.js"></script>
+	<script type="text/javascript" src="js/handlebars.runtime-1.0.rc.1.min.js"></script>
+	<script type="text/javascript" src="js/handlebars.custom.helper.js"></script>
+	<script type="text/javascript" src="js/handlebars.common.helper.js"></script>
+	<script type="text/javascript" src="js/brite.min.js"></script>
+	<script type="text/javascript" src="js/smr.js"></script>
+	<script type="text/javascript" src="js/smr.utils.js"></script>
+	<script type="text/javascript" src="js/smr.state.js"></script>
+	<script type="text/javascript" src="js/smr.mailings.js"></script>
+	<script type="text/javascript" src="js/smr.period.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+	
+	
+	<!-- Component JS Files -->
+	<script type="text/javascript" src="components/js/barChart.js"></script>
+	<script type="text/javascript" src="components/js/report.js"></script>
+	<script type="text/javascript" src="components/js/combobox.js"></script>
+	<script type="text/javascript" src="components/js/dataList.js"></script>
+	<script type="text/javascript" src="components/js/dataTable.js"></script>
+	<script type="text/javascript" src="components/js/dateSelect.js"></script>
+	<script type="text/javascript" src="components/js/exportPicker.js"></script>
+	<script type="text/javascript" src="components/js/pieChart.js"></script>
+	<script type="text/javascript" src="components/js/flipSwitch.js"></script>
+	<script type="text/javascript" src="components/js/ipandVSGPicker.js"></script>
+	<script type="text/javascript" src="components/js/mailingPicker.js"></script>
+	<script type="text/javascript" src="components/js/mailingSelector.js"></script>
+	<script type="text/javascript" src="components/js/pivotOption.js"></script>
+	<script type="text/javascript" src="components/js/pivotTable.js"></script>
+	<script type="text/javascript" src="components/js/reportHeader.js"></script>
+	<script type="text/javascript" src="components/js/drillDown.js"></script>
+	<script type="text/javascript" src="components/js/statsSummary.js"></script>
+	<script type="text/javascript" src="components/js/sectionDisEngagement.js"></script>
+	<script type="text/javascript" src="components/js/sectionFailures.js"></script>
+	<script type="text/javascript" src="components/js/sectionOverview.js"></script>
+	<script type="text/javascript" src="components/js/sectionSharing.js"></script>
+	<script type="text/javascript" src="components/js/sectionVolume.js"></script>
+	<script type="text/javascript" src="components/js/sectionEngagement.js"></script>
+	<script type="text/javascript" src="components/js/sectionLinks.js"></script>
+	<script type="text/javascript" src="components/js/sectionConversions.js"></script>
+	<script type="text/javascript" src="components/js/sectionComparison.js"></script>
+	<script type="text/javascript" src="components/js/sectionEvents.js"></script>
+	<script type="text/javascript" src="components/js/sectionTrends.js"></script>
+	<script type="text/javascript" src="components/js/sectionCampaignOverview.js"></script>
+	<script type="text/javascript" src="components/js/sectionDeliverabilityOverview.js"></script>
+	<script type="text/javascript" src="components/js/sectionDeliverabilityDomains.js"></script>
+	<script type="text/javascript" src="components/js/sectionDefers.js"></script>
+	<script type="text/javascript" src="components/js/sectionSMS.js"></script>
+	<script type="text/javascript" src="components/js/sectionDomainDrilldown.js"></script>
+	<script type="text/javascript" src="components/js/sectionAudienceOverview.js"></script>
+	<script type="text/javascript" src="components/js/sectionMailingDetail.js"></script>
+	<script type="text/javascript" src="components/js/sectionABTest.js"></script>
+	<script type="text/javascript" src="components/js/sectionDeviceUsageOverview.js"></script>
+	<script type="text/javascript" src="components/js/sectionDayOfWeek.js"></script>
+	<script type="text/javascript" src="components/js/sectionUserInsightOverview.js"></script>
+	<script type="text/javascript" src="components/js/sectionEmails.js"></script>
+	<script type="text/javascript" src="components/js/targetPicker.js"></script>
+	<script type="text/javascript" src="components/js/abTestPicker.js"></script>
+	<script type="text/javascript" src="components/js/mailingDetailPicker.js"></script>
+	<script type="text/javascript" src="components/js/userInsightPicker.js"></script>
+	<script type="text/javascript" src="components/js/overviewOption.js"></script>
+	<script type="text/javascript" src="components/js/overlay.js"></script>
+	<script type="text/javascript" src="components/js/viewEmailsPicker.js"></script>
+	<script type="text/javascript" src="components/js/viewTips.js"></script>
+	<!-- /Component JS Files -->
+	
+	<!-- This is the file compiled by jcruncher from the --hbs-->
+    <script type="text/javascript" src="js/templates.js" ></script> 
+	
+	
+	<!-- /INCLUDE THIS -->
+	
+	<!-- PATH TO THE SNOWUI COMPONENTS FILES -->
+	<script type='text/javascript'>
+		//change this value with the path to the briteUI components folder
+		//brite.config.componentsPath = "components/";
+	</script>
+	<!-- /PATH TO THE SNOWUI COMPONENTS FILES -->
+</head>
+
+<body>
+
+	<div id="page">
+		<div id="top" class="topHeaderPart">
+			<div class="title">
+				<span class="smlogo"></span>
+				<label>StrongMail.</label>
+			</div>
+			<div class="infoSetting">
+				<div class="toolLabel">
+					<div class="search">
+						<input name="name" type="text" placeholder="Search"/>
+					</div>
+					<div class="links">
+						<span>Help</span>
+						<span>Profile</span>
+						<span>Sign Out</span>
+					</div>
+				</div>
+				<div class="info">
+					<span>Mike Chowla</span>
+					<span>|</span>
+					<span>StrongMail</span>
+				</div>
+			</div>
+		</div>
+		<div id="side">
+			<div id="side-nav">
+				<div class='side-nav-section'>
+					<div class='side-nav-header first'><span class="demoicon icon-message"></span><label>Campaign Management</label></div>
+				</div>
+				<div class='side-nav-section'>
+					<div class='side-nav-header'><span class="demoicon icon-data"></span><label>Data Management</label></div>
+				</div>
+				<div class='side-nav-section'>
+					<div class='side-nav-header'><span class="demoicon icon-content"></span><label>Content Management</label></div>
+				</div>
+				<div class='side-nav-section expanded'>
+					<div class='side-nav-header'><span class="demoicon icon-report"></span><label>Reports & Insights</label></div>
+					
+					<div class='side-nav-item'  data-section="campaignOverview">Campaign Overview</div>
+					<div class='side-nav-item'  data-section="audience">Audience Insight</div>
+					<div class='side-nav-item'  data-section="userInsight">User Insight</div>
+					<div class='side-nav-item'  data-section="program">Lifecycle Marketing</div>
+					
+					<div class='side-nav-item haveColExp'><span class="collapsible exp">[-]</span> Mailings</div>
+					<div class='side-nav-item level-2 sel' data-section="batch">Batch</div>
+					<div class='side-nav-item level-2' data-section="transactional">Transactional</div>
+					<div class='side-nav-item level-2' data-section="ABTest">A/B Test</div>
+					<div class='side-nav-item level-2' data-section="mailingDetail">Mailing Detail</div>
+					
+					<div class='side-nav-item haveColExp'><span class="collapsible exp">[-]</span> Deliverability</div>
+					<div class='side-nav-item level-2' data-section="deliverability">Analysis</div>
+					<div class='side-nav-item level-2' data-section="deliverabilityDomains">Domains</div>
+					
+					<div class='side-nav-item'  data-section="deviceUsage">Device Usage</div>
+					
+					<div class='side-nav-item'>Social Campaigns</div>
+					
+					<div class='side-nav-item'>Influencer Campaigns</div>
+					
+					<div class='side-nav-item haveColExp'><span class="collapsible col">[+]</span> Custom</div>
+				</div>
+				<div class='side-nav-section'>
+					<div class='side-nav-header'><span class="demoicon icon-tool"></span><label>Tools</label></div>
+				</div>
+				<div class='side-nav-section'>
+					<div class='side-nav-header last'><span class="demoicon icon-setting"></span><label>Settings</label></div>
+				</div>
+			</div>
+			
+		</div>
+		<div id="content">
+			<div class="tabs-bar">
+				<div class="tabs-tab">Home</div>
+				<div class="tabs-tab sel">Reports</div>
+			</div>
+			<div id="reports-container" class='tabs-content'>
+				
+			</div>
+			
+			<script type="text/javascript">
+				$(function(){
+					var $this = $(this);
+//					if(smr.isSafari == null && smr.isChrome == null){
+//						brite.display("supportMessage");
+//					}else{
+						var reportType = smr.state("report","reportType");
+						var section = smr.state("report","section");
+						smr.showReport("#reports-container",reportType,section);
+						var $reportType = $this.find(".side-nav-item[data-section='"+reportType+"']");
+						$reportType.parent().children().removeClass("sel");
+						$reportType.addClass("sel");
+						
+						$this.find(".side-nav-item").click(function(){
+							var $this = $(this);
+							var val = $this.attr("data-section");
+							
+							if(typeof val != "undefined"){
+								//remove the class sel from the others nav-item
+								$this.parent().children().removeClass("sel");
+								//add the class sel from the select one
+								$this.addClass("sel");
+							
+								if(val == "batch"){
+									smr.showReport("#reports-container",smr.REPORT_TYPE.BATCH);
+								}else if(val == "transactional"){
+									smr.showReport("#reports-container",smr.REPORT_TYPE.TRANSACTIONAL);
+								}else if(val == "program"){
+									smr.showReport("#reports-container",smr.REPORT_TYPE.PROGRAM);
+								}else if(val == "campaignOverview"){
+									smr.showReport("#reports-container","campaignOverview","sectionCampaignOverview");
+								}else if(val == "deliverability"){
+									smr.showReport("#reports-container",smr.REPORT_TYPE.DELIVERABILITY);
+								}else if(val == "deliverabilityDomains"){
+									smr.showReport("#reports-container",smr.REPORT_TYPE.DELIVERABILITYDOMAINS,"sectionDeliverabilityDomains");
+								}else if(val == "domainDrillDown"){
+									smr.showDomainDrillDownReport("#reports-container",smr.REPORT_TYPE.DOMAINDRILLDOWN,smr.REPORT_TYPE.DELIVERABILITY,"google.com");
+								}else if(val == "audience"){
+									smr.showReport("#reports-container",smr.REPORT_TYPE.AUDIENCE);
+								}else if(val == "mailingDetail"){
+									smr.showReport("#reports-container",smr.REPORT_TYPE.MAILINGDETAIL,"sectionMailingDetail",null,null,[400],"mailingDetail");
+								}else if(val == "ABTest"){
+									smr.showReport("#reports-container",smr.REPORT_TYPE.ABTEST,"sectionABTest",null,null,[101],"ABTest");
+								}else if(val == "deviceUsage"){
+									smr.showReport("#reports-container",smr.REPORT_TYPE.DEVICEUSAGE,"sectionDeviceUsageOverview");
+								}else if(val == "userInsight"){
+									smr.showReport("#reports-container",smr.REPORT_TYPE.USERINSIGHT,"sectionUserInsightOverview");
+								}
+							}
+							
+						});
+//					}
+				});
+			</script>
+		</div>
+	</div>
+	
+</body>
+
+</html>

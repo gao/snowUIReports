@@ -1,0 +1,105 @@
+<script id="tmpl-sectionOverview" type="text/html">
+	<div class="sectionOverview">
+	</div>
+</script>
+<script id="tmpl-sectionOverview-table" type="text/html">
+	<div class="sectionOverviewTable">
+		<div class="byTitle">Overview by <span class="viewByValue"></span></div> 
+		<div class="statsSummary"></div>
+		<div class="sectionOverviewTable-table">
+		</div>
+	</div>
+</script>
+<script id="tmpl-sectionOverview-bar" type="text/html">
+	<div class="sectionOverviewBar">
+		<div class="byTitle">Overview by <span class="viewByValue"></span></div> 
+		<div class="statsSummary"></div>
+		<div class="sectionOverviewBar-table">
+		</div>
+	</div>
+</script>
+<script id="tmpl-sectionOverview-pie" type="text/html">
+	<div class="sectionOverviewPie">
+		<div class="byTitle">Overview by <span class="viewByValue"></span></div> 
+		<div class="statsSummary"></div>
+		<div class="sectionOverviewPie-pie">
+		</div>
+	</div>
+</script>
+<script id="tmpl-sectionOverview-pivot" type="text/html">
+	<div class="sectionOverviewPivotTable">
+		<div class="byTitle">Summary Statistics</div> 
+		<div class="statsSummary"></div>
+		<div class="sectionOverviewPivot-pivot">
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-sectionOverviewSummary" type="text/html">
+	<div class="sectionOverviewSummary">
+		<div class="sectionOverviewSummary-chart">
+			<div class="viewBy head">
+				<span>View by </span>
+				<span class="SMA-REPORT-VIEWBYDAY action {{#equal viewBy 'day'}}selected{{/equal}}" data-view="day">Day</span>
+				<span class="SMA-REPORT-VIEWBYWEEK action {{#equal viewBy 'week'}}selected{{/equal}}" data-view="week">Week</span>
+				<span class="SMA-REPORT-VIEWBYMONTH action {{#equal viewBy 'month'}}selected{{/equal}}" data-view="month">Month</span>
+				<span class="SMA-REPORT-VIEWBYQUARTER action {{#equal viewBy 'quarter'}}selected{{/equal}}" data-view="quarter">Quarter</span>
+			</div>
+			<div class="chart-content"></div>
+		</div>
+		
+		<div class="SMA-REPORT-ENGAGEMENTMETRICS sectionOverviewSummary-bottom">
+			<span class="spanTitle">Engagement Funnel</span>
+			<div class="sectionOverviewSummary-summary">
+				<table >
+					<tr>
+						<th class="name">Metrics</th>
+						<th class="count">Count</th>
+						<th class="rate" colspan="2">Rate</th>
+					</tr>
+				</table>
+			</div>
+			<div class="cb"></div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-sectionOverviewSummary-summary-tr" type="text/html">
+	<tr data-metric="{{summaryObj.name}}">
+		<td class="name first">{{#if summaryObj.clickable}}<span class="metric" data-metric="{{summaryObj.name}}">{{summaryObj.label}}</span>{{else}}{{summaryObj.label}}{{/if}}</td>
+		<td class="count">{{#equal summaryObj.name 'revenue'}}{{conversionCurrency}}{{/equal}}{{summaryObj.count}}</td>
+		{{#if showName}}
+			<td class="rateVal">{{summaryObj.rate}}</td>
+			<td class="noBorder"></td>
+		{{else}}
+			{{#equal summaryObj.name 'revenue'}}
+				<td class="rate last noBorder" colspan="2">{{#notEqual summaryObj.name 'revenue'}}{{summaryObj.rate}}{{/notEqual}}</td>
+			{{else}}
+				<td class="rateVal noBorderRight" {{#if summaryObj.color}}style='color:{{summaryObj.color}};'{{/if}}>{{summaryObj.rate}}</td>
+				<td class="last noBorderLeft">
+					{{#notEqualAndTrue summaryObj.isRate false summaryObj.isBar}}
+						<div class="funnel-bar">
+							<div class="bar" style="width:{{summaryObj.rate}}"></div>
+						</div>
+					{{/notEqualAndTrue}}
+				</td>
+			{{/equal}}
+		{{/if}}
+	</tr>
+</script>
+
+<script id="tmpl-sectionOverviewSummary-summary-breakTr-tr" type="text/html">
+	<tr class="breakTr">
+		<td class="name first"></td>
+		<td class="count"></td>
+		<td class="rateVal"></td>
+		<td class="noBorder"></td>
+	</tr>
+</script>
+
+<script id="tmpl-sectionOverviewSummary-funnel-item" type="text/html">
+	<div class="sectionOverviewSummary-funnel-item">
+		<span class="smrlabel"><span class="metric" data-metric="{{metric}}">{{label}}:</span></span>
+		<span>{{value}}</span>
+	</div>
+</script>

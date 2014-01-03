@@ -1,0 +1,131 @@
+{ "identifier" : "id",
+  "items" : [ 
+     	{ "data" : [ 
+             {
+ 			  "campaign" : "sample",
+              "date" : "2011-01",
+              "mailing" : "",
+              "program" : "",
+              "receivedSection" : {
+				  "errorCount" : 273,
+                  "helpCount" : 5,
+                  "keyWords" : [
+ 					  { "count" : 10,
+                        "name"  : "STOP",
+                        "rate"  : 10.0
+                      },
+                      { "count" : 10,
+                        "name"  : "offer",
+                        "rate"  : 10.0
+                      },
+                      { "count" : 10,
+                        "name"  : "HELP",
+                        "rate"  : 10.0
+                      }
+                    ],
+                  "keywordMessageCount" : 3908,
+                  "received" : 6789,
+                  "stopCount" : 679
+                },
+              "sentSection" : {
+				  "delivered" : 698,
+                  "deliveredRate" : 90.29,
+                  "failed" : 402,
+                  "failedRate" : 6.71,
+                  "sent" : 7343,
+                  "sentRate" : 0.0
+                }
+            } ,
+             {
+ 			  "campaign" : "sample",
+              "date" : "2011-10",
+              "mailing" : "",
+              "program" : "",
+              "receivedSection" : {
+				  "errorCount" : 300,
+                  "helpCount" : 50,
+                  "keyWords" : [
+ 					  { "count" : 10,
+                        "name"  : "STOP",
+                        "rate"  : 10.0
+                      },
+                      { "count" : 10,
+                        "name"  : "offer",
+                        "rate"  : 10.0
+                      },
+                      { "count" : 10,
+                        "name"  : "HELP",
+                        "rate"  : 10.0
+                      }
+                    ],
+                  "keywordMessageCount" : 1399,
+                  "received" : 5690,
+                  "stopCount" : 434
+                },
+              "sentSection" : {
+				  "delivered" : 998,
+                  "deliveredRate" : 93.29,
+                  "failed" : 502,
+                  "failedRate" : 6.71,
+                  "sent" : 8043,
+                  "sentRate" : 0.0
+                }
+            } ,
+            {
+ 			  "campaign" : "sample",
+              "date" : "2011-07",
+              "mailing" : "",
+              "program" : "",
+              "receivedSection" : {
+				  "errorCount" : 71,
+                  "helpCount" : 20,
+                  "keyWords" : [
+ 					  { "count" : 10,
+                        "name"  : "STOP",
+                        "rate"  : 10.0
+                      },
+                      { "count" : 10,
+                        "name"  : "offer",
+                        "rate"  : 10.0
+                      },
+                      { "count" : 10,
+                        "name"  : "HELP",
+                        "rate"  : 10.0
+                      }
+                    ],
+                  "keywordMessageCount" : 2399,
+                  "received" : 8907,
+                  "stopCount" : 511
+                },
+              "sentSection" : {
+				  "delivered" : 998,
+                  "deliveredRate" : 93.29,
+                  "failed" : 502,
+                  "failedRate" : 6.71,
+                  "sent" : 8343,
+                  "sentRate" : 0.0
+                }
+            } 
+            ],
+        "summary" : { 
+			"delivered" : 197552,
+            "deliveredRate" : 98.65,
+            "failed" : 3134,
+            "failedRate" : 1.35,
+            "received" : 23810,
+            "receivedRate" : 0.0,
+            "sent" : 200686,
+            "sentRate" : 0.0,
+            "stopCount" : 843,
+            "stopRate" : 30.34,
+            "helpCount" : 843,
+            "helpRate" : 30.34,
+            "errorCount" : 843,
+            "errorRate" : 30.34,
+            "totalKeywordRequests" : 19801,
+            "totalKeywordRequestsRate" : 0.0
+          }
+      } ],
+  "itemsCommon" : null
+}
+

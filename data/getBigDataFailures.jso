@@ -1,0 +1,1248 @@
+{
+	"identifier": 'id',
+    "itemsCommon":null,
+    "items":[{
+    "data": [
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 101
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing0"
+                }
+            ],
+            "summary": {
+                "failures": 403,
+                "failureRate": 7.2,
+                "block": 403,
+                "blockRate": 7.3,
+                "hard": 106,
+                "hardRate": 3.3,
+                "soft": 36,
+                "softRate": 9.4,
+                "technical": 103,
+                "technicalRate": 4.3,
+                "unknown": 125,
+                "unknownRate": 10.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "launchTime": 10000101019,
+                    "failures": 406,
+                    "failureRate": 10.2,
+                    "block": 409,
+                    "blockRate": 6.3,
+                    "hard": 106,
+                    "hardRate": 4.3,
+                    "soft": 34,
+                    "softRate": 11.4,
+                    "technical": 104,
+                    "technicalRate": 12.3,
+                    "unknown": 127,
+                    "unknownRate": 4.2
+                },
+                {
+                    "columnName": "mailing-1",
+                    "launchTime": 10000101018,
+                    "failures": 407,
+                    "failureRate": 9.2,
+                    "block": 404,
+                    "blockRate": 2.3,
+                    "hard": 109,
+                    "hardRate": 3.3,
+                    "soft": 35,
+                    "softRate": 4.4,
+                    "technical": 106,
+                    "technicalRate": 4.3,
+                    "unknown": 123,
+                    "unknownRate": 5.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "launchTime": 10000101017,
+                    "failures": 404,
+                    "failureRate": 7.2,
+                    "block": 409,
+                    "blockRate": 1.3,
+                    "hard": 102,
+                    "hardRate": 8.3,
+                    "soft": 37,
+                    "softRate": 4.4,
+                    "technical": 108,
+                    "technicalRate": 5.3,
+                    "unknown": 122,
+                    "unknownRate": 4.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "launchTime": 10000101016,
+                    "failures": 404,
+                    "failureRate": 7.2,
+                    "block": 402,
+                    "blockRate": 5.3,
+                    "hard": 100,
+                    "hardRate": 6.3,
+                    "soft": 39,
+                    "softRate": 4.4,
+                    "technical": 108,
+                    "technicalRate": 4.3,
+                    "unknown": 127,
+                    "unknownRate": 10.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "launchTime": 10000101016,
+                    "failures": 405,
+                    "failureRate": 11.2,
+                    "block": 408,
+                    "blockRate": 5.3,
+                    "hard": 104,
+                    "hardRate": 5.3,
+                    "soft": 38,
+                    "softRate": 10.4,
+                    "technical": 109,
+                    "technicalRate": 5.3,
+                    "unknown": 125,
+                    "unknownRate": 12.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "launchTime": 10000101014,
+                    "failures": 400,
+                    "failureRate": 1.2,
+                    "block": 401,
+                    "blockRate": 8.3,
+                    "hard": 102,
+                    "hardRate": 6.3,
+                    "soft": 40,
+                    "softRate": 11.4,
+                    "technical": 106,
+                    "technicalRate": 4.3,
+                    "unknown": 127,
+                    "unknownRate": 9.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "male"
+                },
+                {
+                    "name": "age",
+                    "value": 102
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing1"
+                }
+            ],
+            "summary": {
+                "failures": 401,
+                "failureRate": 5.2,
+                "block": 410,
+                "blockRate": 4.3,
+                "hard": 107,
+                "hardRate": 7.3,
+                "soft": 30,
+                "softRate": 5.4,
+                "technical": 110,
+                "technicalRate": 4.3,
+                "unknown": 126,
+                "unknownRate": 7.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "failures": 409,
+                    "failureRate": 8.2,
+                    "block": 400,
+                    "blockRate": 10.3,
+                    "hard": 102,
+                    "hardRate": 7.3,
+                    "soft": 37,
+                    "softRate": 4.4,
+                    "technical": 108,
+                    "technicalRate": 5.3,
+                    "unknown": 127,
+                    "unknownRate": 4.2
+                },
+                {
+                    "columnName": "mailing-1",
+                    "failures": 400,
+                    "failureRate": 10.2,
+                    "block": 407,
+                    "blockRate": 9.3,
+                    "hard": 108,
+                    "hardRate": 12.3,
+                    "soft": 32,
+                    "softRate": 10.4,
+                    "technical": 110,
+                    "technicalRate": 8.3,
+                    "unknown": 125,
+                    "unknownRate": 7.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "failures": 405,
+                    "failureRate": 7.2,
+                    "block": 410,
+                    "blockRate": 11.3,
+                    "hard": 103,
+                    "hardRate": 4.3,
+                    "soft": 39,
+                    "softRate": 10.4,
+                    "technical": 109,
+                    "technicalRate": 10.3,
+                    "unknown": 127,
+                    "unknownRate": 6.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "failures": 405,
+                    "failureRate": 3.2,
+                    "block": 407,
+                    "blockRate": 4.3,
+                    "hard": 107,
+                    "hardRate": 2.3,
+                    "soft": 38,
+                    "softRate": 10.4,
+                    "technical": 106,
+                    "technicalRate": 3.3,
+                    "unknown": 127,
+                    "unknownRate": 12.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "failures": 403,
+                    "failureRate": 3.2,
+                    "block": 406,
+                    "blockRate": 5.3,
+                    "hard": 101,
+                    "hardRate": 3.3,
+                    "soft": 34,
+                    "softRate": 6.4,
+                    "technical": 102,
+                    "technicalRate": 5.3,
+                    "unknown": 121,
+                    "unknownRate": 11.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "failures": 410,
+                    "failureRate": 4.2,
+                    "block": 403,
+                    "blockRate": 6.3,
+                    "hard": 109,
+                    "hardRate": 11.3,
+                    "soft": 34,
+                    "softRate": 10.4,
+                    "technical": 101,
+                    "technicalRate": 4.3,
+                    "unknown": 129,
+                    "unknownRate": 3.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 106
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing2"
+                }
+            ],
+            "summary": {
+                "failures": 406,
+                "failureRate": 7.2,
+                "block": 405,
+                "blockRate": 7.3,
+                "hard": 106,
+                "hardRate": 10.3,
+                "soft": 36,
+                "softRate": 2.4,
+                "technical": 109,
+                "technicalRate": 3.3,
+                "unknown": 128,
+                "unknownRate": 9.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "failures": 402,
+                    "failureRate": 3.2,
+                    "block": 405,
+                    "blockRate": 4.3,
+                    "hard": 106,
+                    "hardRate": 3.3,
+                    "soft": 39,
+                    "softRate": 9.4,
+                    "technical": 101,
+                    "technicalRate": 8.3,
+                    "unknown": 128,
+                    "unknownRate": 3.2
+                },
+                {
+                    "columnName": "mailing-1",
+                    "failures": 406,
+                    "failureRate": 7.2,
+                    "block": 407,
+                    "blockRate": 3.3,
+                    "hard": 102,
+                    "hardRate": 9.3,
+                    "soft": 37,
+                    "softRate": 1.4,
+                    "technical": 107,
+                    "technicalRate": 11.3,
+                    "unknown": 126,
+                    "unknownRate": 7.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "failures": 409,
+                    "failureRate": 5.2,
+                    "block": 407,
+                    "blockRate": 6.3,
+                    "hard": 106,
+                    "hardRate": 3.3,
+                    "soft": 31,
+                    "softRate": 8.4,
+                    "technical": 108,
+                    "technicalRate": 12.3,
+                    "unknown": 126,
+                    "unknownRate": 10.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "failures": 406,
+                    "failureRate": 2.2,
+                    "block": 400,
+                    "blockRate": 3.3,
+                    "hard": 101,
+                    "hardRate": 4.3,
+                    "soft": 37,
+                    "softRate": 5.4,
+                    "technical": 109,
+                    "technicalRate": 7.3,
+                    "unknown": 123,
+                    "unknownRate": 12.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "failures": 406,
+                    "failureRate": 8.2,
+                    "block": 407,
+                    "blockRate": 9.3,
+                    "hard": 100,
+                    "hardRate": 6.3,
+                    "soft": 36,
+                    "softRate": 2.4,
+                    "technical": 101,
+                    "technicalRate": 7.3,
+                    "unknown": 130,
+                    "unknownRate": 7.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "failures": 408,
+                    "failureRate": 8.2,
+                    "block": 406,
+                    "blockRate": 7.3,
+                    "hard": 105,
+                    "hardRate": 5.3,
+                    "soft": 36,
+                    "softRate": 6.4,
+                    "technical": 103,
+                    "technicalRate": 7.3,
+                    "unknown": 129,
+                    "unknownRate": 5.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "male"
+                },
+                {
+                    "name": "age",
+                    "value": 107
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing3"
+                }
+            ],
+            "summary": {
+                "failures": 402,
+                "failureRate": 9.2,
+                "block": 400,
+                "blockRate": 4.3,
+                "hard": 105,
+                "hardRate": 4.3,
+                "soft": 33,
+                "softRate": 9.4,
+                "technical": 108,
+                "technicalRate": 2.3,
+                "unknown": 130,
+                "unknownRate": 7.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "failures": 409,
+                    "failureRate": 5.2,
+                    "block": 401,
+                    "blockRate": 7.3,
+                    "hard": 108,
+                    "hardRate": 3.3,
+                    "soft": 35,
+                    "softRate": 2.4,
+                    "technical": 106,
+                    "technicalRate": 4.3,
+                    "unknown": 124,
+                    "unknownRate": 4.2
+                },
+                {
+                    "columnName": "mailing-1",
+                    "failures": 409,
+                    "failureRate": 6.2,
+                    "block": 402,
+                    "blockRate": 2.3,
+                    "hard": 104,
+                    "hardRate": 5.3,
+                    "soft": 31,
+                    "softRate": 9.4,
+                    "technical": 103,
+                    "technicalRate": 11.3,
+                    "unknown": 122,
+                    "unknownRate": 4.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "failures": 408,
+                    "failureRate": 8.2,
+                    "block": 400,
+                    "blockRate": 3.3,
+                    "hard": 100,
+                    "hardRate": 2.3,
+                    "soft": 34,
+                    "softRate": 3.4,
+                    "technical": 103,
+                    "technicalRate": 2.3,
+                    "unknown": 126,
+                    "unknownRate": 13.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "failures": 409,
+                    "failureRate": 11.2,
+                    "block": 407,
+                    "blockRate": 7.3,
+                    "hard": 102,
+                    "hardRate": 9.3,
+                    "soft": 38,
+                    "softRate": 8.4,
+                    "technical": 107,
+                    "technicalRate": 7.3,
+                    "unknown": 122,
+                    "unknownRate": 8.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "failures": 404,
+                    "failureRate": 4.2,
+                    "block": 410,
+                    "blockRate": 7.3,
+                    "hard": 104,
+                    "hardRate": 4.3,
+                    "soft": 39,
+                    "softRate": 10.4,
+                    "technical": 105,
+                    "technicalRate": 7.3,
+                    "unknown": 123,
+                    "unknownRate": 4.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "failures": 405,
+                    "failureRate": 8.2,
+                    "block": 406,
+                    "blockRate": 11.3,
+                    "hard": 108,
+                    "hardRate": 8.3,
+                    "soft": 39,
+                    "softRate": 4.4,
+                    "technical": 108,
+                    "technicalRate": 6.3,
+                    "unknown": 127,
+                    "unknownRate": 9.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 108
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing4"
+                }
+            ],
+            "summary": {
+                "failures": 403,
+                "failureRate": 9.2,
+                "block": 408,
+                "blockRate": 9.3,
+                "hard": 109,
+                "hardRate": 3.3,
+                "soft": 40,
+                "softRate": 4.4,
+                "technical": 107,
+                "technicalRate": 8.3,
+                "unknown": 121,
+                "unknownRate": 7.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "failures": 402,
+                    "failureRate": 3.2,
+                    "block": 405,
+                    "blockRate": 3.3,
+                    "hard": 104,
+                    "hardRate": 6.3,
+                    "soft": 33,
+                    "softRate": 9.4,
+                    "technical": 101,
+                    "technicalRate": 5.3,
+                    "unknown": 122,
+                    "unknownRate": 7.2
+                },
+                {
+                    "columnName": "mailing-1",
+                    "failures": 406,
+                    "failureRate": 4.2,
+                    "block": 410,
+                    "blockRate": 11.3,
+                    "hard": 104,
+                    "hardRate": 5.3,
+                    "soft": 37,
+                    "softRate": 4.4,
+                    "technical": 103,
+                    "technicalRate": 6.3,
+                    "unknown": 127,
+                    "unknownRate": 12.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "failures": 407,
+                    "failureRate": 3.2,
+                    "block": 409,
+                    "blockRate": 5.3,
+                    "hard": 105,
+                    "hardRate": 8.3,
+                    "soft": 37,
+                    "softRate": 8.4,
+                    "technical": 101,
+                    "technicalRate": 6.3,
+                    "unknown": 129,
+                    "unknownRate": 12.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "failures": 400,
+                    "failureRate": 4.2,
+                    "block": 404,
+                    "blockRate": 4.3,
+                    "hard": 109,
+                    "hardRate": 11.3,
+                    "soft": 36,
+                    "softRate": 9.4,
+                    "technical": 103,
+                    "technicalRate": 7.3,
+                    "unknown": 122,
+                    "unknownRate": 12.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "failures": 400,
+                    "failureRate": 2.2,
+                    "block": 405,
+                    "blockRate": 2.3,
+                    "hard": 105,
+                    "hardRate": 10.3,
+                    "soft": 30,
+                    "softRate": 8.4,
+                    "technical": 107,
+                    "technicalRate": 9.3,
+                    "unknown": 124,
+                    "unknownRate": 11.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "failures": 404,
+                    "failureRate": 10.2,
+                    "block": 404,
+                    "blockRate": 10.3,
+                    "hard": 105,
+                    "hardRate": 7.3,
+                    "soft": 33,
+                    "softRate": 5.4,
+                    "technical": 102,
+                    "technicalRate": 8.3,
+                    "unknown": 129,
+                    "unknownRate": 12.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "male"
+                },
+                {
+                    "name": "age",
+                    "value": 101
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing5"
+                }
+            ],
+            "summary": {
+                "failures": 408,
+                "failureRate": 2.2,
+                "block": 401,
+                "blockRate": 7.3,
+                "hard": 107,
+                "hardRate": 11.3,
+                "soft": 40,
+                "softRate": 8.4,
+                "technical": 107,
+                "technicalRate": 8.3,
+                "unknown": 128,
+                "unknownRate": 12.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "failures": 402,
+                    "failureRate": 4.2,
+                    "block": 404,
+                    "blockRate": 9.3,
+                    "hard": 109,
+                    "hardRate": 8.3,
+                    "soft": 39,
+                    "softRate": 7.4,
+                    "technical": 104,
+                    "technicalRate": 10.3,
+                    "unknown": 125,
+                    "unknownRate": 7.2
+                },
+                {
+                    "columnName": "mailing-1",
+                    "failures": 401,
+                    "failureRate": 4.2,
+                    "block": 402,
+                    "blockRate": 4.3,
+                    "hard": 102,
+                    "hardRate": 9.3,
+                    "soft": 40,
+                    "softRate": 6.4,
+                    "technical": 101,
+                    "technicalRate": 10.3,
+                    "unknown": 125,
+                    "unknownRate": 4.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "failures": 401,
+                    "failureRate": 9.2,
+                    "block": 405,
+                    "blockRate": 6.3,
+                    "hard": 108,
+                    "hardRate": 7.3,
+                    "soft": 39,
+                    "softRate": 1.4,
+                    "technical": 101,
+                    "technicalRate": 5.3,
+                    "unknown": 127,
+                    "unknownRate": 3.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "failures": 406,
+                    "failureRate": 7.2,
+                    "block": 408,
+                    "blockRate": 10.3,
+                    "hard": 107,
+                    "hardRate": 4.3,
+                    "soft": 37,
+                    "softRate": 4.4,
+                    "technical": 104,
+                    "technicalRate": 12.3,
+                    "unknown": 123,
+                    "unknownRate": 13.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "failures": 401,
+                    "failureRate": 4.2,
+                    "block": 400,
+                    "blockRate": 9.3,
+                    "hard": 102,
+                    "hardRate": 8.3,
+                    "soft": 33,
+                    "softRate": 2.4,
+                    "technical": 102,
+                    "technicalRate": 3.3,
+                    "unknown": 129,
+                    "unknownRate": 8.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "failures": 405,
+                    "failureRate": 6.2,
+                    "block": 405,
+                    "blockRate": 2.3,
+                    "hard": 110,
+                    "hardRate": 4.3,
+                    "soft": 34,
+                    "softRate": 7.4,
+                    "technical": 106,
+                    "technicalRate": 9.3,
+                    "unknown": 127,
+                    "unknownRate": 6.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 106
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing6"
+                }
+            ],
+            "summary": {
+                "failures": 410,
+                "failureRate": 2.2,
+                "block": 404,
+                "blockRate": 4.3,
+                "hard": 103,
+                "hardRate": 6.3,
+                "soft": 30,
+                "softRate": 5.4,
+                "technical": 106,
+                "technicalRate": 7.3,
+                "unknown": 122,
+                "unknownRate": 10.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "failures": 407,
+                    "failureRate": 3.2,
+                    "block": 404,
+                    "blockRate": 10.3,
+                    "hard": 105,
+                    "hardRate": 7.3,
+                    "soft": 39,
+                    "softRate": 4.4,
+                    "technical": 100,
+                    "technicalRate": 7.3,
+                    "unknown": 124,
+                    "unknownRate": 7.2
+                },
+                {
+                    "columnName": "mailing-1",
+                    "failures": 400,
+                    "failureRate": 11.2,
+                    "block": 408,
+                    "blockRate": 4.3,
+                    "hard": 108,
+                    "hardRate": 12.3,
+                    "soft": 34,
+                    "softRate": 3.4,
+                    "technical": 109,
+                    "technicalRate": 9.3,
+                    "unknown": 125,
+                    "unknownRate": 12.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "failures": 404,
+                    "failureRate": 6.2,
+                    "block": 406,
+                    "blockRate": 7.3,
+                    "hard": 100,
+                    "hardRate": 12.3,
+                    "soft": 38,
+                    "softRate": 11.4,
+                    "technical": 103,
+                    "technicalRate": 3.3,
+                    "unknown": 125,
+                    "unknownRate": 11.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "failures": 409,
+                    "failureRate": 1.2,
+                    "block": 405,
+                    "blockRate": 3.3,
+                    "hard": 104,
+                    "hardRate": 6.3,
+                    "soft": 34,
+                    "softRate": 6.4,
+                    "technical": 104,
+                    "technicalRate": 4.3,
+                    "unknown": 126,
+                    "unknownRate": 12.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "failures": 401,
+                    "failureRate": 5.2,
+                    "block": 403,
+                    "blockRate": 7.3,
+                    "hard": 106,
+                    "hardRate": 10.3,
+                    "soft": 39,
+                    "softRate": 11.4,
+                    "technical": 100,
+                    "technicalRate": 8.3,
+                    "unknown": 127,
+                    "unknownRate": 7.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "failures": 407,
+                    "failureRate": 2.2,
+                    "block": 400,
+                    "blockRate": 3.3,
+                    "hard": 107,
+                    "hardRate": 5.3,
+                    "soft": 34,
+                    "softRate": 6.4,
+                    "technical": 106,
+                    "technicalRate": 12.3,
+                    "unknown": 129,
+                    "unknownRate": 6.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "male"
+                },
+                {
+                    "name": "age",
+                    "value": 105
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing7"
+                }
+            ],
+            "summary": {
+                "failures": 402,
+                "failureRate": 8.2,
+                "block": 401,
+                "blockRate": 9.3,
+                "hard": 107,
+                "hardRate": 11.3,
+                "soft": 40,
+                "softRate": 6.4,
+                "technical": 101,
+                "technicalRate": 10.3,
+                "unknown": 129,
+                "unknownRate": 12.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "failures": 402,
+                    "failureRate": 4.2,
+                    "block": 407,
+                    "blockRate": 5.3,
+                    "hard": 103,
+                    "hardRate": 11.3,
+                    "soft": 31,
+                    "softRate": 8.4,
+                    "technical": 108,
+                    "technicalRate": 4.3,
+                    "unknown": 128,
+                    "unknownRate": 3.2
+                },
+                {
+                    "columnName": "mailing-1",
+                    "failures": 407,
+                    "failureRate": 3.2,
+                    "block": 404,
+                    "blockRate": 7.3,
+                    "hard": 106,
+                    "hardRate": 6.3,
+                    "soft": 38,
+                    "softRate": 8.4,
+                    "technical": 110,
+                    "technicalRate": 4.3,
+                    "unknown": 127,
+                    "unknownRate": 9.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "failures": 407,
+                    "failureRate": 10.2,
+                    "block": 404,
+                    "blockRate": 8.3,
+                    "hard": 109,
+                    "hardRate": 10.3,
+                    "soft": 35,
+                    "softRate": 7.4,
+                    "technical": 107,
+                    "technicalRate": 7.3,
+                    "unknown": 123,
+                    "unknownRate": 5.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "failures": 404,
+                    "failureRate": 8.2,
+                    "block": 408,
+                    "blockRate": 3.3,
+                    "hard": 104,
+                    "hardRate": 9.3,
+                    "soft": 36,
+                    "softRate": 3.4,
+                    "technical": 106,
+                    "technicalRate": 9.3,
+                    "unknown": 127,
+                    "unknownRate": 8.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "failures": 406,
+                    "failureRate": 3.2,
+                    "block": 400,
+                    "blockRate": 9.3,
+                    "hard": 110,
+                    "hardRate": 10.3,
+                    "soft": 33,
+                    "softRate": 8.4,
+                    "technical": 105,
+                    "technicalRate": 6.3,
+                    "unknown": 125,
+                    "unknownRate": 10.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "failures": 406,
+                    "failureRate": 7.2,
+                    "block": 401,
+                    "blockRate": 2.3,
+                    "hard": 105,
+                    "hardRate": 9.3,
+                    "soft": 36,
+                    "softRate": 9.4,
+                    "technical": 104,
+                    "technicalRate": 11.3,
+                    "unknown": 120,
+                    "unknownRate": 5.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 101
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing8"
+                }
+            ],
+            "summary": {
+                "failures": 401,
+                "failureRate": 8.2,
+                "block": 406,
+                "blockRate": 6.3,
+                "hard": 105,
+                "hardRate": 5.3,
+                "soft": 40,
+                "softRate": 1.4,
+                "technical": 105,
+                "technicalRate": 7.3,
+                "unknown": 127,
+                "unknownRate": 9.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "failures": 402,
+                    "failureRate": 3.2,
+                    "block": 405,
+                    "blockRate": 3.3,
+                    "hard": 100,
+                    "hardRate": 7.3,
+                    "soft": 36,
+                    "softRate": 6.4,
+                    "technical": 103,
+                    "technicalRate": 10.3,
+                    "unknown": 121,
+                    "unknownRate": 6.2
+                },
+                {
+                    "columnName": "mailing-1",
+                    "failures": 409,
+                    "failureRate": 11.2,
+                    "block": 402,
+                    "blockRate": 9.3,
+                    "hard": 106,
+                    "hardRate": 11.3,
+                    "soft": 37,
+                    "softRate": 3.4,
+                    "technical": 105,
+                    "technicalRate": 10.3,
+                    "unknown": 122,
+                    "unknownRate": 4.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "failures": 405,
+                    "failureRate": 7.2,
+                    "block": 403,
+                    "blockRate": 3.3,
+                    "hard": 109,
+                    "hardRate": 10.3,
+                    "soft": 31,
+                    "softRate": 5.4,
+                    "technical": 108,
+                    "technicalRate": 6.3,
+                    "unknown": 124,
+                    "unknownRate": 12.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "failures": 410,
+                    "failureRate": 8.2,
+                    "block": 403,
+                    "blockRate": 4.3,
+                    "hard": 104,
+                    "hardRate": 7.3,
+                    "soft": 36,
+                    "softRate": 6.4,
+                    "technical": 105,
+                    "technicalRate": 11.3,
+                    "unknown": 121,
+                    "unknownRate": 6.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "failures": 402,
+                    "failureRate": 9.2,
+                    "block": 406,
+                    "blockRate": 2.3,
+                    "hard": 106,
+                    "hardRate": 11.3,
+                    "soft": 30,
+                    "softRate": 6.4,
+                    "technical": 104,
+                    "technicalRate": 5.3,
+                    "unknown": 125,
+                    "unknownRate": 12.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "failures": 405,
+                    "failureRate": 4.2,
+                    "block": 402,
+                    "blockRate": 4.3,
+                    "hard": 104,
+                    "hardRate": 12.3,
+                    "soft": 35,
+                    "softRate": 5.4,
+                    "technical": 107,
+                    "technicalRate": 3.3,
+                    "unknown": 124,
+                    "unknownRate": 7.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "male"
+                },
+                {
+                    "name": "age",
+                    "value": 104
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing9"
+                }
+            ],
+            "summary": {
+                "failures": 406,
+                "failureRate": 5.2,
+                "block": 406,
+                "blockRate": 2.3,
+                "hard": 109,
+                "hardRate": 8.3,
+                "soft": 31,
+                "softRate": 4.4,
+                "technical": 109,
+                "technicalRate": 10.3,
+                "unknown": 128,
+                "unknownRate": 4.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "failures": 403,
+                    "failureRate": 8.2,
+                    "block": 404,
+                    "blockRate": 5.3,
+                    "hard": 106,
+                    "hardRate": 11.3,
+                    "soft": 33,
+                    "softRate": 8.4,
+                    "technical": 109,
+                    "technicalRate": 10.3,
+                    "unknown": 127,
+                    "unknownRate": 4.2
+                },
+                {
+                    "columnName": "mailing-1",
+                    "failures": 404,
+                    "failureRate": 5.2,
+                    "block": 402,
+                    "blockRate": 1.3,
+                    "hard": 108,
+                    "hardRate": 7.3,
+                    "soft": 34,
+                    "softRate": 7.4,
+                    "technical": 103,
+                    "technicalRate": 11.3,
+                    "unknown": 129,
+                    "unknownRate": 13.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "failures": 404,
+                    "failureRate": 2.2,
+                    "block": 403,
+                    "blockRate": 7.3,
+                    "hard": 104,
+                    "hardRate": 8.3,
+                    "soft": 38,
+                    "softRate": 7.4,
+                    "technical": 100,
+                    "technicalRate": 11.3,
+                    "unknown": 124,
+                    "unknownRate": 8.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "failures": 402,
+                    "failureRate": 5.2,
+                    "block": 401,
+                    "blockRate": 5.3,
+                    "hard": 100,
+                    "hardRate": 3.3,
+                    "soft": 31,
+                    "softRate": 10.4,
+                    "technical": 100,
+                    "technicalRate": 3.3,
+                    "unknown": 127,
+                    "unknownRate": 8.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "failures": 401,
+                    "failureRate": 6.2,
+                    "block": 403,
+                    "blockRate": 8.3,
+                    "hard": 107,
+                    "hardRate": 4.3,
+                    "soft": 33,
+                    "softRate": 2.4,
+                    "technical": 107,
+                    "technicalRate": 4.3,
+                    "unknown": 123,
+                    "unknownRate": 10.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "failures": 406,
+                    "failureRate": 3.2,
+                    "block": 409,
+                    "blockRate": 4.3,
+                    "hard": 109,
+                    "hardRate": 7.3,
+                    "soft": 40,
+                    "softRate": 7.4,
+                    "technical": 106,
+                    "technicalRate": 5.3,
+                    "unknown": 125,
+                    "unknownRate": 12.2
+                }
+            ]
+        }
+    ],
+    	"summary":{
+          "failures":400,
+		  "failureRate":1.2,
+		  "block":400,
+		  "blockRate":30.0,
+		  "hard":200,
+		  "hardRate":3.3,
+		  "soft":100,
+		  "softRate":2.2,
+		  "technical":44,
+		  "technicalRate":4.4,
+		  "unknown":33,
+		  "unknownRate":3.3		
+        }
+    }]
+}

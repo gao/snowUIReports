@@ -1,0 +1,207 @@
+<script id="tmpl-userInsightPicker" type="text/html">
+	<div class="userInsightPicker">
+		<div class="icoDiv resizeHandler"></div>
+		<div class="userInsightPicker-top">
+			<div class="icoDiv close"><span class="ico ico-close"></span></div>
+			<div class="title">Select User(s) to View</div>
+		</div>
+		<div class="userInsightPicker-main">
+			<div class="userInsightPicker-available">
+				<span class="available-name">Users:</span><span class="available-count">0</span>
+			</div>
+			
+			<div class="userInsightPicker-filter">
+				<div class="filter-head">
+					<div class="filter-title exp">
+						<span class="collapsible exp">[-]</span>
+						<span class="collapsible col">[+]</span>
+						<span class="title">Filter by</span>
+					</div>
+					<div class="filter-option" style="display:none">
+						<span class="option-ico">&nbsp;</span><a class="option-label" href="##1">Options</a>
+					</div>
+				</div>
+				<div class="filter-body">
+					<div class="filter-content">
+						<div class="filter-content-section">
+							<div class="sec"><span>Recipient Id&nbsp;</span><input class="fi filter-recipientId" /></div>
+							<div class="sec" style="display:none"><span>Name&nbsp;</span><input class="fi filter-name" /></div>
+							<div class="sec" style="display:none">
+								<span>Date Added</span>
+								<select class="date-select">
+									<option value="after"  >after</option>
+									<option value="before" >before</option>
+								<select/>
+								<input class="dateAddedRange" />
+							</div>
+							<div class="clear"></div>
+						</div>
+						
+						<div class="filter-content-section" style="display:none">
+							<div class="sec">
+								<span>Open Rate</span>
+								<select class="compare-select">
+									<option value="D">&gt;</option>
+									<option value="S">&lt;</option>
+								<select/>
+								<input data-name="Open Rate" class="fi rate-input" />
+								<span>%</span>
+							</div>
+							<div class="sec">
+								<span>Click Rate</span>
+								<select class="compare-select">
+									<option value="D">&gt;</option>
+									<option value="S">&lt;</option>
+								<select/>
+								<input data-name="Click Rate" class="fi rate-input" />
+								<span>%</span>
+							</div>
+							<div class="sec">
+								<span>Conv. Rate</span>
+								<select class="compare-select">
+									<option value="D">&gt;</option>
+									<option value="S">&lt;</option>
+								<select/>
+								<input data-name="Conv. Rate" class="fi rate-input" />
+								<span>%</span>
+							</div>
+							<div class="sec">
+								<span>Converions</span>
+								<select class="compare-select">
+									<option value="D">&gt;</option>
+									<option value="S">&lt;</option>
+								<select/>
+								<input data-name="Converions" class="fi rate-input" />
+								<span>%</span>
+							</div>
+							<div class="sec">
+								<span>Revenue</span>
+								<select class="compare-select">
+									<option value="D">&gt;</option>
+									<option value="S">&lt;</option>
+								<select/>
+								<span>{{currency}}</span>
+								<input data-name="Revenue" class="fi currency-input" />
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+					<div class="filter-bottom">
+						<div class="SMA-REPORT-USERINSIGHTPICKERFIND btn find">Find</div>
+						<div class="SMA-REPORT-USERINSIGHTPICKERRESET btn reset">Reset</div>   
+						<div class="error-message"><span class="msg-content"></span></div>
+						<div class="clear"></div>   
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="userInsightPicker-table">
+				<table class="dataTable" data-type="mailing">
+					<thead>
+						<tr>
+							<th class="first"><div><input type="checkbox" class="btnBatchAction"/></div></th>
+							<th class="sortable email" data-column="email"><span class="thSortName">Recipient Id</span><span class="sort asc">&uarr;</span><span class="sort desc">&darr;</span></th>
+							<!--
+							<th class="sortable name" data-column="name"><span class="thSortName">Name</span><span class="sort asc">&uarr;</span><span class="sort desc">&darr;</span></th>
+							<th class="sortable" data-column="dateAdded"><span class="thSortName">Date Added</span><span class="sort asc">&uarr;</span><span class="sort desc">&darr;</span></th>
+							<th class="sortable rate" data-column="openRate"><span class="thSortName">Open Rate</span><span class="sort asc">&uarr;</span><span class="sort desc">&darr;</span></th>
+							<th class="sortable rate" data-column="clickRate"><span class="thSortName">Click Rate</span><span class="sort asc">&uarr;</span><span class="sort desc">&darr;</span></th>
+							<th class="sortable rate" data-column="conversionRate"><span class="thSortName">Conv. Rate</span><span class="sort asc">&uarr;</span><span class="sort desc">&darr;</span></th>
+							<th class="sortable" data-column="conversions"><span class="thSortName">Conversions</span><span class="sort asc">&uarr;</span><span class="sort desc">&darr;</span></th>
+							<th class="sortable last" data-column="revenue"><span class="thSortName">Revenue</span><span class="sort asc">&uarr;</span><span class="sort desc">&darr;</span></th>
+							-->
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="dataTable-bottom">									
+			</div>
+			
+		</div>
+		<div class="userInsightPicker-bottom">
+			<div class="SMA-REPORT-USERINSIGHTPICKERDONEBUTTON btn done">View</div>
+			<div class="SMA-REPORT-USERINSIGHTPICKERSELECTBUTTON btn select">Select</div>
+			<div class="SMA-REPORT-USERINSIGHTPICKERCANCELBUTTON btn cancel">Cancel</div>
+			<div class="clear"></div>
+		</div>
+		<div class="reportPicker-data-loading">
+          <div>
+          	<span class="loading-data-gif">&nbsp;</span><span>Loading data...</span>
+		  </div>
+	   </div>
+	</div>
+</script>
+
+<script id="tmpl-userInsightPicker-dataTable-tr" type="text/html">
+	<tr data-obj.id="{{id}}"  data-obj.name="{{name}}" class="{{#if isSelected}}checked{{/if}}">
+			<td class="first">
+				<div><input {{#if isSelected}}checked="checked"{{/if}} type="checkbox" class="btnAction"/></div>
+			</td>
+			<td><span>{{recipientId}}</td>
+			<!--
+			<td><span>{{dateAdded}}</span></td>
+			-->
+	</tr>
+</script>
+
+
+<script id="tmpl-userInsightPicker-pagination" type="text/html">
+	<div class="userInsightPicker-pagination" data-pageNum="{{pageNum}}">
+	<span class="info">Rows: {{startRows}} - {{endRows}} of {{sizeCount}}</span>
+	{{#gt pageSize 1}}
+		<span class="nums">
+			<span class="prevStart {{#unless isFirst}}action{{/unless}}">&lt;&lt;</span>
+			<span class="prev {{#unless isFirst}}action{{/unless}}">&lt;</span>
+			{{#equalOr pageNum 1 pageNum 2}}
+				{{#gt pageSize 6}} 
+					{{#listNum 1 6 pageNum}}
+						<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span> 
+					{{/listNum}}
+				{{else}}
+					{{#listNum 1 pageSize pageNum}}
+						<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span>  
+					{{/listNum}}
+				{{/gt}}
+			{{else}}
+				{{#gtSum pageSize pageNum 3}}
+					{{#reListNumber pageNum 2 pageNum 3 pageNum}}
+						<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span> 
+					{{/reListNumber}}
+				{{else}}
+					{{#gt pageSize 6}}
+						{{#reListNumber pageSize 6 pageSize 0 pageNum}}
+							<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span> 
+						{{/reListNumber}}
+					{{else}}
+						{{#listNum 1 pageSize pageNum}}
+							<span class="pageNum {{css}}" data-num='{{num}}'>{{num}}</span> 
+						{{/listNum}}
+					{{/gt}}
+				{{/gtSum}}
+			{{/equalOr}}
+			<span class="next {{#unless isLast}}action{{/unless}}">&gt;</span>
+			<span class="nextEnd {{#unless isLast}}action{{/unless}}">&gt;&gt;</span>
+		</span>
+	{{/gt}}
+		<span class="showRows">
+			<span class="show-label">Show</span>
+			<select name="SMA-REPORT-PAGECOUNT pageCount">
+			<option {{#equal pageCount 10}}selected{{/equal}}>10</option>
+			<option {{#equal pageCount 15}}selected{{/equal}}>15</option>
+			<option {{#equal pageCount 25}}selected{{/equal}}>25</option>
+			<option {{#equal pageCount 50}}selected{{/equal}}>50</option>
+			<option {{#equal pageCount 100}}selected{{/equal}}>100</option>
+			<option {{#equal pageCount 500}}selected{{/equal}}>500</option>
+			<option {{#equal pageCount "all"}}selected{{/equal}}>All</option>
+			</select>
+			<span class="rows-label">Rows</span>
+		</span>
+	</div>
+</script>
+
+

@@ -1,0 +1,1359 @@
+{
+    "identifier": 'id',
+    "itemsCommon":null,
+    "items":[{
+    "data": [
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 101
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing0"
+                },
+                {
+                    "name": "tag:110",
+                    "value": 14.1
+                }
+            ],
+            "summary": {
+                "sent": 204,
+                "delivered": 306,
+                "deliveryRate": 7.2,
+                "opens": 134,
+                "openRate": 10.5,
+                "clicks": 171,
+                "clickRate": 18.1,
+                "unsubs": 88,
+                "unsubRate": 3.5,
+                "conversions": 101,
+                "conversionRate": 9.3,
+                "revenue": 677,
+                "averageOrderValue": 3.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "launchTime": 10000101019,
+                    "sent": 205,
+                    "delivered": 307,
+                    "deliveryRate": 1.2,
+                    "opens": 131,
+                    "openRate": 6.5,
+                    "clicks": 180,
+                    "clickRate": 13.1,
+                    "unsubs": 83,
+                    "unsubRate": 2.5,
+                    "conversions": 109,
+                    "conversionRate": 11.3,
+                    "revenue": 672,
+                    "averageOrderValue": 4.2
+                },
+                {
+                    "columnName": "mailing-51",
+                    "launchTime": 10000101018,
+                    "sent": 203,
+                    "delivered": 309,
+                    "deliveryRate": 4.2,
+                    "opens": 136,
+                    "openRate": 9.5,
+                    "clicks": 179,
+                    "clickRate": 18.1,
+                    "unsubs": 81,
+                    "unsubRate": 5.5,
+                    "conversions": 106,
+                    "conversionRate": 6.3,
+                    "revenue": 674,
+                    "averageOrderValue": 4.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "launchTime": 10000101017,
+                    "sent": 204,
+                    "delivered": 303,
+                    "deliveryRate": 1.2,
+                    "opens": 134,
+                    "openRate": 10.5,
+                    "clicks": 171,
+                    "clickRate": 19.1,
+                    "unsubs": 81,
+                    "unsubRate": 6.5,
+                    "conversions": 107,
+                    "conversionRate": 6.3,
+                    "revenue": 672,
+                    "averageOrderValue": 5.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "launchTime": 10000101016,
+                    "sent": 208,
+                    "delivered": 305,
+                    "deliveryRate": 1.2,
+                    "opens": 140,
+                    "openRate": 6.5,
+                    "clicks": 172,
+                    "clickRate": 17.1,
+                    "unsubs": 82,
+                    "unsubRate": 7.5,
+                    "conversions": 110,
+                    "conversionRate": 9.3,
+                    "revenue": 675,
+                    "averageOrderValue": 10.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "launchTime": 10000101015,
+                    "sent": 205,
+                    "delivered": 302,
+                    "deliveryRate": 1.2,
+                    "opens": 140,
+                    "openRate": 6.5,
+                    "clicks": 172,
+                    "clickRate": 11.1,
+                    "unsubs": 86,
+                    "unsubRate": 11.5,
+                    "conversions": 106,
+                    "conversionRate": 5.3,
+                    "revenue": 680,
+                    "averageOrderValue": 12.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "launchTime": 10000101014,
+                    "sent": 206,
+                    "delivered": 305,
+                    "deliveryRate": 10.2,
+                    "opens": 136,
+                    "openRate": 4.5,
+                    "clicks": 172,
+                    "clickRate": 14.1,
+                    "unsubs": 89,
+                    "unsubRate": 10.5,
+                    "conversions": 105,
+                    "conversionRate": 5.3,
+                    "revenue": 675,
+                    "averageOrderValue": 9.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "male"
+                },
+                {
+                    "name": "age",
+                    "value": 110
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing1"
+                },
+                {
+                    "name": "tag:110",
+                    "value": 18.1
+                }
+            ],
+            "summary": {
+                "sent": 204,
+                "delivered": 304,
+                "deliveryRate": 7.2,
+                "opens": 132,
+                "openRate": 11.5,
+                "clicks": 179,
+                "clickRate": 10.1,
+                "unsubs": 82,
+                "unsubRate": 4.5,
+                "conversions": 101,
+                "conversionRate": 12.3,
+                "revenue": 677,
+                "averageOrderValue": 8.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "sent": 210,
+                    "delivered": 309,
+                    "deliveryRate": 8.2,
+                    "opens": 130,
+                    "openRate": 3.5,
+                    "clicks": 172,
+                    "clickRate": 11.1,
+                    "unsubs": 89,
+                    "unsubRate": 9.5,
+                    "conversions": 103,
+                    "conversionRate": 11.3,
+                    "revenue": 680,
+                    "averageOrderValue": 8.2
+                },
+                {
+                    "columnName": "mailing-51",
+                    "sent": 210,
+                    "delivered": 303,
+                    "deliveryRate": 10.2,
+                    "opens": 134,
+                    "openRate": 3.5,
+                    "clicks": 178,
+                    "clickRate": 9.1,
+                    "unsubs": 81,
+                    "unsubRate": 9.5,
+                    "conversions": 108,
+                    "conversionRate": 4.3,
+                    "revenue": 674,
+                    "averageOrderValue": 7.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "sent": 204,
+                    "delivered": 307,
+                    "deliveryRate": 5.2,
+                    "opens": 137,
+                    "openRate": 10.5,
+                    "clicks": 173,
+                    "clickRate": 18.1,
+                    "unsubs": 83,
+                    "unsubRate": 3.5,
+                    "conversions": 103,
+                    "conversionRate": 3.3,
+                    "revenue": 675,
+                    "averageOrderValue": 11.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "sent": 202,
+                    "delivered": 304,
+                    "deliveryRate": 6.2,
+                    "opens": 135,
+                    "openRate": 8.5,
+                    "clicks": 179,
+                    "clickRate": 17.1,
+                    "unsubs": 82,
+                    "unsubRate": 2.5,
+                    "conversions": 102,
+                    "conversionRate": 5.3,
+                    "revenue": 677,
+                    "averageOrderValue": 7.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "sent": 205,
+                    "delivered": 308,
+                    "deliveryRate": 9.2,
+                    "opens": 140,
+                    "openRate": 10.5,
+                    "clicks": 171,
+                    "clickRate": 15.1,
+                    "unsubs": 82,
+                    "unsubRate": 7.5,
+                    "conversions": 108,
+                    "conversionRate": 4.3,
+                    "revenue": 671,
+                    "averageOrderValue": 10.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "sent": 208,
+                    "delivered": 303,
+                    "deliveryRate": 10.2,
+                    "opens": 133,
+                    "openRate": 4.5,
+                    "clicks": 174,
+                    "clickRate": 15.1,
+                    "unsubs": 89,
+                    "unsubRate": 8.5,
+                    "conversions": 107,
+                    "conversionRate": 11.3,
+                    "revenue": 678,
+                    "averageOrderValue": 4.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 108
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing2"
+                },
+                {
+                    "name": "tag:110",
+                    "value": 13.1
+                }
+            ],
+            "summary": {
+                "sent": 201,
+                "delivered": 300,
+                "deliveryRate": 9.2,
+                "opens": 137,
+                "openRate": 11.5,
+                "clicks": 179,
+                "clickRate": 12.1,
+                "unsubs": 88,
+                "unsubRate": 9.5,
+                "conversions": 110,
+                "conversionRate": 4.3,
+                "revenue": 673,
+                "averageOrderValue": 7.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "sent": 205,
+                    "delivered": 306,
+                    "deliveryRate": 6.2,
+                    "opens": 135,
+                    "openRate": 3.5,
+                    "clicks": 172,
+                    "clickRate": 18.1,
+                    "unsubs": 89,
+                    "unsubRate": 2.5,
+                    "conversions": 109,
+                    "conversionRate": 2.3,
+                    "revenue": 675,
+                    "averageOrderValue": 11.2
+                },
+                {
+                    "columnName": "mailing-51",
+                    "sent": 207,
+                    "delivered": 310,
+                    "deliveryRate": 1.2,
+                    "opens": 139,
+                    "openRate": 2.5,
+                    "clicks": 175,
+                    "clickRate": 18.1,
+                    "unsubs": 88,
+                    "unsubRate": 9.5,
+                    "conversions": 109,
+                    "conversionRate": 2.3,
+                    "revenue": 673,
+                    "averageOrderValue": 10.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "sent": 200,
+                    "delivered": 302,
+                    "deliveryRate": 2.2,
+                    "opens": 134,
+                    "openRate": 3.5,
+                    "clicks": 171,
+                    "clickRate": 17.1,
+                    "unsubs": 89,
+                    "unsubRate": 11.5,
+                    "conversions": 105,
+                    "conversionRate": 11.3,
+                    "revenue": 680,
+                    "averageOrderValue": 5.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "sent": 210,
+                    "delivered": 307,
+                    "deliveryRate": 5.2,
+                    "opens": 138,
+                    "openRate": 8.5,
+                    "clicks": 176,
+                    "clickRate": 13.1,
+                    "unsubs": 81,
+                    "unsubRate": 2.5,
+                    "conversions": 105,
+                    "conversionRate": 5.3,
+                    "revenue": 673,
+                    "averageOrderValue": 11.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "sent": 206,
+                    "delivered": 301,
+                    "deliveryRate": 10.2,
+                    "opens": 134,
+                    "openRate": 12.5,
+                    "clicks": 173,
+                    "clickRate": 14.1,
+                    "unsubs": 84,
+                    "unsubRate": 8.5,
+                    "conversions": 106,
+                    "conversionRate": 5.3,
+                    "revenue": 676,
+                    "averageOrderValue": 6.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "sent": 208,
+                    "delivered": 308,
+                    "deliveryRate": 6.2,
+                    "opens": 131,
+                    "openRate": 4.5,
+                    "clicks": 171,
+                    "clickRate": 12.1,
+                    "unsubs": 89,
+                    "unsubRate": 3.5,
+                    "conversions": 108,
+                    "conversionRate": 9.3,
+                    "revenue": 673,
+                    "averageOrderValue": 5.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "male"
+                },
+                {
+                    "name": "age",
+                    "value": 103
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing3"
+                },
+                {
+                    "name": "tag:110",
+                    "value": 12.1
+                }
+            ],
+            "summary": {
+                "sent": 209,
+                "delivered": 307,
+                "deliveryRate": 9.2,
+                "opens": 139,
+                "openRate": 9.5,
+                "clicks": 179,
+                "clickRate": 10.1,
+                "unsubs": 82,
+                "unsubRate": 3.5,
+                "conversions": 110,
+                "conversionRate": 9.3,
+                "revenue": 674,
+                "averageOrderValue": 4.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "sent": 204,
+                    "delivered": 305,
+                    "deliveryRate": 5.2,
+                    "opens": 132,
+                    "openRate": 7.5,
+                    "clicks": 177,
+                    "clickRate": 12.1,
+                    "unsubs": 85,
+                    "unsubRate": 4.5,
+                    "conversions": 107,
+                    "conversionRate": 10.3,
+                    "revenue": 679,
+                    "averageOrderValue": 9.2
+                },
+                {
+                    "columnName": "mailing-51",
+                    "sent": 203,
+                    "delivered": 305,
+                    "deliveryRate": 6.2,
+                    "opens": 139,
+                    "openRate": 5.5,
+                    "clicks": 173,
+                    "clickRate": 15.1,
+                    "unsubs": 83,
+                    "unsubRate": 9.5,
+                    "conversions": 109,
+                    "conversionRate": 9.3,
+                    "revenue": 675,
+                    "averageOrderValue": 13.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "sent": 210,
+                    "delivered": 301,
+                    "deliveryRate": 5.2,
+                    "opens": 132,
+                    "openRate": 11.5,
+                    "clicks": 170,
+                    "clickRate": 12.1,
+                    "unsubs": 83,
+                    "unsubRate": 2.5,
+                    "conversions": 103,
+                    "conversionRate": 5.3,
+                    "revenue": 675,
+                    "averageOrderValue": 9.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "sent": 207,
+                    "delivered": 306,
+                    "deliveryRate": 9.2,
+                    "opens": 133,
+                    "openRate": 10.5,
+                    "clicks": 174,
+                    "clickRate": 10.1,
+                    "unsubs": 90,
+                    "unsubRate": 7.5,
+                    "conversions": 109,
+                    "conversionRate": 8.3,
+                    "revenue": 670,
+                    "averageOrderValue": 6.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "sent": 207,
+                    "delivered": 303,
+                    "deliveryRate": 8.2,
+                    "opens": 136,
+                    "openRate": 8.5,
+                    "clicks": 180,
+                    "clickRate": 13.1,
+                    "unsubs": 87,
+                    "unsubRate": 7.5,
+                    "conversions": 101,
+                    "conversionRate": 6.3,
+                    "revenue": 673,
+                    "averageOrderValue": 4.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "sent": 210,
+                    "delivered": 308,
+                    "deliveryRate": 2.2,
+                    "opens": 133,
+                    "openRate": 10.5,
+                    "clicks": 177,
+                    "clickRate": 17.1,
+                    "unsubs": 82,
+                    "unsubRate": 1.5,
+                    "conversions": 101,
+                    "conversionRate": 10.3,
+                    "revenue": 679,
+                    "averageOrderValue": 8.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 107
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing4"
+                },
+                {
+                    "name": "tag:110",
+                    "value": 16.1
+                }
+            ],
+            "summary": {
+                "sent": 203,
+                "delivered": 301,
+                "deliveryRate": 10.2,
+                "opens": 131,
+                "openRate": 11.5,
+                "clicks": 171,
+                "clickRate": 17.1,
+                "unsubs": 85,
+                "unsubRate": 9.5,
+                "conversions": 109,
+                "conversionRate": 5.3,
+                "revenue": 670,
+                "averageOrderValue": 13.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "sent": 200,
+                    "delivered": 301,
+                    "deliveryRate": 8.2,
+                    "opens": 134,
+                    "openRate": 6.5,
+                    "clicks": 179,
+                    "clickRate": 10.1,
+                    "unsubs": 82,
+                    "unsubRate": 8.5,
+                    "conversions": 102,
+                    "conversionRate": 10.3,
+                    "revenue": 677,
+                    "averageOrderValue": 11.2
+                },
+                {
+                    "columnName": "mailing-51",
+                    "sent": 206,
+                    "delivered": 302,
+                    "deliveryRate": 3.2,
+                    "opens": 130,
+                    "openRate": 12.5,
+                    "clicks": 176,
+                    "clickRate": 19.1,
+                    "unsubs": 84,
+                    "unsubRate": 6.5,
+                    "conversions": 104,
+                    "conversionRate": 11.3,
+                    "revenue": 680,
+                    "averageOrderValue": 9.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "sent": 203,
+                    "delivered": 301,
+                    "deliveryRate": 4.2,
+                    "opens": 139,
+                    "openRate": 5.5,
+                    "clicks": 178,
+                    "clickRate": 9.1,
+                    "unsubs": 86,
+                    "unsubRate": 7.5,
+                    "conversions": 104,
+                    "conversionRate": 5.3,
+                    "revenue": 675,
+                    "averageOrderValue": 5.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "sent": 204,
+                    "delivered": 303,
+                    "deliveryRate": 9.2,
+                    "opens": 136,
+                    "openRate": 10.5,
+                    "clicks": 176,
+                    "clickRate": 13.1,
+                    "unsubs": 83,
+                    "unsubRate": 7.5,
+                    "conversions": 110,
+                    "conversionRate": 8.3,
+                    "revenue": 678,
+                    "averageOrderValue": 11.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "sent": 209,
+                    "delivered": 306,
+                    "deliveryRate": 7.2,
+                    "opens": 136,
+                    "openRate": 9.5,
+                    "clicks": 179,
+                    "clickRate": 12.1,
+                    "unsubs": 83,
+                    "unsubRate": 11.5,
+                    "conversions": 103,
+                    "conversionRate": 12.3,
+                    "revenue": 680,
+                    "averageOrderValue": 7.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "sent": 207,
+                    "delivered": 307,
+                    "deliveryRate": 9.2,
+                    "opens": 140,
+                    "openRate": 3.5,
+                    "clicks": 176,
+                    "clickRate": 16.1,
+                    "unsubs": 84,
+                    "unsubRate": 8.5,
+                    "conversions": 100,
+                    "conversionRate": 6.3,
+                    "revenue": 671,
+                    "averageOrderValue": 13.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "male"
+                },
+                {
+                    "name": "age",
+                    "value": 108
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing5"
+                },
+                {
+                    "name": "tag:110",
+                    "value": 14.1
+                }
+            ],
+            "summary": {
+                "sent": 205,
+                "delivered": 305,
+                "deliveryRate": 5.2,
+                "opens": 137,
+                "openRate": 10.5,
+                "clicks": 178,
+                "clickRate": 10.1,
+                "unsubs": 89,
+                "unsubRate": 4.5,
+                "conversions": 106,
+                "conversionRate": 7.3,
+                "revenue": 674,
+                "averageOrderValue": 5.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "sent": 203,
+                    "delivered": 303,
+                    "deliveryRate": 5.2,
+                    "opens": 136,
+                    "openRate": 9.5,
+                    "clicks": 177,
+                    "clickRate": 10.1,
+                    "unsubs": 86,
+                    "unsubRate": 3.5,
+                    "conversions": 102,
+                    "conversionRate": 9.3,
+                    "revenue": 677,
+                    "averageOrderValue": 4.2
+                },
+                {
+                    "columnName": "mailing-51",
+                    "sent": 202,
+                    "delivered": 307,
+                    "deliveryRate": 8.2,
+                    "opens": 136,
+                    "openRate": 4.5,
+                    "clicks": 177,
+                    "clickRate": 18.1,
+                    "unsubs": 87,
+                    "unsubRate": 2.5,
+                    "conversions": 110,
+                    "conversionRate": 9.3,
+                    "revenue": 678,
+                    "averageOrderValue": 10.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "sent": 208,
+                    "delivered": 307,
+                    "deliveryRate": 5.2,
+                    "opens": 136,
+                    "openRate": 6.5,
+                    "clicks": 180,
+                    "clickRate": 12.1,
+                    "unsubs": 87,
+                    "unsubRate": 7.5,
+                    "conversions": 107,
+                    "conversionRate": 8.3,
+                    "revenue": 674,
+                    "averageOrderValue": 6.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "sent": 208,
+                    "delivered": 310,
+                    "deliveryRate": 10.2,
+                    "opens": 139,
+                    "openRate": 5.5,
+                    "clicks": 172,
+                    "clickRate": 13.1,
+                    "unsubs": 90,
+                    "unsubRate": 5.5,
+                    "conversions": 106,
+                    "conversionRate": 7.3,
+                    "revenue": 670,
+                    "averageOrderValue": 10.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "sent": 202,
+                    "delivered": 304,
+                    "deliveryRate": 10.2,
+                    "opens": 130,
+                    "openRate": 3.5,
+                    "clicks": 174,
+                    "clickRate": 18.1,
+                    "unsubs": 85,
+                    "unsubRate": 8.5,
+                    "conversions": 102,
+                    "conversionRate": 9.3,
+                    "revenue": 679,
+                    "averageOrderValue": 4.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "sent": 210,
+                    "delivered": 307,
+                    "deliveryRate": 4.2,
+                    "opens": 140,
+                    "openRate": 8.5,
+                    "clicks": 170,
+                    "clickRate": 13.1,
+                    "unsubs": 82,
+                    "unsubRate": 4.5,
+                    "conversions": 105,
+                    "conversionRate": 10.3,
+                    "revenue": 674,
+                    "averageOrderValue": 9.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 108
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing6"
+                },
+                {
+                    "name": "tag:110",
+                    "value": 12.1
+                }
+            ],
+            "summary": {
+                "sent": 203,
+                "delivered": 305,
+                "deliveryRate": 4.2,
+                "opens": 132,
+                "openRate": 4.5,
+                "clicks": 177,
+                "clickRate": 16.1,
+                "unsubs": 90,
+                "unsubRate": 4.5,
+                "conversions": 109,
+                "conversionRate": 7.3,
+                "revenue": 675,
+                "averageOrderValue": 4.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "sent": 207,
+                    "delivered": 304,
+                    "deliveryRate": 8.2,
+                    "opens": 135,
+                    "openRate": 4.5,
+                    "clicks": 172,
+                    "clickRate": 17.1,
+                    "unsubs": 80,
+                    "unsubRate": 10.5,
+                    "conversions": 105,
+                    "conversionRate": 7.3,
+                    "revenue": 671,
+                    "averageOrderValue": 3.2
+                },
+                {
+                    "columnName": "mailing-51",
+                    "sent": 203,
+                    "delivered": 306,
+                    "deliveryRate": 4.2,
+                    "opens": 136,
+                    "openRate": 6.5,
+                    "clicks": 176,
+                    "clickRate": 14.1,
+                    "unsubs": 81,
+                    "unsubRate": 9.5,
+                    "conversions": 105,
+                    "conversionRate": 4.3,
+                    "revenue": 679,
+                    "averageOrderValue": 10.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "sent": 208,
+                    "delivered": 305,
+                    "deliveryRate": 10.2,
+                    "opens": 135,
+                    "openRate": 2.5,
+                    "clicks": 178,
+                    "clickRate": 11.1,
+                    "unsubs": 84,
+                    "unsubRate": 7.5,
+                    "conversions": 108,
+                    "conversionRate": 6.3,
+                    "revenue": 676,
+                    "averageOrderValue": 13.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "sent": 203,
+                    "delivered": 305,
+                    "deliveryRate": 10.2,
+                    "opens": 136,
+                    "openRate": 7.5,
+                    "clicks": 174,
+                    "clickRate": 19.1,
+                    "unsubs": 80,
+                    "unsubRate": 2.5,
+                    "conversions": 108,
+                    "conversionRate": 3.3,
+                    "revenue": 672,
+                    "averageOrderValue": 7.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "sent": 203,
+                    "delivered": 302,
+                    "deliveryRate": 5.2,
+                    "opens": 138,
+                    "openRate": 6.5,
+                    "clicks": 176,
+                    "clickRate": 19.1,
+                    "unsubs": 81,
+                    "unsubRate": 5.5,
+                    "conversions": 102,
+                    "conversionRate": 7.3,
+                    "revenue": 672,
+                    "averageOrderValue": 9.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "sent": 202,
+                    "delivered": 305,
+                    "deliveryRate": 8.2,
+                    "opens": 139,
+                    "openRate": 4.5,
+                    "clicks": 170,
+                    "clickRate": 16.1,
+                    "unsubs": 86,
+                    "unsubRate": 4.5,
+                    "conversions": 102,
+                    "conversionRate": 9.3,
+                    "revenue": 673,
+                    "averageOrderValue": 6.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "male"
+                },
+                {
+                    "name": "age",
+                    "value": 101
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing7"
+                },
+                {
+                    "name": "tag:110",
+                    "value": 20.1
+                }
+            ],
+            "summary": {
+                "sent": 205,
+                "delivered": 303,
+                "deliveryRate": 10.2,
+                "opens": 136,
+                "openRate": 8.5,
+                "clicks": 177,
+                "clickRate": 16.1,
+                "unsubs": 89,
+                "unsubRate": 2.5,
+                "conversions": 100,
+                "conversionRate": 12.3,
+                "revenue": 675,
+                "averageOrderValue": 6.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "sent": 207,
+                    "delivered": 308,
+                    "deliveryRate": 5.2,
+                    "opens": 130,
+                    "openRate": 12.5,
+                    "clicks": 180,
+                    "clickRate": 12.1,
+                    "unsubs": 85,
+                    "unsubRate": 3.5,
+                    "conversions": 105,
+                    "conversionRate": 8.3,
+                    "revenue": 671,
+                    "averageOrderValue": 9.2
+                },
+                {
+                    "columnName": "mailing-51",
+                    "sent": 206,
+                    "delivered": 307,
+                    "deliveryRate": 7.2,
+                    "opens": 140,
+                    "openRate": 8.5,
+                    "clicks": 170,
+                    "clickRate": 15.1,
+                    "unsubs": 81,
+                    "unsubRate": 1.5,
+                    "conversions": 108,
+                    "conversionRate": 8.3,
+                    "revenue": 676,
+                    "averageOrderValue": 11.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "sent": 209,
+                    "delivered": 306,
+                    "deliveryRate": 10.2,
+                    "opens": 140,
+                    "openRate": 11.5,
+                    "clicks": 173,
+                    "clickRate": 9.1,
+                    "unsubs": 81,
+                    "unsubRate": 2.5,
+                    "conversions": 106,
+                    "conversionRate": 10.3,
+                    "revenue": 674,
+                    "averageOrderValue": 11.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "sent": 202,
+                    "delivered": 306,
+                    "deliveryRate": 10.2,
+                    "opens": 132,
+                    "openRate": 7.5,
+                    "clicks": 170,
+                    "clickRate": 17.1,
+                    "unsubs": 85,
+                    "unsubRate": 7.5,
+                    "conversions": 103,
+                    "conversionRate": 2.3,
+                    "revenue": 673,
+                    "averageOrderValue": 5.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "sent": 205,
+                    "delivered": 307,
+                    "deliveryRate": 2.2,
+                    "opens": 138,
+                    "openRate": 9.5,
+                    "clicks": 177,
+                    "clickRate": 12.1,
+                    "unsubs": 83,
+                    "unsubRate": 9.5,
+                    "conversions": 104,
+                    "conversionRate": 10.3,
+                    "revenue": 676,
+                    "averageOrderValue": 9.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "sent": 202,
+                    "delivered": 300,
+                    "deliveryRate": 1.2,
+                    "opens": 137,
+                    "openRate": 2.5,
+                    "clicks": 173,
+                    "clickRate": 14.1,
+                    "unsubs": 83,
+                    "unsubRate": 10.5,
+                    "conversions": 104,
+                    "conversionRate": 7.3,
+                    "revenue": 678,
+                    "averageOrderValue": 11.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 107
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing8"
+                },
+                {
+                    "name": "tag:110",
+                    "value": 18.1
+                }
+            ],
+            "summary": {
+                "sent": 208,
+                "delivered": 302,
+                "deliveryRate": 4.2,
+                "opens": 136,
+                "openRate": 11.5,
+                "clicks": 176,
+                "clickRate": 13.1,
+                "unsubs": 82,
+                "unsubRate": 10.5,
+                "conversions": 105,
+                "conversionRate": 9.3,
+                "revenue": 676,
+                "averageOrderValue": 4.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "sent": 209,
+                    "delivered": 308,
+                    "deliveryRate": 1.2,
+                    "opens": 139,
+                    "openRate": 11.5,
+                    "clicks": 174,
+                    "clickRate": 10.1,
+                    "unsubs": 89,
+                    "unsubRate": 6.5,
+                    "conversions": 108,
+                    "conversionRate": 10.3,
+                    "revenue": 672,
+                    "averageOrderValue": 9.2
+                },
+                {
+                    "columnName": "mailing-51",
+                    "sent": 206,
+                    "delivered": 307,
+                    "deliveryRate": 4.2,
+                    "opens": 131,
+                    "openRate": 4.5,
+                    "clicks": 171,
+                    "clickRate": 18.1,
+                    "unsubs": 88,
+                    "unsubRate": 5.5,
+                    "conversions": 101,
+                    "conversionRate": 9.3,
+                    "revenue": 675,
+                    "averageOrderValue": 8.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "sent": 203,
+                    "delivered": 306,
+                    "deliveryRate": 8.2,
+                    "opens": 133,
+                    "openRate": 5.5,
+                    "clicks": 178,
+                    "clickRate": 9.1,
+                    "unsubs": 85,
+                    "unsubRate": 8.5,
+                    "conversions": 110,
+                    "conversionRate": 6.3,
+                    "revenue": 671,
+                    "averageOrderValue": 4.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "sent": 204,
+                    "delivered": 310,
+                    "deliveryRate": 5.2,
+                    "opens": 135,
+                    "openRate": 2.5,
+                    "clicks": 172,
+                    "clickRate": 17.1,
+                    "unsubs": 90,
+                    "unsubRate": 3.5,
+                    "conversions": 107,
+                    "conversionRate": 5.3,
+                    "revenue": 675,
+                    "averageOrderValue": 7.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "sent": 203,
+                    "delivered": 304,
+                    "deliveryRate": 8.2,
+                    "opens": 131,
+                    "openRate": 7.5,
+                    "clicks": 170,
+                    "clickRate": 18.1,
+                    "unsubs": 80,
+                    "unsubRate": 8.5,
+                    "conversions": 108,
+                    "conversionRate": 6.3,
+                    "revenue": 674,
+                    "averageOrderValue": 7.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "sent": 210,
+                    "delivered": 307,
+                    "deliveryRate": 2.2,
+                    "opens": 133,
+                    "openRate": 6.5,
+                    "clicks": 174,
+                    "clickRate": 10.1,
+                    "unsubs": 88,
+                    "unsubRate": 9.5,
+                    "conversions": 102,
+                    "conversionRate": 6.3,
+                    "revenue": 680,
+                    "averageOrderValue": 5.2
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "male"
+                },
+                {
+                    "name": "age",
+                    "value": 107
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing9"
+                },
+                {
+                    "name": "tag:110",
+                    "value": 15.1
+                }
+            ],
+            "summary": {
+                "sent": 207,
+                "delivered": 304,
+                "deliveryRate": 3.2,
+                "opens": 138,
+                "openRate": 4.5,
+                "clicks": 171,
+                "clickRate": 14.1,
+                "unsubs": 83,
+                "unsubRate": 6.5,
+                "conversions": 106,
+                "conversionRate": 6.3,
+                "revenue": 672,
+                "averageOrderValue": 5.2
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-0",
+                    "sent": 205,
+                    "delivered": 309,
+                    "deliveryRate": 1.2,
+                    "opens": 137,
+                    "openRate": 8.5,
+                    "clicks": 174,
+                    "clickRate": 17.1,
+                    "unsubs": 89,
+                    "unsubRate": 6.5,
+                    "conversions": 109,
+                    "conversionRate": 9.3,
+                    "revenue": 679,
+                    "averageOrderValue": 7.2
+                },
+                {
+                    "columnName": "mailing-51",
+                    "sent": 209,
+                    "delivered": 309,
+                    "deliveryRate": 3.2,
+                    "opens": 139,
+                    "openRate": 11.5,
+                    "clicks": 177,
+                    "clickRate": 17.1,
+                    "unsubs": 90,
+                    "unsubRate": 2.5,
+                    "conversions": 108,
+                    "conversionRate": 7.3,
+                    "revenue": 675,
+                    "averageOrderValue": 10.2
+                },
+                {
+                    "columnName": "mailing-2",
+                    "sent": 202,
+                    "delivered": 304,
+                    "deliveryRate": 10.2,
+                    "opens": 137,
+                    "openRate": 8.5,
+                    "clicks": 172,
+                    "clickRate": 15.1,
+                    "unsubs": 88,
+                    "unsubRate": 7.5,
+                    "conversions": 108,
+                    "conversionRate": 6.3,
+                    "revenue": 677,
+                    "averageOrderValue": 7.2
+                },
+                {
+                    "columnName": "mailing-3",
+                    "sent": 203,
+                    "delivered": 304,
+                    "deliveryRate": 4.2,
+                    "opens": 137,
+                    "openRate": 4.5,
+                    "clicks": 177,
+                    "clickRate": 19.1,
+                    "unsubs": 85,
+                    "unsubRate": 6.5,
+                    "conversions": 104,
+                    "conversionRate": 9.3,
+                    "revenue": 673,
+                    "averageOrderValue": 12.2
+                },
+                {
+                    "columnName": "mailing-4",
+                    "sent": 209,
+                    "delivered": 302,
+                    "deliveryRate": 5.2,
+                    "opens": 131,
+                    "openRate": 12.5,
+                    "clicks": 177,
+                    "clickRate": 13.1,
+                    "unsubs": 82,
+                    "unsubRate": 9.5,
+                    "conversions": 102,
+                    "conversionRate": 9.3,
+                    "revenue": 675,
+                    "averageOrderValue": 8.2
+                },
+                {
+                    "columnName": "mailing-5",
+                    "sent": 201,
+                    "delivered": 307,
+                    "deliveryRate": 11.2,
+                    "opens": 137,
+                    "openRate": 7.5,
+                    "clicks": 173,
+                    "clickRate": 11.1,
+                    "unsubs": 83,
+                    "unsubRate": 3.5,
+                    "conversions": 101,
+                    "conversionRate": 3.3,
+                    "revenue": 673,
+                    "averageOrderValue": 8.2
+                }
+            ]
+        }
+    ],
+    	"summary":{
+		  "sent":1003,
+		  "delivered":3022,
+		  "deliveryRate":1.3,
+		  "opens":1003,
+		  "openRate":13.1,
+		  "clicks":2030,
+		  "clickRate":11.3,
+          "unsubs":1203,
+          "unsubRate":11.6,
+          "conversions":100,
+		  "conversionRate":31.3,          
+          "revenue":10100,
+          "averageOrderValue":13.2
+        }
+    }]
+}

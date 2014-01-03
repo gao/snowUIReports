@@ -1,0 +1,107 @@
+.exportPicker{
+	position:absolute;
+	background:#ededed;
+	color:#3c3c3c;
+	.border-radius(10px);
+	border:1px solid #a8a8a8;
+	font-size:12px;
+	font-family:Arial;
+	.box-shadow(2px 3px 6px #757575);
+	z-index:23;
+	left:445px;
+	top:150px;
+	width:410px;
+	min-width:300px;
+	min-height:340px;
+	padding:5px 0px;
+}
+.exportPicker .exportPicker-header{
+	position:relative;
+	margin:0 10px;
+	font-size:14px;
+	font-weight:bold;
+}
+.exportPicker .exportPicker-header label{
+	display:inline-block;
+	height:24px;
+	line-height:24px;
+}
+.exportPicker .ico{
+	position:absolute;
+	width:24px;
+	height:24px;
+	background-image:none;
+	text-align:center;
+	line-height:24px;
+	cursor:pointer;
+}
+.exportPicker .ico.icoDel{
+	right:0px;
+	top:0px;
+	background-image: url("images/smr-sprites.png");
+	background-repeat: no-repeat;
+	width:16px;
+	height:16px;
+	background-position: -32px -92px;
+}
+
+.exportPicker .ico.icoDel:hover{
+	background-position: -64px -92px;
+}
+
+.exportPicker .exportPicker-main{
+	position:relative;
+	padding:0 0 0 15px;
+}
+.exportPicker .exportPicker-main .column{
+	float:left;
+	padding:10px;
+}
+.exportPicker .exportPicker-main .column .column-header{
+	font-weight:bold;
+}
+.exportPicker .exportPicker-main .column .item{
+	margin:3px 0 ;
+}
+.exportPicker .exportPicker-main .column .item.disable{
+	color:#cccccc;
+}
+.exportPicker .exportPicker-footer  {
+	text-align:center;
+}
+.exportPicker .exportPicker-footer .btn {
+	#gradient > .vertical-three-colors(#F7F6F4,#D4D2D3,60%,#ebebeb);
+	border:1px solid #bfc3c4;
+	text-align:center;
+	width:50px;
+	.border-radius(15px);
+	padding:3px 10px;
+	margin:10px;
+	cursor:pointer;
+	display:inline-block;
+}
+
+.exportPicker .exportPicker-footer .export{
+    margin-left:120px;
+	margin-right:10px;
+	float:left;
+}
+.exportPicker .exportPicker-footer .cancel{
+	margin-right:120px;
+	float:right;
+}
+
+.exportPicker .exportPicker-footer .btn:hover{
+	#gradient > .vertical-three-colors(#E1F4F8,#ADD9E2,50%,#d1edf1);
+}
+
+.exportPicker .exportPicker-footer .btn.disable:hover{
+	background:#F7F6F4;
+}
+
+.exportPicker .exportPicker-footer .btn.disable{
+	filter:none;
+	background:#F7F6F4;
+	cursor:default;
+	color:#919191;
+}

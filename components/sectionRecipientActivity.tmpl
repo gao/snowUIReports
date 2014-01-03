@@ -1,0 +1,87 @@
+<script id="tmpl-sectionRecipientActivity" type="text/html">
+	<div class="sectionRecipientActivity">  
+		<div class="subTitle"></div>
+		<div class="SMA-REPORT-SUMMARYSTATISTICSTABLE statsSummary"></div>
+		
+		<div class="sectionRecipientActivity-segmentSection recipientPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				<span>Segment Memership</span>
+			</div>
+			<div class="sectionContent">
+				<div class="segmentSectionTable">
+					<table class="dataTable">
+						<thead>
+							<tr></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionRecipientActivity-programSection recipientPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				<span>LCM Programs</span>
+			</div>
+			<div class="sectionContent">
+				<div class="programSectionTable">
+					<table class="dataTable">
+						<thead>
+							<tr></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionRecipientActivity-messageSection recipientPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				<span>Messages</span>
+			</div>
+			<div class="sectionContent">
+				<div class="messageSectionTable">
+					<table class="dataTable">
+						<thead>
+							<tr></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</script>
+
+
+<script id="tmpl-sectionContent-dataTable-tableThead-recipient" type="text/html">
+	<th class="{{#if sortable}}sortable{{/if}}" data-column="{{column}}">
+		<div class="th-label">{{label}}</div>
+	</th>
+</script>
+
+<script id="tmpl-sectionContent-dataTable-tableTbody-recipient" type="text/html">
+	<tr>
+	</tr>
+</script>
+
+<script id="tmpl-sectionContent-dataTable-tableTbody-td-recipient" type="text/html">
+	<td class="{{first}} {{#if isLastRow}}lastRowTd{{/if}} {{#if textAlignLeft}}textAlignLeft{{/if}}">
+		{{#if isCheckbox}}
+			<span>
+				<input type="checkbox" {{#equal value "true"}}checked="true"{{/equal}} disabled="true"/>
+			</span>
+		{{else}}
+			<span {{#if haveTitle}}title="{{columnTitle}}"{{/if}} {{#notEqual improvement "unchange"}}class="{{#equal improvement 'improve'}}greenFont{{else}}redFont{{/equal}}"{{/notEqual}}>
+				{{#if isConversionSymbol}}{{conversionCurrency}}{{/if}}{{#equal improvement 'improve'}}+{{/equal}}{{value}}{{#notEqualAndTrue value "N/A" isRate}}%{{/notEqualAndTrue}}
+			</span>
+		{{/if}}
+	</td>
+</script>

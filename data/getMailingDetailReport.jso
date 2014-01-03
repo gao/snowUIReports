@@ -1,0 +1,292 @@
+{ "identifier" : "id",
+  "items" : [ { 
+		"data":{
+			"mailingList":[
+				{
+					"mailing":"aaa",
+					"delivered":{"count":516,"rate":97.19},
+					"failed":{"count":30000,"rate":2.82},
+					"sent":{"count":50000,"rate":100.0},
+					"opens":{"count":47500,"rate":92.05,"unique":50000,"uniqueRate":15.11},
+					"clicks":{"count":100000,"rate":0.78,"unique":300000,"uniqueRate":11.25},
+					"clickToOpen":{"rate":0.84,"uniqueRate":84.57},
+					"conversions":{"count":80000,"rate":10.0,"items":50000,"itemsPerOrder":1.5,"unique":50000,"uniqueRate":0.0,"revenue":45000,"averageOrderValue":40000,"revenuePerEmail":200000},
+					"unsubs":{"count":100000,"rate":10.0,"unique":200000,"uniqueRate":0.42},
+					"convertToClick":{"rate":12.13,"rateChange":0.0,"uniqueRate":0.0,"uniqueRateChange":0.0},
+					"complaints":{"count":50000,"rate":10.0,"unique":200000,"uniqueRate":0.18}
+				},
+				{
+					"mailing":"mailing2",
+					"delivered":{"count":516,"rate":67.19},
+					"failed":{"count":30000,"rate":2.82},
+					"sent":{"count":40000,"rate":100.0},
+					"opens":{"count":7500,"rate":2.05,"unique":50000,"uniqueRate":15.11},
+					"clicks":{"count":130000,"rate":3.78,"unique":300000,"uniqueRate":11.25},
+					"clickToOpen":{"rate":0.84,"uniqueRate":84.57},
+					"conversions":{"count":40000,"rate":10.0,"items":50000,"itemsPerOrder":4.5,"unique":50000,"uniqueRate":0.0,"revenue":45000,"averageOrderValue":40000,"revenuePerEmail":200000},
+					"unsubs":{"count":150000,"rate":10.0,"unique":200000,"uniqueRate":0.42},
+					"convertToClick":{"rate":2.13,"rateChange":0.0,"uniqueRate":0.0,"uniqueRateChange":0.0},
+					"complaints":{"count":55000,"rate":10.0,"unique":200000,"uniqueRate":0.18}
+				},
+				{
+					"mailing":"aaa",
+					"delivered":{"count":516,"rate":47.19},
+					"failed":{"count":30000,"rate":2.82},
+					"sent":{"count":50000,"rate":100.0},
+					"opens":{"count":47500,"rate":92.05,"unique":50000,"uniqueRate":15.11},
+					"clicks":{"count":100000,"rate":0.78,"unique":300000,"uniqueRate":11.25},
+					"clickToOpen":{"rate":0.84,"uniqueRate":84.57},
+					"conversions":{"count":80000,"rate":10.0,"items":50000,"itemsPerOrder":2.5,"unique":50000,"uniqueRate":0.0,"revenue":45000,"averageOrderValue":40000,"revenuePerEmail":200000},
+					"unsubs":{"count":100000,"rate":10.0,"unique":200000,"uniqueRate":0.42},
+					"convertToClick":{"rate":12.13,"rateChange":0.0,"uniqueRate":0.0,"uniqueRateChange":0.0},
+					"complaints":{"count":50000,"rate":10.0,"unique":200000,"uniqueRate":0.18}
+				},
+				{
+					"mailing":"mailing2",
+					"delivered":{"count":516,"rate":97.19},
+					"failed":{"count":30000,"rate":2.82},
+					"sent":{"count":30000,"rate":100.0},
+					"opens":{"count":77500,"rate":82.05,"unique":50000,"uniqueRate":15.11},
+					"clicks":{"count":50000,"rate":5.78,"unique":300000,"uniqueRate":11.25},
+					"clickToOpen":{"rate":0.84,"uniqueRate":84.57},
+					"conversions":{"count":60000,"rate":10.0,"items":50000,"itemsPerOrder":1.5,"unique":50000,"uniqueRate":0.0,"revenue":45000,"averageOrderValue":40000,"revenuePerEmail":200000},
+					"unsubs":{"count":50000,"rate":10.0,"unique":200000,"uniqueRate":0.42},
+					"convertToClick":{"rate":52.13,"rateChange":0.0,"uniqueRate":0.0,"uniqueRateChange":0.0},
+					"complaints":{"count":150000,"rate":10.0,"unique":200000,"uniqueRate":0.18}
+				},
+				{
+					"mailing":"mailing",
+					"delivered":{"count":516,"rate":98.32},
+					"failed":{"count":35000,"rate":2.82},
+					"sent":{"count":20000,"rate":60.0},
+					"opens":{"count":47500,"rate":92.05,"unique":50000,"uniqueRate":13.51},
+					"clicks":{"count":100000,"rate":0.78,"unique":300000,"uniqueRate":6.20},
+					"clickToOpen":{"rate":0.84,"uniqueRate":52.40},
+					"conversions":{"count":90000,"rate":12.0,"items":50000,"itemsPerOrder":6.5,"unique":50000,"uniqueRate":0.0,"revenue":45000,"averageOrderValue":40000,"revenuePerEmail":210000},
+					"unsubs":{"count":100000,"rate":10.0,"unique":200000,"uniqueRate":0.52},
+					"convertToClick":{"rate":12.13,"rateChange":0.0,"uniqueRate":0.0,"uniqueRateChange":0.0},
+					"complaints":{"count":50000,"rate":10.0,"unique":200000,"uniqueRate":0.16}
+				}
+			],
+			"mailingvscampaignAveragesList":[
+				{
+					"delivered":{"count":516,"rate":97.19},
+					"opens":{"count":47500,"rate":92.05,"unique":50000,"uniqueRate":15.11},
+					"clicks":{"count":100000,"rate":0.78,"unique":300000,"uniqueRate":11.25},
+					"clickToOpen":{"rate":0.84,"uniqueRate":84.57},
+					"conversions":{"count":80000,"rate":10.0,"items":50000,"unique":50000,"uniqueRate":0.0,"revenue":45000,"averageOrderValue":40000,"revenuePerEmail":200000},
+					"unsubs":{"count":100000,"rate":10.0,"unique":200000,"uniqueRate":0.42},
+					"complaints":{"count":50000,"rate":10.0,"unique":200000,"uniqueRate":0.18}
+				},
+				{
+					"delivered":{"count":516,"rate":98.32},
+					"opens":{"count":47500,"rate":92.05,"unique":50000,"uniqueRate":13.51},
+					"clicks":{"count":100000,"rate":0.78,"unique":300000,"uniqueRate":6.20},
+					"clickToOpen":{"rate":0.84,"uniqueRate":52.40},
+					"conversions":{"count":80000,"rate":12.0,"items":50000,"unique":50000,"uniqueRate":0.0,"revenue":45000,"averageOrderValue":40000,"revenuePerEmail":210000},
+					"unsubs":{"count":100000,"rate":10.0,"unique":200000,"uniqueRate":0.52},
+					"complaints":{"count":50000,"rate":10.0,"unique":200000,"uniqueRate":0.16}
+				}
+			],
+			"targetList":[
+				{
+					"target":"WC_PINTEREST_GroupA",
+					"delivered":{"count":516,"rate":97.19},
+					"failed":{"count":30000,"rate":2.82},
+					"sent":{"count":50000,"rate":100.0},
+					"opens":{"count":47500,"rate":92.05,"unique":50000,"uniqueRate":15.11},
+					"clicks":{"count":100000,"rate":0.78,"unique":300000,"uniqueRate":11.25},
+					"clickToOpen":{"rate":0.84,"uniqueRate":84.57},
+					"conversions":{"count":80000,"rate":10.0,"items":50000,"unique":50000,"uniqueRate":0.0,"revenue":45000,"averageOrderValue":40000,"revenuePerEmail":200000},
+					"unsubs":{"count":100000,"rate":10.0,"unique":200000,"uniqueRate":0.42},
+					"complaints":{"count":50000,"rate":10.0,"unique":200000,"uniqueRate":0.18}
+				},
+				{
+					"target":"target2WC_PINTEREST_GroupAWC_PINTEREST_GroupA",
+					"delivered":{"count":516,"rate":97.19},
+					"failed":{"count":30000,"rate":2.82},
+					"sent":{"count":50000,"rate":100.0},
+					"opens":{"count":47500,"rate":92.05,"unique":50000,"uniqueRate":15.11},
+					"clicks":{"count":100000,"rate":0.78,"unique":300000,"uniqueRate":11.25},
+					"clickToOpen":{"rate":0.84,"uniqueRate":84.57},
+					"conversions":{"count":80000,"rate":10.0,"items":50000,"unique":50000,"uniqueRate":0.0,"revenue":45000,"averageOrderValue":40000,"revenuePerEmail":200000},
+					"unsubs":{"count":100000,"rate":10.0,"unique":200000,"uniqueRate":0.42},
+					"complaints":{"count":50000,"rate":10.0,"unique":200000,"uniqueRate":0.18}
+				},
+				{
+					"target":"Webinars",
+					"delivered":{"count":516,"rate":98.32},
+					"failed":{"count":35000,"rate":2.82},
+					"sent":{"count":40000,"rate":60.0},
+					"opens":{"count":47500,"rate":92.05,"unique":50000,"uniqueRate":13.51},
+					"clicks":{"count":100000,"rate":0.78,"unique":300000,"uniqueRate":6.20},
+					"clickToOpen":{"rate":0.84,"uniqueRate":52.40},
+					"conversions":{"count":80000,"rate":12.0,"items":50000,"unique":50000,"uniqueRate":0.0,"revenue":45000,"averageOrderValue":40000,"revenuePerEmail":210000},
+					"unsubs":{"count":100000,"rate":10.0,"unique":200000,"uniqueRate":0.52},
+					"complaints":{"count":50000,"rate":10.0,"unique":200000,"uniqueRate":0.16}
+				}
+			],
+			"faliureList": [
+        		{
+            		"block": {
+                		"count": 100,
+                		"percentageOfFailure": 12,
+                		"rate": 10
+	                },
+            		"failed": {
+                		"count": 100,
+               			"rate": 0
+            		},
+           		 	"hardBounce": {
+                		"count": 10,
+                		"percentageOfFailure": 71.4,
+                		"rate": 20
+            		},
+            		"softBounce": {
+                		"count": 39,
+                		"percentageOfFailure": 4.8,
+                		"rate": 5.63
+           			},
+            		"technical": {
+                		"count": 110,
+                		"percentageOfFailure": 23.8,
+               		 	"rate": 12
+           	 		},
+            		"unknown": {
+                		"count": 130,
+                		"percentageOfFailure": 0.12,
+               	 		"rate": 13
+            		}
+        		}
+    		],
+    		"namedLinkList":[{"clickRate":0,"date":"08/05/2011","delivered":1000,"linkId":100,"linkName":"www.google.com.hk.testaaaaatestaaaaatestaaaaatestaaaaatestaaaaa","linkUrl":"www.google.com.hk","mailingId":200,"mailingName":"www.google.com.hk.testaaaabbbb","mailingSubject":"mailingtestaaaabbbbsubject0","opens":1000,"templateId":300,"templateType":"html","totalClicks":400,"uniqueClicks":500,"uniqueClicksPercent":96,"uniqueClicksRate":0},{"clickRate":1.5,"date":"08/06/2011","delivered":1001,"linkId":101,"linkName":"linkname1","linkUrl":"linkurl1","mailingId":201,"mailingName":"mailingname1","mailingSubject":"mailingsubject1","opens":1001,"templateId":301,"templateType":"html","totalClicks":401,"uniqueClicks":501,"uniqueClicksPercent":89.83,"uniqueClicksRate":1},{"clickRate":3,"date":"08/07/2011","delivered":1002,"linkId":102,"linkName":"linkname2","linkUrl":"linkurl2","mailingId":202,"mailingName":"mailingname2","mailingSubject":"mailingsubject2","opens":1002,"templateId":302,"templateType":"html","totalClicks":402,"uniqueClicks":502,"uniqueClicksPercent":4,"uniqueClicksRate":2},{"clickRate":4.5,"date":"08/08/2011","delivered":1003,"linkId":103,"linkName":"linkname3","linkUrl":"linkurl3","mailingId":203,"mailingName":"mailingname3","mailingSubject":"mailingsubject3","opens":1003,"templateId":303,"templateType":"html","totalClicks":403,"uniqueClicks":503,"uniqueClicksPercent":6,"uniqueClicksRate":3},{"clickRate":6,"date":"08/09/2011","delivered":1004,"linkId":104,"linkName":"linkname4","linkUrl":"linkurl4","mailingId":204,"mailingName":"mailingname4","mailingSubject":"mailingsubject4","opens":1004,"templateId":304,"templateType":"html","totalClicks":404,"uniqueClicks":504,"uniqueClicksPercent":8,"uniqueClicksRate":4},{"clickRate":7.5,"date":"08/10/2011","delivered":1005,"linkId":105,"linkName":"linkname5","linkUrl":"linkurl5","mailingId":205,"mailingName":"mailingname5","mailingSubject":"mailingsubject5","opens":1005,"templateId":305,"templateType":"html","totalClicks":405,"uniqueClicks":505,"uniqueClicksPercent":10,"uniqueClicksRate":5},{"clickRate":9,"date":"08/11/2011","delivered":1006,"linkId":106,"linkName":"linkname6","linkUrl":"linkurl6","mailingId":206,"mailingName":"mailingname6","mailingSubject":"mailingsubject6","opens":1006,"templateId":306,"templateType":"html","totalClicks":406,"uniqueClicks":506,"uniqueClicksPercent":12,"uniqueClicksRate":6},{"clickRate":10.5,"date":"08/12/2011","delivered":1007,"linkId":107,"linkName":"linkname7","linkUrl":"linkurl7","mailingId":207,"mailingName":"mailingname7","mailingSubject":"mailingsubject7","opens":1007,"templateId":307,"templateType":"html","totalClicks":407,"uniqueClicks":507,"uniqueClicksPercent":14,"uniqueClicksRate":7},{"clickRate":12,"date":"08/13/2011","delivered":1008,"linkId":108,"linkName":"linkname8","linkUrl":"linkurl8","mailingId":208,"mailingName":"mailingname8","mailingSubject":"mailingsubject8","opens":1008,"templateId":308,"templateType":"html","totalClicks":408,"uniqueClicks":508,"uniqueClicksPercent":16,"uniqueClicksRate":8},{"clickRate":13.5,"date":"08/14/2011","delivered":1009,"linkId":109,"linkName":"linkname9","linkUrl":"linkurl9","mailingId":209,"mailingName":"mailingname9","mailingSubject":"mailingsubject9","opens":1009,"templateId":309,"templateType":"html","totalClicks":409,"uniqueClicks":509,"uniqueClicksPercent":18,"uniqueClicksRate":9},{"clickRate":15,"date":"08/15/2011","delivered":1010,"linkId":110,"linkName":"linkname10","linkUrl":"linkurl10","mailingId":210,"mailingName":"mailingname10","mailingSubject":"mailingsubject10","opens":1010,"templateId":310,"templateType":"html","totalClicks":410,"uniqueClicks":510,"uniqueClicksPercent":20,"uniqueClicksRate":10},{"clickRate":16.5,"date":"08/16/2011","delivered":1011,"linkId":111,"linkName":"linkname11","linkUrl":"linkurl11","mailingId":211,"mailingName":"mailingname11","mailingSubject":"mailingsubject11","opens":1011,"templateId":311,"templateType":"html","totalClicks":411,"uniqueClicks":511,"uniqueClicksPercent":22,"uniqueClicksRate":11},{"clickRate":18,"date":"08/17/2011","delivered":1012,"linkId":112,"linkName":"linkname12","linkUrl":"linkurl12","mailingId":212,"mailingName":"mailingname12","mailingSubject":"mailingsubject12","opens":1012,"templateId":312,"templateType":"html","totalClicks":412,"uniqueClicks":512,"uniqueClicksPercent":24,"uniqueClicksRate":12},{"clickRate":19.5,"date":"08/18/2011","delivered":1013,"linkId":113,"linkName":"linkname13","linkUrl":"linkurl13","mailingId":213,"mailingName":"mailingname13","mailingSubject":"mailingsubject13","opens":1013,"templateId":313,"templateType":"html","totalClicks":413,"uniqueClicks":513,"uniqueClicksPercent":26,"uniqueClicksRate":13},{"clickRate":21,"date":"08/19/2011","delivered":1014,"linkId":114,"linkName":"linkname14","linkUrl":"linkurl14","mailingId":214,"mailingName":"mailingname14","mailingSubject":"mailingsubject14","opens":1014,"templateId":314,"templateType":"html","totalClicks":414,"uniqueClicks":514,"uniqueClicksPercent":28,"uniqueClicksRate":14},{"clickRate":22.5,"date":"08/20/2011","delivered":1015,"linkId":115,"linkName":"linkname15","linkUrl":"linkurl15","mailingId":215,"mailingName":"mailingname15","mailingSubject":"mailingsubject15","opens":1015,"templateId":315,"templateType":"html","totalClicks":415,"uniqueClicks":515,"uniqueClicksPercent":30,"uniqueClicksRate":15},{"clickRate":24,"date":"08/21/2011","delivered":1016,"linkId":116,"linkName":"linkname16","linkUrl":"linkurl16","mailingId":216,"mailingName":"mailingname16","mailingSubject":"mailingsubject16","opens":1016,"templateId":316,"templateType":"html","totalClicks":416,"uniqueClicks":516,"uniqueClicksPercent":32,"uniqueClicksRate":16},{"clickRate":25.5,"date":"08/22/2011","delivered":1017,"linkId":117,"linkName":"linkname17","linkUrl":"linkurl17","mailingId":217,"mailingName":"mailingname17","mailingSubject":"mailingsubject17","opens":1017,"templateId":317,"templateType":"html","totalClicks":417,"uniqueClicks":517,"uniqueClicksPercent":34,"uniqueClicksRate":17}],
+    		"conversionDataList":[{"averageOrderValue":5.12,"conversionPercent":12.6,"clicks":50,"conversionCount":1000,"covertToClicks":14.5,"delivered":5,"items":80,"linkId":200,"linkName":"linkConversionname0","linkUrl":"linkConversionurl0","mailingId":300,"mailingName":"mailingConversionname0","mailingSubject":"mailingConversionsubject0","opens":20,"revenue":20},{"averageOrderValue":6,"conversionPercent":12.6,"clicks":51,"conversionCount":1001,"covertToClicks":36.5,"delivered":6,"items":81,"linkId":201,"linkName":"linkConversionname1","linkUrl":"linkConversionurl1","mailingId":301,"mailingName":"mailingConversionname1","mailingSubject":"mailingConversionsubject1","opens":21,"revenue":21},{"averageOrderValue":7,"conversionPercent":10.6,"clicks":52,"conversionCount":1002,"covertToClicks":33.5,"delivered":7,"items":82,"linkId":202,"linkName":"linkConversionname2","linkUrl":"linkConversionurl2","mailingId":302,"mailingName":"mailingConversionname2","mailingSubject":"mailingConversionsubject2","opens":22,"revenue":22},{"averageOrderValue":8,"conversionPercent":2.6,"clicks":53,"conversionCount":1003,"covertToClicks":26.5,"delivered":8,"items":83,"linkId":203,"linkName":"linkConversionname3","linkUrl":"linkConversionurl3","mailingId":303,"mailingName":"mailingConversionname3","mailingSubject":"mailingConversionsubject3","opens":23,"revenue":23},{"averageOrderValue":9,"conversionPercent":32.6,"clicks":54,"conversionCount":1004,"covertToClicks":39.5,"delivered":9,"items":84,"linkId":204,"linkName":"linkConversionname4","linkUrl":"linkConversionurl4","mailingId":304,"mailingName":"mailingConversionname4","mailingSubject":"mailingConversionsubject4","opens":24,"revenue":24},{"averageOrderValue":10,"conversionPercent":12.6,"clicks":55,"conversionCount":1005,"covertToClicks":24.5,"delivered":10,"items":85,"linkId":205,"linkName":"linkConversionname5","linkUrl":"linkConversionurl5","mailingId":305,"mailingName":"mailingConversionname5","mailingSubject":"mailingConversionsubject5","opens":25,"revenue":25},{"averageOrderValue":11,"conversionPercent":52.6,"clicks":56,"conversionCount":1006,"covertToClicks":18.5,"delivered":11,"items":86,"linkId":206,"linkName":"linkConversionname6","linkUrl":"linkConversionurl6","mailingId":306,"mailingName":"mailingConversionname6","mailingSubject":"mailingConversionsubject6","opens":26,"revenue":26},{"averageOrderValue":12,"conversionPercent":12.6,"clicks":57,"conversionCount":1007,"covertToClicks":20.5,"delivered":12,"items":87,"linkId":207,"linkName":"linkConversionname7","linkUrl":"linkConversionurl7","mailingId":307,"mailingName":"mailingConversionname7","mailingSubject":"mailingConversionsubject7","opens":27,"revenue":27},{"averageOrderValue":13,"conversionPercent":12.6,"clicks":58,"conversionCount":1008,"covertToClicks":30.5,"delivered":13,"items":88,"linkId":208,"linkName":"linkConversionname8","linkUrl":"linkConversionurl8","mailingId":308,"mailingName":"mailingConversionname8","mailingSubject":"mailingConversionsubject8","opens":28,"revenue":28},{"averageOrderValue":14,"conversionPercent":12.6,"clicks":59,"conversionCount":1009,"covertToClicks":26.5,"delivered":14,"items":89,"linkId":209,"linkName":"linkConversionname9","linkUrl":"linkConversionurl9","mailingId":309,"mailingName":"mailingConversionname9","mailingSubject":"mailingConversionsubject9","opens":29,"revenue":29},{"averageOrderValue":15,"conversionPercent":32.6,"clicks":60,"conversionCount":1010,"covertToClicks":17.5,"delivered":15,"items":90,"linkId":210,"linkName":"linkConversionname10","linkUrl":"linkConversionurl10","mailingId":310,"mailingName":"mailingConversionname10","mailingSubject":"mailingConversionsubject10","opens":30,"revenue":30},{"averageOrderValue":16,"conversionPercent":12.6,"clicks":61,"conversionCount":1011,"covertToClicks":47.5,"delivered":16,"items":91,"linkId":211,"linkName":"linkConversionname11","linkUrl":"linkConversionurl11","mailingId":311,"mailingName":"mailingConversionname11","mailingSubject":"mailingConversionsubject11","opens":31,"revenue":31},{"averageOrderValue":17,"conversionPercent":12.6,"clicks":62,"conversionCount":1012,"covertToClicks":43.5,"delivered":17,"items":92,"linkId":212,"linkName":"linkConversionname12","linkUrl":"linkConversionurl12","mailingId":312,"mailingName":"mailingConversionname12","mailingSubject":"mailingConversionsubject12","opens":32,"revenue":32},{"averageOrderValue":18,"conversionPercent":12.6,"clicks":63,"conversionCount":1013,"covertToClicks":13.5,"delivered":18,"items":93,"linkId":213,"linkName":"linkConversionname13","linkUrl":"linkConversionurl13","mailingId":313,"mailingName":"mailingConversionname13","mailingSubject":"mailingConversionsubject13","opens":33,"revenue":33},{"averageOrderValue":19,"conversionPercent":12.6,"clicks":64,"conversionCount":1014,"covertToClicks":29.5,"delivered":19,"items":94,"linkId":214,"linkName":"linkConversionname14","linkUrl":"linkConversionurl14","mailingId":314,"mailingName":"mailingConversionname14","mailingSubject":"mailingConversionsubject14","opens":34,"revenue":34},{"averageOrderValue":20,"conversionPercent":12.6,"clicks":65,"conversionCount":1015,"covertToClicks":25.5,"delivered":20,"items":95,"linkId":215,"linkName":"linkConversionname15","linkUrl":"linkConversionurl15","mailingId":315,"mailingName":"mailingConversionname15","mailingSubject":"mailingConversionsubject15","opens":35,"revenue":35},{"averageOrderValue":21,"conversionPercent":42.6,"clicks":66,"conversionCount":1016,"covertToClicks":41.5,"delivered":21,"items":96,"linkId":216,"linkName":"linkConversionname16","linkUrl":"linkConversionurl16","mailingId":316,"mailingName":"mailingConversionname16","mailingSubject":"mailingConversionsubject16","opens":36,"revenue":36},{"averageOrderValue":22,"conversionPercent":12.6,"clicks":67,"conversionCount":1017,"covertToClicks":28.5,"delivered":22,"items":97,"linkId":217,"linkName":"linkConversionname17","linkUrl":"linkConversionurl17","mailingId":317,"mailingName":"mailingConversionname17","mailingSubject":"mailingConversionsubject17","opens":37,"revenue":37},{"averageOrderValue":23,"conversionPercent":12.6,"clicks":68,"conversionCount":1018,"covertToClicks":27.5,"delivered":23,"items":98,"linkId":218,"linkName":"linkConversionname18","linkUrl":"linkConversionurl18","mailingId":318,"mailingName":"mailingConversionname18","mailingSubject":"mailingConversionsubject18","opens":38,"revenue":38},{"averageOrderValue":24.6,"conversionPercent":12.6,"clicks":69,"conversionCount":1019,"covertToClicks":30.5,"delivered":24,"items":99,"linkId":219,"linkName":"linkConversionname19","linkUrl":"linkConversionurl19","mailingId":319,"mailingName":"mailingConversionname19","mailingSubject":"mailingConversionsubject19","opens":39,"revenue":39},{"averageOrderValue":25,"conversionPercent":12.6,"clicks":70,"conversionCount":1020,"covertToClicks":32.5,"delivered":25,"items":100,"linkId":220,"linkName":"linkConversionname20","linkUrl":"linkConversionurl20","mailingId":320,"mailingName":"mailingConversionname20","mailingSubject":"mailingConversionsubject20","opens":40,"revenue":40}],
+    		"linkSummary":{
+    			"totalClickRate": 66.67,
+            	"totalClicks": 13340,
+            	"totalUniqueClickRate": 66.67,
+            	"totalUniqueClicks": 4456,
+            	"totalUniqueClicksPercent":22,
+            	"totalRevenue": 23232,
+            	"totalConversionCount": 11111,
+            	"totalConversionToClickRate": 25.00,
+            	"totalConversionPercent": 23.22,
+            	"totalAverageOrderValue": 26.22
+            },
+            "offerPerformances":[{
+		            "offerName":"offerName1",
+		            "offerShares":175,
+		            "offerClicks":35,
+		            "offerSharesPercent":74.5,
+		            "offerClicksPercent":55.5,
+		            "totalOfferClicks":120,
+		            "totalOfferShareCount":28
+		        },{
+		            "offerName":"offerName2",
+		            "offerShares":1753,
+		            "offerClicks":352,
+		            "offerSharesPercent":64.5,
+		            "offerClicksPercent":51.5,
+		            "totalOfferClicks":120,
+		            "totalOfferShareCount":28
+		        },{
+		            "offerName":"offerName3",
+		            "offerShares":475,
+		            "offerClicks":345,
+		            "offerSharesPercent":34.5,
+		            "offerClicksPercent":35.5,
+		            "totalOfferClicks":120,
+		            "totalOfferShareCount":28
+		        }
+		    ],
+		    "channelPerformances":[{
+		            "shareChannelName":"Email",
+		            "offerShares":175,
+		            "offerClicks":35,
+		            "offerSharesPercent":74.5,
+		            "offerClicksPercent":55.5,
+		            "totalOfferClicks":120,
+		            "totalOfferShareCount":28
+		        },{
+		            "shareChannelName":"Facebook",
+		            "offerShares":1753,
+		            "offerClicks":352,
+		            "offerSharesPercent":64.5,
+		            "offerClicksPercent":51.5,
+		            "totalOfferClicks":120,
+		            "totalOfferShareCount":28
+		        },{
+		            "shareChannelName":"Twitter",
+		            "offerShares":475,
+		            "offerClicks":345,
+		            "offerSharesPercent":34.5,
+		            "offerClicksPercent":35.5,
+		            "totalOfferClicks":120,
+		            "totalOfferShareCount":28
+		        },{
+		            "shareChannelName":"LinkedIn",
+		            "offerShares":175,
+		            "offerClicks":35,
+		            "offerSharesPercent":74.5,
+		            "offerClicksPercent":55.5,
+		            "totalOfferClicks":120,
+		            "totalOfferShareCount":28
+		        },{
+		            "shareChannelName":"Pinterest",
+		            "offerShares":475,
+		            "offerClicks":345,
+		            "offerSharesPercent":34.5,
+		            "offerClicksPercent":35.5,
+		            "totalOfferClicks":120,
+		            "totalOfferShareCount":28
+		        }
+		    ],
+            "shareSummary":{
+            	"totalPanelViewed":5800,
+            	"totalShares":10343,
+        		"totalClicks":100000,
+        		"totalClicksRate":30,
+        		"totalOfferClicks":120,
+		        "totalOfferShareCount":28
+            },
+            "ftafSummary":{
+            	"totalPanelViewed":5800,
+            	"totalEmailVolume":10343,
+        		"totalForwards":5832,
+        		"totalOpens":2330,
+        		"totalOpensRate":23.30,
+        		"totalClicks":100000,
+        		"totalClicksRate":30
+            }
+		},
+        "summary":{
+        	"campaign":"Webinars",
+        	"mailingType":"Standard Instance",
+        	"subject":"The Wonders of Summer Special Event Phase A",
+        	"status":"Completed",
+        	"reportGenerated":"May 23, 2012 10:55 AM PDT",
+        	"launchDate":"May 30, 2012 10:55 AM PDT",
+        	"elapsedTime":"4 minutes, 30 seconds",
+			"clickToOpen":{"rate":1.0,"rateChange":2.0,"uniqueRate":100.0,"uniqueRateChange":1.1},
+			"clicks":{"count":200000,"countChange":1.0,"rate":1.0,"rateChange":1.1},
+			"complaints":{"count":100000,"countChange":1.1,"rate":1.0,"rateChange":11.0},
+			"conversions":{"count":50000,"countChange":1.1,"rate":1.0,"rateChange":12.0,"revenue":40000,"averageOrderValue":50000,"items":50000,"itemsPerOrder":1.5,"averageOrderValueChange":200,"revenuePerEmail":20000,"revenueChange":20},
+			"convertToClick":{"rate":12.13,"rateChange":0.0,"uniqueRate":0.0,"uniqueRateChange":0.0},
+			"delivered":{"count":615,"countChange":0.0,"rate":76.78,"rateChange":0.0},
+			"failed":{"count":50000,"countChange":0.0,"rate":0.0,"rateChange":0.0},
+			"invalid":{"count":40000,"countChange":0.0,"rate":0.0,"rateChange":0.0},
+			"opens":{"count":50000,"countChange":0.0,"rate":0.0,"rateChange":0.0},
+			"sent":{"count":150000,"countChange":0.0,"rate":0.0,"rateChange":0.0},
+			"threshold":95.0,
+			"conversionReportEnabled":true,
+        	"conversionCurrency": "$ ",
+			"triggered":{"count":150000,"countChange":0.0,"rate":0.0,"rateChange":0.0},
+			"uniqueClicks":{"count":80000,"countChange":0.0,"rate":53.33,"rateChange":53.33},
+			"uniqueComplaints":{"count":50000,"countChange":0.0,"rate":0.0,"rateChange":0.0},
+			"uniqueOpens":{"count":40000,"countChange":0.0,"rate":53.33,"rateChange":53.33},
+			"uniqueUnsubs":{"count":20000,"countChange":0.0,"rate":0.0,"rateChange":0.0},
+			"unsubs":{"count":300000,"countChange":0.0,"rate":0.0,"rateChange":0.0}
+		}
+      } ],
+  "itemsCommon" : null
+}

@@ -1,0 +1,295 @@
+{
+    "identifier": "id",
+    "itemsCommon": null,
+    "items": [
+        {
+            "browserUsageData": {
+                "conversions": 400,
+                "delivered": 1000,
+                "data": [
+                    {
+                        "browser": "Internet Explorer",
+                        "conversions": 10,
+                        "opens": 307,
+                        "revenue": 1751
+                    },
+                    {
+                        "browser": "Firefox",
+                        "conversions": 20,
+                        "opens": 310,
+                        "revenue": 1744
+                    },
+                    {
+                        "browser": "Safari",
+                        "conversions": 30,
+                        "opens": 312,
+                        "revenue": 1578
+                    },
+                    {
+                        "browser": "Opera",
+                        "conversions": 40,
+                        "opens": 345,
+                        "revenue": 1640
+                    },
+                    {
+                        "browser": "Unknown Browser",
+                        "conversions": 50,
+                        "opens": 0,
+                        "revenue": 1671
+                    },
+                    {
+                        "browser": "Chrome",
+                        "conversions": 0,
+                        "opens": 397,
+                        "revenue": 1616
+                    }
+                ],
+                "opens": 2000,
+                "revenue": 10000
+            },
+            "clientUsageData": {
+                "delivered": 1000,
+                "desktopClientUsageData": {
+                    "data": [
+                        {
+                            "client": "Microsoft Outlook",
+                            "opens": 389,
+                            "versions": [
+                                {
+                                    "client": "Outlook 2010",
+                                    "opens": 97
+                                },
+                                {
+                                    "client": "Microsoft Outlook",
+                                    "opens": 98
+                                },
+                                {
+                                    "client": "Outlook 2007",
+                                    "opens": 106
+                                },
+                                {
+                                    "client": "Other",
+                                    "opens": 88
+                                }
+                            ]
+                        },
+                        {
+                            "client": "Apple Mail",
+                            "opens": 368,
+                            "versions": [
+                                {
+                                    "client": "Apple Mail",
+                                    "opens": 95
+                                },
+                                {
+                                    "client": "Other",
+                                    "opens": 96
+                                },
+                                {
+                                    "client": "Apple Mail 4",
+                                    "opens": 85
+                                },
+                                {
+                                    "client": "Apple Mail 5",
+                                    "opens": 92
+                                }
+                            ]
+                        },
+                        {
+                            "client": "ThunderBird",
+                            "opens": 99,
+                            "versions": [
+                                {
+                                    "client": "ThunderBird",
+                                    "opens": 99
+                                }
+                            ]
+                        }
+                    ],
+                    "opens": 856
+                },
+                "mobileClientUsageData": {
+                    "data": [
+                        {
+                            "client": "Android Mail",
+                            "opens": 92,
+                            "versions": []
+                        },
+                        {
+                            "client": "Other",
+                            "opens": 93,
+                            "versions": []
+                        },
+                        {
+                            "client": "iOS Mail",
+                            "opens": 87,
+                            "versions": []
+                        }
+                    ],
+                    "opens": 272
+                },
+                "opens": 2000,
+                "others": {
+                    "data": [
+                        {
+                            "client": "Other",
+                            "opens": 94,
+                            "versions": []
+                        }
+                    ],
+                    "opens": 94
+                },
+                "webClientUsageData": {
+                    "data": [
+                        {
+                            "client": "Yahoo",
+                            "opens": 93,
+                            "versions": []
+                        },
+                        {
+                            "client": "Gmail",
+                            "opens": 294,
+                            "versions": []
+                        },
+                        {
+                            "client": "Other",
+                            "opens": 95,
+                            "versions": []
+                        }
+                    ],
+                    "opens": 482
+                }
+            },
+            "deviceUsageData": {
+                "clicks": 1685,
+                "conversions": 1258,
+                "delivered": 100000,
+                "desktopUsageData": {
+                    "clicks": 694,
+                    "conversions": 248,
+                    "data": [
+                        {
+                            "clicks": 1,
+                            "conversions": 0,
+                            "opens": 1,
+                            "platform": "Unknown desktop",
+                            "revenue": 1
+                        },
+                        {
+                            "clicks": 151,
+                            "conversions": 19,
+                            "opens": 60,
+                            "platform": "Desktop",
+                            "revenue": 731
+                        },
+                        {
+                            "clicks": 121,
+                            "conversions": 19,
+                            "opens": 80,
+                            "platform": "Linux",
+                            "revenue": 787
+                        },
+                        {
+                            "clicks": 140,
+                            "conversions": 19,
+                            "opens": 75,
+                            "platform": "Windows",
+                            "revenue": 792
+                        },
+                        {
+                            "clicks": 146,
+                            "conversions": 172,
+                            "opens": 71,
+                            "platform": "Mac",
+                            "revenue": 679
+                        }
+                    ],
+                    "opens": 355,
+                    "revenue": 3759
+                },
+                "mobileUsageData": {
+                    "clicks": 445,
+                    "conversions": 57,
+                    "data": [
+                        {
+                            "clicks": 160,
+                            "conversions": 19,
+                            "opens": 72,
+                            "platform": "Phone",
+                            "revenue": 749
+                        },
+                        {
+                            "clicks": 143,
+                            "conversions": 19,
+                            "opens": 79,
+                            "platform": "iPhone",
+                            "revenue": 799
+                        },
+                        {
+                            "clicks": 142,
+                            "conversions": 19,
+                            "opens": 72,
+                            "platform": "Unknown phone",
+                            "revenue": 897
+                        }
+                    ],
+                    "opens": 223,
+                    "revenue": 2445
+                },
+                "opens": 1628,
+                "others": {
+                    "clicks": 136,
+                    "conversions": 19,
+                    "data": [
+                        {
+                            "clicks": 136,
+                            "conversions": 19,
+                            "opens": 61,
+                            "platform": "Other",
+                            "revenue": 703
+                        }
+                    ],
+                    "opens": 61,
+                    "revenue": 703
+                },
+                "revenue": 1234,
+                "tabletUsageData": {
+                    "clicks": 725,
+                    "conversions": 76,
+                    "data": [
+                        {
+                            "clicks": 157,
+                            "conversions": 19,
+                            "opens": 70,
+                            "platform": "Tablet",
+                            "revenue": 763
+                        },
+                        {
+                            "clicks": 307,
+                            "conversions": 19,
+                            "opens": 163,
+                            "platform": "Unknown tablet",
+                            "revenue": 774
+                        },
+                        {
+                            "clicks": 135,
+                            "conversions": 19,
+                            "opens": 65,
+                            "platform": "iPad",
+                            "revenue": 763
+                        },
+                        {
+                            "clicks": 126,
+                            "conversions": 19,
+                            "opens": 63,
+                            "platform": "Android",
+                            "revenue": 793
+                        }
+                    ],
+                    "opens": 361,
+                    "revenue": 3093
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,635 @@
+.pivotTable{
+	font-family: Arial;
+	margin: 0 20px;
+	width: 98%;
+	position: relative;
+	z-index:1;
+}
+
+.pivotTable .ic {
+    color: #555555;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    width: 20px;
+}
+
+.pivotTable .ic.btnAdd{
+ 	margin-left: 0;
+	background-position: 2px 4px;
+	background-repeat: no-repeat;
+ 	background-image: url("images/assets/btn_Add_normal.png");
+}
+
+.pivotTable .ic.btnAdd:hover{
+ 	background-image: url("images/assets/btn_Add_hover.png");
+}
+
+.pivotTable .ic.btnDelete{
+ 	margin-left: 0;
+	background-position: 2px 4px;
+	background-repeat: no-repeat;
+ 	background-image: url("images/assets/btn_Delete.png");
+}
+
+.pivotTable .ic.btnDelete:hover{
+ 	background-image: url("images/assets/btn_Delete_hover.png");
+}
+
+.pivotTable .pivotHeader {
+	display:none;
+	height: 30px;
+}
+
+.pivotTable .pivotHeader .pivotTableMetric{
+	float: left;
+	margin-top: 5px;
+}
+
+.pivotTable .pivotHeader .pivotTableMetric .metric-title{
+	font-family: Arial;
+    font-size: 10.5pt;
+    font-weight: bold;
+    margin: 17px 0 6px 0;
+}
+
+.pivotTable .pivotHeader .pivotTableMetric .metric-select{
+	height: 22px;
+	line-height: 22px;
+	font-weight: bold;
+	border: 1px solid #C6C6C6;
+	vertical-align: middle;
+	margin-left: 3px;
+	width:120px;
+}
+
+.pivotTable .pivot-right-left-SMR div.btn{
+	#gradient > .vertical-three-colors(#F7F6F4,#D4D2D3,60%,#ebebeb);
+	border:1px solid #bfc3c4;
+	text-align:center;
+	width:50px;	
+	.border-radius(15px);
+	padding: 3px 5px;
+	margin:25px 6px 0 5px;
+	cursor:pointer;
+	display:inline-block;
+	float:left;
+}
+
+.pivotTable .pivot-right-left-SMR div.btn:hover {
+	#gradient > .vertical-three-colors(#E1F4F8,#ADD9E2,50%,#d1edf1);
+}
+
+.pivotTable .pivot-right-left-SMR{
+	margin-top:5px;
+	border: 1px solid #d6d6d6;
+	.border-radius(5px);
+	background: #dcebf0;
+}
+
+.pivotTable .pivot-right-left-SMR.pivotCondtionPanel{
+	position:relative;
+	z-index:2;
+}
+
+.pivotTable .pivot-right-left-SMR .pivot-left-SMR{
+	float:left;
+	width: 340px;
+	*width: 340px;
+	height:100%;
+}
+
+.pivotTable .pivot-right-left-SMR .pivot-right-SMR{
+	margin-left: 340px;
+	border-left: 2px solid #d6d6d6;
+	background: #f0f1f1;
+	position: relative;
+	font-size: 12px;
+}
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .breakdown-title{
+	float: left;
+	width: 89px;
+	margin-top: 4px;
+	text-align: right;
+}
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .breakdown-title span{
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .breakdown-content{
+	margin-left: 89px;
+	position:relative;
+}
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .metric-partSMR{
+	position: relative;
+	z-index: 6;
+}
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .breakdown-content .breakdown-item {
+	margin: 6px 0 5px 3px;
+	width: 249px;
+	*width: 248px;
+}
+
+.pivotTable .pivotCondtionPanel .breakdown-type-select{
+	width:180px;
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #C6C6C6;
+	vertical-align: middle;
+	position: relative;
+	background: #fff;
+	z-index: 1;
+}
+
+.pivotTable .pivotCondtionPanel .breakdown-type-select .button-ico{
+    border-left: 1px solid #D6D6D6;
+	background-position: -125px -124px;
+    height: 22px;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    width: 18px;
+}
+
+.pivotTable .pivotCondtionPanel .breakdown-type-select .metric-name{
+	height:22px;
+	line-height: 22px;
+	margin-left: 8px;
+	color: #3C3C3C;
+	font-size:12px;
+}
+
+.pivotTable .pivotCondtionPanel .combox-option{
+   	background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    left: 0px;
+    position: absolute;
+    top: 23px;
+    width: 180px;
+    display: none;
+    z-index: 2;
+}
+
+.pivotTable .pivotCondtionPanel .combox-option a{
+	display: block;
+	text-decoration: none;
+	padding-left: 8px;
+	width: 172px;
+	color: #111;
+	height:20px;
+	line-height: 20px;
+	font-size:12px;
+	position:relative;
+}
+
+.pivotTable .pivotCondtionPanel .combox-option a span.select-option-name{
+	display: inline-block;
+	float:left;
+}
+
+.pivotTable .pivotCondtionPanel a.hasSub > .icon-chevron-right{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	margin-top: 3px;
+	float:right;
+	vertical-align: text-top;
+	background-image: url("images/smr-glyphicons.png");
+	background-repeat: no-repeat;
+	background-position: -456px -72px;
+}
+
+.pivotTable .pivotCondtionPanel .combox-option a:hover{
+	background: #A7DEE5;
+}
+
+.pivotTable .pivotCondtionPanel .combox-option a.disabled{
+	cursor:default;
+	background: #eee;
+	color:#B7B7B7;
+}
+
+.pivotTable .pivotCondtionPanel .combox-option a.disabled:hover{
+	background: #eee;
+	cursor:default;
+	color:#B7B7B7;
+}
+
+.pivotTable .pivotCondtionPanel .combox-option-subsction{
+   	background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    left: 180px;
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    display: none;
+    z-index: 2;
+}
+
+.pivotTable .pivotCondtionPanel .combox-option-subsction > a{
+	display: block;
+	text-decoration: none;
+	padding-left: 8px;
+	width: 172px;
+	color: #111;
+	height:20px;
+	line-height: 20px;
+	font-size:12px;
+	position:relative;
+}
+
+.pivotTable .pivotCondtionPanel .combox-option-subsction a span.select-option-name{
+	display: inline-block;
+	float:left;
+}
+
+.pivotTable .pivotCondtionPanel .combox-option-subsction a:hover{
+	background: #A7DEE5;
+}
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .breakdown-content .breakdown-item{
+	position:relative;
+}
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .breakdown-content .breakdown-item .breakdown-item-drag-dot{
+	border-left: 2px dotted #AAAAAA;
+    display: inline-block;
+    float: left;
+    height: 15px;
+    margin-top: 3px;
+    width: 1px;
+    cursor: move;
+}
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .breakdown-content .breakdown-item .breakdown-add{
+	display: none;
+}
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .breakdown-content .breakdown-item.last .breakdown-add{
+	float : right;
+	margin-right:10px;
+	display: block;
+}
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .breakdown-content .breakdown-item.only .breakdown-delete{
+	display: none;
+}
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .breakdown-content .breakdown-item.drag-holder{
+ 	border: 1px dotted #AAAAAA;
+    height: 20px;
+    width: 250px;
+}
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .breakdown-content .breakdown-item .breakdown-item-part{
+	float:left;
+	margin-left: 6px;
+}
+
+.pivotTable .pivotCondtionPanel .breakdownPanelSMR .breakdown-content .breakdown-item .breakdown-item-part.breakdown-type{
+	margin-left: 1px;
+	position: relative;
+}  
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivot{
+	float: left;
+	margin-bottom:5px;
+	margin-top:6px;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotByPanel > span{
+ 	float: left;
+    margin-top: 4px;
+    margin-left:10px;
+    margin-right:5px;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotByPanel .breakdown-type{
+	float:left;
+	position:relative;
+	margin-right: 19px;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotByPanel select{
+	width:196px;
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #C6C6C6;
+	vertical-align: middle;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotOptionsPanel{
+	cursor: pointer;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotOptionsPanel.disabled{
+	cursor: default;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotOptionsPanel .option-label{
+	text-decoration: none;
+	color: #3C3C3C;
+	margin-left:4px;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotOptionsPanel .option-label:hover{
+	color: #10AFC2;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotOptionsPanel.disabled .option-label:hover{
+	color: #3C3C3C;
+	cursor: default;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotOptionsPanel .option-ico{
+	background-position: 1px 2px;
+	background-repeat: no-repeat;
+ 	background-image: url("images/assets/icon_Options.png");
+ 	width: 18px;
+ 	height:20px;
+	line-height: 20px;
+	display: inline-block; 	
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotColumnControlPanel{
+	position: absolute;
+	right:10px;
+	bottom:6px;
+	height:20px;
+	line-height: 20px;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotColumnControlPanel span{
+ 	height:18px;
+	line-height: 18px;
+	margin:0px;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotColumnControlPanel .column-control{
+	background-repeat: no-repeat;
+ 	width: 24px;
+	display: inline-block; 	
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotColumnControlPanel .column-next{
+	background-image: url("images/assets/btn_Next_innactive.png");
+	margin-left:-2px;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotColumnControlPanel .column-next.active{
+	background-image: url("images/assets/btn_Next.png");
+	cursor: pointer;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotColumnControlPanel .column-prev{
+	background-image: url("images/assets/btn_Previous_innactive.png");
+	margin-left:7px;
+}
+
+.pivotTable .pivotCondtionPanel .pivotPanelSMR .pivotColumnControlPanel .column-prev.active{
+	background-image: url("images/assets/btn_Previous.png");
+	cursor: pointer;
+}
+
+
+.pivotTable .pivotRunReportPanel{
+	border-radius: 5px 5px 0 0;
+}
+
+.pivotTable .pivotRunReportPanel .pivotRunReport{
+	display:none;
+	min-height:30px;
+} 
+
+.pivotTable .pivotRunReportPanel .pivot-right-SMR{
+	min-height:30px;
+}
+
+.pivotTable .pivotRunReportPanel .pivot-right-SMR span{
+	font-style:italic;
+ 	margin: 3px auto auto 10px;
+ 	height: 30px;
+    line-height: 30px;
+}
+
+.pivotTable .pivotRunReportPanel .pivotRunReport .breakdownPanelButton .btn{
+ 	margin: 3px auto auto 90px;
+ 	padding: 3px 15px;
+ 	width:auto;
+}
+
+.pivotTable .pivotRunReportPanel .pivotSaveReport{
+	display:none;
+}
+
+
+.pivotTable .pivotRunReportPanel .pivotSaveReport .breakdownPanelButton .btn{
+ 	margin: 3px auto auto 110px;
+ 	padding: 3px 15px;
+ 	width:auto;
+}
+
+.pivotTable .pivotRunReportPanel .pivotUpdateReport{
+	display:none;
+	min-height:30px;
+	background:#f2dcdb;
+}
+
+.pivotTable .pivotRunReportPanel .pivotUpdateReport .btn{
+ 	margin: 3px auto auto 20px;
+ 	padding: 3px 15px;
+ 	width:auto;
+}
+
+.pivotTable .pivotRunReportPanel .pivotUpdateReport span{
+    height: 30px;
+    line-height: 30px;
+    margin: 0px auto auto 10px;
+    float:left;
+}
+
+.pivotTable .pivotDataPart{
+	margin-top:5px;
+	position:relative;
+	z-index:1;
+}
+
+.pivotTable .pivotDataPart.nomargin-top{
+	margin-top:0;
+}
+
+.pivotTable .pivotDataPart .pivotSegmentTable{
+	float:left;
+	width: 342px;
+	height:100%;
+}
+.pivotTable .pivotDataPart .pivotSegmentTable .dataTable{
+	width: 342px;
+}
+.pivotTable .pivotDataPart .dataTable th{
+	#gradient > .verticalNotIE(#EAEAEA,#D8D8D8);
+	padding-right: 5px;
+	text-align: left;
+	min-width:60px;
+}
+
+.pivotTable .pivotDataPart .pivotSegmentTable .dataTable th{
+	#gradient > .verticalNotIE(#E7F4F8,#CBDEE4);
+}
+
+.pivotTable .pivotDataPart .dataTable th.alignRight{
+	text-align: right;
+}
+
+.pivotTable .pivotDataPart .dataTable th .data-th-label{
+  	font-style: normal;
+	float:left;
+}
+.pivotTable .pivotDataPart .dataTable th .data-th-label.floatRight{
+	float:right;
+}
+
+.pivotTable .pivotDataPart .dataTable th .control{
+	font-style: normal;
+	float:right;
+	margin-left: 2px;
+	margin-top: -2px;
+}
+
+.pivotTable .pivotDataPart .dataTable th .data-th-label  .control{
+	float:left;
+}
+
+.pivotTable .pivotDataPart .dataTable th .control .sort{
+	display:none;
+}
+
+.pivotTable .pivotDataPart .dataTable th .control .delete-pivot-col{
+    background-image: url("images/assets/btn_Delete.png");
+    background-position: 2px 4px;
+    background-repeat: no-repeat;
+    display:block;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+    margin-left: 0;
+    text-decoration: none;
+    width: 18px;
+}
+
+.pivotTable .pivotDataPart .dataTable th .control .delete-pivot-col:hover{
+	background-image: url("images/assets/btn_Delete_hover.png");
+}
+
+.pivotTable .pivotDataPart .dataTable th.asc .control .sort.asc{
+	display:inline-block;
+}
+
+.pivotTable .pivotDataPart .dataTable th.desc .control .sort.desc{
+	display:inline-block;
+}
+
+.pivotTable .pivotDataPart .dataTable td {
+	text-align: left;
+}
+
+.pivotTable .pivotDataPart .dataTable td.nodata{
+	text-align: center;
+}
+
+.pivotTable .pivotDataPart .dataTable td.alginRight {
+	text-align: right;
+}
+
+.pivotTable .pivotDataPart .dataTable td span.best{
+	font-weight:bold;
+}
+
+.pivotTable .pivotDataPart .pivotDataTable{
+	margin-left: 342px;
+}
+
+.pivotTable .pivot-table-bottom{
+	height:32px;
+	background:#dcebf0;
+	border:1px solid #d6d6d6;
+}
+
+.pivotTable .pivotDataPart .pivotSegmentTable .pivot-table-bottom{
+	.border-radius(0 0 0 5px);
+	border-right: 1px solid #D6D6D6;
+}
+
+.pivotTable .pivotDataPart .pivotDataTable .pivot-table-bottom{
+	.border-radius(0 0 5px 0);
+	border-left: 1px solid #D6D6D6;
+	background:#f0f1f1;
+}
+
+.pivotTable .pivotTable-pagination {
+	margin-top: 7px;
+    text-align: right;
+}
+
+.pivotTable .pivotTable-pagination .goto .gotoBtn {
+	cursor:pointer;
+}
+
+.pivotTable .pivotTable-pagination .goto input[type="text"] {
+	width:30px;
+	margin: 0 0 0 5px;
+}
+.pivotTable .pivotTable-pagination > span {
+	padding:0;
+}
+
+.pivotTable .pivotTable-pagination > span.nums{
+	margin-left:9px;
+}
+.pivotTable .pivotTable-pagination > span.showRows{
+	margin-left:27px;
+	margin-right:9px;
+}
+
+.pivotTable .pivotTable-pagination > span.showRows .show-label{
+	margin-right:1px;
+}
+
+.pivotTable .pivotTable-pagination > span.showRows .rows-label{
+	margin-left:1px;
+}
+
+.pivotTable .pivotTable-pagination > span.showRows .pageCount{
+	width:60px;
+}
+
+.pivotTable .pivotTable-pagination .action {
+	color:#5588bb;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+
+.pivotTable .pivotDataPart .gray-out-pivot {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	background:#000000;
+	opacity:0.3;
+	filter:alpha(opacity=30);
+	z-index:5;
+	width:100%;
+	height:100%;
+	display:none;
+	border-radius: 0 0 5px 5px;
+}
+

@@ -1,0 +1,19 @@
+<script id="tmpl-statsSummary" type="text/html">
+	<div class="statsSummary-dataItem"></div>
+</script>
+
+<script id="tmpl-statsSummary-dataItem" type="text/html">
+	<div class="dataItem {{#if isFirst}}first{{/if}} {{#if isClickable}}clickable{{else}}unclickable{{/if}} {{#if isSelectedItem}}sel{{/if}} {{#if isByDomain}}byDomain{{/if}}" data-value="{{name}}">
+		<div class="rightPart {{#equalOr viewType "table" viewType "pivot"}}rightPart-table{{/equalOr}}">
+            {{#equalOr viewType "bar" viewType "pie" }}<div class="dataItem-label">{{label}}</div>{{/equalOr}}
+			<div class="dataItem-value {{#equalOr viewType "table" viewType "pivot"}}dataItem-table{{/equalOr}}" {{#if haveColor}}style="color:{{haveColor}}"{{/if}} {{#if haveTitle}}title="{{titleVal}}"{{/if}}>
+				{{#if isByDomain}}
+					&nbsp;&nbsp;
+				{{else}}
+					{{#if isConversionSymbol}}{{conversionCurrency}}{{/if}}{{val}}{{#notEqualAndTrue val "N/A" isRate}}%{{/notEqualAndTrue}}
+				{{/if}}
+			</div>
+			{{#equalOr viewType "table" viewType "pivot"}}<div class="dataItem-label dataItem-table">{{label}}</div>{{/equalOr}}
+		</div>
+	</div>
+</script>

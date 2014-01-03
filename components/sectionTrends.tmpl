@@ -1,0 +1,41 @@
+<script id="tmpl-sectionTrends" type="text/html">
+	<div class="sectionTrends">
+	</div>
+</script>
+
+
+<script id="tmpl-sectionTrendsSummary" type="text/html">
+	<div class="sectionTrendsSummary">
+		<div class="sectionTrendsSummary-content">
+			<div class="sectionTrendsSummary-content-left">
+				<div class="viewBy head">
+					<span>View by </span>
+					<span class="SMA-REPORT-VIEWBYDAY action selected" data-view="day">Day</span>
+					<span class="SMA-REPORT-VIEWBYWEEK action" data-view="week">Week</span>
+					<span class="SMA-REPORT-VIEWBYMONTH action" data-view="month">Month</span>
+					<span class="SMA-REPORT-VIEWBYQUARTER action" data-view="quarter">Quarter</span>
+				</div>
+				<div class="topChart"></div>
+				<div class="bottomChart"></div>
+			</div>
+			<div class="sectionTrendsSummary-content-right">
+				<div class="SMA-REPORT-TRENDMETRICSBOX trendMetricsBox">
+					<div class="header">Trend Metrics</div>
+					<div class="trendMetricsBox-content"></div>
+				</div>
+			</div>
+			<div class="cb"></div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-sectionTrendsSummary-item" type="text/html">
+	<div class="sectionTrendsSummary-item">
+		<div class="trends-item-data {{#if isLeftIndent}}leftIndent{{/if}}" data-isRate="{{isRate}}" data-isUnique="{{isUnique}}" data-labelChart="{{labelChart}}">
+			<input type="checkbox" name="{{inputName}}" value="{{name}}" {{#if isChecked}}checked{{/if}}/>
+			<span class="itemValue">{{value}}</span>
+			<span class="itemLabel">{{label}}</span>
+		</div>
+		<div class="trends-item-line"></div>
+	</div>
+</script>

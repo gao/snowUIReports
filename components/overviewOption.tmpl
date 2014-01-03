@@ -1,0 +1,27 @@
+<script id="tmpl-overviewOption" type="text/html">
+	<div class="overviewOption" style="left:{{left}}px;top:{{top}}px;{{#if width}}width:{{width}}px{{/if}}">
+		<div class="overviewOption-main">
+			<div class="overviewOption-header">
+				<span class="option-ico">&nbsp;</span><span>Options</span><b class="arrowup"></b>
+			</div>
+			<div class="overviewOption-content">
+				<div class="overviewOption-select-tip">
+					<span>Select Segment Groups to Display</span>
+				</div>
+				<div class="overviewOption-items">
+					
+				</div>
+				<div class="overviewOption-handle">
+					<div class="btn cancel">Close</div>  
+					<div class="btn reset">Reset</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script id="tmpl-overviewOption-item" type="text/html">
+	<div class="item">
+		<input type="checkbox" name="overviewOptionColumn" value="{{label}}" {{#if checked}}checked="checked"{{/if}}/>
+		<span {{#if ellipsis}}title="{{label}}"{{/if}}>{{labelName}}</span>
+	</div>
+</script>

@@ -1,0 +1,126 @@
+<script id="tmpl-targetPicker" type="text/html">
+	<div class="targetPicker commonPicker new-picker">
+		<div class="icoDiv resizeHandler"></div>
+		<div class="targetPicker-top commonPicker-top new-close">
+			<div class="icoDiv close"><span class="ico ico-close"></span></div>
+			<div class="title">{{extTitle}}</div>
+		</div>
+		<div class="targetPicker-main commonPicker-main">
+			<div class="targetPicker-content commonPicker-content">
+				
+			</div>
+		</div>
+		<div class="targetPicker-bottom commonPicker-bottom">
+			<div class="SMA-REPORT-TARGETPICKERDONEBUTTON btn done">Done</div>
+			<div class="SMA-REPORT-TARGETPICKERCANCELBUTTON btn cancel">Cancel</div>
+		</div>
+	</div>
+</script>
+<script id="tmpl-targetPicker-mailingView" type="text/html">
+	<div class="commonPicker-mailingView targetPicker-mailingView">
+		<div class="tags">
+			
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-targetPicker-tag-selectTargets" type="text/html">
+	<div class="tag " data-tag="selectTargets">
+		<div class="tag-content">
+			<div class="commonPicker-selected targetPicker-selected">
+				{{{incl "tmpl-targetPicker-limitData" "selectTargets"}}}
+			</div>
+			<div class="availableMailings">
+				<span class="count">0</span> Targets Available
+			</div>
+			<div class="SMA-REPORT-TARGETPICKERFILTER commonPicker-filter targetPicker-filter">
+				<div class="filter-label targetPicker-filter-label">Filter by:</div>
+				<div class="filter-fields targetPicker-filter-fields">
+					<div class="label-field">
+							<div class="label left">Last Used:</div>
+							<div class="field">
+								<span class="sub-field">
+									<select name="launchDate" style="width:154px">
+										<option value="today" >Today</option>
+										<option value="yesterday">Yesterday</option>
+										<option value="last7Days">Last 7 days</option>
+										<option value="last30Days">Last 30 days</option>
+										<option value="last60Days">Last 60 days</option>
+										<option value="last180Days">Last 180 days</option>
+										<option value="last365Days">Last 365 days</option>
+										<option value="all" selected>All</option>
+									</select>
+								</span>
+							</div>
+					</div>
+					<div class="label-field">
+						<div class="label left">Name:</div>
+						<div class="field">
+							<span class="sub-field name">
+								<input name="name" type="text"/>
+								<span class="keyCancel ico ico-close"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="cb"></div>
+			</div>
+			
+			<div class="SMA-REPORT-TARGETPICKERTABLE targetPicker-table commonPicker-table">
+				<div class="targetPicker-dataTable">
+					<table class="dataTable" data-type="target">
+						<thead>
+							<tr>
+								<th class="sortable" data-column="name"><span class="thSortName">Name</span></th>
+								<th class="sortable" data-column="dataSource"><span class="thSortName">Data Source</span></th>
+								<th class="sortable" data-column="lastUsed"><span class="thSortName">Last Used</span></th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+					<div class="targetPicker-noTargets"><div class="nomessage">No targets in this organization have audience statistics enabled.&nbsp;Audience statistics can be enabled in </div><div class="nomessage sec">Target options</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-targetPicker-target-table-tr" type="text/html">
+	<tr data-obj.id="{{id}}" data-obj.name="{{name}}" datasource-type="{{dataSourceType}}" class="{{#if isSelected}}checked{{/if}} pointertr">
+		<td class="btnAction" {{#if nameEllipses}}title="{{name}}"{{/if}}>{{#if nameEllipses}}{{nameEllipses}}{{else}}{{name}}{{/if}}</td>
+		<td class="btnAction" {{#if dataSourceEllipses}}title="{{dataSource}}"{{/if}}>{{#if dataSourceEllipses}}{{dataSourceEllipses}}{{else}}{{dataSource}}{{/if}}</td>
+		<td class="btnAction">{{lastUsed}}</td>
+	</tr>
+</script>
+
+<script id="tmpl-targetPicker-limitData" type="text/html">
+	<div class="limitDataTo">
+		<div class="limitDataToSec">
+			<span class="spanTitle">Use data from</span> 
+		</div>
+		<div class="limitDataToSec">
+			<select name="dateTypeSelect">
+				<option value="last30Days">Last 30 days</option>
+				<option value="last60Days">Last 60 days</option>
+				<option value="last90Days">Last 90 days</option>
+				<option value="last180Days">Last 180 days</option>
+				<option value="last365Days">Last 365 days</option>
+				<option value="last2Years">Last 2 years</option>
+				<option value="last3Years">Last 3 years</option>
+				<option value="inCustomDateRange">In custom date range</option>
+			</select>
+		</div>
+		<div class="limitDataToSec">
+			<span class="dateInputs">
+				<label>from</label>
+				<input type="text" name="startDate" value="mm/dd/yy"/>
+				<label>to</label>
+				<input type="text" name="endDate" value="mm/dd/yy"/>
+			</span>
+			<br/>
+			<span class="message"></span>
+		</div>
+		<div class="cb"></div>
+	</div>
+</script>

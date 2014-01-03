@@ -1,0 +1,166 @@
+{
+    "identifier": "id",
+    "itemsCommon": null,
+    "items": [
+        {
+            "block": {
+                "count": 110,
+                "failuresByCode": [
+                    {
+                        "code": 1001,
+                        "count": 100,
+                        "description": "Spam Complaint",
+                        "percentageOfFailure": 18.5,
+                        "rate": 15
+                    },
+                    {
+                        "code": 1002,
+                        "count": 10,
+                        "description": "Black List",
+                        "percentageOfFailure": 34,
+                        "rate": 12
+                    }
+                ],
+                "rate": 0
+            },
+            "domain": "abc@yahoo.com",
+            "failed": {
+                "count": 1000,
+                "rate": 0
+            },
+            "hardBounce": {
+                "count": 10,
+                "failuresByCode": [
+                    {
+                        "code": 2001,
+                        "count": 100,
+                        "description": "Spam Complaint2",
+                        "percentageOfFailure": 22,
+                        "rate": 35
+                    },
+                    {
+                        "code": 2002,
+                        "count": 10,
+                        "description": "Black List2",
+                        "percentageOfFailure": 23,
+                        "rate": 45
+                    }
+                ],
+                "rate": 0
+            },
+            "sent": 2000,
+            "softBounce": {
+                "count": 39,
+                "failuresByCode": [
+                    {
+                        "code": 3001,
+                        "count": 100,
+                        "description": "Spam Complaint3",
+                        "percentageOfFailure": 24,
+                        "rate": 74
+                    },
+                    {
+                        "code": 3002,
+                        "count": 10,
+                        "description": "Black List3",
+                        "percentageOfFailure": 45,
+                        "rate": 30.7
+                    }
+                ],
+                "rate": 12
+            },
+            "technical": {
+                "count": 30,
+                "failuresByCode": [
+                    {
+                        "code": 4001,
+                        "count": 100,
+                        "description": "Spam Complaint4",
+                        "percentageOfFailure": 11,
+                        "rate": 44
+                    },
+                    {
+                        "code": 4002,
+                        "count": 10,
+                        "description": "Black List4",
+                        "percentageOfFailure": 13,
+                        "rate": 19.8
+                    }
+                ],
+                "rate": 10
+            },
+            "unknown": {
+                "count": 30,
+                "failuresByCode": [
+                    {
+                        "code": 9001,
+                        "count": 100,
+                        "description": "Spam Complaint5",
+                        "percentageOfFailure": 33,
+                        "rate": 22
+                    },
+                    {
+                        "code": 9002,
+                        "count": 10,
+                        "description": "Black List5",
+                        "percentageOfFailure": 12,
+                        "rate": 11.6
+                    }
+                ],
+                "rate": 10
+            },
+        "data": [
+        	{
+            "block": {
+                "count": 100,
+                "failuresByCode": [
+                    {
+                        "code": 1001,
+                        "count": 100,
+                        "description": "SpamComplaint",
+                        "percentageOfFailure": 0,
+                        "rate": 0
+                    },
+                    {
+                        "code": 1002,
+                        "count": 10,
+                        "description": "BlackList",
+                        "percentageOfFailure": 0,
+                        "rate": 0
+                    }
+                ],
+                "rate": 0
+            },
+            "failed": {
+                "count": 100,
+                "rate": 0
+            },
+            "hardBounce": {
+                "count": 10,
+                "failuresByCode": [],
+                "rate": 0
+            },
+            "sent": 100,
+            "vsgIp": "10.0.1.2",
+            "vsg": "1",
+            "organization" : "Admin", 
+            "softBounce": {
+                "count": 39,
+                "failuresByCode": [],
+                "rate": 0
+            },
+            "technical": {
+                "count": 10,
+                "failuresByCode": [],
+                "rate": 0
+            },
+            "unknown": {
+                "count": 10,
+                "failuresByCode": [],
+                "rate": 0
+            }
+        }
+    ]
+        }
+    ]
+}

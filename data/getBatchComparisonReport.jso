@@ -1,0 +1,40 @@
+{
+    "identifier": 'id',
+    "itemsCommon":null,
+    "items":[{
+		"summary":{
+			"clickToOpen":{"rate":14,"uniqueRate":14},
+			"clicks":{"count":30014,"rate":14,"unique":30014,"uniqueRate":14},
+			"complaints":{"count":30014,"rate":14,"unique":30015,"uniqueRate":0},
+			"conversions":{"count":30014,"rate":14,"items":30016,"revenuePerEmail":1600,"revenue":0,"averageOrderValue":30014},
+			"convertToClick":{"rate":30,"uniqueRate":30},
+			"delivered":{"count":114,"rate":35},
+			"failed":{"count":33214,"rate":30},
+			"invalid":{"count":33214,"rate":30},
+			"opens":{"count":13214,"rate":10,"unique":13214,"uniqueRate":10},
+			"sent":{"count":33214,"rate":30},
+			"targeted":{"count":33219,"rate":30.5},
+			"threshold":95.5,
+			"conversionReportEnabled":true,
+            "conversionCurrency": "$ ",
+			"unsub":{"count":13214,"rate":10,"unique":13214,"uniqueRate":10}
+		},
+		"summary2":{
+			"clickToOpen":{"rate":36,"uniqueRate":36},
+			"clicks":{"count":36500,"rate":36,"unique":36501,"uniqueRate":37},
+			"complaints":{"count":36501,"rate":37,"unique":36502,"uniqueRate":0},
+			"conversions":{"count":36501,"rate":37,"items":20000,"revenuePerEmail":1200,"revenue":35500,"averageOrderValue":34500},
+			"convertToClick":{"rate":11,"uniqueRate":11},
+			"delivered":{"count":326,"rate":30},
+			"failed":{"count":36534,"rate":11},
+			"invalid":{"count":36534,"rate":11},
+			"opens":{"count":16533,"rate":30,"unique":16533,"uniqueRate":30},
+			"sent":{"count":36533,"rate":10},
+			"targeted":{"count":36539,"rate":11.5},
+			"threshold":96.5,
+			"conversionReportEnabled":true,
+            "conversionCurrency": "$ ",
+			"unsub":{"count":16534,"rate":31,"unique":16534,"uniqueRate":31}
+		}
+	}]
+}

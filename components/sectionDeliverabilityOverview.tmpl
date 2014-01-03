@@ -1,0 +1,98 @@
+<script id="tmpl-sectionDeliverabilityOverview" type="text/html">
+	<div class="sectionDeliverabilityOverview">
+	</div>
+</script>
+
+<script id="tmpl-sectionDeliverabilityOverview-summary" type="text/html">
+	<div class="sectionDeliverabilityOverviewSummary">
+		<div class="sectionDeliverabilityOverviewSummary-chart">
+			<div class="viewBy head">
+				<span>View by </span>
+				<span class="SMA-REPORT-VIEWBYDAY action {{#equal viewBy 'day'}}selected{{/equal}}" data-view="day">Day</span>
+				<span class="SMA-REPORT-VIEWBYWEEK action {{#equal viewBy 'week'}}selected{{/equal}}" data-view="week">Week</span>
+				<span class="SMA-REPORT-VIEWBYMONTH action {{#equal viewBy 'month'}}selected{{/equal}}" data-view="month">Month</span>
+				<span class="SMA-REPORT-VIEWBYQUARTER action {{#equal viewBy 'quarter'}}selected{{/equal}}" data-view="quarter">Quarter</span>
+			</div>
+			<div class="chart-content"></div>
+		</div>
+		
+		<div class="sectionDeliverabilityOverviewSummary-bottom">
+			<div class="sectionDeliverabilityOverviewSummary-bottom-left">
+				<span class="spanTitle">Delivery Statistics</span>
+				<table>
+					<tr>
+						<th class="metric">Metrics</th>
+						<th class="count">Count</th>
+						<th class="rate">Rate</th>
+						<th>Rate Trend</th>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="sectionDeliverabilityOverviewSummary-bottom-right">
+				<span class="spanTitle">Failure Rates 
+					{{#if isMock}}
+						<a class="spanTitleByDomain" onclick="smr.showReport('#reports-container',smr.REPORT_TYPE.DELIVERABILITYDOMAINS,'sectionDeliverabilityDomains');">by Domain</a>
+					{{else}}
+						<a class="spanTitleByDomain"  href="javascript:sm.comp.tab.TabMgr.openTab('DELIVERABILITY_DOMAIN_FAILURE_REPORT')">by Domain</a>
+					{{/if}}
+				</span>
+				<table>
+					<tr>
+						<th class="name">Domain</th>
+						<th class="count">Count</th>
+						<th class="rate">Rate</th>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="cb"></div>
+		</div>
+		
+		<div class="sectionDeliverabilityOverviewSummary-bottom-link">
+			<a href="javascript:sm.comp.tab.TabMgr.openTab('CLASSIC_DELIVERABILITY_REPORT')">Classic Deliverability Reports</a>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-sectionDeliverabilityOverview-summary-table-tr" type="text/html">
+	<tr>
+		<td class="name">
+			{{#notEqual summaryObj.domainName "other"}}
+            	{{#if isMock}}
+					<a class="spanTitleByDomain" onclick="smr.showDomainDrillDownReport('#reports-container',smr.REPORT_TYPE.DOMAINDRILLDOWN,'deliverability','{{summaryObj.domainName}}')">{{summaryObj.domainName}}</a>
+				{{else}}
+					<a class="spanTitleByDomain" href="javascript:sm.comp.tab.TabMgr.openTab('DOMAIN_DELIVERABILITY_DRILLDOWN','fromReportType=deliverability&startDate={{summaryObj.startDate}}&endDate={{summaryObj.endDate}}&domainName={{summaryObj.domainName}}')">{{summaryObj.domainName}}</a>
+				{{/if}}
+			{{else}}
+				{{#if isMock}}
+					<a class="spanTitleByDomain" onclick="smr.showReport('#reports-container',smr.REPORT_TYPE.DELIVERABILITYDOMAINS,'sectionDeliverabilityDomains');">{{summaryObj.domainName}}</a>
+				{{else}}
+					<a class="spanTitleByDomain"  href="javascript:sm.comp.tab.TabMgr.openTab('DELIVERABILITY_DOMAIN_FAILURE_REPORT')">{{summaryObj.domainName}}</a>
+				{{/if}}
+			{{/notEqual}}
+			
+		</td>
+		<td class="count alignRight">{{summaryObj.count}}</td>
+		<td class="rate alignRight">{{summaryObj.rate}}</td>
+	</tr>
+</script>
+
+<script id="tmpl-sectionDeliverabilityOverview-summary-leftTable-tr" type="text/html">
+	<tr>
+		<td class="name">
+			{{#if summaryObj.clickable}}
+				<span class="metric" data-metric="{{summaryObj.name}}">{{summaryObj.label}}</span>
+			{{else}}
+				<span {{#if summaryObj.indentable}}class="indentable"{{/if}}>{{summaryObj.label}}</span>
+			{{/if}}
+		</td>
+		<td class="alignRight">{{summaryObj.count}}</td>
+		<td class="alignRight">
+			{{summaryObj.rate}}
+		</td>
+		<td class="rateTrend">
+			<span class="{{summaryObj.name}}"></span>
+		</td>
+	</tr>
+</script>

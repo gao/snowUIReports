@@ -1,0 +1,98 @@
+<script id="tmpl-abTestPicker" type="text/html">
+	<div class="abTestPicker commonPicker old-picker">
+		<div class="icoDiv resizeHandler"></div>
+		<div class="abTestPicker-top commonPicker-top new-close">
+			<div class="icoDiv close"><span class="ico ico-close"></span></div>
+			<div class="title">{{extTitle}}</div>
+		</div>
+		<div class="abTestPicker-main commonPicker-main">
+		<div class="availableMailings">
+				<span class="count">0</span> Mailings Available
+			</div>
+			<div class="abTestPicker-content  commonPicker-content notab">
+				
+			</div>
+		</div>
+		<div class="abTestPicker-bottom commonPicker-bottom old-layout">
+			<div class="SMA-REPORT-ABTESTPICKERDONEBUTTON btn done">Done</div>
+			<div class="SMA-REPORT-ABTESTPICKERCANCELBUTTON btn cancel">Cancel</div>
+		</div>
+	</div>
+</script>
+<script id="tmpl-abTestPicker-mailingView" type="text/html">
+	<div class="commonPicker-mailingView abTestPicker-mailingView">
+		<div class="tags">
+			
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-abTestPicker-tag-selectTargets" type="text/html">
+	<div class="tag " data-tag="selectABTestMailings">
+		<div class="tag-content">
+			
+			<div class="SMA-REPORT-ABTESTPICKERFILTER commonPicker-filters abTestPicker-filter">
+				<div class="filter-label abTestPicker-filter-label">Filter by:</div>
+				<div class="filter-fields abTestPicker-filter-fields">
+					<div class="label-field">
+							<div class="field">
+							<span class="sub-field left">Launch Date</span>
+								<span class="sub-field right">
+									<select name="launchDate" style="width:135px">
+										<option value="today" >Today</option>
+										<option value="yesterday">Yesterday</option>
+										<option value="last7Days">Last 7 days</option>
+										<option value="last30Days" selected>Last 30 days</option>
+										<option value="last60Days">Last 60 days</option>
+										<option value="last90Days">Last 90 days</option>
+										<option value="last180Days">Last 180 days</option>
+										<option value="last365Days">Last 365 days</option>
+										<option value="all">All</option>
+									</select>
+								</span>
+								<span class="sub-field left">Name</span>
+							<span class="sub-field name right">
+								<input name="name" type="text"/>
+								<span class="keyCancel ico ico-close"></span>
+							</span>
+							<span class="sub-field right">
+								<input type="checkbox" name="includeArchive" />
+								<label>Include Archived Mailings</label>
+							</span>
+							<div class="cb"></div>
+							</div>
+					</div>
+				</div>
+				<div class="cb"></div>
+			</div>
+			
+			<div class="SMA-REPORT-ABTESTPICKERTABLE abTestPicker-table commonPicker-table">
+				<div class="abTestPicker-dataTable">
+					<table class="dataTable" data-type="ABTest">
+						<thead>
+							<tr>
+								<th class="sortable name" data-column="name"><span class="thSortName">Name</span></th>
+								<th class="sortable campaign" data-column="campaign"><span class="thSortName">Campaign</span></th>
+								<th class="sortable type" data-column="type"><span class="thSortName">Type</span></th>
+								<th class="sortable status" data-column="status"><span class="thSortName">Status</span></th>
+								<th class="sortable launchDate" data-column="launchDate"><span class="thSortName">Last Launch Date</span></th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-abTestPicker-target-table-tr" type="text/html">
+	<tr data-obj.id="{{id}}" data-obj.name="{{name}}" class="{{#if isSelected}}checked{{/if}} pointertr">
+		<td class="btnAction" {{#if nameEllipses}}title="{{name}}"{{/if}}>{{#if nameEllipses}}{{nameEllipses}}{{else}}{{name}}{{/if}}</td>
+		<td class="btnAction" {{#if campaignEllipses}}title="{{campaign}}"{{/if}}>{{#if campaignEllipses}}{{campaignEllipses}}{{else}}{{campaign}}{{/if}}</td>
+		<td class="btnAction">{{type}}</td>
+		<td class="btnAction">{{status}}</td>
+		<td class="btnAction">{{launchDate}}</td>
+	</tr>
+</script>

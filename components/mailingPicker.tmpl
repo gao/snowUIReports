@@ -1,0 +1,453 @@
+<script id="tmpl-mailingPicker" type="text/html">
+	<div class="mailingPicker commonPicker old-picker">
+		<div class="icoDiv resizeHandler"></div>
+		<div class="mailingPicker-top commonPicker-top old-close">
+			<div class="icoDiv close"><span class="ico ico-close"></span></div>
+			<div class="title">Select Mailings / Campaigns {{extTitle}}</div>
+		</div>
+		<div class="mailingPicker-main commonPicker-main">
+			<div class="SMA-REPORT-MAILINGPICKERHEADER mailingPicker-header commonPicker-header">
+				<div class="header-label">
+					Select By:
+				</div>
+				<div class="smrTabs">
+					<div class="tab">
+						<input name="tag" type="radio"  value="selectByLaunchDate"/><span class="tagspan" data-value="selectByLaunchDate">Date</span>
+					</div>
+					<div class="tab">
+						<input name="tag" type="radio"  value="selectMailings"/><span class="tagspan" data-value="selectMailings">Mailings</span>
+					</div>
+					<div class="tab">
+						<input name="tag" type="radio"  value="selectPrograms"/><span class="tagspan" data-value="selectPrograms">Programs</span>
+					</div>
+					<div class="tab">
+						<input name="tag" type="radio"  value="selectCampaigns"/><span class="tagspan" data-value="selectCampaigns">Campaigns</span>
+					</div>
+					<div class="tab">
+						<input name="tag" type="radio"  value="selectTags"/><span class="tagspan" data-value="selectTags">Tags</span>
+					</div>
+				</div>
+			</div>
+			<div class="mailingPicker-content commonPicker-content">
+				
+			</div>
+		</div>
+		<div class="mailingPicker-bottom commonPicker-bottom old-layout">
+			<div class="SMA-REPORT-MAILINGPICKERDONEBUTTON btn done">Done</div>
+			<div class="SMA-REPORT-MAILINGPICKERCANCELBUTTON btn cancel">Cancel</div>
+		</div>
+	</div>
+</script>
+<script id="tmpl-mailingPicker-mailingView" type="text/html">
+	<div class="commonPicker-mailingView mailingPicker-mailingView">
+		<div class="tags">
+			
+		</div>
+	</div>
+</script>
+<script id="tmpl-mailingPicker-tag-selectByLaunchDate" type="text/html">
+	<div class="tag selectByLaunchDate" data-tag="selectByLaunchDate">
+		<div class="tag-content">
+			<div class="SMA-REPORT-MAILINGPICKERLAUNCHDATE launchDate-area">
+				<div>
+					<div class="lblVal dateType">
+						<label>All mailings:</label>
+						<select name="dateTypeSelect">
+							<option value="inCustomDateRange">In custom date range</option>
+							<option value="last30Days" >Last 30 days</option>
+							<option value="last90Days">Last 90 days</option>
+							<option value="last180Days">Last 180 days</option>
+							<option value="last365Days">Last 365 days</option>
+						</select>
+					</div>
+					<div class="lblVal date">
+						<div class="dateInputs">
+							<label>from</label>
+							<input type="text" name="startDate" value="mm/dd/yy"/>
+							<label>to</label>
+							<input type="text" name="endDate" value="mm/dd/yy"/>
+						</div>
+						<div class="message">
+						</div>
+					</div>
+					<div class="lblVal includeArchive">
+						<input type="checkbox" name="includeArchive" />
+						<label>Include Archived Mailings</label>
+						{{#if hasSubOrganization}}
+						<input type="checkbox" {{#if isRootOrg}}checked="true" disabled="true"{{/if}} name="includeSubOrganizations" class="includeSubOrganizations" />
+						<label>Include Mailings from Sub-Organizations</label>
+						{{/if}}
+					</div>
+					<div class="cb"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script id="tmpl-mailingPicker-tag-selectMailings" type="text/html">
+	<div class="tag " data-tag="selectMailings">
+		<div class="tag-content">
+			<div class="mailingPicker-selected commonPicker-selected">
+				<div class="selectedMailingLable">
+					<div class="label">
+						<span class="count">0</span> Mailing<span class="needS">s</span> Selected
+					</div>
+					<div class="cb"></div>
+				</div>
+				{{#equal reportType "transactional"}}
+					{{{incl "tmpl-mailingPicker-limitData" "selectMailings"}}}
+				{{/equal}}
+			</div>
+			<div class="selectedMailingTable">
+				
+			</div>
+			<div class="availableMailings">
+				<span class="count">0</span> Mailings Available
+			</div>
+			<div class="SMA-REPORT-MAILINGPICKERFILTER commonPicker-filter mailingPicker-filter">
+				<div class="filter-label mailingPicker-filter-label">Filter By:</div>
+				<div class="filter-fields mailingPicker-filter-fields">
+					{{#equal reportType "batch"}}
+						<div class="label-field">
+							<div class="label left">Launch Date:</div>
+							<div class="field">
+								<span class="sub-field">
+									<select name="launchDate" style="width:154px">
+										<option value="today" >Today</option>
+										<option value="yesterday">Yesterday</option>
+										<option value="last7Days">Last 7 days</option>
+										<option value="last30Days" selected>Last 30 days</option>
+										<option value="last60Days">Last 60 days</option>
+										<option value="last90Days">Last 90 days</option>
+										<option value="last180Days">Last 180 days</option>
+										<option value="last365Days">Last 365 days</option>
+										<option value="all">All</option>
+									</select>
+								</span>
+								{{#if hasSubOrganization}}
+								<span class="sub-field"><input type="checkbox" {{#if isRootOrg}}checked="true" disabled="true"{{/if}} name="includeSubOrganizations" class="includeSubOrganizations" />Include Mailings from Sub-Organizations</span>
+								{{/if}}
+							</div>
+						</div>
+					{{/equal}}
+					<div class="label-field">
+						<div class="label left">Name:</div>
+						<div class="field">
+							<span class="sub-field name">
+								<input name="name" type="text"/>
+								<span class="keyCancel ico ico-close"></span>
+							</span>
+							{{#equalOrUntrue reportType "batch" hasSubOrganization}}
+							<span class="sub-field"><input type="checkbox" name="includeArchive" />Include Archived Mailings</span>
+							{{/equalOrUntrue}}
+						</div>
+						{{#notEqualAndTrue reportType "batch" hasSubOrganization}}
+						<div class="field">
+							<span class="sub-field"><input type="checkbox" name="includeArchive" />Include Archived Mailings</span>
+							<span class="sub-field"><input type="checkbox" {{#if isRootOrg}}checked="true" disabled="true"{{/if}} name="includeSubOrganizations" />Include Mailings from Sub-Organizations</span>
+						</div>
+						{{/notEqualAndTrue}}
+					</div>
+				</div>
+				<div class="cb"></div>
+			</div>
+			
+			<div class="SMA-REPORT-MAILINGPICKERTABLE commonPicker-table mailingPicker-table">
+				<div class="mailingPicker-dataTable">
+					<table class="dataTable" data-type="mailing">
+						<thead>
+							<tr>
+								<th class="first"><div><input type="checkbox" class="btnBatchAction"/></div></th>
+								<th class="sortable" data-column="name"><span class="thSortName">Name</span></th>
+								<th class="sortable" data-column="campaign"><span class="thSortName">Campaign</span></th>
+								{{#if hasSubOrganization}}
+								<th class="sortable orga" data-column="organization"><span class="thSortName">Organization</span></th>
+								{{/if}}
+								<th class="sortable" data-column="launchDate"><span class="thSortName">Launch Date</span></th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script id="tmpl-mailingPicker-tag-selectPrograms" type="text/html">
+	<div class="tag " data-tag="selectPrograms">
+		<div class="tag-content">
+			<div class="mailingPicker-selected commonPicker-selected">
+				<div class="selectedMailingLable">
+					<div class="label">
+						<span class="count">0</span> Program<span class="needS">s</span> Selected
+					</div>
+					<div class="cb"></div>
+				</div>
+				{{{incl "tmpl-mailingPicker-limitData" "selectPrograms"}}}
+			</div>
+			<div class="selectedMailingTable">
+			</div>
+			<div class="availableMailings">
+				<span class="count">0</span> Programs Available
+			</div>
+			<div class="SMA-REPORT-MAILINGPICKERFILTER commonPicker-filter mailingPicker-filter">
+				<div class="filter-label mailingPicker-filter-label">Filter By:</div>
+				<div class="filter-fields mailingPicker-filter-fields">
+					<div class="label-field">
+						<div class="label">Filter:</div>
+						<div class="field">
+							<span class="sub-field name">
+								<input name="name" style="margin-left:4px;" type="text"/>
+								<span class="keyCancel ico ico-close"></span>
+							</span>
+						</div>
+						<div class="field">
+							<span class="sub-field"><input type="checkbox" name="includeArchive" />Include Archived Programs</span>
+							{{#if hasSubOrganization}}
+							<span class="sub-field"><input type="checkbox" {{#if isRootOrg}}checked="true" disabled="true"{{/if}} name="includeSubOrganizations" />Include Programs from Sub-Organizations</span>
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				<div class="cb"></div>
+			</div>
+			
+			<div class="SMA-REPORT-MAILINGPICKERTABLE commonPicker-table mailingPicker-table">
+				<div class="mailingPicker-dataTable">
+					<table class="dataTable" data-type="program">
+						<thead>
+							<tr>
+								<th class="first"><div><input type="checkbox" class="btnBatchAction"/></div></th>
+								<th class="sortable" data-column="name"><span class="thSortName">Name</span></th>
+								<th class="sortable" data-column="campaign"><span class="thSortName">Campaign</span></th>
+								{{#if hasSubOrganization}}
+								<th class="sortable orga" data-column="organization"><span class="thSortName">Organization</span></th>
+								{{/if}}
+								<th class="sortable" data-column="launchDate"><span class="thSortName">Launch Date</span></th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script id="tmpl-mailingPicker-tag-selectCampaigns" type="text/html">
+	<div class="tag " data-tag="selectCampaigns">
+		<div class="tag-content">
+			<div class="mailingPicker-selected commonPicker-selected">
+				<div class="selectedMailingLable">
+					<div class="label">
+						<span class="count">0</span> Campaign<span class="needS">s</span> Selected
+					</div>
+					<div class="cb"></div>
+				</div>
+				{{{incl "tmpl-mailingPicker-limitData" data}}}
+			</div>
+			<div class="selectedMailingTable">
+			</div>
+			<div class="availableMailings">
+				<span class="count">0</span> Campaigns Available
+			</div>
+			<div class="SMA-REPORT-MAILINGPICKERFILTER commonPicker-filter mailingPicker-filter">
+				<div class="filter-label mailingPicker-filter-label">Filter By:</div>
+				<div class="filter-fields mailingPicker-filter-fields">
+					<div class="label-field">
+						<div class="label">Filter:</div>
+						<div class="field">
+							<span class="sub-field name">
+								<input name="name" type="text" style="margin-left:4px;"/>
+								<span class="keyCancel ico ico-close"></span>
+							</span>
+						</div>
+						<div class="field">
+							<span class="sub-field"><input type="checkbox" name="includeArchive" />Include Archived Mailings</span>
+							{{#if hasSubOrganization}}
+							<span class="sub-field">
+								<input type="checkbox" {{#if isRootOrg}}checked="true" disabled="true"{{/if}} name="includeSubOrganizations" />
+								Include {{#equal reportType "program"}}Programs{{else}}Mailings{{/equal}} from Sub-Organizations
+							</span>
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				<div class="cb"></div>
+			</div>
+			
+			<div class="SMA-REPORT-MAILINGPICKERTABLE commonPicker-table mailingPicker-table">
+				<div class="mailingPicker-dataTable">
+					<table class="dataTable" data-type="campaign">
+						<thead>
+							<tr>
+								<th class="first"><div><input type="checkbox" class="btnBatchAction"/></div></th>
+								<th class="sortable" data-column="campaign"><span class="thSortName">Name</span></th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</script>
+<script id="tmpl-mailingPicker-tag-selectTags" type="text/html">
+	<div class="tag " data-tag="selectTags">
+		<div class="tag-content">
+			<div class="mailingPicker-selected commonPicker-selected">
+				<div class="selectedMailingLable">
+					<div class="label">
+						<span class="count">0</span> Tag<span class="needS">s</span> Selected
+					</div>
+					<div class="cb"></div>
+				</div>
+				{{{incl "tmpl-mailingPicker-limitData" data}}}
+			</div>
+			<div class="selectedMailingTable">
+			</div>
+			<div class="availableMailings">
+				<span class="count">0</span> Tags Available
+			</div>
+			<div class="SMA-REPORT-MAILINGPICKERFILTER commonPicker-filter mailingPicker-filter">
+				<div class="filter-label mailingPicker-filter-label">Filter By:</div>
+				<div class="filter-fields mailingPicker-filter-fields">
+					<div class="label-field">
+						<div class="label">Filter:</div>
+						<div class="field">
+							<span class="sub-field name">
+								<input name="name" type="text" style="margin-left:4px;"/>
+								<span class="keyCancel ico ico-close"></span>
+							</span>
+						</div>
+						<div class="field">
+							<span class="sub-field"><input type="checkbox" name="includeArchive" />Include Archived Mailings</span>
+							{{#if hasSubOrganization}}
+							<span class="sub-field">
+								<input type="checkbox" {{#if isRootOrg}}checked="true" disabled="true"{{/if}} name="includeSubOrganizations" />
+								Include {{#equal reportType "program"}}Programs{{else}}Mailings{{/equal}} from Sub-Organizations
+							</span>
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				<div class="cb"></div>
+			</div>
+			
+			<div class="SMA-REPORT-MAILINGPICKERTABLE commonPicker-table mailingPicker-table">
+				<div class="mailingPicker-dataTable">
+					<table class="dataTable" data-type="tag">
+						<thead>
+							<tr>
+								<th class="first"><div><input type="checkbox" class="btnBatchAction"/></div></th>
+								<th class="sortable" data-column="name"><span class="thSortName">Tag Name</span></th>
+								{{#if hasSubOrganization}}
+								<th class="sortable orga" data-column="organization"><span class="thSortName">Organization</span></th>
+								{{/if}}
+								<th data-column="tageValues"><span class="thSortName">Values</span></th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</script>
+<script id="tmpl-mailingPicker-table-tr" type="text/html">
+	<tr data-obj.id="{{id}}" data-obj.name="{{name}}" class="{{#if isSelected}}checked{{/if}}">
+		<td class="first">
+			<div><input type="checkbox" {{#if isSelected}}checked{{/if}} class="btnAction"/></div>
+		</td>
+		<td {{#if nameEllipses}}title="{{name}}"{{/if}}>{{#if nameEllipses}}{{nameEllipses}}{{else}}{{name}}{{/if}}</td>
+		<td {{#if campaignEllipses}}title="{{campaign}}"{{/if}}>{{#if campaignEllipses}}{{campaignEllipses}}{{else}}{{campaign}}{{/if}}</td>
+		{{#if hasSubOrganization}}
+		<td>{{organization}}</td>
+		{{/if}}
+		<td>{{#if launchDate}} {{launchDate}} {{else}} Unlaunched {{/if}}</td>
+	</tr>
+</script>
+<script id="tmpl-mailingPicker-campaign-table-tr" type="text/html">
+	<tr data-obj.id="{{id}}" data-obj.name="{{campaign}}" class="{{#if isSelected}}checked{{/if}}">
+		<td class="first">
+			<div><input type="checkbox" {{#if isSelected}}checked{{/if}} class="btnAction"/></div>
+		</td>
+		<td {{#if campaignEllipses}}title="{{campaign}}"{{/if}}>{{#if campaignEllipses}}{{campaignEllipses}}{{else}}{{campaign}}{{/if}}</td>
+	</tr>
+</script>
+<script id="tmpl-mailingPicker-program-table-tr" type="text/html">
+	<tr data-obj.id="{{id}}" data-obj.name="{{name}}" class="{{#if isSelected}}checked{{/if}}">
+		<td class="first">
+			<div><input type="checkbox" {{#if isSelected}}checked{{/if}} class="btnAction"/></div>
+		</td>
+		<td {{#if nameEllipses}}title="{{name}}"{{/if}}>{{#if nameEllipses}}{{nameEllipses}}{{else}}{{name}}{{/if}}</td>
+		<td {{#if campaignEllipses}}title="{{campaign}}"{{/if}}>{{#if campaignEllipses}}{{campaignEllipses}}{{else}}{{campaign}}{{/if}}</td>
+		{{#if hasSubOrganization}}
+		<td>{{organization}}</td>
+		{{/if}}
+		<td>{{#if launchDate}} {{launchDate}} {{else}} Unlaunched {{/if}}</td>
+	</tr>
+</script>
+<script id="tmpl-mailingPicker-tag-table-tr" type="text/html">
+	<tr data-obj.id="{{id}}" data-obj.name="{{name}}" class="{{#if isSelected}}checked{{/if}}">
+		<td class="first">
+			<div><input type="checkbox" {{#if isSelected}}checked{{/if}} class="btnAction"/></div>
+		</td>
+		<td {{#if nameEllipses}}title="{{name}}"{{/if}}>{{#if nameEllipses}}{{nameEllipses}}{{else}}{{name}}{{/if}}</td>
+		{{#if hasSubOrganization}}
+		<td>{{organization}}</td>
+		{{/if}}
+		<td >
+			<div class="tag-values" data-value="0">
+				<div data-value="0" class="tags-value-select {{#if isSelected}}showValues{{/if}}">
+					<span class="value-name">0 items selected</span><span class="button-ico ico ico-downArrow"></span>
+				</div>
+				<div class="tags-value-combox">
+					<div class="item">
+						<a href="javascript:void(0);" class="select-all"><span class="icon icon-ok">&nbsp;</span>Select All</a><a href="javascript:void(0);" class="unselect-all"><span class="icon icon-remove">&nbsp;</span>Unselect All</a>
+					</div>
+					{{#each tagValues}}
+					<div class="item">
+						<input type="checkbox" {{#if selected}}checked="checked"{{/if}} value="{{id}}" data-name="{{tagValue}}" name="tagValue"><span>{{tagValue}}</span>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+		</td>
+	</tr>
+</script>
+<script id="tmpl-mailingPicker-limitData" type="text/html">
+	<div class="limitDataTo">
+		<div class="limitDataToSec">
+			<input type="checkbox" name="limitDataTo" />{{#equalAnd tag  "selectCampaigns" reportType "batch"}}Limit to mailings launched between{{else}}Limit data to{{/equalAnd}} 
+		</div>
+		<div class="limitDataToSec">
+			<select name="dateTypeSelect">
+				<option value="inCustomDateRange">In custom date range</option>
+				<option value="last7Days" >Last 7 days</option>
+				<option value="last30Days" >Last 30 days</option>
+				<option value="last90Days">Last 90 days</option>
+				<option value="last180Days">Last 180 days</option>
+				<option value="last365Days">Last 365 days</option>
+			</select>
+		</div>
+		<div class="limitDataToSec">
+			<span class="dateInputs">
+				<label>from</label>
+				<input type="text" name="startDate" value="mm/dd/yy"/>
+				<label>to</label>
+				<input type="text" name="endDate" value="mm/dd/yy"/>
+			</span>
+			<br/>
+			<span class="message"></span>
+		</div>
+		<div class="cb"></div>
+	</div>
+</script>

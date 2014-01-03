@@ -1,0 +1,191 @@
+<script id="tmpl-ipandVSGPicker" type="text/html">
+	<div class="ipandVSGPicker  commonPicker old-picker">
+		<div class="icoDiv resizeHandler"></div>
+		<div class="ipandVSGPicker-top commonPicker-top new-close">
+			<div class="icoDiv close"><span class="ico ico-close"></span></div>
+			<div class="title">{{extTitle}}</div>
+		</div>
+		<div class="ipandVSGPicker-main commonPicker-main">
+			<div class="SMA-REPORT-IPANDVAGPICKERHEADER ipandVSGPicker-header commonPicker-header">
+				<div class="header-label">
+					Select By:
+				</div>
+				<div class="smrTabs">
+					<div class="tab">
+						<input name="tag" type="radio"  value="selectVSGs"/><span class="tagspan" data-value="selectVSGs">Mailing Server Groups</span>
+					</div>
+					<div class="tab">
+						<input name="tag" type="radio"  value="selectIPs"/><span class="tagspan" data-value="selectIPs">IPs</span>
+					</div>
+				</div>
+			</div>
+			<div class="ipandVSGPicker-content commonPicker-content">
+				
+			</div>
+		</div>
+		<div class="ipandVSGPicker-bottom  commonPicker-bottom old-layout">
+			<div class="SMA-REPORT-IPANDVAGPICKERDONEBUTTON btn done">Done</div>
+			<div class="SMA-REPORT-IPANDVAGPICKERDONEBUTTON btn cancel">Cancel</div>
+		</div>
+	</div>
+</script>
+<script id="tmpl-ipandVSGPicker-mailingView" type="text/html">
+	<div class="commonPicker-mailingView ipandVSGPicker-mailingView">
+		<div class="tags">
+			
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-ipandVSGPicker-tag-selectVSGs" type="text/html">
+	<div class="tag " data-tag="selectVSGs">
+		<div class="tag-content">
+			<div class="commonPicker-selected ipandVSGPicker-selected">
+				<div class="selectedMailingLable">
+					<div class="label">
+						<span class="count">0</span> Mailing Server Group<span class="needS">s</span> Selected
+					</div>
+					<div class="cb"></div>
+				</div>
+				{{{incl "tmpl-ipandVSGPicker-limitData" "selectVSGs"}}}
+			</div>
+			<div class="selectedMailingTable">
+				
+			</div>
+			<div class="availableMailings">
+				<span class="count">0</span> Mailing Server Groups Available
+			</div>
+			<div class="SMA-REPORT-IPANDVAGPICKERFILTER commonPicker-filter ipandVSGPicker-filter">
+				<div class="filter-label ipandVSGPicker-filter-label">Filter by:</div>
+				<div class="filter-fields ipandVSGPicker-filter-fields">
+					<div class="label-field">
+						<div class="label left">Name:</div>
+						<div class="field">
+							<span class="sub-field name">
+								<input name="name" type="text"/>
+								<span class="keyCancel ico ico-close"></span>
+							</span>
+							{{#if hasSubOrganization}}
+							<span class="sub-field"><input type="checkbox" {{#if isRootOrg}}checked="true" disabled="true"{{/if}} name="includeSubOrganizations" />Include Data from Sub-Organizations</span>
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				<div class="cb"></div>
+			</div>
+			
+			<div class="SMA-REPORT-IPANDVAGPICKERTABLE ipandVSGPicker-table commonPicker-table">
+				<div class="ipandVSGPicker-dataTable">
+					<table class="dataTable" data-type="vsgs">
+						<thead>
+							<tr>
+								<th class="first"><div><input type="checkbox" class="btnBatchAction"/></div></th>
+								<th class="sortable" data-column="name"><span class="thSortName">Name</span></th>
+								<th class="sortable" data-column="createdDate"><span class="thSortName">Created Date</span></th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-ipandVSGPicker-tag-selectIPs" type="text/html">
+	<div class="tag " data-tag="selectIPs">
+		<div class="tag-content">
+			<div class="commonPicker-selected ipandVSGPicker-selected">
+				<div class="selectedMailingLable">
+					<div class="label">
+						<span class="count">0</span> IP<span class="needS">s</span> Selected
+					</div>
+					<div class="cb"></div>
+				</div>
+				{{{incl "tmpl-ipandVSGPicker-limitData" "selectIPs"}}}
+			</div>
+			<div class="selectedMailingTable">
+				
+			</div>
+			<div class="availableMailings">
+				<span class="count">0</span> IPs Available
+			</div>
+			<div class="SMA-REPORT-IPANDVAGPICKERFILTER commonPicker-filter ipandVSGPicker-filter">
+				{{#if hasSubOrganization}}
+				<div class="filter-label ipandVSGPicker-filter-label">Filter by:</div>
+				<div class="filter-fields ipandVSGPicker-filter-fields">
+					<div class="label-field">
+						<div class="field">
+							<span class="sub-field"><input type="checkbox" {{#if isRootOrg}}checked="true" disabled="true"{{/if}} name="includeSubOrganizations" />Include Data from Sub-Organizations</span>
+						</div>
+					</div>
+				</div>
+				<div class="cb"></div>
+				{{/if}}
+			</div>
+			
+			<div class="SMA-REPORT-IPANDVAGPICKERTABLE ipandVSGPicker-table commonPicker-table">
+				<div class="ipandVSGPicker-dataTable">
+					<table class="dataTable" data-type="ips">
+						<thead>
+							<tr>
+								<th class="first"><div><input type="checkbox" class="btnBatchAction"/></div></th>
+								<th class="sortable" data-column="name"><span class="thSortName">IP</span></th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-ipandVSGPicker-ip-table-tr" type="text/html">
+	<tr data-obj.id="{{ip}}" data-obj.name="{{name}}" class="{{#if isSelected}}checked{{/if}}">
+		<td class="first">
+			<div><input type="checkbox" {{#if isSelected}}checked{{/if}} class="btnAction"/></div>
+		</td>
+		<td>{{name}}</td>
+	</tr>
+</script>
+<script id="tmpl-ipandVSGPicker-vsg-table-tr" type="text/html">
+	<tr data-obj.id="{{name}}" data-obj.name="{{name}}" class="{{#if isSelected}}checked{{/if}}">
+		<td class="first">
+			<div><input type="checkbox" {{#if isSelected}}checked{{/if}} class="btnAction"/></div>
+		</td>
+		<td {{#if nameEllipses}}title="{{name}}"{{/if}}>{{#if nameEllipses}}{{nameEllipses}}{{else}}{{name}}{{/if}}</td>
+		<td>{{createdDate}}</td>
+	</tr>
+</script>
+
+<script id="tmpl-ipandVSGPicker-limitData" type="text/html">
+	<div class="limitDataTo">
+		<div class="limitDataToSec">
+			<span class="spanTitle">Use data from</span> 
+		</div>
+		<div class="limitDataToSec">
+			<select name="dateTypeSelect">
+				<option value="inCustomDateRange">In custom date range</option>
+				<option value="last7Days">Last 7 days</option>
+				<option value="last30Days">Last 30 days</option>
+				<option value="last60Days">Last 60 days</option>
+				<option value="last90Days">Last 90 days</option>
+				<option value="last180Days">Last 180 days</option>
+			</select>
+		</div>
+		<div class="limitDataToSec">
+			<span class="dateInputs">
+				<label>from</label>
+				<input type="text" name="startDate" value="mm/dd/yy"/>
+				<label>to</label>
+				<input type="text" name="endDate" value="mm/dd/yy"/>
+			</span>
+			<br/>
+			<span class="message"></span>
+		</div>
+		<div class="cb"></div>
+	</div>
+</script>

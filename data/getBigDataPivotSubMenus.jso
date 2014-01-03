@@ -1,0 +1,74 @@
+{
+	"identifier": 'id',
+	"itemsCommon":null,
+	"items":[
+		{
+		   "segments":[
+		    	{
+		    		"id":101,
+					"name":"Gender"
+				},
+				{
+		    		"id":102,
+					"name":"Age"
+				},
+				{
+		    		"id":103,
+					"name":"Age - Gender"
+				},
+				{
+		    		"id":104,
+					"name":"Income"
+				},
+				{
+		    		"id":105,
+					"name":"Conversion"
+				}
+		   ],
+		   
+		   "regions":[
+		     	{
+		     		"id":101,
+			 		"name":"Left_Top"
+			 	},
+			 	{
+			 		"id":102,
+			 		"name":"Right_Middle"
+			 	}
+		   ],
+		   
+		   "catalogs":[
+		   		{
+		     		"id":111,
+			 		"name":"Product Catalog"
+			 	},
+			 	{
+			 		"id":112,
+			 		"name":"Offer Catalog"
+			 	}
+		   ],
+		   
+		   "catalogFields":[
+	     		{    
+	     			"name":"Product Name",
+	     			"value":"product_name"
+	            },
+	            {
+	                "name":"Product Type",
+	                "value":"product_type"
+	            }
+   			],
+		   
+		   "tags":[
+		    	{
+			    	"id":109,
+				 	"name":"Tag1"
+			 	},
+			 	{
+			 		"id":110,
+			   		"name":"Tag2"
+			 	}
+			]  
+		}  
+	]
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+	<title>Strong Mail Report</title>
+	
+	<!-- INCLUDE THIS -->
+	<link href="css/smr-imports.css" rel="stylesheet" type="text/css" />
+	<link href="css/smr-imports2.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.render.js"></script>
+	<script type="text/javascript" src="js/jquery.sparkline.min.js"></script>
+	<script type="text/javascript" src="js/brite.min.js"></script>
+	<script type="text/javascript" src="js/smr.js"></script>
+	<script type="text/javascript" src="js/smr.utils.js"></script>
+	<script type="text/javascript" src="js/smr.state.js"></script>
+	<script type="text/javascript" src="js/smr.mailings.js"></script>
+	<script type="text/javascript" src="js/smr.period.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+	<script type='text/javascript'>
+		var url = decodeURI(document.location.href);
+		var params = url.substring(url.indexOf("?")+1,url.length).split("&"); 
+		var paraObj = {} 
+		for (i=0; j=params[i]; i++){ 
+			paraObj[j.substring(0,j.indexOf("="))] = j.substring(j.indexOf("=")+1,j.length); 
+		} 
+		var mailingSet = smr.getMailingDetailSet(smr.REPORT_TYPE.MAILINGDETAIL,"main");
+		smr.setDefaultSet(smr.REPORT_TYPE.MAILINGDETAIL,"main","mailingDetail");
+		mailingSet.add({id:paraObj.mailingId , name:"" , mailingType:paraObj.mailingType});
+		var startDate = new Date(Date.parse(paraObj.startDate));
+		var endDate = new Date(Date.parse(paraObj.endDate));
+		var period = smr.buildPeriod("inCustomDateRange",startDate,endDate);
+		mailingSet.period(period);
+		var dateRange = period.getDateRange(); 
+		if(paraObj['allDateRangeShow'] == 'true'){
+			paraObj.formatDate = 'All';
+		}else{
+			paraObj.formatDate= smr.formatDate(dateRange.startDate,"medium")+" - "+smr.formatDate(dateRange.endDate,"medium");
+		}
+		paraObj.isConversionReportEnabledForMDR = smr.isConversionReportEnabledForMDR;
+	</script>
+
+	<script type="text/javascript" src="components/js/printMailingDetail.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		brite.display("printMailingDetail",$('#reports-container'),{reportType:smr.REPORT_TYPE.MAILINGDETAIL,opts:paraObj,isNewRequest:false});
+	});
+	</script>
+	
+</head>
+
+<body>
+		<div class="report">
+		<div id="reports-container" class='tabs-content mailingDetailPrint-container'></div>
+		</div>
+</body>
+</html>

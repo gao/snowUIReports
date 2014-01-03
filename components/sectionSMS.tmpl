@@ -1,0 +1,110 @@
+<script id="tmpl-sectionSMS" type="text/html">
+	<div class="sectionSMS">
+	</div>
+</script>
+
+<script id="tmpl-sectionSMS-summary" type="text/html">
+	<div class="sectionSMSSummary">
+		<div class="sectionSMSSummary-chart">
+			<div class="viewBy head">
+				<span>View by </span>
+				<span class="SMA-REPORT-VIEWBYDAY action {{#equal viewBy 'day'}}selected{{/equal}}" data-view="day">Day</span>
+				<span class="SMA-REPORT-VIEWBYWEEK action {{#equal viewBy 'week'}}selected{{/equal}}" data-view="week">Week</span>
+				<span class="SMA-REPORT-VIEWBYMONTH action {{#equal viewBy 'month'}}selected{{/equal}}" data-view="month">Month</span>
+				<span class="SMA-REPORT-VIEWBYQUARTER action {{#equal viewBy 'quarter'}}selected{{/equal}}" data-view="quarter">Quarter</span>
+			</div>
+			<div class="chart-content"></div>
+		</div>
+		
+		<div class="sectionSMSSummary-bottom">
+			<div class="sectionSMSSummary-bottom-left">
+				<span class="spanTitle">SMS Sent</span>
+				<table>
+					<tr>
+						<th>Metrics</th>
+						<th>Count</th>
+						<th>Rate</th>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="sectionSMSSummary-bottom-right">
+				<span class="spanTitle">SMS Received</span>
+				<table>
+					<tr>
+						<th>Metrics</th>
+						<th>Count</th>
+						<th>Rate</th>
+					</tr>
+				</table>
+			</div>
+			<div class="cb"></div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-sectionSMS-summary-sent-table-tr" type="text/html">
+	{{#if haveData}}
+	<tr>
+		<td class="name">Sent</td>
+		<td class="rate">{{summaryObj.sent}}</td>
+		<td class="count">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="name">Failed</td>
+		<td class="rate">{{summaryObj.failed}}</td>
+		<td class="count">{{summaryObj.failedRate}}%</td>
+	</tr>
+	<tr>
+		<td class="name">Delivered</td>
+		<td class="rate">{{summaryObj.delivered}}</td>
+		<td class="count">{{summaryObj.deliveredRate}}%</td>
+	</tr>
+    {{else}}
+    <tr>
+      <td colspan="3" style="text-align:center">No data!</td>
+    <tr>
+    {{/if}}
+</script>
+
+<script id="tmpl-sectionSMS-summary-received-table-tr" type="text/html">
+    {{#if haveData}}
+	<tr>
+		<td class="name">Received</td>
+		<td class="rate">{{summaryObj.received}}</td>
+		<td class="count">&nbsp;</td>
+	</tr>
+    {{else}}
+    <tr>
+      <td colspan="3" style="text-align:center">No data!</td>
+    <tr>
+    {{/if}}
+</script>
+
+<script id="tmpl-sectionSMS-tableChart" type="text/html">
+	<div class="sectionSMSTable">
+		<div class="byTitle">SMS by <span class="viewByValue"></span></div> 
+		<div class="SMA-REPORT-SUMMARYSTATISTICSTABLE statsSummary"></div>
+		<div class="sectionSMS-table">
+		</div>
+	</div>
+</script>
+<script id="tmpl-sectionSMS-pieChart" type="text/html">
+	<div class="sectionSMSPie">
+		<div class="byTitle">SMS by <span class="viewByValue"></span></div> 
+		<div class="SMA-REPORT-SUMMARYSTATISTICSTABLE statsSummary pieOrBarView"></div>
+		<div class="sectionSMS-pie">
+		</div>
+	</div>
+</script>
+<script id="tmpl-sectionSMS-barChart" type="text/html">
+	<div class="sectionSMSBar">
+		<div class="byTitle">SMS by <span class="viewByValue"></span></div> 
+		<div class="SMA-REPORT-SUMMARYSTATISTICSTABLE statsSummary pieOrBarView"></div>
+		<div class="sectionSMS-bar">
+		</div>
+	</div>
+</script>
+<script id="tmpl-sectionSMS-keyword-breakdown" type="text/html">
+	<div class="item" data-value="{{value}}">{{name}}</div>	
+</script>

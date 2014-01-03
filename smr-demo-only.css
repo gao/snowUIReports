@@ -1,0 +1,220 @@
+/* this is the demo css for the index.html place holder */
+/* DO NOT include this file in production applicaiton */
+
+body {
+	height: 100%;
+	background: #f9f9f9;
+	background-image: url(sm-background-pattern.png);
+	overflow:hidden;
+}
+#page {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+#top {
+	width: 100%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height:50px;
+}
+#side {
+	width: 200px;
+	position: absolute;
+	top: 73px;
+	left: 10px;
+	
+}
+#content {
+	position: absolute;
+	top: 40px;
+	bottom: 30px;
+	left: 220px;
+	right: 10px;
+}
+
+
+/* ----- top header ------ */
+.topHeaderPart .title{
+	font-weight: bold;
+	letter-spacing: .1em;
+	color: #F3F6F6;
+	font-size:24px;
+	float: left;
+	margin-left:20px;
+	margin-top:12px
+}
+
+.topHeaderPart .title .smlogo{
+	width: 35px;
+	height: 25px;
+	display: block;
+	float: left;
+	margin: 2px 3px 3px 3px;
+}
+
+.topHeaderPart .infoSetting{
+	float: right;
+	margin-left:5px;
+	margin-right:10px;
+	color: #F3F6F6;
+	font-size:14px;
+}
+.topHeaderPart .infoSetting .toolLabel{
+	height:28px;
+	float: right;
+	margin-left:5px;
+	background:#838383;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+.topHeaderPart .infoSetting .toolLabel .search{
+	float: left;
+	margin-left:5px;
+}
+.topHeaderPart .infoSetting .toolLabel .search input{
+	border-radius:10px;
+}
+.topHeaderPart .infoSetting .toolLabel .links{
+	float: left;
+	margin-left:5px;
+	margin-top:2px;
+}
+.topHeaderPart .infoSetting .toolLabel .links span{
+	float: left;
+	margin:2px 8px;
+}
+.topHeaderPart .infoSetting .info{
+	float: right;
+	margin:5px 25px 5px 25px;
+	height:25px;
+}
+.topHeaderPart .infoSetting .info span{
+	margin:2px 8px;
+}
+/* ----- /top header ------ */
+
+
+/* ----- nav side ------ */
+.side-nav-header {
+	padding: 7px;
+	background: #dfdfdf;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgb(240,240,240)),color-stop(0.7, rgb(199,199,199)));
+	background-image: -moz-linear-gradient(center top,rgb(240,240,240) 0%,rgb(199,199,199) 50%);
+	border-bottom: solid 1px #acabac;
+}
+.side-nav-header.first{
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+}
+.side-nav-header.last{
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+.side-nav-item{
+	padding: 5px 5px 5px 30px;
+	background: #677A7B;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+.side-nav-item.haveColExp{
+	padding: 5px 5px 5px 10px;
+}
+
+
+.side-nav-item.level-2{
+	padding-left: 50px;
+}
+
+.side-nav-item.sel{
+	background: #CCCFD3;
+	font-weight: bold;
+	letter-spacing: .1em;
+}
+/* ----- /nav side ------ */
+
+
+/* ------ Tabs ------ */
+.tabs-bar{
+	height: 33px;
+	border-bottom: solid 1px #333;
+	padding-left: 23px;
+}
+.tabs-tab{
+	float: left;
+	border: solid 1px #999;
+	border-bottom: none;
+	margin: 0 20px 0 0;
+	padding: 7px 13px 7px 13px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	background: rgb(199,199,199);
+	background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, rgb(199,199,199)),
+	color-stop(0.7, rgb(150,150,150))
+	);
+	background-image: -moz-linear-gradient(
+	center top,
+	rgb(199,199,199) 0%,
+	rgb(150,150,150) 70%
+	);
+	color: #555;
+}
+
+.tabs-tab.sel{
+	border-bottom: solid 1px #f8f8f8;
+	background: #efefef;
+	font-weight: bold; 
+}
+.tabs-content{
+	position: absolute;
+	top: 34px; right: 0; bottom: 0; left: 0;
+	background: #f8f8f8;
+	overflow:auto;
+}
+/* ------ /Tabs ------ */
+
+/* ------ demo icno ------ */
+.demoicon{
+	background-image: url("css/images/smr-glyphicons.png");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: left;
+	margin: 2px 3px 3px 3px;
+}
+.icon-message{
+  	background-position: -72px 0px;
+}
+.icon-data{
+  	background-position: -384px -144px;
+}
+.icon-content{
+  	background-position: -264px -24px;
+}
+.icon-report{
+  	background-position: -264px 0px;
+}
+.icon-tool{
+  	background-position: -360px -144px;
+}
+.icon-setting{
+  	background-position: -432px 0px;
+}
+/* ------ /demo icno ------ */

@@ -1,0 +1,542 @@
+.report .mailingDetailPrint-container{
+   min-width: 1040px;
+   overflow: auto; 
+   color:#303030;
+}
+
+.sectionMailingDetail {
+	margin: 8px 0 0 0;
+	background:#F9F7F8;
+	color:#303030;
+}
+
+.sectionMailingDetail .sectionMailingDetail-headerInfo{
+	margin: 0px 10px 15px 12px;
+	font-weight:bold;
+	font-family: Arial;
+}
+.sectionMailingDetail .sectionMailingDetail-headerInfo .title{
+	font-size: 10.25pt; 
+}
+
+.sectionMailingDetail .sectionMailingDetail-headerInfo .mailing-name{
+	color: #1c818a;
+	font-size: 10.25pt;
+	font-family: Arial;
+}
+
+.sectionMailingDetail .sectionMailingDetail-headerInfo .mailing-date{
+	float:right;
+	margin-right: 12px;
+	font-size: 8.5pt;
+	font-weight: normal;
+}
+
+.sectionMailingDetail .sectionMailingDetail-subjectLine{
+	margin: 0px 10px 5px 12px;
+	font-size:8.5pt;
+	font-weight:bold;
+	font-family: Arial;
+}
+.sectionMailingDetail .sectionMailingDetail-subjectLine .title{
+	color:#6d6d6d;
+}
+
+/* ---------Header section--------- */
+.sectionMailingDetail .sectionMailingDetail-headerSection{
+	margin: 5px 10px 5px 10px;
+	width: 98%;
+	border: 1px solid #d6d6d6;
+	.border-radius(7px);
+	background:#FFFFFF;
+}
+.sectionMailingDetail .sectionMailingDetail-headerSection .headerSection-table{
+	width:100%;
+	margin:4px 4px 1px 4px;
+	font-size: 8.5pt;
+	font-weight:normal;
+	font-family: Arial;
+}
+.sectionMailingDetail .sectionMailingDetail-headerSection .headerSection-table .labelTd{
+	text-align:right;
+	width:180px;
+	color:#6d6d6d;
+}
+.sectionMailingDetail .sectionMailingDetail-headerSection .headerSection-table tr{
+	height:16px;
+}
+.sectionMailingDetail .sectionMailingDetail-headerSection .headerSection-table .labelTd.first{
+	width:100px;
+}
+.sectionMailingDetail .sectionMailingDetail-headerSection .headerSection-table .value{
+	text-align:left;
+}
+.sectionMailingDetail .sectionMailingDetail-headerSection span.refresh{
+	background-image: url("images/refresh_ico.png");
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-left: 3px;
+	margin-right: 6px;
+	margin-bottom: 8px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+/* ---------/Header section--------- */
+
+
+/* ---------Section Title--------- */
+.sectionMailingDetail .sectionMailingDetail-targetSection .sectionTitle{
+	margin:12px 10px 0 10px;
+}
+
+.sectionMailingDetail .sectionMailingDetail-linkSection .sectionTitle{
+	margin:12px 10px 0 10px;
+}
+
+.sectionMailingDetail .sectionTitle .targetTypeSelect{
+	margin-left:37px;
+	font-size:8.5pt;
+	font-family: Arial;
+	color:#3c3c3c;
+	font-weight:normal;
+}
+.sectionMailingDetail .sectionTitle .conversionReportPart{
+	display: inline;
+}
+.sectionMailingDetail .sectionTitle .targetTypeSelect input{
+	margin-left:7px;
+}
+.sectionMailingDetail .sectionTitle .targetTypeSelect span{
+	margin-right:5px;
+	margin-left:2px;
+}
+
+.sectionMailingDetail .sectionTitle .linkTypeSelect{
+	margin-left:20px;
+	font-size:8.5pt;
+	font-family: Arial;
+	color:#3c3c3c;
+	font-weight:normal;
+}
+.sectionMailingDetail .sectionTitle .linkTypeSelect input{
+	margin-left:4px;
+}
+.sectionMailingDetail .sectionTitle .linkTypeSelect span{
+	margin-right:5px;
+	margin-left:2px;
+}
+
+.sectionMailingDetail .sectionTitle .dynamicContentSelector{
+	margin-left:40px;
+	font-size:8.5pt;
+	font-family: Arial;
+	color:#3c3c3c;
+	font-weight:normal;
+}
+.sectionMailingDetail .sectionTitle .dynamicContentSelector input{
+	margin-left:8px;
+}
+.sectionMailingDetail .sectionTitle .dynamicContentSelector span{
+	margin-right:4px;
+}
+.sectionMailingDetail .sectionTitle .dynamicContentSelector .iconDiv{
+	margin: 0 0 0 2px;
+}
+
+/* ---------/Section Title--------- */
+
+
+/* ---------Summary Items--------- */
+.sectionMailingDetail .statsSummaryItems{
+	margin:5px 10px 0 10px;
+}
+.sectionMailingDetail .statsSummaryItems .dataItem{
+	display:inline-block;
+	border:1px solid #d6d6d6;
+	border-left:0px;
+	background:#FFFFFF;
+}
+.sectionMailingDetail .statsSummaryItems .dataItem.hoveredDiv{
+	background:#F0F1F1;
+}
+.sectionMailingDetail .statsSummaryItems .dataItem{
+	*display:inline;
+}
+.sectionMailingDetail .statsSummaryItems .dataItem.dataItemSpace{
+	margin-left:10px;
+}
+
+.sectionMailingDetail .statsSummaryItems .dataItem.first{
+	border-left: 1px solid #C6C6C6;
+	.complex-border-radius(7px,0,0,7px);
+}
+.sectionMailingDetail .statsSummaryItems .dataItem:not(.first){
+	.complex-border-radius(0,7px,7px,0);
+}
+.sectionMailingDetail .statsSummaryItems .dataItem.haveRightRadius{
+	.complex-border-radius(7px,7px,7px,7px);
+}
+.sectionMailingDetail .statsSummaryItems .dataItem .mainPart{
+	text-align:center;
+	display:block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-left:13px;
+	margin-right:14px;
+	font-weight:bold;
+}
+.sectionMailingDetail .statsSummaryItems .dataItem .mainPart .dataItem-label{
+	margin:0px 0px 0px 0px;
+	font-size:8.5pt;
+	font-family: Arial;
+	font-weight:normal;
+	color: #303030
+}
+.sectionMailingDetail .statsSummaryItems .dataItem .mainPart .dataItem-value{
+	margin:0px 0px 0px 0px;
+	font-size:11pt;
+	font-family: Arial;
+	font-weight:bold;
+	letter-spacing: 0;
+	color:#303030;
+}
+/* ---------/Summary Items--------- */
+
+/* ---------Summary Statistic Hover Container--------- */
+.sectionMailingDetail .hoverItemContainer {
+	position: absolute;
+	margin: 0 0;
+	z-index: 23;
+}
+.sectionMailingDetail .hoverItemContainer .hoverDiv {
+	overflow: hidden;
+	.border-radius(14px);
+	border: 1px solid #a8a8a8;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-bottom: 6px;
+	background-color: #ffffff;
+	.box-shadow(0px 0px 10px rgba(0,0,0,.3));
+}
+.sectionMailingDetail .hoverItemContainer .hoverDiv .totalPart {
+	margin-top:9px;
+}
+.sectionMailingDetail .hoverItemContainer .hoverDiv .uniquePart {
+	margin-top:53px;
+}
+.sectionMailingDetail .hoverItemContainer .hoverDiv .title {
+	font-size:8.5pt;
+	font-weight:bold;
+	font-family: Arial;
+	border-bottom: 1px solid #d6d6d6;
+}
+.sectionMailingDetail .hoverItemContainer .hoverDiv .title .name{
+	padding-bottom:3px;
+}
+
+.sectionMailingDetail .hoverItemContainer .hoverDiv .leftPart{
+	display:inline;
+	float:left;
+	margin-top:5px;
+	padding-right:9px;
+	border-right: 1px solid #d6d6d6;
+	text-align:center;
+}
+.sectionMailingDetail .hoverItemContainer .hoverDiv .rightPart{
+	display:inline;
+	float:left;
+	margin-top:5px;
+	padding-left:9px;
+	padding-right:0px;
+	text-align:center;
+}
+.sectionMailingDetail .hoverItemContainer .hoverDiv .hoverDiv-label{
+	margin:0px 5px 0px 5px;
+	font-size:8.5pt;
+	font-weight:normal;
+	font-family: Arial;
+	color: #303030;
+}
+
+.sectionMailingDetail .hoverItemContainer .hoverDiv .value{
+	margin:0px 5px 0px 5px;
+	font-size:11pt;
+	font-weight:bold;
+	font-family: Arial;
+	letter-spacing: 0;
+	color:#303030;
+}
+/* --------- for Transactional --------- */
+.sectionMailingDetail .hoverItemContainer .hoverDiv.itemsForTransactional {
+	width: 180px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+}
+.sectionMailingDetail .hoverItemContainer .hoverDiv.itemsForTransactional .totalPart {
+	margin-top:9px;
+}
+.sectionMailingDetail .hoverItemContainer .hoverDiv.itemsForTransactional .uniquePart {
+	margin-top:18px;
+}
+.sectionMailingDetail .hoverItemContainer .hoverDiv .metric{
+	margin:5px 0px 5px 0px;
+	font-family: Arial;
+	font-weight: normal;
+	font-size:8.5pt;
+	color: #303030;
+	letter-spacing: 0;
+}
+.sectionMailingDetail .hoverItemContainer .hoverDiv .metric .metricValue{
+	float:right;
+}
+/* ---------/for Transactional --------- */
+
+/* ---------/Summary Statistic Hover Container--------- */
+
+/* ---------Summary Statistic and Conversion Statistic --------- */
+.sectionMailingDetail .sectionMailingDetail-summaryConversionSection{
+	margin-bottom:10px;
+}
+.sectionMailingDetail .sectionMailingDetail-summaryConversionSection .sectionContent{
+	height:auto;
+}
+.sectionMailingDetail .sectionMailingDetail-summarySection{
+	margin-bottom:10px;
+}
+.sectionMailingDetail .sectionMailingDetail-conversionSection{
+	margin-bottom:10px;
+}
+.sectionMailingDetail .sectionMailingDetail-summaryConversionSection .sectionContent .sectionContent-sub{
+	background:#FFFFFF;
+	.border-radius(7px);
+	border: 1px solid #ccc;
+}
+.sectionMailingDetail .sectionMailingDetail-summaryConversionSection .sectionTitle-sub{
+	margin:7px 10px 5px 10px;
+	font-size:8.5pt;
+	font-weight:bold;
+	font-family: Arial;
+}
+/* ---------/Summary Statistic and Conversion Statistic --------- */
+
+
+/* ---------Summary Statistic and Conversion Statistic for Transactional --------- */
+.sectionMailingDetail .sectionMailingDetail-summaryConversionSectionForTransactional{
+	margin-bottom:10px;
+}
+.sectionMailingDetail .sectionMailingDetail-summaryConversionSectionForTransactional .sectionContent{
+	height:234px;
+}
+.sectionMailingDetail .sectionMailingDetail-summaryConversionSectionForTransactional .sectionContent .sectionContent-sub{
+	background:#FFFFFF;
+	border-radius:7px;
+	border: 1px solid #d6d6d6;
+}
+.sectionMailingDetail .sectionMailingDetail-summaryConversionSectionForTransactional .sectionTitle-sub{
+	margin:7px 10px 5px 0px;
+	font-size:8.5pt;
+	font-weight:bold;
+	font-family: Arial;
+}
+.sectionMailingDetail .sectionMailingDetail-summarySectionForTransactional{
+	float:left;
+	margin-left:10px;
+	width:48.3%;
+	margin-bottom:10px;
+}
+.sectionMailingDetail .sectionMailingDetail-summarySectionForTransactional .summarySectionForTransactionalTable{
+	height:180px;
+	margin:6px 10px 10px 10px;
+}
+
+.sectionMailingDetail .sectionMailingDetail-conversionSectionForTransactional{
+	float:left;
+	margin-left:20px;
+	width:48%;
+	margin-bottom:10px;
+}
+.sectionMailingDetail .sectionMailingDetail-conversionSectionForTransactional .conversionSectionForTransactionalTable{
+	height:180px;
+	margin:6px 10px 10px 10px;
+}
+.sectionMailingDetail .sectionContent .dataTableForTransactional{
+	font-family:Arial;
+	font-size:8.5pt;
+	font-weight:normal;
+	border-collapse:collapse;
+	width:100%;
+	margin-left:5px;
+}
+.sectionMailingDetail .sectionContent .dataTableForTransactional td{
+	height:17px;
+	text-align:left;
+	padding: 2px 8px 3px 8px;
+}
+.sectionMailingDetail .sectionContent .dataTableForTransactional td.bottomBorder{
+	border-bottom:1px solid #D6D6D6;
+}
+.sectionMailingDetail .sectionContent .dataTableForTransactional td.name{
+	width:25%;
+}
+.sectionMailingDetail .sectionContent .dataTableForTransactional td.value{
+	width:15%;
+	text-align:right;
+	padding-right:11px;
+}
+.sectionMailingDetail .sectionContent .dataTableForTransactional td.hoveredTd{
+	background:#F0F1F1;
+}
+/* ---------/Summary Statistic and Conversion Statistic for Transactional --------- */
+
+
+/* ---------Each Section Table--------- */
+
+.sectionMailingDetail .sectionContent .campaignAveragesSectionTable{
+	margin:10px 10px 10px 10px;
+}
+.sectionMailingDetail .sectionContent .campaignAveragesSectionTable .noArrow{
+	margin:0 5px 0 5px;
+}
+.sectionMailingDetail .sectionContent .targetSectionTable{
+	margin:10px 10px 10px 10px;
+}
+.sectionMailingDetail .sectionContent .failureSectionTable{
+	margin:10px 10px 10px 10px;
+}
+.sectionMailingDetail .sectionContent .linkSectionTable{
+	margin:10px 10px 10px 10px;
+	max-height:470px;
+	overflow-y:auto;
+}
+.sectionMailingDetail .sectionContent .shareSectionSummaryAndTable{
+	margin:7px 10px 10px 10px;
+}
+.sectionMailingDetail .sectionContent .ftafSectionTable{
+	margin:7px 10px 10px 10px;
+}
+.sectionMailingDetail .sectionContent .deviceUsageSectionTable{
+	margin:10px 10px 10px 10px;
+}
+
+
+.sectionMailingDetail .sectionContent .leftBar{
+	display:inline;
+	width: 20%;
+	float:left;
+} 
+.sectionMailingDetail .sectionContent .rightBar{
+	display:inline;
+	width: 70%;
+	float:left;
+} 
+.sectionMailingDetail .sectionContent .leftBar .worsenedBar{
+	height:12px;
+	border:1px solid #C93739;
+	border-right:0px;
+	#gradient > .vertical(#f77c7e,#e0494b);
+	float:right;
+	margin-right:0px;
+} 
+.sectionMailingDetail .sectionContent .leftBar .worsenedBarHide{
+	height:12px;
+	float:right;
+	margin-right:0px;
+}
+.sectionMailingDetail .sectionContent .rightBar .improvedBar{
+	height:12px;
+	border:1px solid #58ad15;
+	border-right:1px;
+	#gradient > .vertical(#95e855,#6ac821);
+	margin-left: 5px;
+	float:left;
+	margin-left:0px;
+} 
+.sectionMailingDetail .sectionContent .leftBar .improvedBarHide{
+	height:12px;
+	float:right;
+	margin-right:0px;
+}
+
+/* ---------/Each Section Table--------- */
+
+
+/* ---------Section Title Button--------- */
+.sectionMailingDetail .btn {
+	#gradient > .vertical-three-colors(#F7F6F4,#D4D2D3,60%,#ebebeb);
+	border:1px solid #bfc3c4;
+	text-align:center;
+	width:auto;
+	border-radius:15px;
+	font-size:12px;
+	font-weight:normal;
+	padding:0px 6px;
+	cursor:pointer;
+	display:inline-block;
+}
+
+.sectionMailingDetail .btn:hover{
+	#gradient > .vertical-three-colors(#E1F4F8,#ADD9E2,50%,#d1edf1);
+}
+
+.sectionMailingDetail .sectionMailingDetail-linkSection .overlayReport{
+	float:right;
+	margin-right:8px;
+	margin-top:4px;
+	margin-bottom:3px;
+	*margin-top:-18px;
+}
+
+.sectionMailingDetail .sectionMailingDetail-failureSection .failureDetailReport{
+	float:right;
+	margin-right:8px;
+	margin-top:-1px;
+	margin-bottom:3px;
+	*margin-top:-18px;
+}
+/* ---------/Section Title Button--------- */
+
+
+
+/* ---------Share Performance --------- */
+.sectionMailingDetail .sectionContent .sectionSubTitle{
+	margin:0 10px 5px 0;
+	font-size:8.5pt;
+	font-weight:bold;
+	font-family: Arial;
+}
+
+.sectionMailingDetail .shareSectionSummaryAndTable .statsSummaryItems{
+	margin:5px 10px 17px 0;
+}
+
+.sectionMailingDetail .shareSectionSummaryAndTable .dataTable td.first{
+	width:25%;
+}
+/* ---------/Share Performance --------- */
+
+
+/* ---------Link Performance --------- */
+ .sectionMailingDetail .linkHoverBoxContainer {
+ 	z-index:23;
+	position: absolute;
+	margin: 0 0;
+}
+
+.sectionMailingDetail .linkHoverBoxContainer .hoverDiv {
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	border-radius: 10px;
+	border: 1px solid #6d6d6d;
+	padding: 10px;
+	background-color: #ffffff;
+}
+
+.sectionMailingDetail .linkHoverBoxContainer .hoverDiv span {
+	margin-left: 10px;
+	font-weight:normal;
+}
+/* ---------/Link Performance --------- */

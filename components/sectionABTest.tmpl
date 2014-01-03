@@ -1,0 +1,117 @@
+<script id="tmpl-sectionABTest" type="text/html">
+	<div class="sectionABTest">
+		
+		<div class="sectionABTest-headerSection">
+			
+		</div>
+     		
+		<div class="sectionABTest-summary-Chart">
+			<div class="sectionContent">
+				
+			</div>
+		</div>
+
+		
+		<div class="sectionABTest-gridSection">
+			<div class="sectionTitle">
+				<span class="showTypeSelect">
+					Show:
+					<input name="showType" type="radio" value="count"><span class="showType-count">Counts</span>
+					<input name="showType" type="radio" value="percent"><span class="showType-percent">Percentages</span>
+				</span>
+			</div>
+			<div class="sectionContent">
+				<div class="targetSectionTable">
+					<table class="dataTable">
+						<thead>
+							<tr></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="gridHoverBoxContainer"></div>
+	</div>
+</script>
+
+<script id="tmpl-ABTest-headerSection" type="text/html">
+	<div class="headerSection-table">
+		<table>
+			<tr>
+				<td class="labelTd first">Campaign:&nbsp;</td>
+				<td class="value longvalue" title="{{summary.campaign}}">{{summary.campaignEllipses}}</td>
+				<td class="labelTd">Status:&nbsp;</td>
+				<td class="value">{{summary.status}}</td>
+				<td class="labelTd">Test Started:&nbsp;</td>
+				<td class="value">{{summary.testStartTime}}</td>
+			</tr>
+			<tr>
+				<td class="labelTd first">Test Type:&nbsp;</td>
+				<td class="value longvalue">{{summary.testType}}</td>
+				<td class="labelTd">Report Generated:&nbsp;</td>
+				<td class="value">{{summary.reportGeneratedTime}} <span class="refresh"><span></td>
+				<td class="labelTd">Elapsed Time:&nbsp;</td>
+				<td class="value">{{summary.elapsedTime}}</td>
+			</tr>
+			{{#if showWinner}}
+			<tr>
+				<td class="labelTd first">{{#if summary.winnerCriteria}}Winner Criteria:{{/if}}&nbsp;</td>
+				<td class="value">{{summary.winnerCriteria}}</td>
+				<td class="labelTd">&nbsp;</td>
+				<td class="value"></td>
+				<td class="labelTd">{{#if summary.timeTillWinnerSelection}}Time Till Winner Selection:{{/if}}&nbsp;</td>
+				<td class="value">{{summary.timeTillWinnerSelection}}</td>
+			</tr>
+			{{/if}}
+		</table>
+	</div>
+</script>
+
+<script id="tmpl-ABTest-dataTable-tableThead" type="text/html">
+	<th class="{{#if sortable}}sortable{{/if}}"  data-column="{{column}}">
+		<div class="th-label">{{label}}</div>
+	</th>
+</script>
+
+<script id="tmpl-ABTest-dataTable-tableTbody" type="text/html">
+	<tr index="{{index}}">
+	</tr>
+</script>
+
+<script id="tmpl-ABTest-dataTable-tableTbody-td" type="text/html">
+	<td class="{{first}} {{#notEqualAndTrue value 'Total' showHoverBox}}showhover{{/notEqualAndTrue}} {{#if isLastRow}}lastRowTd{{/if}}  {{#if isAlignLeft}}alignLeft{{/if}}">
+			<span {{#if haveTitle}}title="{{columnTitle}}"{{/if}}>
+				{{#notEqual first ""}}
+						{{#if isMock}}
+							{{#notEqual value 'Total'}}
+							<a class="name-value" href="javascript:smr.showReport('#reports-container',smr.REPORT_TYPE.MAILINGDETAIL,'sectionMailingDetail',null,null,[301],'mailingDetail');">{{value}}</a><span class="iconspan glyphicon icon-info-sign">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							{{else}}
+							<a class="name-value" href="javascript:smr.showReport('#reports-container',smr.REPORT_TYPE.BATCH,null,null,[101]);">{{value}}</a>
+							{{/notEqual}}
+						{{else}}
+							{{#notEqual value 'Total'}}
+					 		<a class="name-value" href="javascript:sm.app.mailing.MailingMgr.showDetailReport({{mailingId}},'','')">{{value}}</a><span class="iconspan glyphicon icon-info-sign">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							{{else}}
+							<a class="name-value" href="javascript:sm.comp.tab.TabMgr.openTab('BATCH_MAILING_REPORT','{{mailingIds}}');">{{value}}</a>
+							{{/notEqual}}
+						{{/if}}
+				{{else}}
+					<span {{#if haveBestVaule }}class="best"{{/if}}>{{#if isConversionSymbol}}{{conversionCurrencyForABTest}}{{/if}}{{value}}{{#if isRate}}%{{/if}}</span>
+				{{/notEqual}}
+			</span>
+	</td>
+</script>
+<script id="tmpl-gridSection-table-td-hover" type="text/html">
+	<div class="hoverDiv">
+		<div><span>Name:</span><span {{#if ellipse}}title="{{splitName}}"{{/if}}>{{#if ellipse}}{{ellipse}}{{else}}{{splitName}}{{/if}}</span></div>
+		<div><span>Subject Line:</span><span>{{subject}}</span></div>
+		<div><span class="tmp-span">Template:</span><div class="template"><img src="{{splitImage}}" /></div></div>
+	<div>
+</script>
+<script id="tmpl-legend-item-hover" type="text/html">
+	<div class="legend-item-hover">
+		<div></div>
+	<div>
+</script>

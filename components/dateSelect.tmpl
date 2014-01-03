@@ -1,0 +1,53 @@
+<script id="tmpl-dateSelect" type="text/html">
+	<div class="dateSelect">
+		<div class="dateSelect-main">
+			<div class="icos">
+				<div class="icoDiv icoLeft" data-action="prev"><span class="ico ico-icoLeft"></span></div>
+				<div class="icoDiv icoRight" data-action="next"><span class="ico ico-icoRight"></span></div>
+			</div>
+			<div class="dateSelect-content">
+				
+			</div>
+			<div class="dateSelect-buttons">
+				<div class="button close">Close</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script id="tmpl-dateSelect-calendar" type="text/html">
+	<div class="dateSelect-calendar">
+		<div class="title">
+			{{monthLabel}} {{year}}
+		</div>
+		<table class="dateSelect-calendar-table">
+			<thead>
+				<tr class="calendar-week">
+					<th data-value="0">S</th>
+					<th data-value="1">M</th>
+					<th data-value="2">T</th>
+					<th data-value="3">W</th>
+					<th data-value="4">T</th>
+					<th data-value="5">F</th>
+					<th data-value="6">S</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#eachWeeks weeks}}
+					<tr >
+						{{#eachDayWeek week belforeLimitedDate}}
+							{{#if date}}
+								<td class="calendar-date {{#if isGray}}gray{{/if}} {{#if equalServerDate}}today{{/if}}" data-value="{{formatDate}}">
+									{{dateVal}}
+								</td>
+							{{else}}
+								<td>
+									&nbsp;
+								</td>
+							{{/if}}
+						{{/eachDayWeek}}
+					</tr>
+				{{/eachWeeks}}
+			</tbody>
+		</table>
+	</div>
+</script>

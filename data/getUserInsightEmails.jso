@@ -1,0 +1,222 @@
+{
+    "identifier": 'id',
+    "itemsCommon": null,
+    "items": [
+        {
+            "data": [
+                {
+                    "click": false,
+                    "converted": false,
+                    "date": "23-Aug-13",
+                    "id": 2100,
+                    "mailingName": "test_for_invalid_member_property_6",
+                    "open": false,
+                    "revenue": 0,
+                    "subject": "test_for_invalid_member_property_3",
+                    "assetType":"STANDARD_MAILING",
+                    "type": "Batch"
+                },
+                {
+                    "click": true,
+                    "converted": false,
+                    "date": "07-Aug-13",
+                    "id": 700,
+                    "mailingName": "program_5.My Send Program 5",
+                    "open": true,
+                    "revenue": 0,
+                    "subject": "simple template 2",
+                    "assetType":"STANDARD_MAILING",
+                    "programId":1000,
+                    "programName": "programName_test1",
+                    "type": "PROGRAM"
+                },
+                {
+                    "click": true,
+                    "converted": false,
+                    "date": "06-Aug-13",
+                    "id": 100,
+                    "mailingName": "simple_mailing_1",
+                    "open": true,
+                    "revenue": 0,
+                    "subject": "simple template 1",
+                    "assetType":"STANDARD_MAILING",
+                    "type": "Batch"
+                },
+                {
+                    "click": true,
+                    "converted": true,
+                    "date": "16-Aug-13",
+                    "id": 300,
+                    "mailingName": "t_mail_my_record",
+                    "open": true,
+                    "revenue": 20,
+                    "subject": "simple template my record",
+                    "assetType":"TRANSACTIONAL_MAILING",
+                    "type": "Transactional"
+                },
+                {
+                    "click": true,
+                    "converted": false,
+                    "date": "08-Aug-13",
+                    "id": 900,
+                    "mailingName": "b_mail_content_region_only",
+                    "open": true,
+                    "revenue": 0,
+                    "subject": "template content region",
+                    "assetType":"TRANSACTIONAL_MAILING",
+                    "type": "Batch"
+                },
+                {
+                    "click": true,
+                    "converted": true,
+                    "date": "08-Aug-13",
+                    "id": 700,
+                    "mailingName": "program_5.My Send Program 5",
+                    "open": true,
+                    "revenue": 140,
+                    "subject": "simple template 2",
+                    "assetType":"TRANSACTIONAL_MAILING",
+                    "programId":1001,
+                    "programName": "programName_test2",
+                    "type": "PROGRAM"
+                },
+                {
+                    "click": false,
+                    "converted": false,
+                    "date": "22-Aug-13",
+                    "id": 1900,
+                    "mailingName": "test_for_invalid_member_property_4",
+                    "open": false,
+                    "revenue": 0,
+                    "subject": "test_for_invalid_member_property_3",
+                    "assetType":"TRANSACTIONAL_MAILING",
+                    "type": "Batch"
+                },
+                {
+                    "click": false,
+                    "converted": false,
+                    "date": "22-Aug-13",
+                    "id": 2000,
+                    "mailingName": "test_for_invalid_member_property_5",
+                    "open": false,
+                    "revenue": 0,
+                    "subject": "test_for_invalid_member_property_3",
+                    "assetType":"PROGRAM",
+                    "type": "Batch"
+                },
+                {
+                    "click": true,
+                    "converted": true,
+                    "date": "01-Sep-13",
+                    "id": 300,
+                    "mailingName": "t_mail_my_record",
+                    "open": true,
+                    "revenue": 110,
+                    "subject": "simple template my record",
+                    "assetType":"PROGRAM",
+                    "type": "Transactional"
+                },
+                {
+                    "click": false,
+                    "converted": false,
+                    "date": "10-Aug-13",
+                    "id": 1400,
+                    "mailingName": "co_1",
+                    "open": false,
+                    "revenue": 0,
+                    "subject": "simple template 1",
+                    "assetType":"PROGRAM",
+                    "type": "Batch"
+                },
+                {
+                    "click": true,
+                    "converted": true,
+                    "date": "09-Aug-13",
+                    "id": 1200,
+                    "mailingName": "mailing_multi_target",
+                    "open": true,
+                    "revenue": 180,
+                    "subject": "multi target mail",
+                    "assetType":"PROGRAM",
+                    "type": "Batch"
+                },
+                {
+                    "click": false,
+                    "converted": false,
+                    "date": "23-Aug-13",
+                    "id": 2300,
+                    "mailingName": "test_for_invalid_member_property_8",
+                    "open": false,
+                    "revenue": 0,
+                    "subject": "test_for_invalid_member_property_3",
+                    "assetType":"PROGRAM",
+                    "type": "Batch"
+                },
+                {
+                    "click": true,
+                    "converted": false,
+                    "date": "02-Sep-13",
+                    "id": 2700,
+                    "mailingName": "program_8_test.My Send Program 7",
+                    "open": true,
+                    "revenue": 0,
+                    "subject": "simple template 1",
+                    "assetType":"PROGRAM",
+                    "programId":1002,
+                    "programName": "programName_test3",
+                    "type": "PROGRAM"
+                },
+                {
+                    "click": false,
+                    "converted": false,
+                    "date": "21-Aug-13",
+                    "id": 1800,
+                    "mailingName": "test_for_invalid_member_property_3",
+                    "open": false,
+                    "revenue": 0,
+                    "subject": "test_for_invalid_member_property_3",
+                    "assetType":"PROGRAM",
+                    "type": "Batch"
+                },
+                {
+                    "click": false,
+                    "converted": false,
+                    "date": "19-Aug-13",
+                    "id": 1700,
+                    "mailingName": "test_for_invalid_member_property_2",
+                    "open": false,
+                    "revenue": 0,
+                    "subject": "test_for_invalid_member_property_2",
+                    "assetType":"PROGRAM",
+                    "type": "Batch"
+                },
+                {
+                    "click": false,
+                    "converted": false,
+                    "date": "19-Aug-13",
+                    "id": 1600,
+                    "mailingName": "test_for_invalid_member_property",
+                    "open": false,
+                    "revenue": 0,
+                    "subject": "test_for_invalid_member_property",
+                    "assetType":"PROGRAM",
+                    "type": "Batch"
+                }
+            ],
+            "summary": {
+                "clickRate": 87.5,
+                "clicks": 14,
+                "conversionRate": 50.0,
+                "conversions": 8,
+                "delivered": 16,
+                "deliveryRate": 100.0,
+                "openRate": 37.5,
+                "opens": 6,
+                "revenue": 450,
+                "sent": 16,
+                "unsubRate": 0.0,
+                "unsubs": 0
+            }
+        }
+    ]
+}

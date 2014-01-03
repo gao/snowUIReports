@@ -1,0 +1,391 @@
+.userInsightPicker{
+	position:absolute;
+	z-index:22;
+	left:245px;
+	top:55px;
+	min-width:905px;
+	min-height:540px;
+	width:905px;
+	background-color:#f9f7f8;
+	color:#3c3c3c;
+	.border-radius(10px);
+	.box-shadow(5px 5px 5px rgba(0,0,0,.4));
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.userInsightPicker .clear{
+	clear:both;
+}
+
+.userInsightPicker .btn {
+	#gradient > .vertical-three-colors(#F7F6F4,#D4D2D3,60%,#ebebeb);
+	border:1px solid #bfc3c4;
+	text-align:center;
+	width:50px;	
+	.border-radius(15px);
+	padding: 3px 5px;
+	margin:0px 6px 0 73px;
+	cursor:pointer;
+	display:inline-block;
+}
+
+.userInsightPicker .btn:hover{
+	#gradient > .vertical-three-colors(#E1F4F8,#ADD9E2,50%,#d1edf1);
+}
+
+.userInsightPicker .btn.reset{
+	margin:0px 6px 0 5px;
+}
+
+.userInsightPicker .icoDiv{
+	position:absolute;
+	width:16px;
+	height:16px;
+	background-image:none;
+	text-align:center;
+	line-height:24px;
+	cursor:pointer;
+}
+.userInsightPicker .icoDiv.resizeHandler{
+	background-image: url("images/smr-sprites.png");
+	background-repeat: no-repeat;
+	background-position: 0px -96px;	
+	bottom:2px;
+	right:1px;
+	cursor:se-resize;
+}
+.userInsightPicker input[type="text"]:focus{
+	outline: 5px auto #518ec8;
+}
+.userInsightPicker .userInsightPicker-top{
+	cursor:move;
+	#gradient > .vertical(#E6E6E6,#BDBDBD);
+	.border-radius(7px 7px 0 0);
+	border-bottom:1px solid #8b8b8b;
+	height:35px;
+}
+
+.userInsightPicker .userInsightPicker-top.IE9PickerHeader-background{
+	filter:none;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U5ZTllOSIgc3RvcC1vcGFjaXR5PSIxIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZDBkMGQxIiBzdG9wLW9wYWNpdHk9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+PC9zdmc+);
+}
+
+.userInsightPicker .userInsightPicker-top .title{
+	font-size:14px;
+	font-weight:bolder;
+	float:left;
+	margin:10px 0 0 15px;
+}
+
+.userInsightPicker .userInsightPicker-top .icoDiv.close{
+	top:10px;
+	right:10px;
+}
+.userInsightPicker .userInsightPicker-top .icoDiv .ico-close{
+	background-image: url("images/btn_close.png");
+	width: 16px;
+	height: 16px;
+	background-position: 0 0;
+	margin-left: 0;
+}
+
+.userInsightPicker .userInsightPicker-main{
+	padding:0 15px 10px 15px;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-available {
+	margin:8px 0 0 0 ;
+	font-weight:bold;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter {
+	background: #F0F1F1;
+    border: 1px solid #D6D6D6;
+    margin:8px 0 0 0 ;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-head{
+	height:20px;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-head .filter-title{
+	margin-left:6px;
+	float:left;
+	height: 20px;
+    line-height: 20px;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-head .filter-title .collapsible{
+	display:none;
+	cursor:pointer;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-head .filter-title.exp .collapsible.exp{
+	display:inline-block;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-head .filter-title.col .collapsible.col{
+	display:inline-block;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-head .filter-option{
+	margin-right:10px;
+	float:right;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-head .filter-option a{
+	text-decoration: none;
+	color:#3c3c3c;
+}
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-head .filter-option .option-ico{
+	background-position: 1px 2px;
+	background-repeat: no-repeat;
+ 	background-image: url("images/assets/icon_Options.png");
+ 	width: 18px;
+ 	height:20px;
+	line-height: 20px;
+	display: inline-block; 	
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-content .filter-content-section{
+	margin-top:8px;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-content .filter-content-section .rate-input{
+	width:30px;
+	border: 1px solid #DDDDDD;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-content .filter-content-section .currency-input{
+	width:40px;
+	border: 1px solid #DDDDDD;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-content .filter-content-section input.error{
+	border: 1px solid red;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-content .filter-content-section .date-select{
+	height: 20px;
+	border: 1px solid #DDDDDD;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-content .filter-content-section .compare-select{
+	height: 20px;
+	border: 1px solid #DDDDDD;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-content .filter-content-section .sec{
+	float:left;
+	margin-left: 10px;
+}
+
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table{
+	border-top:1px solid #a8a8a8;
+	max-height: 272px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	margin-top:6px;
+}
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table .userInsightPicker-dataTable .dataTable{
+	margin:0px auto;
+}
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table{
+	background-color:#ffffff;
+	border-collapse:collapse;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	width:100%;
+}
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table th{
+	#gradient > .verticalNotIE(#eaeaea,#D8D8D8);
+	padding: 2px 0 2px 8px;
+	text-align: left;
+	border:1px solid #a8a8a8;
+	font-weight:normal;
+	border-top:none;
+	font-size:12px;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table th.first{
+	width:5%;
+	padding:0px;
+	text-align:center;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table th.email{
+	width:50%;
+}
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table th.name{
+	width:12%;
+}
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table th.rate{
+	width:10%;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table tr th:last-child{
+	width:auto;
+	border-right:1px solid #a8a8a8;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table tr th.last{
+	border-right:1px solid #a8a8a8;
+}
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table tr.checked{
+	background:#e8f2fe;
+}
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table th.sortable{
+	cursor:pointer;
+}
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table th.sortable .thSortName{
+	float:left;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table th.sortable .sort{
+	float:right;
+	display:none;
+	margin-right: 6px;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table th.asc .sort.asc{
+	display:inline;
+}
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table th.desc .sort.desc{
+	display:inline;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table td{
+	font-weight:normal;
+	text-align:left;
+	padding: 4px 0 4px 6px;
+	border:1px solid #a8a8a8;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table td.first{
+	padding:0px;
+	text-align:center;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-table table td.alignRight{
+	padding: 4px 6px 4px 0;
+	text-align:right;
+}
+
+.userInsightPicker .userInsightPicker-main  .dataTable-bottom{
+	margin-top:6px;
+	border: 1px solid #D6D6D6;
+	background:#f0f1f1;
+	height:27px;
+}
+
+.userInsightPicker .userInsightPicker-pagination {
+	margin-top: 5px;
+    text-align: right;
+}
+
+.userInsightPicker .userInsightPicker-pagination .goto .gotoBtn {
+	cursor:pointer;
+}
+
+.userInsightPicker .userInsightPicker-pagination .goto input[type="text"] {
+	width:30px;
+	margin: 0 0 0 5px;
+}
+.userInsightPicker .userInsightPicker-pagination > span {
+	padding:0;
+}
+
+.userInsightPicker .userInsightPicker-pagination > span.nums{
+	margin-left:9px;
+}
+.userInsightPicker .userInsightPicker-pagination > span.showRows{
+	margin-left:27px;
+	margin-right:9px;
+}
+
+.userInsightPicker .userInsightPicker-pagination > span.showRows .show-label{
+	margin-right:1px;
+}
+
+.userInsightPicker .userInsightPicker-pagination > span.showRows .rows-label{
+	margin-left:1px;
+}
+
+.userInsightPicker .userInsightPicker-pagination > span.showRows .pageCount{
+	width:60px;
+}
+
+.userInsightPicker .userInsightPicker-pagination .action {
+	color:#5588bb;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-bottom{
+    margin-bottom: 6px;
+    margin-top: 8px;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-bottom .error-message{
+	display:inline-block;
+	margin-left:20px;
+	color:red;
+	float:left;
+}
+
+.userInsightPicker .userInsightPicker-main .userInsightPicker-filter .filter-bottom .btn{
+	float:left;
+}
+
+.userInsightPicker .userInsightPicker-bottom {
+	padding: 0 15px 10px 10px;
+}
+
+.userInsightPicker .userInsightPicker-bottom .btn{
+	margin: 0 6px 0 5px;
+	float:left;
+}
+
+.userInsightPicker .reportPicker-data-loading{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:50;
+	width:100%;
+	height:100%;
+	text-align: center;
+	display: none;
+}
+
+.userInsightPicker .reportPicker-data-loading div{
+	margin:0 auto;
+	width:200px;
+	height:200px;
+	.border-radius(5px);
+    margin-top: 80px;
+    background: #333;
+    opacity:0.2;
+	filter:alpha(opacity=20);
+	line-height: 200px;
+	overflow: hidden;
+}
+
+.userInsightPicker .reportPicker-data-loading div span{
+	margin-left:5px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+	margin: 80px 0 0 8px;
+	*margin:0 0 0 8px;
+}
+
+.userInsightPicker .reportPicker-data-loading div span.loading-data-gif{
+	display: inline-block;
+	width: 30px;
+   	height: 30px;
+    background-image: url("images/loadingData.gif");
+	background-repeat: no-repeat;
+}
+

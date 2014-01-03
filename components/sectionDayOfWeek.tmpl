@@ -1,0 +1,65 @@
+<script id="tmpl-sectionDayOfWeek" type="text/html">
+	<div class="sectionDayOfWeek">
+		<div class="sectionDayOfWeek-openPart">
+			<div class="title">Opens</div>
+			<div class="openChart"></div>
+			<div class="openTable">
+				<div class="sectionContent">
+					<div class="openSectionTable">
+						<table class="dataTable">
+							<thead>
+								<tr></tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sectionDayOfWeek-clickPart">
+			<div class="title">Clicks</div>
+			<div class="clickChart"></div>
+			<div class="clickTable">
+				<div class="sectionContent">
+					<div class="clickSectionTable">
+						<table class="dataTable">
+							<thead>
+								<tr></tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+
+<script id="tmpl-sectionDayOfWeek-sectionContent-dataTable-tableThead" type="text/html">
+	<th data-column="{{column}}">
+		{{label}}
+	</th>
+</script>
+
+<script id="tmpl-sectionDayOfWeek-sectionContent-dataTable-tableTbody" type="text/html">
+	<tr>
+	</tr>
+</script>
+
+<script id="tmpl-sectionDayOfWeek-sectionContent-dataTable-tableTbody-td" type="text/html">
+	<td class="{{first}} {{#if isLastRow}}lastRowTd{{/if}}">
+		{{#if first}}
+			<div class="indexParColor" style="background:{{colorVal}}"></div>
+			<span class="deviceType">{{value}}</span>
+		{{else}}
+			<span>
+				{{value}}{{#notEqualAndTrue value "N/A" isRate}}%{{/notEqualAndTrue}}
+			</span>
+		{{/if}}
+	</td>
+</script>
+
+
+
+

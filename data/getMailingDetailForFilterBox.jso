@@ -1,0 +1,10 @@
+{"identifier": 'id',
+"itemsCommon":null,
+"items":[
+	{"campaign":"Advisor 31","type":"Batch","id":301,"launchDate":"23-Aug-2011","name":"failurebatch"},
+	{"campaign":"firstcampaign","type":"Batch","id":900,"launchDate":"16-May-2011","name":"recurringbatch2asdasdasdasdasdsdasdasdasasda"},
+	{"campaign":"secondcampaign","type":"Transactional","id":400,"launchDate":"17-Aug-2011","name":"secondstandard"},
+	{"campaign":"Custmoer Meetup","type":"Program","id":700,"launchDate":"30-Dec-2011","name":"starndard1"},
+	{"campaign":null,"type":"Transactional","id":600,"launchDate":"22-Apr-2011","name":"trackingbatch"},
+	{"campaign":"campaign2","type":"A/B Test","id":1402,"launchDate":"15-Dec-2011","name":"recurring"}
+]}

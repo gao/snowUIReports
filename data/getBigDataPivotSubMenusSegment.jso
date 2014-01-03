@@ -1,0 +1,16 @@
+{
+    "identifier": "id",
+    "itemsCommon": null,
+    "items": [
+        {
+            "id": 101,
+            "name": "Gender",
+            "department":"Dept1"
+        },
+        {
+            "id": 102,
+            "name": "segment_IDS_age",
+            "department":"Dept2"
+        }
+    ]
+}

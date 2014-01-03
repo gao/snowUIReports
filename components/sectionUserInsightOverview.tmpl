@@ -1,0 +1,179 @@
+<script id="tmpl-sectionUserInsightOverview" type="text/html">
+	<div class="sectionUserInsightOverview">  
+		
+		<div class="sectionUserInsightOverview-userOverviewSection">
+			<div class="byTitle UserOverview">User Overview</div>
+			<div class="sectionUserOverviewContent userImageSegmentList">
+				<div class="userImage"></div>
+				<div class="segmentList"></div>
+			</div>
+			
+			<div class="sectionUserOverviewContent userScore">
+				<div class="engagementScore score-div">
+					<div class="above">
+						<div class="engagementShape score-div-shape"><span class="stitle">Engagement Score:</span><span class="compare-span"><label class="num">  </label>%&nbsp;<label class="compare">&gt;</label></span><span>Average</span></div>
+						<div class="engagementCompare score-div-compare">
+							<div class="summaryScore"><span>  </span></div>
+							<div class="avgScore">
+								<span class="compare-arrow"></span>
+								<span class="cen-line"></span>
+								<span class="ver-line"></span>
+								<span class="avgScoreNum">  </span>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="engagementContent score-content"><span class="engagementName"></span>'s Engagement score (based on open, click rates and unsubs) is <span class="engagementConValue">% </span><label class="compare"></label> average</div>
+				</div>
+			</div>
+			
+			<div class="sectionUserOverviewContent userScore">
+				<div class="conversionScore score-div">
+					<div class="above">
+						<div class="conversionShape score-div-shape"><span class="stitle">Conversion Score:</span><span class="compare-span"><label class="num">  </label>%&nbsp;<label class="compare">&gt;</label></span><span>Average</span></div>
+						<div class="conversionCompare score-div-compare">
+							<div class="summaryScore"><span>  </span></div>
+							<div class="avgScore">
+								<span class="compare-arrow"></span>
+								<span class="cen-line"></span>
+								<span class="ver-line"></span>
+								<span class="avgScoreNum">  </span>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="conversionContent score-content"><span class="conversionName"></span>'s Conversion score (based on conversions and revenue) is <span class="conversionConValue">% </span><label class="compare"></label> average</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<div class="sectionUserInsightOverview-summary">
+		
+			<div class="byTitle byTitle-table userInsightSummary">Summary Statistics</div> 
+			<div class="SMA-REPORT-SUMMARYSTATISTICSTABLE statsSummary userInsightSummary"></div>
+		</div> 
+		
+		<div class="sectionUserInsightOverview-statsComparisonSection userInsightPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				<span class="spanTitle">&nbsp;Summary Statistics Comparison</span>
+				<div class="clear"></div>
+			</div>
+			<div class="sectionContent">
+				<div class="statsComparisonSectionTable">
+					<table class="dataTable">
+						<thead>
+							<tr></tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionUserInsightOverview-segmentComparisonSection userInsightPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				<span class="spanTitle">&nbsp;Segment Group Comparison</span>
+				<span class="toolbar">
+					View:
+					<input name="segment" type="radio" value="2" checked/><span>Actual Difference From Segment</span>
+					<input name="segment" type="radio" value="1"  /><span>% Difference From Segment</span> 
+				</span>
+				<span class="toolbar showAverageSegment">
+					<input name="average" type="checkbox" /><span>View Segment Values</span>
+				</span>
+			</div>
+			<div class="sectionContent">
+				<div class="segmentComparisonSectionTable">
+					<table class="dataTable">
+						<thead>
+							<tr></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionUserInsightOverview-programSection userInsightPart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				<span class="spanTitle">&nbsp;LCM Programs</span>
+				<div class="clear"></div>
+			</div>
+			<div class="sectionContent">
+				<div class="programSectionTable">
+					<table class="dataTable">
+						<thead>
+							<tr></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</script>
+
+
+<script id="tmpl-sectionContent-dataTable-tableThead-userInsight" type="text/html">
+	<th class="{{#if sortable}}sortable{{/if}}" data-column="{{column}}" colspan="{{colspan}}">
+		<div class="th-label">{{label}}</div>
+	</th>
+</script>
+
+<script id="tmpl-sectionContent-dataTable-tableTbody-userInsight" type="text/html">
+	<tr>
+	</tr>
+</script>
+
+<script id="tmpl-sectionContent-dataTable-tableTbody-td-userInsight" type="text/html">
+	<td class="{{first}} {{#if isLastRow}}lastRowTd{{/if}} {{#if textAlignLeft}}textAlignLeft{{/if}} {{#if textAlignCenter}}textAlignCenter{{/if}}">
+		{{#if isCheckbox}}
+			<span>
+				<input type="checkbox" {{#equal value "true"}}checked="true"{{/equal}} disabled="true"/>
+			</span>
+			{{#if isDraw}}
+			<div class="normalBarDiv" >
+				{{#notEqual value 0}}
+					<div class="normalBar"  {{#lte drawValue 100}}style="width:{{drawValue}}%" {{else}} {{#unless drawValue}}style="width:0%;border:0px;"{{/unless}}{{/lte}}></div>
+				{{/notEqual}}
+			</div>
+			{{/if}}
+		{{else}} 
+			<span {{#if haveTitle}}title="{{columnTitle}}"{{/if}} class="{{#notEqual improvement "unchange"}} {{#equal improvement 'improve'}}greenFont{{else}}redFont{{/equal}} {{/notEqual}} {{#if isUrlLink}}isUrlLink{{/if}} {{#if isFontBold}}fontBold{{/if}}">
+				{{#if isProgramName}}
+					{{#if isMock}}
+						<a href="#">{{value}}</a>
+					{{else}}
+						<a href="javascript:sm.comp.list.ListMgr.displayOnListPage({{programId}},'{{value}}','PROGRAM')">{{value}}</a>
+					{{/if}}
+				{{else}}
+					{{#if isConversionSymbol}}{{conversionCurrency}}{{/if}}{{#equal improvement 'improve'}}+{{/equal}}{{value}}{{#notEqualAndTrue value "N/A" isRate}}%{{/notEqualAndTrue}}
+				{{/if}}
+			</span>
+			{{#if isDraw}}
+			<div class="normalBarDiv" >
+				{{#notEqual value 0}}
+					<div class="normalBar"  {{#lte drawValue 100}}style="width:{{drawValue}}%" {{else}} {{#unless drawValue}}style="width:0%;border:0px;"{{/unless}}{{/lte}}></div>
+				{{/notEqual}}
+			</div>
+			{{/if}}
+		{{/if}}
+	</td>
+</script>
+<script id="tmpl-userOverviewSection-segment-userInsight" type="text/html">
+	{{#each dataList}}
+	<div class="segment" >
+		<span class="segmentName" {{#if ellipsis}}title="{{segmentation}}"{{/if}}>{{labelName}}:</span>
+		<span class="segmentValue" {{#if valEllipsis}}title="{{segment}}"{{/if}}>{{labelValue}}</span>
+	</div>
+	{{/each}}
+</script>

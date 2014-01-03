@@ -1,0 +1,14 @@
+<script id="tmpl-combobox" type="text/html">
+	<div class="combobox" data-value="{{defaultItem.value}}">
+		<div class="combobox-content">
+			<div class="combobox-button">
+				<label>{{defaultItem.name}}</label><span class="button-ico ico ico-downArrow"></span>
+			</div>
+			<div class="combobox-list">
+				{{#eachList list defaultItem.value}}
+					<div class="item {{#if isDefault}}default{{/if}} {{#if isHide}}isHide{{/if}} {{#if isSMSKeyword}}isSMSKeyword{{/if}} {{#if isEventType}}isEventType{{/if}} {{#if isFailureDetailCode}}isFailureDetailCode{{/if}}" data-value="{{value}}">{{name}}</div>
+				{{/eachList}}
+			</div>
+		</div>
+	</div>
+</script>

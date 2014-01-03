@@ -1,0 +1,13 @@
+{"identifier": 'id',
+"itemsCommon":null,
+"items":[{
+	"clickToOpen":50.0,
+	"clicks":1000,
+	"opens":2000,
+	"data":[
+		{"clickToOpen":50.1,"clicks":223,"deviceType":"Phone","opens":445},
+		{"clickToOpen":49.8,"clicks":361,"deviceType":"Tablet","opens":725},
+		{"clickToOpen":51.2,"clicks":355,"deviceType":"Desktop","opens":694}
+	]
+}]
+}

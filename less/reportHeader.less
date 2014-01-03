@@ -1,0 +1,912 @@
+.reportHeader {
+	color: #3c3c3c;
+}
+
+.reportHeader .reportHeader-top {
+	margin: 0px 0px 4px 0px;
+	height: 25px;
+}
+
+.reportHeader .reportHeader-top>div {
+	float: left;
+}
+
+.reportHeader .reportHeader-top .reportHeader-period {
+	float: right;
+	position: relative;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser{
+	float: right;
+	position: relative;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser .find-sec{
+	float: left;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser .find-sec .current-num{
+    vertical-align: middle;
+    width: 20px;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser .find-sec .find-user-input{
+    vertical-align: middle;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser .find-sec .ico{
+    background-image: url("images/smr-sprites.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: right;
+    height: 18px;
+    width: 18px;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser .find-sec .user-prev{
+	background-position: 3px -126px;
+	margin-left: 3px;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser .find-sec .user-next{
+	background-position: -67px -126px;
+	margin-right: 20px;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser .find-sec .user-prev.active{
+	background-position: -28px -126px;
+	cursor:pointer;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser .find-sec .user-next.active{
+	background-position: -99px -126px;
+	cursor:pointer;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser .find-sec .user-control{
+	display: inline-block;
+	max-width:60px;
+	vertical-align: -3px;
+	*vertical-align: 0px;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser .find-sec .ico-find{
+	margin-left:5px;
+	background-position: -128px -94px;
+	cursor:pointer;
+	float: left;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser .find-sec .find-user-label{
+	float: left;
+	margin-top: 4px;
+	float: left;
+}
+
+.reportHeader .reportHeader-top .reportHeader-findUser .find-sec .find-user-input{
+	margin-left:5px;
+	float: left;
+}
+
+.reportHeader .reportHeader-info{
+	margin-bottom:4px;
+}
+
+.reportHeader .reportHeader-info .info.email{
+	font-weight: bold;
+}
+
+.reportHeader .reportHeader-info .split{
+	margin: 0 10px;
+}
+
+.reportHeader .reportHeader-period {
+	margin: 0px 0 0 10px;
+	color: #7e7e7e;
+	font-size: 14px;
+}
+
+.reportHeader .reportHeader-top .reportHeader-period.maildetail-period {
+	margin: 0px 0 0 10px;
+	font-size: 8.5pt;
+	font-weight:normal;
+	font-family: Arial;
+	position: relative;
+	z-index: 8;
+	width: 330px;
+}
+
+.reportHeader .reportHeader-top .reportHeader-period.maildetail-period .message{
+	display:none;
+	margin:0px 5px 5px 5px;
+}
+
+.reportHeader .reportHeader-top .maildetail-period .maildetail-date {
+	line-height: 27px;
+	margin-left: 10px;
+	margin-right: 6px;
+	float: left;
+}
+
+.reportHeader .reportHeader-top .date-arrow {
+	width: 190px;	
+	margin-left: 10px;
+	float: right;
+}
+
+.reportHeader .reportHeader-top .date-arrow h3 {
+	height: 1px;
+	background: #ddd;
+	margin: 0 10px;
+	overflow: hidden;
+	display: none;
+}
+
+.reportHeader .reportHeader-top .date-arrow .clear {
+	clear: both;
+}
+
+.reportHeader .reportHeader-top .date-arrow-on {
+	background-color: #fff;
+	color: #3C3C3C;
+	font-weight: bold;
+	border: 1px solid #CCC;
+	border-bottom: none;
+	border-left: 1px solid #EDEDED;
+	.complex-border-radius(7px,7px,0,0);
+	.box-shadow(2px 0px 3px rgba(51, 51, 51, .2));
+	z-index: 10;
+	height:23px;
+}
+
+.reportHeader .reportHeader-top .deviceusage-date .date-arrow-on{
+	position: absolute;
+	right: 0;
+}
+
+.reportHeader b.arrowup {
+	border-width: 6px;
+	border-style: solid;
+	border-color: transparent transparent #10afc2 transparent;
+	float: left;
+	margin-top: 3px;
+	margin-right: 10px;
+}
+
+*+html .reportHeader b.arrowup{
+	margin-top: -10px;
+}
+
+.reportHeader .reportHeader-top .deviceusage-date b.arrowup{
+	margin-right: 0;
+}
+
+*+html .reportHeader .reportHeader-top .reportHeader-period.maildetail-period{
+	width:330px;
+}
+
+.reportHeader b.arrowdown {
+	border-width: 6px;
+	border-style: solid;
+	border-color: #10afc2 transparent transparent transparent;
+	float: left;
+	margin-top: 10px;
+	margin-right: 5px;
+	color:#10afc2;
+}
+
+.reportHeader .reportHeader-mailingSelector {
+	cursor: pointer;
+	color: #1c818a;
+	font-size: 11.5pt;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.reportHeader .reportHeader-mailingSelector.abtest-selector {
+	cursor: default;
+	color: #3C3C3C;
+}
+.reportHeader .reportHeader-mailingSelector.audience-selector {
+	cursor: default;
+	color: #3C3C3C;
+}
+.reportHeader .reportHeader-mailingSelector.mailingDetail-selector {
+	cursor: default;
+}
+
+.reportHeader .reportHeader-reportName {
+	font-size: 11.5pt;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.reportHeader .edit {
+	margin: 0px 0 0 20px;
+	cursor: pointer;
+}
+.reportHeader .edit.editForMDR{
+	margin: 0 0 0 6px;
+	cursor: pointer;
+}
+.reportHeader .edit span.pencilIco {
+	background-image: url("images/icon_pencil.png");
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.reportHeader .reportHeader-selectors {
+	margin: 0px 0 0 0px;
+	color: #7e7e7e;
+	font-size: 14px;
+}
+
+.reportHeader .reportHeader-selectors .domainName {
+	font-size: 11.5pt;
+	font-weight: bold;
+}
+
+.reportHeader .reportHeader-selectors>div {
+	float: left;
+	margin-left: 10px;
+}
+
+.reportHeader .reportHeader-period>div {
+	float: left;
+	margin-left: 10px;
+}
+
+.reportHeader .reportHeader-period div.export-print {
+	float: right;
+	margin-left: 5px;
+	margin-top: 3px;
+}
+.reportHeader .reportHeader-period div.export-print span.dividerLine {
+	color:#d6d6d6;
+}
+.reportHeader .reportHeader-period div.export-print span.export {
+	background-image: url("images/export_as.jpg");
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.reportHeader .reportHeader-period div.export-print span.print {
+	background-image: url("images/print_icon.jpg");
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 16px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.reportHeader .reportHeader-top .edit .text {
+	color: #3ea0a9;
+	font-size: 12px;
+}
+
+.reportHeader .reportHeader-nav {
+	height: 30px;
+	line-height: 30px;
+	#gradient > .vertical-three-colors(#ECECEC,#F5F5F5,60%,#D4D4D4);
+	border: 1px solid #c5c5c5;
+	.complex-border-radius(10px,10px,0,0);
+}
+
+.reportHeader .reportHeader-nav-top {
+	border: 1px solid #c5c5c5;
+	.complex-border-radius(10px,10px,0,0);
+}
+
+.reportHeader .reportHeader-nav-item {
+	float: left;
+	padding: 0 1% 0 1%;
+	font-size: 13px;
+	font-family: Arial;
+	cursor: pointer;
+	border-right: 1px solid #cdcbcc;
+}
+
+.has-canvas .reportHeader .reportHeader-nav-item {
+	position: relative;
+}
+
+.has-canvas .reportHeader .reportHeader-nav-item canvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.reportHeader .reportHeader-nav-item:first-child {
+	.complex-border-radius(10px,0,0,0);
+}
+
+.reportHeader .reportHeader-nav-item.sel {
+	#gradient > .vertical-three-colors(#C4E5EA,#f5f9fa,50%,#B9DFE2);
+	-webkit-box-shadow: 1px 1px 4px 0px #8bafb2 inset;
+	-moz-box-shadow: 1px 1px 4px 0px #8bafb2 inset;
+	border-right: 1px solid #b6d5d9;
+}
+
+.reportHeader .reportHeader-nav-item:hover {
+	#gradient > .vertical-three-colors(#E0ECEC,#f5f9fa,50%,#B9DFE2);
+	-webkit-box-shadow: 1px 1px 4px 0px #8bafb2 inset;
+	-moz-box-shadow: 1px 1px 4px 0px #8bafb2 inset;
+	border-right: 1px solid #b6d5d9;
+}
+
+.reportHeader .reportHeader-toolbar {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f1f2',endColorstr='#E7E5E5');
+	background: -moz-linear-gradient(0% 84% 270deg, #f3f1f2, #E7E5E5);
+	background: -webkit-gradient(linear, 0% 84%, 0% 90%, from(#f3f1f2), to(#E7E5E5) );
+	height: 32px;
+	line-height: 30px;
+	border-left: 1px solid #d0d0d0;
+	border-right: 1px solid #d0d0d0;
+	padding-bottom: 2px;
+}
+
+.reportHeader .reportHeader-toolbar .disable {
+	color: #B7B7B7;
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-toolItems {
+	float: left;
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-toolItems .reportHeader-period{
+	color:#3C3C3C;
+	position:absolute;
+	width:280px;
+	float:left;
+	margin-left:10px;
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-toolItems .reportHeader-period .date-arrow{
+	width:190px;
+	float:left;
+	margin:1px 0 0 0;
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-toolItems .reportHeader-period .date-arrow-on{
+	right:20px;
+	margin:1px 0 0 0;
+}
+
+
+.reportHeader .reportHeader-toolbar .reportHeader-toolItems-right {
+	float: right;
+	position:relative;
+	z-index:17;
+}
+
+.reportHeader .reportHeader-toolbar>div {
+	float: left;
+	height: 32px;
+}
+
+.reportHeader .reportHeader-toolbar > div:nth-child(1){
+	padding : 0 10px 0 0;
+}
+.reportHeader .reportHeader-toolbar > div:nth-child(2){
+	float : right ;
+	margin-right : 10px;
+}
+.reportHeader .reportHeader-toolbar .toolbar-item {
+	float: left;
+	margin: 3px 0 2px 5px;
+}
+
+.reportHeader .reportHeader-toolbar .toolbar-item label {
+	float: left;
+	font-size:12px;
+}
+
+.reportHeader .reportHeader-toolbar .toolbar-item .toolbar-item-content{
+	float: left;
+	margin: 0 0 0 5px;
+}
+
+.reportHeader .reportHeader-toolbar .toolbar-item .toolbar-item-content .option-ico{
+	background-position: 1px 2px;
+	background-repeat: no-repeat;
+ 	background-image: url("images/assets/icon_Options.png");
+ 	width: 18px;
+ 	height:20px;
+	line-height: 20px;
+	display: inline-block; 	
+}
+
+.reportHeader .reportHeader-toolbar .toolbar-item .iconDiv{
+	float: left;
+	margin: 7px 0 0 5px;
+}
+.reportHeader .reportHeader-toolItems {
+	position: relative;
+	min-width: 430px;
+}
+
+.reportHeader .reportHeader-toolItems .toolbar-item {
+	position: absolute;
+	width: 100%;
+}
+
+.reportHeader .reportHeader-toolItems .toolbar-item input[type='checkbox'] {
+	margin: 8px 0 0 0;
+	*margin:0 0 0 0;
+} 
+
+.reportHeader .reportHeader-toolItems .toolbar-item.reportHeader-breakdown {
+	left: 0px;
+	top: 0px;
+}
+
+.reportHeader .reportHeader-toolItems .toolbar-item.reportHeader-toggle {
+	left: 230px;
+	top: 0px;
+}
+
+.reportHeader .reportHeader-toolItems .toolbar-item.reportHeader-toggle-comparison {
+	left: 0;
+}
+
+.reportHeader .reportHeader-toolItems .toolbar-item.reportHeader-deviceSelector {
+	display: none;
+	left: 430px;
+	top: 0px;
+	width: 120px;
+}
+
+.reportHeader .reportHeader-toolItems .toolbar-item.reportHeader-showCount {
+	display: none;
+	left: 430px;
+	top: 0px;
+	width: 120px;
+}
+
+.reportHeader .reportHeader-toolItems .toolbar-item.reportHeader-dynamicContentSelector {
+	display: none;
+	left: 430px;
+	top: 0px;
+	width: 140px;
+}
+
+.reportHeader .reportHeader-toolItems .toolbar-item.reportHeader-clientSelector {
+	display: none;
+	left: 430px;
+	top: 0px;
+	width: 220px;
+}
+
+.reportHeader .reportHeader-toolItems .toolbar-item.reportHeader-uniqueStatsSelector {
+	left: 230px;
+	top: 0px;
+	width: 140px;
+}
+
+.reportHeader .reportHeader-toolItems .toolbar-item.reportHeader-subSection {
+	left: 230px;
+	top: 0px;
+	width: 220px;
+}
+
+.reportHeader .reportHeader-toolItems-right {
+	margin-right: 5px;
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-exportAndPrint {
+	float: right;
+	width: 150px;
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-viewSelector {
+	float: left;
+	border-right: 1px solid #c5c5c5;
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-viewSelector .toolbar-item-content {
+	.border-radius(8px);
+	border: 1px solid #bcc1c2;
+	margin: 1px 10px 0 0;
+	float: right;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d4d4d4',endColorstr='#d4d4d4');
+	background: -moz-linear-gradient(0% 0% 270deg, #d4d4d4, #f7f7f7, #d4d4d4 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d4d4d4), to(#d4d4d4), color-stop(0.5, #f7f7f7) );
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-viewSelector .reportsHeader-viewButton {
+	float: left;
+	width: 35px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	border-left: 1px solid #c5c5c5;
+}
+.reportHeader .reportHeader-toolbar .reportHeader-viewSelector .reportsHeader-viewButton.viewButton-disabled {
+	background:#bbb;
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-viewSelector .reportsHeader-viewButton.first {
+	.complex-border-radius(6px,0,0,6px);
+	border-left: 0px;
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-viewSelector .reportsHeader-viewButton.last {
+	.complex-border-radius(0,6px,6px,0);
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-viewSelector .reportsHeader-viewButton .ico {
+	display: inline-block;
+	margin: 0 0 0 8px;
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-viewSelector .reportsHeader-viewButton:hover {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D8F1F5',endColorstr='#D8F1F5');
+	background: -moz-linear-gradient(0% 0% 270deg, #D8F1F5, #B7DEE4, #D8F1F5 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D8F1F5), to(#D8F1F5), color-stop(0.4, #B7DEE4), color-stop(0.6, #A7DAE1) );
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-viewSelector .reportsHeader-viewButton.viewButton-disabled:hover {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddd',endColorstr='#ddd');
+	background: #bbb;
+}
+
+.reportHeader .reportHeader-toolbar .reportHeader-viewSelector .reportsHeader-viewButton.sel {
+	cursor: default;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D8F1F5', endColorstr='#D8F1F5');
+	background: -moz-linear-gradient(0% 0% 270deg, #D8F1F5, #B7DEE4, #D8F1F5 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D8F1F5), to(#D8F1F5), color-stop(0.4, #B7DEE4), color-stop(0.6, #A7DAE1) );
+}
+
+.reportHeader .reportHeader-toolbar .btnExport {
+	float: left;
+	width: 70px;
+	height: 23px;
+	line-height: 20px;
+	margin: 2px 0 0 0;
+	text-align: center;
+	font-weight: bold;
+	#gradient > .vertical-three-colors(#d4d4d4,#f7f7f7,50%,#d4d4d4);
+	.border-radius(12px);
+	cursor: pointer;
+	border: 1px solid #c5c5c5;
+}
+
+.reportHeader .reportHeader-toolbar .btnOptions {
+	float: left;
+	width: 100px;
+	height: 23px;
+	line-height: 25px;
+	margin: 0 10px 0 0;
+	text-align: center;
+	cursor: pointer;
+	border-right: 1px solid #c5c5c5;
+	display:none;
+	padding:4px 10px 0 0;
+	margin-right:5px;
+}
+
+.reportHeader .reportHeader-toolbar .btnOptions a{
+	color: #3C3C3C;
+	text-decoration: none;
+	font-size:12px;
+}
+
+
+.reportHeader .reportHeader-toolbar .btnExport:hover {
+	color: #44A6C1;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D8F1F5',endColorstr='#D8F1F5');
+	background: -moz-linear-gradient(0% 0% 270deg, #D8F1F5, #B7DEE4, #D8F1F5 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D8F1F5), to(#D8F1F5), color-stop(0.4, #B7DEE4), color-stop(0.6, #A7DAE1) );
+}
+
+.reportHeader .reportHeader-toolbar .btnExport.disabled:hover{
+	filter: none;
+	background:#E7E5E5;
+	color: #B7B7B7;
+	cursor:default;
+}
+
+.reportHeader .reportHeader-toolbar .btnExport.sel {
+	color: #3C7D8D;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D8F1F5',endColorstr='#D8F1F5');
+	background: -moz-linear-gradient(0% 0% 270deg, #D8F1F5, #B7DEE4, #D8F1F5 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D8F1F5), to(#D8F1F5), color-stop(0.4, #B7DEE4), color-stop(0.6, #A7DAE1));
+}
+
+.reportHeader .reportHeader-toolbar .btnExport.disabled{
+	filter: none;
+	background:#E7E5E5;
+	cursor:default;
+	color: #B7B7B7;
+}
+
+.reportHeader .reportHeader-toolbar .btnPrint {
+	float: right;
+	width: 30px;
+	height: 23px;
+	line-height: 20px;
+	padding: 0 0 0 5px;
+	margin: 2px 0 0 10px;
+	text-align: center;
+	.border-radius(8px);
+	cursor: pointer;
+	border: 1px solid #c5c5c5;
+	#gradient > .vertical-three-colors(#d4d4d4,#f7f7f7,50%,#d4d4d4);
+}
+
+.reportHeader .reportHeader-toolbar .btnPrint:hover {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D8F1F5',endColorstr='#D8F1F5');
+	background: -moz-linear-gradient(0% 0% 270deg, #D8F1F5, #B7DEE4, #D8F1F5 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D8F1F5), to(#D8F1F5), color-stop(0.4, #B7DEE4), color-stop(0.6, #A7DAE1) );
+}
+
+.reportHeader .reportHeader-toolbar .btnPrint.disabled:hover{
+	filter: none;
+	background:#E7E5E5;
+	cursor:default;
+}
+
+.reportHeader .reportHeader-toolbar .btnPrint.sel {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D8F1F5',endColorstr='#D8F1F5');
+	background: -moz-linear-gradient(0% 0% 270deg, #D8F1F5, #B7DEE4, #D8F1F5 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D8F1F5), to(#D8F1F5), color-stop(0.4, #B7DEE4), color-stop(0.6, #A7DAE1) );
+}
+
+.reportHeader .reportHeader-toolbar .btnPrint.disabled{
+	background:#E7E5E5;
+	cursor:default;
+	filter: none;
+}
+
+.reportHeader .reportHeader-toolbar .btnPrint.disabled .ico-btnPrint:hover{
+	background-position: -130px 0;
+}
+
+.reportHeader .reportHeader-dateSelector {
+	background-color: #000;
+	position: absolute;
+	top: 24px;
+	z-index: 999;
+	left: 0;
+	height: auto;
+	display: none;
+	background-color: #ffffff;
+	border: 1px solid #d6d6d6;
+	text-align: center;
+	.border-radius(7px);
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+	margin-top:-1px;
+}
+
+.reportHeader .reportHeader-top .deviceusage-date .reportHeader-dateSelector{
+	z-index: 9;
+	.complex-border-radius(7px,0,7px,7px);
+	-webkit-box-shadow: 2px 1px 2px rgba(51, 51, 51, .3);
+	-moz-box-shadow: 2px 1px 2px rgba(51, 51, 51, .3);
+	-webkit-box-shadow: 2px 1px 2px rgba(51, 51, 51, .2);
+}
+
+.reportHeader-selectdate{
+	margin-left:10px;
+	display:none;
+}
+
+.reportHeader .deviceusage-date .reportHeader-dateSelector .date{
+	width: 348px;
+}
+
+.reportHeader .reportHeader-dateSelector .date .dateInputs{
+	background-color: #F0F1F1;
+	border: 1px solid #d6d6d6;
+	min-width:270px;
+	margin: 10px;
+	border-radius:5px;
+}
+
+.reportHeader .deviceusage-date .reportHeader-dateSelector .date .dateInputs{
+	text-align: left;
+}
+
+.reportHeader .deviceusage-date .reportHeader-dateSelector .date .dateInputs .inputor{
+	display: none;
+}
+
+.reportHeader .reportHeader-dateSelector .date .dateInputs .dateS{
+	background: #fff; 
+	border: 1px solid #ccc;
+	padding: 2px;
+	.border-radius(4px);
+	vertical-align: middle;
+	width: 71px;
+}
+
+.reportHeader .reportHeader-dateSelector .reportHeaderDateSelect{
+	text-align: center;
+}
+
+.reportHeader .reportHeader-dateSelector .reportHeaderDateSelect td{
+	line-height:14px;
+}
+
+.reportHeader .reportHeader-dateSelector .reportHeaderDateSelect .dateSelect{
+	margin: 0 auto 15px auto;
+}
+
+.reportHeader .reportHeader-dateSelector .reportHeaderDateSelect .dateSelect-buttons .button {
+	padding:3px 15px;
+}
+
+.reportHeader .reportHeader-dateSelector .dateTypeSelect{
+	vertical-align: middle;
+	*margin-top: 3px;
+}
+
+.reportHeader .reportHeader-dateSelector .dateSelectorDone {
+	#gradient > .vertical-three-colors(#F7F6F4,#D4D2D3,60%,#ebebeb);
+	border: 1px solid #BFC3C6;
+	text-align: center;
+	width: 60px;
+	border-radius: 15px;
+	margin: 10px;
+	cursor: pointer;
+	display: inline;
+	border: none;
+	height: 22px;
+	font-size: 12px;
+	margin-top: 3px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 7px;
+	vertical-align: middle;
+	line-height: 22px;
+	padding: 3px 10px;
+	*vertical-align: -1px;
+	*margin-top: 3px;
+	*border:1px solid #D4D2D3;
+	border:1px solid #D4D2D3\0;
+	border:1px solid #D4D2D3\9\0;
+}
+
+.reportHeader .deviceusage-date .reportHeader-dateSelector .dateSelectorDone {
+    line-height: 22px;
+}
+
+.reportHeader .reportHeader-dateSelector .dateSelectorDone:hover {
+	#gradient > .vertical-three-colors(#E1F4F8,#ADD9E2,50%,#d1edf1);
+}
+
+.reportHeader .reportHeader-dateSelector .date-range {
+	color: #303030;
+	margin-right:3px;
+	margin-left:10px;
+}
+
+.reportHeader .reportHeader-dateSelector .date-to {
+	color: #303030;
+	margin-right:3px;
+	margin-left:3px;
+}
+
+.reportHeader .reportHeader-toolbar .toolbar-item label.date-to{
+	float:none;
+}
+
+.reportHeader .reportHeader-dateSelector input.dateS {
+	text-align: center;
+	width: 81px;
+	height: 20px;
+	margin-top:3px;
+	margin-bottom:3px;
+}
+
+
+
+/* ---------Just for section UserInsightOverview report header ,for some tool items and date pikcker--------- */
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolbar .reportHeader-toolItems .reportHeader-period{
+	width:580px;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolbar .reportHeader-toolItems .reportHeader-period .date-arrow{
+    background:#fff;
+    border: 1px solid #CCCCCC;
+    height: 22px;
+    left: 56px;
+    line-height: 22px;
+    margin-left: 15px;
+    position: absolute;
+    top: 0;
+    width: 188px;
+    z-index:10;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolbar .reportHeader-toolItems .reportHeader-period .date-arrow .reportHeader-date{
+	font-size: 12px;
+    line-height: 22px;
+    padding-left: 5px;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolbar .reportHeader-toolItems .reportHeader-period .date-arrow .arrowdown{
+	background-image: url("images/smr-sprites.png");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+	background-position: -125px -124px;
+    border-left: 1px solid #D6D6D6;
+    height: 22px;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    width: 18px;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolbar .reportHeader-toolItems-right .reportHeader-toggle{
+	float:right;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolbar .reportHeader-toolItems-right .reportHeader-toggle .reportHeader-rateSwitch input{
+	*margin-top:-2px;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolbar .reportHeader-toolItems-right .reportHeader-exportAndPrint{
+	*width:215px;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolbar .reportHeader-toolItems-right .reportHeader-exportAndPrint .toolbar-item-content{
+	position:relative;
+	z-index:22;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolbar .reportHeader-toolItems-right .reportHeader-exportAndPrint .btnExport{
+	margin-left:5px;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolbar .reportHeader-toolItems-right .reportHeader-exportAndPrint .btnPrint{
+	margin-left:5px;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-dateSelector {
+	left: 61px;
+	top:25px;
+	.border-radius(0 7px 7px 7px);
+	max-width:351px;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-top .deviceusage-date .reportHeader-dateSelector{
+	.border-radius(0 7px 7px 7px);
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolItems-right .reportHeader-toggle{
+	border-right: 1px solid #C5C5C5;
+	padding-right: 10px;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolItems-right .reportHeader-toggle input{
+	margin-top:6px;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolItems-right .reportHeader-toggle label{
+	line-height:25px;
+}
+
+.reportHeader.sectionUserInsightOverview-header .reportHeader-toolItems-right .reportHeader-exportAndPrint .btnOptions{
+	padding: 0 10px 0 0;
+	width:70px;
+	height: 25px;
+}
+/* ---------/ Just for section UserInsightOverview report header ,for some tool items and date pikcker--------- */

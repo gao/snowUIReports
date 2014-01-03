@@ -1,0 +1,785 @@
+{
+    "identifier": "id",
+    "itemsCommon": null,
+    "items": [
+        {
+      "data": [
+        {
+            "breakdowns": [
+                {
+                    "name": "domain",
+                    "value": "0gmail.com"
+                },
+                {
+                    "name": "mailing",
+                    "value": "MailingName0"
+                }
+            ],
+            "summary": {
+                "sent": 108,
+                "targeted": 226,
+                "delivered": 35,
+                "deliveryRate": 4.3,
+                "failed": 102,
+                "invalid": 12
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-6",
+                    "launchTime": 10000101010,
+                    "sent": 106,
+                    "targeted": 228,
+                    "delivered": 31,
+                    "deliveryRate": 2.3,
+                    "failed": 110,
+                    "invalid": 12
+                },
+                {
+                    "columnName": "mailing-7",
+                    "launchTime": 10020101010,
+                    "sent": 104,
+                    "targeted": 228,
+                    "delivered": 35,
+                    "deliveryRate": 2.3,
+                    "failed": 109,
+                    "invalid": 16
+                },
+                {
+                    "columnName": "mailing-8",
+                    "launchTime": 10010101013,
+                    "sent": 109,
+                    "targeted": 225,
+                    "delivered": 33,
+                    "deliveryRate": 9.3,
+                    "failed": 108,
+                    "invalid": 13
+                },
+                {
+                    "columnName": "mailing-9",
+                    "launchTime": 10010101010,
+                    "sent": 101,
+                    "targeted": 231,
+                    "delivered": 32,
+                    "deliveryRate": 3.3,
+                    "failed": 103,
+                    "invalid": 11
+                },
+                {
+                    "columnName": "mailing-10",
+                    "launchTime": 11000101010,
+                    "sent": 107,
+                    "targeted": 224,
+                    "delivered": 31,
+                    "deliveryRate": 5.3,
+                    "failed": 101,
+                    "invalid": 19
+                },
+                {
+                    "columnName": "mailing-11",
+                    "launchTime": 10000101012,
+                    "sent": 104,
+                    "targeted": 227,
+                    "delivered": 36,
+                    "deliveryRate": 5.3,
+                    "failed": 101,
+                    "invalid": 11
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "domain",
+                    "value": "1gmail.com"
+                },
+                {
+                    "name": "mailing",
+                    "value": "MailingName1"
+                }
+            ],
+            "summary": {
+                "sent": 102,
+                "targeted": 227,
+                "delivered": 34,
+                "deliveryRate": 1.3,
+                "failed": 100,
+                "invalid": 10
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-6",
+                    "sent": 108,
+                    "targeted": 225,
+                    "delivered": 35,
+                    "deliveryRate": 8.3,
+                    "failed": 106,
+                    "invalid": 18
+                },
+                {
+                    "columnName": "mailing-7",
+                    "sent": 108,
+                    "targeted": 222,
+                    "delivered": 30,
+                    "deliveryRate": 5.3,
+                    "failed": 107,
+                    "invalid": 17
+                },
+                {
+                    "columnName": "mailing-8",
+                    "sent": 104,
+                    "targeted": 222,
+                    "delivered": 35,
+                    "deliveryRate": 2.3,
+                    "failed": 105,
+                    "invalid": 12
+                },
+                {
+                    "columnName": "mailing-9",
+                    "sent": 101,
+                    "targeted": 231,
+                    "delivered": 32,
+                    "deliveryRate": 9.3,
+                    "failed": 108,
+                    "invalid": 19
+                },
+                {
+                    "columnName": "mailing-10",
+                    "sent": 100,
+                    "targeted": 228,
+                    "delivered": 31,
+                    "deliveryRate": 6.3,
+                    "failed": 105,
+                    "invalid": 16
+                },
+                {
+                    "columnName": "mailing-11",
+                    "sent": 110,
+                    "targeted": 230,
+                    "delivered": 32,
+                    "deliveryRate": 9.3,
+                    "failed": 102,
+                    "invalid": 12
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "domain",
+                    "value": "2gmail.com"
+                },
+                {
+                    "name": "mailing",
+                    "value": "MailingName2"
+                }
+            ],
+            "summary": {
+                "sent": 105,
+                "targeted": 223,
+                "delivered": 35,
+                "deliveryRate": 3.3,
+                "failed": 103,
+                "invalid": 11
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-6",
+                    "sent": 101,
+                    "targeted": 222,
+                    "delivered": 39,
+                    "deliveryRate": 10.3,
+                    "failed": 105,
+                    "invalid": 13
+                },
+                {
+                    "columnName": "mailing-7",
+                    "sent": 109,
+                    "targeted": 226,
+                    "delivered": 32,
+                    "deliveryRate": 5.3,
+                    "failed": 103,
+                    "invalid": 17
+                },
+                {
+                    "columnName": "mailing-8",
+                    "sent": 107,
+                    "targeted": 224,
+                    "delivered": 36,
+                    "deliveryRate": 4.3,
+                    "failed": 102,
+                    "invalid": 15
+                },
+                {
+                    "columnName": "mailing-9",
+                    "sent": 104,
+                    "targeted": 228,
+                    "delivered": 31,
+                    "deliveryRate": 1.3,
+                    "failed": 107,
+                    "invalid": 18
+                },
+                {
+                    "columnName": "mailing-10",
+                    "sent": 102,
+                    "targeted": 222,
+                    "delivered": 38,
+                    "deliveryRate": 10.3,
+                    "failed": 107,
+                    "invalid": 19
+                },
+                {
+                    "columnName": "mailing-11",
+                    "sent": 102,
+                    "targeted": 226,
+                    "delivered": 34,
+                    "deliveryRate": 2.3,
+                    "failed": 101,
+                    "invalid": 10
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "domain",
+                    "value": "3gmail.com"
+                },
+                {
+                    "name": "mailing",
+                    "value": "MailingName3"
+                }
+            ],
+            "summary": {
+                "sent": 106,
+                "targeted": 232,
+                "delivered": 38,
+                "deliveryRate": 6.3,
+                "failed": 104,
+                "invalid": 17
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-6",
+                    "sent": 100,
+                    "targeted": 232,
+                    "delivered": 38,
+                    "deliveryRate": 8.3,
+                    "failed": 106,
+                    "invalid": 15
+                },
+                {
+                    "columnName": "mailing-7",
+                    "sent": 105,
+                    "targeted": 226,
+                    "delivered": 33,
+                    "deliveryRate": 6.3,
+                    "failed": 106,
+                    "invalid": 16
+                },
+                {
+                    "columnName": "mailing-8",
+                    "sent": 110,
+                    "targeted": 227,
+                    "delivered": 39,
+                    "deliveryRate": 8.3,
+                    "failed": 101,
+                    "invalid": 16
+                },
+                {
+                    "columnName": "mailing-9",
+                    "sent": 101,
+                    "targeted": 229,
+                    "delivered": 32,
+                    "deliveryRate": 8.3,
+                    "failed": 102,
+                    "invalid": 14
+                },
+                {
+                    "columnName": "mailing-10",
+                    "sent": 106,
+                    "targeted": 230,
+                    "delivered": 33,
+                    "deliveryRate": 10.3,
+                    "failed": 102,
+                    "invalid": 15
+                },
+                {
+                    "columnName": "mailing-11",
+                    "sent": 106,
+                    "targeted": 223,
+                    "delivered": 39,
+                    "deliveryRate": 1.3,
+                    "failed": 102,
+                    "invalid": 15
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "domain",
+                    "value": "4gmail.com"
+                },
+                {
+                    "name": "mailing",
+                    "value": "MailingName4"
+                }
+            ],
+            "summary": {
+                "sent": 106,
+                "targeted": 224,
+                "delivered": 39,
+                "deliveryRate": 4.3,
+                "failed": 109,
+                "invalid": 11
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-6",
+                    "sent": 103,
+                    "targeted": 226,
+                    "delivered": 31,
+                    "deliveryRate": 2.3,
+                    "failed": 103,
+                    "invalid": 14
+                },
+                {
+                    "columnName": "mailing-7",
+                    "sent": 100,
+                    "targeted": 223,
+                    "delivered": 38,
+                    "deliveryRate": 6.3,
+                    "failed": 109,
+                    "invalid": 13
+                },
+                {
+                    "columnName": "mailing-8",
+                    "sent": 106,
+                    "targeted": 229,
+                    "delivered": 37,
+                    "deliveryRate": 3.3,
+                    "failed": 103,
+                    "invalid": 11
+                },
+                {
+                    "columnName": "mailing-9",
+                    "sent": 105,
+                    "targeted": 223,
+                    "delivered": 32,
+                    "deliveryRate": 3.3,
+                    "failed": 100,
+                    "invalid": 12
+                },
+                {
+                    "columnName": "mailing-10",
+                    "sent": 108,
+                    "targeted": 226,
+                    "delivered": 39,
+                    "deliveryRate": 2.3,
+                    "failed": 107,
+                    "invalid": 15
+                },
+                {
+                    "columnName": "mailing-11",
+                    "sent": 100,
+                    "targeted": 226,
+                    "delivered": 31,
+                    "deliveryRate": 10.3,
+                    "failed": 107,
+                    "invalid": 12
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "domain",
+                    "value": "5gmail.com"
+                },
+                {
+                    "name": "mailing",
+                    "value": "MailingName5"
+                }
+            ],
+            "summary": {
+                "sent": 105,
+                "targeted": 228,
+                "delivered": 35,
+                "deliveryRate": 11.3,
+                "failed": 102,
+                "invalid": 11
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-6",
+                    "sent": 102,
+                    "targeted": 232,
+                    "delivered": 36,
+                    "deliveryRate": 9.3,
+                    "failed": 106,
+                    "invalid": 10
+                },
+                {
+                    "columnName": "mailing-7",
+                    "sent": 109,
+                    "targeted": 230,
+                    "delivered": 30,
+                    "deliveryRate": 8.3,
+                    "failed": 104,
+                    "invalid": 18
+                },
+                {
+                    "columnName": "mailing-8",
+                    "sent": 101,
+                    "targeted": 230,
+                    "delivered": 32,
+                    "deliveryRate": 10.3,
+                    "failed": 109,
+                    "invalid": 19
+                },
+                {
+                    "columnName": "mailing-9",
+                    "sent": 107,
+                    "targeted": 223,
+                    "delivered": 37,
+                    "deliveryRate": 9.3,
+                    "failed": 103,
+                    "invalid": 10
+                },
+                {
+                    "columnName": "mailing-10",
+                    "sent": 108,
+                    "targeted": 224,
+                    "delivered": 32,
+                    "deliveryRate": 1.3,
+                    "failed": 100,
+                    "invalid": 16
+                },
+                {
+                    "columnName": "mailing-11",
+                    "sent": 106,
+                    "targeted": 224,
+                    "delivered": 35,
+                    "deliveryRate": 2.3,
+                    "failed": 102,
+                    "invalid": 12
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "domain",
+                    "value": "6gmail.com"
+                },
+                {
+                    "name": "mailing",
+                    "value": "MailingName6"
+                }
+            ],
+            "summary": {
+                "sent": 107,
+                "targeted": 229,
+                "delivered": 39,
+                "deliveryRate": 7.3,
+                "failed": 101,
+                "invalid": 12
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-6",
+                    "sent": 103,
+                    "targeted": 229,
+                    "delivered": 34,
+                    "deliveryRate": 9.3,
+                    "failed": 106,
+                    "invalid": 19
+                },
+                {
+                    "columnName": "mailing-7",
+                    "sent": 104,
+                    "targeted": 224,
+                    "delivered": 38,
+                    "deliveryRate": 2.3,
+                    "failed": 102,
+                    "invalid": 13
+                },
+                {
+                    "columnName": "mailing-8",
+                    "sent": 107,
+                    "targeted": 224,
+                    "delivered": 33,
+                    "deliveryRate": 8.3,
+                    "failed": 107,
+                    "invalid": 19
+                },
+                {
+                    "columnName": "mailing-9",
+                    "sent": 105,
+                    "targeted": 229,
+                    "delivered": 35,
+                    "deliveryRate": 2.3,
+                    "failed": 106,
+                    "invalid": 16
+                },
+                {
+                    "columnName": "mailing-10",
+                    "sent": 105,
+                    "targeted": 223,
+                    "delivered": 31,
+                    "deliveryRate": 1.3,
+                    "failed": 109,
+                    "invalid": 13
+                },
+                {
+                    "columnName": "mailing-11",
+                    "sent": 107,
+                    "targeted": 230,
+                    "delivered": 35,
+                    "deliveryRate": 6.3,
+                    "failed": 103,
+                    "invalid": 14
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "domain",
+                    "value": "7gmail.com"
+                },
+                {
+                    "name": "mailing",
+                    "value": "MailingName7"
+                }
+            ],
+            "summary": {
+                "sent": 104,
+                "targeted": 226,
+                "delivered": 37,
+                "deliveryRate": 2.3,
+                "failed": 110,
+                "invalid": 15
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-6",
+                    "sent": 108,
+                    "targeted": 232,
+                    "delivered": 35,
+                    "deliveryRate": 6.3,
+                    "failed": 105,
+                    "invalid": 13
+                },
+                {
+                    "columnName": "mailing-7",
+                    "sent": 110,
+                    "targeted": 224,
+                    "delivered": 34,
+                    "deliveryRate": 9.3,
+                    "failed": 100,
+                    "invalid": 19
+                },
+                {
+                    "columnName": "mailing-8",
+                    "sent": 104,
+                    "targeted": 223,
+                    "delivered": 34,
+                    "deliveryRate": 4.3,
+                    "failed": 106,
+                    "invalid": 16
+                },
+                {
+                    "columnName": "mailing-9",
+                    "sent": 104,
+                    "targeted": 229,
+                    "delivered": 35,
+                    "deliveryRate": 4.3,
+                    "failed": 108,
+                    "invalid": 15
+                },
+                {
+                    "columnName": "mailing-10",
+                    "sent": 108,
+                    "targeted": 223,
+                    "delivered": 31,
+                    "deliveryRate": 2.3,
+                    "failed": 103,
+                    "invalid": 17
+                },
+                {
+                    "columnName": "mailing-11",
+                    "sent": 103,
+                    "targeted": 224,
+                    "delivered": 35,
+                    "deliveryRate": 3.3,
+                    "failed": 106,
+                    "invalid": 12
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "domain",
+                    "value": "8gmail.com"
+                },
+                {
+                    "name": "mailing",
+                    "value": "MailingName8"
+                }
+            ],
+            "summary": {
+                "sent": 107,
+                "targeted": 227,
+                "delivered": 31,
+                "deliveryRate": 7.3,
+                "failed": 106,
+                "invalid": 15
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-6",
+                    "sent": 106,
+                    "targeted": 229,
+                    "delivered": 32,
+                    "deliveryRate": 2.3,
+                    "failed": 109,
+                    "invalid": 15
+                },
+                {
+                    "columnName": "mailing-7",
+                    "sent": 105,
+                    "targeted": 224,
+                    "delivered": 38,
+                    "deliveryRate": 9.3,
+                    "failed": 108,
+                    "invalid": 13
+                },
+                {
+                    "columnName": "mailing-8",
+                    "sent": 105,
+                    "targeted": 231,
+                    "delivered": 33,
+                    "deliveryRate": 11.3,
+                    "failed": 110,
+                    "invalid": 14
+                },
+                {
+                    "columnName": "mailing-9",
+                    "sent": 104,
+                    "targeted": 224,
+                    "delivered": 32,
+                    "deliveryRate": 2.3,
+                    "failed": 109,
+                    "invalid": 20
+                },
+                {
+                    "columnName": "mailing-10",
+                    "sent": 105,
+                    "targeted": 227,
+                    "delivered": 40,
+                    "deliveryRate": 2.3,
+                    "failed": 102,
+                    "invalid": 18
+                },
+                {
+                    "columnName": "mailing-11",
+                    "sent": 105,
+                    "targeted": 229,
+                    "delivered": 36,
+                    "deliveryRate": 1.3,
+                    "failed": 109,
+                    "invalid": 14
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "domain",
+                    "value": "9gmail.com"
+                },
+                {
+                    "name": "mailing",
+                    "value": "MailingName9"
+                }
+            ],
+            "summary": {
+                "sent": 106,
+                "targeted": 230,
+                "delivered": 40,
+                "deliveryRate": 2.3,
+                "failed": 100,
+                "invalid": 13
+            },
+            "columnData": [
+                {
+                    "columnName": "mailing-6",
+                    "sent": 109,
+                    "targeted": 226,
+                    "delivered": 33,
+                    "deliveryRate": 10.3,
+                    "failed": 110,
+                    "invalid": 11
+                },
+                {
+                    "columnName": "mailing-7",
+                    "sent": 103,
+                    "targeted": 224,
+                    "delivered": 33,
+                    "deliveryRate": 9.3,
+                    "failed": 104,
+                    "invalid": 19
+                },
+                {
+                    "columnName": "mailing-8",
+                    "sent": 104,
+                    "targeted": 223,
+                    "delivered": 30,
+                    "deliveryRate": 7.3,
+                    "failed": 106,
+                    "invalid": 14
+                },
+                {
+                    "columnName": "mailing-9",
+                    "sent": 107,
+                    "targeted": 228,
+                    "delivered": 40,
+                    "deliveryRate": 5.3,
+                    "failed": 108,
+                    "invalid": 11
+                },
+                {
+                    "columnName": "mailing-10",
+                    "sent": 109,
+                    "targeted": 222,
+                    "delivered": 36,
+                    "deliveryRate": 4.3,
+                    "failed": 107,
+                    "invalid": 17
+                },
+                {
+                    "columnName": "mailing-11",
+                    "sent": 106,
+                    "targeted": 231,
+                    "delivered": 39,
+                    "deliveryRate": 5.3,
+                    "failed": 103,
+                    "invalid": 17
+                }
+            ]
+        }
+    ],
+            "summary": {
+                "columnName": null,
+                "delivered": 439975,
+                "deliveryRate": 100,
+                "failed": 182,
+                "invalid": 1212,
+                "sent": 439981,
+                "targeted": 439981
+            }
+        }
+    ]
+}

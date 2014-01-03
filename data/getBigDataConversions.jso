@@ -1,0 +1,893 @@
+{
+    "identifier": 'id',
+    "itemsCommon":null,
+    "items":[{
+	        "data": [
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 103
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing0"
+                }
+            ],
+            "summary": {
+                "conversions": 406,
+                "conversionRate": 5.2,
+                "items": 409,
+                "revenue": 5.3,
+                "averageOrderValue": 3.1,
+                "revenuePerEmail": 5.1,
+                "convertToClick": 12.1
+            },
+            "columnData": [
+                {
+                    "columnName": "Mailing0",
+                    "launchTime": 10000101019,
+                    "conversions": 403,
+                    "conversionRate": 7.2,
+                    "items": 404,
+                    "revenue": 10.3,
+                    "averageOrderValue": 5,
+                    "revenuePerEmail": 10.1,
+                    "convertToClick": 17.1
+                },
+                {
+                    "columnName": "Mailing1",
+                                        "launchTime": 10000101018,
+                    "conversions": 404,
+                    "conversionRate": 5.2,
+                    "items": 410,
+                    "revenue": 6.3,
+                    "averageOrderValue": 3,
+                    "revenuePerEmail": 2.1,
+                    "convertToClick": 10.1
+                },
+                {
+                    "columnName": "Mailing2",
+                                        "launchTime": 10000101017,
+                    "conversions": 410,
+                    "conversionRate": 10.2,
+                    "items": 407,
+                    "revenue": 5.3,
+                    "averageOrderValue": 7,
+                    "revenuePerEmail": 4.1,
+                    "convertToClick": 17.1
+                },
+                {
+                    "columnName": "Mailing3",
+                                        "launchTime": 10000101016,
+                    "conversions": 404,
+                    "conversionRate": 8.2,
+                    "items": 412,
+                    "revenue": 11.3,
+                    "averageOrderValue": 13,
+                    "revenuePerEmail": 6.1,
+                    "convertToClick": 16.1
+                },
+                {
+                    "columnName": "Mailing4",
+                                        "launchTime": 10000101015,
+                    "conversions": 408,
+                    "conversionRate": 5.2,
+                    "items": 405,
+                    "revenue": 10.3,
+                    "averageOrderValue": 5,
+                    "revenuePerEmail": 15.1,
+                    "convertToClick": 13.1
+                },
+                {
+                    "columnName": "Mailing5",
+                    "launchTime": 10000101014,
+                    "conversions": 405,
+                    "conversionRate": 9.2,
+                    "items": 412,
+                    "revenue": 15.3,
+                    "averageOrderValue": 12,
+                    "revenuePerEmail": 9.1,
+                    "convertToClick": 19.1
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 102
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing1"
+                }
+            ],
+            "summary": {
+                "conversions": 400,
+                "conversionRate": 9.2,
+                "items": 410,
+                "revenue": 6.3,
+                "averageOrderValue": 9.1,
+                "revenuePerEmail": 4.1,
+                "convertToClick": 11.1
+            },
+            "columnData": [
+                {
+                    "columnName": "Mailing0",
+                    "conversions": 405,
+                    "conversionRate": 8.2,
+                    "items": 401,
+                    "revenue": 8.3,
+                    "averageOrderValue": 6,
+                    "revenuePerEmail": 6.1,
+                    "convertToClick": 16.1
+                },
+                {
+                    "columnName": "Mailing1",
+                    "conversions": 408,
+                    "conversionRate": 12.2,
+                    "items": 404,
+                    "revenue": 10.3,
+                    "averageOrderValue": 6,
+                    "revenuePerEmail": 11.1,
+                    "convertToClick": 14.1
+                },
+                {
+                    "columnName": "Mailing2",
+                    "conversions": 407,
+                    "conversionRate": 8.2,
+                    "items": 411,
+                    "revenue": 8.3,
+                    "averageOrderValue": 6,
+                    "revenuePerEmail": 3.1,
+                    "convertToClick": 13.1
+                },
+                {
+                    "columnName": "Mailing3",
+                    "conversions": 408,
+                    "conversionRate": 11.2,
+                    "items": 403,
+                    "revenue": 8.3,
+                    "averageOrderValue": 5,
+                    "revenuePerEmail": 12.1,
+                    "convertToClick": 19.1
+                },
+                {
+                    "columnName": "Mailing4",
+                    "conversions": 412,
+                    "conversionRate": 13.2,
+                    "items": 404,
+                    "revenue": 10.3,
+                    "averageOrderValue": 7,
+                    "revenuePerEmail": 12.1,
+                    "convertToClick": 17.1
+                },
+                {
+                    "columnName": "Mailing5",
+                    "conversions": 412,
+                    "conversionRate": 11.2,
+                    "items": 411,
+                    "revenue": 8.3,
+                    "averageOrderValue": 12,
+                    "revenuePerEmail": 11.1,
+                    "convertToClick": 17.1
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 104
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing2"
+                }
+            ],
+            "summary": {
+                "conversions": 407,
+                "conversionRate": 11.2,
+                "items": 407,
+                "revenue": 3.3,
+                "averageOrderValue": 1.1,
+                "revenuePerEmail": 5.1,
+                "convertToClick": 16.1
+            },
+            "columnData": [
+                {
+                    "columnName": "Mailing0",
+                    "conversions": 407,
+                    "conversionRate": 10.2,
+                    "items": 401,
+                    "revenue": 1.3,
+                    "averageOrderValue": 2,
+                    "revenuePerEmail": 4.1,
+                    "convertToClick": 13.1
+                },
+                {
+                    "columnName": "Mailing1",
+                    "conversions": 406,
+                    "conversionRate": 4.2,
+                    "items": 411,
+                    "revenue": 12.3,
+                    "averageOrderValue": 10,
+                    "revenuePerEmail": 3.1,
+                    "convertToClick": 10.1
+                },
+                {
+                    "columnName": "Mailing2",
+                    "conversions": 411,
+                    "conversionRate": 7.2,
+                    "items": 406,
+                    "revenue": 8.3,
+                    "averageOrderValue": 9,
+                    "revenuePerEmail": 5.1,
+                    "convertToClick": 14.1
+                },
+                {
+                    "columnName": "Mailing3",
+                    "conversions": 412,
+                    "conversionRate": 7.2,
+                    "items": 408,
+                    "revenue": 14.3,
+                    "averageOrderValue": 13,
+                    "revenuePerEmail": 13.1,
+                    "convertToClick": 14.1
+                },
+                {
+                    "columnName": "Mailing4",
+                    "conversions": 412,
+                    "conversionRate": 10.2,
+                    "items": 412,
+                    "revenue": 12.3,
+                    "averageOrderValue": 11,
+                    "revenuePerEmail": 6.1,
+                    "convertToClick": 12.1
+                },
+                {
+                    "columnName": "Mailing5",
+                    "conversions": 411,
+                    "conversionRate": 16.2,
+                    "items": 411,
+                    "revenue": 15.3,
+                    "averageOrderValue": 11,
+                    "revenuePerEmail": 15.1,
+                    "convertToClick": 14.1
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 101
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing3"
+                }
+            ],
+            "summary": {
+                "conversions": 406,
+                "conversionRate": 8.2,
+                "items": 403,
+                "revenue": 6.3,
+                "averageOrderValue": 0.1,
+                "revenuePerEmail": 8.1,
+                "convertToClick": 13.1
+            },
+            "columnData": [
+                {
+                    "columnName": "Mailing0",
+                    "conversions": 407,
+                    "conversionRate": 11.2,
+                    "items": 408,
+                    "revenue": 9.3,
+                    "averageOrderValue": 3,
+                    "revenuePerEmail": 8.1,
+                    "convertToClick": 9.1
+                },
+                {
+                    "columnName": "Mailing1",
+                    "conversions": 405,
+                    "conversionRate": 9.2,
+                    "items": 405,
+                    "revenue": 6.3,
+                    "averageOrderValue": 6,
+                    "revenuePerEmail": 9.1,
+                    "convertToClick": 12.1
+                },
+                {
+                    "columnName": "Mailing2",
+                    "conversions": 408,
+                    "conversionRate": 11.2,
+                    "items": 407,
+                    "revenue": 9.3,
+                    "averageOrderValue": 2,
+                    "revenuePerEmail": 5.1,
+                    "convertToClick": 14.1
+                },
+                {
+                    "columnName": "Mailing3",
+                    "conversions": 409,
+                    "conversionRate": 7.2,
+                    "items": 407,
+                    "revenue": 11.3,
+                    "averageOrderValue": 6,
+                    "revenuePerEmail": 6.1,
+                    "convertToClick": 15.1
+                },
+                {
+                    "columnName": "Mailing4",
+                    "conversions": 404,
+                    "conversionRate": 10.2,
+                    "items": 404,
+                    "revenue": 8.3,
+                    "averageOrderValue": 7,
+                    "revenuePerEmail": 12.1,
+                    "convertToClick": 13.1
+                },
+                {
+                    "columnName": "Mailing5",
+                    "conversions": 413,
+                    "conversionRate": 12.2,
+                    "items": 410,
+                    "revenue": 14.3,
+                    "averageOrderValue": 15,
+                    "revenuePerEmail": 7.1,
+                    "convertToClick": 14.1
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 105
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing4"
+                }
+            ],
+            "summary": {
+                "conversions": 401,
+                "conversionRate": 5.2,
+                "items": 408,
+                "revenue": 2.3,
+                "averageOrderValue": 6.1,
+                "revenuePerEmail": 6.1,
+                "convertToClick": 9.1
+            },
+            "columnData": [
+                {
+                    "columnName": "Mailing0",
+                    "conversions": 409,
+                    "conversionRate": 5.2,
+                    "items": 404,
+                    "revenue": 3.3,
+                    "averageOrderValue": 10,
+                    "revenuePerEmail": 2.1,
+                    "convertToClick": 9.1
+                },
+                {
+                    "columnName": "Mailing1",
+                    "conversions": 401,
+                    "conversionRate": 11.2,
+                    "items": 408,
+                    "revenue": 8.3,
+                    "averageOrderValue": 1,
+                    "revenuePerEmail": 9.1,
+                    "convertToClick": 16.1
+                },
+                {
+                    "columnName": "Mailing2",
+                    "conversions": 403,
+                    "conversionRate": 12.2,
+                    "items": 403,
+                    "revenue": 8.3,
+                    "averageOrderValue": 11,
+                    "revenuePerEmail": 10.1,
+                    "convertToClick": 15.1
+                },
+                {
+                    "columnName": "Mailing3",
+                    "conversions": 407,
+                    "conversionRate": 9.2,
+                    "items": 403,
+                    "revenue": 8.3,
+                    "averageOrderValue": 7,
+                    "revenuePerEmail": 13.1,
+                    "convertToClick": 18.1
+                },
+                {
+                    "columnName": "Mailing4",
+                    "conversions": 414,
+                    "conversionRate": 10.2,
+                    "items": 412,
+                    "revenue": 11.3,
+                    "averageOrderValue": 7,
+                    "revenuePerEmail": 9.1,
+                    "convertToClick": 13.1
+                },
+                {
+                    "columnName": "Mailing5",
+                    "conversions": 414,
+                    "conversionRate": 10.2,
+                    "items": 409,
+                    "revenue": 11.3,
+                    "averageOrderValue": 8,
+                    "revenuePerEmail": 16.1,
+                    "convertToClick": 20.1
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 102
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing5"
+                }
+            ],
+            "summary": {
+                "conversions": 406,
+                "conversionRate": 3.2,
+                "items": 410,
+                "revenue": 8.3,
+                "averageOrderValue": 8.1,
+                "revenuePerEmail": 9.1,
+                "convertToClick": 11.1
+            },
+            "columnData": [
+                {
+                    "columnName": "Mailing0",
+                    "conversions": 403,
+                    "conversionRate": 5.2,
+                    "items": 406,
+                    "revenue": 2.3,
+                    "averageOrderValue": 4,
+                    "revenuePerEmail": 4.1,
+                    "convertToClick": 8.1
+                },
+                {
+                    "columnName": "Mailing1",
+                    "conversions": 402,
+                    "conversionRate": 9.2,
+                    "items": 401,
+                    "revenue": 8.3,
+                    "averageOrderValue": 8,
+                    "revenuePerEmail": 6.1,
+                    "convertToClick": 19.1
+                },
+                {
+                    "columnName": "Mailing2",
+                    "conversions": 407,
+                    "conversionRate": 12.2,
+                    "items": 411,
+                    "revenue": 4.3,
+                    "averageOrderValue": 4,
+                    "revenuePerEmail": 8.1,
+                    "convertToClick": 14.1
+                },
+                {
+                    "columnName": "Mailing3",
+                    "conversions": 404,
+                    "conversionRate": 9.2,
+                    "items": 405,
+                    "revenue": 5.3,
+                    "averageOrderValue": 8,
+                    "revenuePerEmail": 6.1,
+                    "convertToClick": 17.1
+                },
+                {
+                    "columnName": "Mailing4",
+                    "conversions": 408,
+                    "conversionRate": 8.2,
+                    "items": 406,
+                    "revenue": 8.3,
+                    "averageOrderValue": 10,
+                    "revenuePerEmail": 11.1,
+                    "convertToClick": 15.1
+                },
+                {
+                    "columnName": "Mailing5",
+                    "conversions": 406,
+                    "conversionRate": 6.2,
+                    "items": 409,
+                    "revenue": 8.3,
+                    "averageOrderValue": 15,
+                    "revenuePerEmail": 15.1,
+                    "convertToClick": 19.1
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 105
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing6"
+                }
+            ],
+            "summary": {
+                "conversions": 403,
+                "conversionRate": 5.2,
+                "items": 408,
+                "revenue": 4.3,
+                "averageOrderValue": 1.1,
+                "revenuePerEmail": 3.1,
+                "convertToClick": 9.1
+            },
+            "columnData": [
+                {
+                    "columnName": "Mailing0",
+                    "conversions": 404,
+                    "conversionRate": 6.2,
+                    "items": 404,
+                    "revenue": 3.3,
+                    "averageOrderValue": 8,
+                    "revenuePerEmail": 3.1,
+                    "convertToClick": 15.1
+                },
+                {
+                    "columnName": "Mailing1",
+                    "conversions": 404,
+                    "conversionRate": 11.2,
+                    "items": 403,
+                    "revenue": 7.3,
+                    "averageOrderValue": 6,
+                    "revenuePerEmail": 8.1,
+                    "convertToClick": 17.1
+                },
+                {
+                    "columnName": "Mailing2",
+                    "conversions": 406,
+                    "conversionRate": 9.2,
+                    "items": 408,
+                    "revenue": 12.3,
+                    "averageOrderValue": 5,
+                    "revenuePerEmail": 5.1,
+                    "convertToClick": 19.1
+                },
+                {
+                    "columnName": "Mailing3",
+                    "conversions": 406,
+                    "conversionRate": 12.2,
+                    "items": 409,
+                    "revenue": 13.3,
+                    "averageOrderValue": 4,
+                    "revenuePerEmail": 10.1,
+                    "convertToClick": 18.1
+                },
+                {
+                    "columnName": "Mailing4",
+                    "conversions": 407,
+                    "conversionRate": 5.2,
+                    "items": 409,
+                    "revenue": 8.3,
+                    "averageOrderValue": 5,
+                    "revenuePerEmail": 11.1,
+                    "convertToClick": 17.1
+                },
+                {
+                    "columnName": "Mailing5",
+                    "conversions": 415,
+                    "conversionRate": 12.2,
+                    "items": 408,
+                    "revenue": 12.3,
+                    "averageOrderValue": 15,
+                    "revenuePerEmail": 13.1,
+                    "convertToClick": 17.1
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 104
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing7"
+                }
+            ],
+            "summary": {
+                "conversions": 400,
+                "conversionRate": 3.2,
+                "items": 408,
+                "revenue": 4.3,
+                "averageOrderValue": 2.1,
+                "revenuePerEmail": 5.1,
+                "convertToClick": 15.1
+            },
+            "columnData": [
+                {
+                    "columnName": "Mailing0",
+                    "conversions": 401,
+                    "conversionRate": 2.2,
+                    "items": 408,
+                    "revenue": 1.3,
+                    "averageOrderValue": 4,
+                    "revenuePerEmail": 4.1,
+                    "convertToClick": 14.1
+                },
+                {
+                    "columnName": "Mailing1",
+                    "conversions": 410,
+                    "conversionRate": 4.2,
+                    "items": 404,
+                    "revenue": 10.3,
+                    "averageOrderValue": 11,
+                    "revenuePerEmail": 6.1,
+                    "convertToClick": 16.1
+                },
+                {
+                    "columnName": "Mailing2",
+                    "conversions": 407,
+                    "conversionRate": 8.2,
+                    "items": 404,
+                    "revenue": 9.3,
+                    "averageOrderValue": 5,
+                    "revenuePerEmail": 5.1,
+                    "convertToClick": 17.1
+                },
+                {
+                    "columnName": "Mailing3",
+                    "conversions": 410,
+                    "conversionRate": 10.2,
+                    "items": 407,
+                    "revenue": 10.3,
+                    "averageOrderValue": 7,
+                    "revenuePerEmail": 6.1,
+                    "convertToClick": 19.1
+                },
+                {
+                    "columnName": "Mailing4",
+                    "conversions": 412,
+                    "conversionRate": 12.2,
+                    "items": 407,
+                    "revenue": 10.3,
+                    "averageOrderValue": 6,
+                    "revenuePerEmail": 9.1,
+                    "convertToClick": 17.1
+                },
+                {
+                    "columnName": "Mailing5",
+                    "conversions": 414,
+                    "conversionRate": 11.2,
+                    "items": 406,
+                    "revenue": 13.3,
+                    "averageOrderValue": 7,
+                    "revenuePerEmail": 12.1,
+                    "convertToClick": 15.1
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 108
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing8"
+                }
+            ],
+            "summary": {
+                "conversions": 404,
+                "conversionRate": 4.2,
+                "items": 407,
+                "revenue": 11.3,
+                "averageOrderValue": 5.1,
+                "revenuePerEmail": 9.1,
+                "convertToClick": 17.1
+            },
+            "columnData": [
+                {
+                    "columnName": "Mailing0",
+                    "conversions": 404,
+                    "conversionRate": 10.2,
+                    "items": 400,
+                    "revenue": 8.3,
+                    "averageOrderValue": 6,
+                    "revenuePerEmail": 4.1,
+                    "convertToClick": 16.1
+                },
+                {
+                    "columnName": "Mailing1",
+                    "conversions": 409,
+                    "conversionRate": 3.2,
+                    "items": 409,
+                    "revenue": 6.3,
+                    "averageOrderValue": 5,
+                    "revenuePerEmail": 12.1,
+                    "convertToClick": 14.1
+                },
+                {
+                    "columnName": "Mailing2",
+                    "conversions": 406,
+                    "conversionRate": 4.2,
+                    "items": 405,
+                    "revenue": 11.3,
+                    "averageOrderValue": 9,
+                    "revenuePerEmail": 6.1,
+                    "convertToClick": 15.1
+                },
+                {
+                    "columnName": "Mailing3",
+                    "conversions": 407,
+                    "conversionRate": 5.2,
+                    "items": 412,
+                    "revenue": 11.3,
+                    "averageOrderValue": 11,
+                    "revenuePerEmail": 6.1,
+                    "convertToClick": 16.1
+                },
+                {
+                    "columnName": "Mailing4",
+                    "conversions": 407,
+                    "conversionRate": 11.2,
+                    "items": 409,
+                    "revenue": 5.3,
+                    "averageOrderValue": 6,
+                    "revenuePerEmail": 6.1,
+                    "convertToClick": 17.1
+                },
+                {
+                    "columnName": "Mailing5",
+                    "conversions": 407,
+                    "conversionRate": 6.2,
+                    "items": 410,
+                    "revenue": 10.3,
+                    "averageOrderValue": 9,
+                    "revenuePerEmail": 15.1,
+                    "convertToClick": 22.1
+                }
+            ]
+        },
+        {
+            "breakdowns": [
+                {
+                    "name": "gender",
+                    "value": "female"
+                },
+                {
+                    "name": "age",
+                    "value": 104
+                },
+                {
+                    "name": "mailing",
+                    "value": "mailing9"
+                }
+            ],
+            "summary": {
+                "conversions": 409,
+                "conversionRate": 7.2,
+                "items": 402,
+                "revenue": 5.3,
+                "averageOrderValue": 7.1,
+                "revenuePerEmail": 5.1,
+                "convertToClick": 16.1
+            },
+            "columnData": [
+                {
+                    "columnName": "Mailing0",
+                    "conversions": 409,
+                    "conversionRate": 8.2,
+                    "items": 405,
+                    "revenue": 7.3,
+                    "averageOrderValue": 7,
+                    "revenuePerEmail": 10.1,
+                    "convertToClick": 12.1
+                },
+                {
+                    "columnName": "Mailing1",
+                    "conversions": 411,
+                    "conversionRate": 6.2,
+                    "items": 407,
+                    "revenue": 5.3,
+                    "averageOrderValue": 8,
+                    "revenuePerEmail": 5.1,
+                    "convertToClick": 13.1
+                },
+                {
+                    "columnName": "Mailing2",
+                    "conversions": 403,
+                    "conversionRate": 5.2,
+                    "items": 411,
+                    "revenue": 12.3,
+                    "averageOrderValue": 7,
+                    "revenuePerEmail": 6.1,
+                    "convertToClick": 15.1
+                },
+                {
+                    "columnName": "Mailing3",
+                    "conversions": 408,
+                    "conversionRate": 7.2,
+                    "items": 407,
+                    "revenue": 10.3,
+                    "averageOrderValue": 9,
+                    "revenuePerEmail": 13.1,
+                    "convertToClick": 20.1
+                },
+                {
+                    "columnName": "Mailing4",
+                    "conversions": 411,
+                    "conversionRate": 10.2,
+                    "items": 407,
+                    "revenue": 13.3,
+                    "averageOrderValue": 7,
+                    "revenuePerEmail": 8.1,
+                    "convertToClick": 21.1
+                },
+                {
+                    "columnName": "Mailing5",
+                    "conversions": 405,
+                    "conversionRate": 9.2,
+                    "items": 414,
+                    "revenue": 13.3,
+                    "averageOrderValue": 14,
+                    "revenuePerEmail": 7.1,
+                    "convertToClick": 15.1
+                }
+            ]
+        }
+    ],
+    	"summary":{
+        	"conversions":4300,
+		  	"conversionRate":31.2,
+		  	"items":4040,
+		  	"revenue":21.3,
+          	"averageOrderValue":0.0,
+          	"revenuePerEmail":13.1,
+          	"convertToClick":38.1		  
+        }
+    }]
+}

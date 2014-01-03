@@ -1,0 +1,79 @@
+.report .combobox{
+	width:auto;
+	color: #444;
+}
+.report .combobox-content{ 
+	position:relative;
+	width:145px;
+	line-height:20px;
+}
+
+.report .combobox .combobox-button{
+	display:inline-block;
+	cursor:pointer; 
+	height:25px;
+	width:auto; 
+	line-height:25px;
+	.border-radius(8px);
+	border:1px solid #cccccc;
+	#gradient > .vertical(#FDFDFD,#EEEEEE);
+}
+
+.report .reportHeader-subSectionCombobox .combobox .combobox-button {
+	*max-width:95px;
+}
+
+.report .combobox .combobox-button label{
+	float:left;
+	margin:0 2px 0 6px;
+}
+.report .combobox .combobox-button .button-ico{
+	float:right;
+	margin:0 1px 0 0;
+}
+.report .combobox .combobox-button:hover{
+	border:1px solid #bbb;
+	color: #101010;
+	#gradient > .vertical(#EDEDED,#EEEEEE);
+	text-shadow:0 1px 1px #ffffff;
+}
+
+.report .combobox .combobox-list{
+	position:absolute;
+	left:0px;
+	background:#fff;
+	min-width:60px;
+	width:auto;
+	z-index:8;
+	border:1px solid #7f9db9;
+}
+.report .combobox .combobox-list .item{
+	display:block;
+	padding:0 5px;
+	white-space:nowrap;
+	width:auto;
+}
+.report .combobox .combobox-list .item:hover{
+	#gradient > .vertical(#d3eff3,#a7dee5);
+}
+.report .combobox .combobox-list .item.selected{
+	#gradient > .vertical(#d3eff3,#a7dee5);
+}
+.report .combobox .combobox-list .item.isHide{
+	display:none;
+}
+.report .combobox .combobox-list .item.isFailureDetailCode{
+	display:none;
+}
+.report .combobox .combobox-list .item.isSMSKeyword{
+	display:none;
+}
+.report .combobox .combobox-list .item.isEventType{
+	display:none;
+}
+.report .combobox .comboboxScreener{
+	position:fixed;
+	top:0;left:0;right:0;bottom:0;
+	display:none;
+	z-index:1;
+}

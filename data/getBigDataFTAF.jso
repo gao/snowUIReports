@@ -1,0 +1,119 @@
+{
+    "identifier": 'id',
+    "itemsCommon":null,
+    "items":[{
+    	"data":[{
+    		"breakdowns":[{"name":"gender","value":"female"},{"name":"age","value":100},{"name":"mailing","value":"mailing1"}],
+		    "columnData":[
+			     { "columnName":"Mailing12",
+		          "forwaders":800,
+				  "forwardedMessages":80,
+				  "clickers":385,
+				  "openers":908,
+				  "subscribers":85
+				  },		  
+				 {
+				  "columnName":"Mailing13",
+				 "forwaders":400,
+				  "forwardedMessages":20,
+				  "clickers":60,
+				  "openers":70,
+				  "subscribers":10
+			     }  
+		   
+		    ]
+	 	},
+	 	{
+    		"breakdowns":[{"name":"gender","value":"female"},{"name":"age","value":100},{"name":"mailing","value":"mailing1"}],
+		    "columnData":[
+			     { "columnName":"Mailing12",
+		          "forwaders":400,
+				  "forwardedMessages":20,
+				  "clickers":35,
+				  "openers":90,
+				  "subscribers":5
+				  },		  
+				 {
+				  "columnName":"Mailing13",
+				 "forwaders":400,
+				  "forwardedMessages":20,
+				  "clickers":60,
+				  "openers":70,
+				  "subscribers":10
+			     }  
+		   
+		    ]
+	 	},
+	 	{
+    		"breakdowns":[{"name":"gender","value":"female"},{"name":"age","value":100},{"name":"mailing","value":"mailing1"}],
+		    "columnData":[
+			     { "columnName":"Mailing12",
+		          "forwaders":400,
+				  "forwardedMessages":20,
+				  "clickers":35,
+				  "openers":90,
+				  "subscribers":5
+				  },		  
+				 {
+				  "columnName":"Mailing13",
+				 "forwaders":600,
+				  "forwardedMessages":120,
+				  "clickers":160,
+				  "openers":170,
+				  "subscribers":110
+			     }  
+		   
+		    ]
+	 	},
+	 	{
+    		"breakdowns":[{"name":"gender","value":"female"},{"name":"age","value":100},{"name":"mailing","value":"mailing1"}],
+		    "columnData":[
+			     { "columnName":"Mailing12",
+		          "forwaders":400,
+				  "forwardedMessages":20,
+				  "clickers":35,
+				  "openers":90,
+				  "subscribers":5
+				  },		  
+				 {
+				  "columnName":"Mailing13",
+				 "forwaders":400,
+				  "forwardedMessages":20,
+				  "clickers":60,
+				  "openers":70,
+				  "subscribers":10
+			     }  
+		   
+		    ]
+	 	},
+	 	{
+    		"breakdowns":[{"name":"gender","value":"female"},{"name":"age","value":100},{"name":"mailing","value":"mailing1"}],
+		    "columnData":[
+			     { "columnName":"Mailing12",
+		          "forwaders":1400,
+				  "forwardedMessages":120,
+				  "clickers":135,
+				  "openers":190,
+				  "subscribers":15
+				  },		  
+				 {
+				  "columnName":"Mailing13",
+				 "forwaders":2400,
+				  "forwardedMessages":220,
+				  "clickers":260,
+				  "openers":270,
+				  "subscribers":210
+			     }  
+		   
+		    ]
+	 	}
+		],
+	    "summary":{
+		      "forwaders":400,
+			  "forwardedMessages":20,
+			  "clickers":35,
+			  "openers":90,
+			  "subscribers":5
+	     }
+	}]
+}

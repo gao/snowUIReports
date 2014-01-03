@@ -1,0 +1,51 @@
+{
+    "identifier": "id",
+    "itemsCommon": null,
+    "items": [
+        {
+            "id": 100,
+            "segmentName": "Gender",
+            "isCore": true
+        },
+        {
+            "id": 101,
+            "segmentName": "Income",
+            "isCore": true
+        },
+        {
+            "id": 102,
+            "segmentName": "Age-Gender",
+            "isCore": true
+        },
+        {
+            "id": 103,
+            "segmentName": "Location-Conversion",
+            "isCore": true
+        },
+        {
+            "id": 104,
+            "segmentName": "Region",
+            "isCore": true
+        },
+        {
+            "id": 105,
+            "segmentName": "Conversion",
+            "isCore": false
+        },
+        {
+            "id": 106,
+            "segmentName": "Group123",
+            "isCore": true
+        },
+        {
+            "id": 107,
+            "segmentName": "GroupAB",
+            "isCore": false
+        },
+        {
+            "id": 108,
+            "segmentName": "GroupBCTestForLongNameSegmentation",
+            "isCore": false
+        }
+    ]
+}

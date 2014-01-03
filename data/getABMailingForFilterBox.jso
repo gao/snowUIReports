@@ -1,0 +1,22 @@
+{
+    "identifier": "id",
+    "itemsCommon": null,
+    "items": [
+        {
+            "id": 101,
+            "name": "fiirstmdsafdfafasfaasdfailing1",
+            "campaign": "mycampaign1",
+            "type": "Subject Line",
+            "status": "completed",
+            "launchDate": "26-Jun-2012"
+        },
+        {
+            "id": 102,
+            "name": "fiirstmailing2",
+            "campaign": "mycampaign2",
+            "type": "Custom",
+            "status": "Winner Selection Pending",
+            "launchDate": "26-Jun-2012"
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+<script id="tmpl-sectionDeviceUsageOverview" type="text/html">
+	<div class="sectionDeviceUsageOverview">
+		<div class="sectionDeviceUsageOverview-top">
+			<div class="graphType">
+				<div class="graphTypeList"></div>
+				<span class="graphTitle">Trend</span>
+			</div>
+		</div>
+		<div style="clear: both;" class="sectionDeviceUsageOverview-viewchart">
+			<div class="viewBy head">
+				<span>View by: </span>
+				<span class="SMA-REPORT-VIEWBYDAY action selected" data-view="day">Day</span>
+				<span class="SMA-REPORT-VIEWBYWEEK action" data-view="week">Week</span>
+				<span class="SMA-REPORT-VIEWBYMONTH action" data-view="month">Month</span>
+				<span class="SMA-REPORT-VIEWBYQUARTER action" data-view="quarter">Quarter</span>
+			</div>
+			
+			<div class="sectionDeviceUsageOverview-chart"></div>
+		</div>
+		
+		<div class="sectionDeviceUsageOverview-overviewTable">
+			<div class="sectionContent">
+				<div class="overviewSectionTable">
+					<table class="dataTable">
+						<tr>
+							<th class="name">Device Type</th>
+							<th class="centerAlignTh" colspan="2">Opens</th>
+							<th class="centerAlignTh" colspan="2">Clicks</th>
+							<th>Click-to-Open</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionDeviceUsageOverview-phoneUsageSection deviceUsagePart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				<span>Phone Usage Breakdown</span>
+			</div>
+			<div class="sectionContent">
+				<div class="phoneUsageSectionTable">
+					<table class="dataTable">
+						<thead>
+							<tr></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionDeviceUsageOverview-tabletUsageSection deviceUsagePart">
+			<div class="sectionTitle">
+				<span class="collapsible exp">[-]</span>
+				<span class="collapsible col">[+]</span>
+				<span>Tablet Usage Breakdown</span>
+			</div>
+			<div class="sectionContent">
+				<div class="tabletUsageSectionTable">
+					<table class="dataTable">
+						<thead>
+							<tr></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-sectionDeviceUsageOverview-sectionContent-dataTable-tableThead" type="text/html">
+	<th class="{{#if isBarAndValue}}isBarAndValueTh{{/if}}" data-column="{{column}}">
+		{{label}}
+	</th>
+</script>
+
+<script id="tmpl-sectionDeviceUsageOverview-sectionContent-dataTable-tableTbody" type="text/html">
+	<tr>
+	</tr>
+</script>
+
+<script id="tmpl-sectionDeviceUsageOverview-sectionContent-dataTable-tableTbody-td" type="text/html">
+	<td class="{{first}} {{#if isLastRow}}lastRowTd{{/if}}">
+		{{#if isBarAndValue}}
+			<span class="barValue">{{value}}{{#if isRate}}%{{/if}}</span>
+			{{#unless isTotalColumn}}
+				<div class="normalBarDiv" >
+					{{#notEqual value 0}}
+						<div class="normalBar"  {{#lte value 90}}style="width:{{value}}%" {{else}} {{#unless value}}style="width:0%;border:0px;"{{/unless}}{{/lte}}></div>
+					{{/notEqual}}
+				</div>
+			{{/unless}}
+		{{else}}
+			<span>
+				{{value}}{{#notEqualAndTrue value "N/A" isRate}}%{{/notEqualAndTrue}}
+			</span>
+		{{/if}}
+	</td>
+</script>
+
+<script id="tmpl-overviewTable-dataTable-tr" type="text/html">
+	<tr>
+		<td class="name">
+			<div class="indexParColor" style="background:{{summaryObj.colorVal}}"></div>
+			<span class="deviceType">{{summaryObj.label}}</span>
+		</td>
+		<td class="rate">
+			{{summaryObj.openShare}}%
+		</td>
+		<td>
+			{{summaryObj.openCount}}
+		</td>
+		<td class="rate">
+			{{summaryObj.clickShare}}%
+		</td>
+		<td>
+			{{summaryObj.clickCount}}
+		</td>
+		<td class="rate">
+			{{summaryObj.clickToOpen}}%
+		</td>
+	</tr>
+</script>
+
+

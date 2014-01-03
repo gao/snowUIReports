@@ -1,0 +1,67 @@
+<script id="tmpl-pivotOption" type="text/html">
+	<div class="pivotOption" style="left:{{left}}px;top:{{top}}px;{{#if width}}width:{{width}}px{{/if}}">
+		<div class="pivotOption-main">
+			<div class="pivotOption-header">
+				<span class="option-ico">&nbsp;</span><span>Options</span><b class="arrowup"></b>
+			</div>
+			<div class="pivotOption-content">
+				<div class="pivotOption-sort pivotOption-onlyShow">
+					<span>Sort by</span>
+					<select {{#if readonly}}disabled="disabled"{{/if}}>
+						{{#each sortByOptions}}
+						<option value="{{sortType}}">{{sortBy}}</option>
+						{{/each}}
+					</select>
+				</div>
+				<div class="pivotOption-algin pivotOption-onlyShow">
+					<div class="pivotOption-algin-item">
+						<input type="radio" name="SortOrder" value="Ascending"/>
+						<span>Left to Right - Smallest / newest value at left</span>
+					</div>
+					<div class="pivotOption-algin-item">
+						<input type="radio" name="SortOrder" value="Descending"/>
+						<span>Right to Left - Smallest / newest value at right</span>
+					</div>
+				</div>
+				<div class="pivotOption-select-allMetric">
+					<div class="item">
+						<input type="checkbox" name="fetchAllMetrics" {{#if fetchAllMetrics}}checked="checked"{{/if}}/>
+						<span>Fetch All Metrics</span>
+					</div>
+				</div>
+				<div class="pivotOption-select-tip pivotOption-onlyShow">
+					<span>Select Columns:</span>
+				</div>
+				<div class="pivotOption-select-all pivotOption-onlyShow">
+					<div class="item">
+						<div class="item-checkbox">
+							<input type="checkbox" name="pivotOptionColumn" value="1" checked="checked"/>
+						</div>
+						<div class="item-line"></div>
+						<div  class="item-span">
+							<span>Column Name</span>
+						</div>
+					</div>
+				</div>
+				<div class="pivotOption-items pivotOption-onlyShow">
+					
+				</div>
+				<div class="pivotOption-handle">
+					<div class="btn done">Done</div>
+					<div class="btn cancel">Cancel</div>   
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script id="tmpl-pivotOption-item" type="text/html">
+	<div class="item">
+		<div class="item-checkbox">
+			<input type="checkbox" name="pivotOptionColumn" value="{{label}}" {{#if checked}}checked="checked"{{/if}}/>
+		</div>
+		<div class="item-line"></div>
+		<div  class="item-span">
+			<span {{#if ellipsis}}title="{{label}}"{{/if}}>{{labelName}}</span>
+		</div>
+	</div>
+</script>

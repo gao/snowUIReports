@@ -1,0 +1,23 @@
+{
+	"identifier": 'id',
+	"itemsCommon":null,
+	"items":[
+		{
+			"block":100,
+			"data":[
+				{"block":50,"domain":"google.com","failed":500,"hardBounce":100,"softBounce":150,"technical":100,"unknown":150},
+				{"block":50,"domain":"yahoo.com","failed":500,"hardBounce":100,"softBounce":150,"technical":100,"unknown":150},
+				{"block":50,"domain":"2google.com","failed":530,"hardBounce":130,"softBounce":130,"technical":130,"unknown":130},
+				{"block":50,"domain":"2yahoo.com","failed":540,"hardBounce":140,"softBounce":140,"technical":140,"unknown":140},
+				{"block":50,"domain":"3google.com","failed":550,"hardBounce":150,"softBounce":150,"technical":150,"unknown":150},
+				{"block":50,"domain":"3yahoo.com","failed":560,"hardBounce":160,"softBounce":160,"technical":160,"unknown":160},
+				{"block":50,"domain":"others","failed":570,"hardBounce":170,"softBounce":170,"technical":170,"unknown":170}
+			],
+			"failed":1000,
+			"hardBounce":200,
+			"softBounce":300,
+			"technical":200,
+			"unknown":300
+		}
+	]
+}

@@ -1,0 +1,116 @@
+<script id="tmpl-sectionCampaignOverview" type="text/html">
+	<div class="sectionCampaignOverview">
+		<div class="sectionCampaignOverview-top">
+			<div class="graphType">
+				<div class="graphTypeList"></div>
+			</div>
+		</div>
+      <div style="clear: both;" class="sectionCampaignOverview-viewchart">
+		<div class="viewBy head">
+				<span>View by: </span>
+				<span class="SMA-REPORT-VIEWBYWEEK action selected" data-view="week">Week</span>
+				<span class="SMA-REPORT-VIEWBYMONTH action" data-view="month">Month</span>
+				<span class="SMA-REPORT-VIEWBYQUARTER action" data-view="quarter">Quarter</span>
+		</div>
+		
+		<div class="sectionCampaignOverview-chart">
+
+		</div>
+     </div>
+		<div class="sectionCampaignOverview-bottom">
+			<div class="statistic">Overview Statistics by Campaign</div>
+			<div class="sectionCampaignOverview-bottom-table">
+				<table >
+
+				</table>
+			</div>
+            <div class="menuContainer"></div>
+            <div class="menuhoverContainer"></div>
+		</div>
+	</div>
+</script>
+
+<script id="tmpl-sectionCampaignOverview-table-tr" type="text/html">
+	<tr >
+		<td class="name first"><span class="metric" data-cid ='{{summaryObj.campaignId}}' {{#if summaryObj.campaignNameEllipses}}title='{{summaryObj.campaignName}}'{{/if}}>{{#if summaryObj.campaignNameEllipses}}{{summaryObj.campaignNameEllipses}}{{else}}{{summaryObj.campaignName}}{{/if}}</span></td>
+		<td>{{summaryObj.sent}}</td>
+		<td>{{summaryObj.deliverability}}</td>
+		<td class="showhover" data-name="{{summaryObj.openName}}" data-value="{{summaryObj.open}}" data-rate="{{summaryObj.openRateVariance}}"><span>{{summaryObj.open}}</span> 
+			{{#equal summaryObj.openArrow 'no' }}
+				<span class="smr-noArrowBlack">-</span>
+			{{else}}
+				<span class="smr-carouselSpriteIco {{#equal summaryObj.openArrow 'up'}} smr-arrowUpLargeGreen {{else}} smr-arrowDownLargeRed {{/equal}}" ></span>
+			{{/equal}}
+		</td>
+		<td class="showhover" data-name="{{summaryObj.clickName}}" data-value="{{summaryObj.click}}" data-rate="{{summaryObj.clickRateVariance}}"><span>{{summaryObj.click}}</span> 
+			{{#equal summaryObj.clickArrow 'no'}}
+				<span class="smr-noArrowBlack">-</span>
+			{{else}}
+				<span class="smr-carouselSpriteIco {{#equal summaryObj.clickArrow 'up'}} smr-arrowUpLargeGreen {{else}} smr-arrowDownLargeRed {{/equal}}" ></span>
+			{{/equal}}
+		</td>
+		<td>{{summaryObj.unsub}}</td>
+        {{#if summaryObj.enabled}}
+            <td>{{summaryObj.conversionRate}}</td>
+            <td>{{conversionCurrency}}{{summaryObj.revenue}}</td>
+        {{/if}}
+	</tr>
+</script>
+
+<script id="tmpl-sectionCampaignOverview-table-td-hover" type="text/html">
+	<div class="hoverDiv">
+	    <div style="font-weight:bold;color"#000"><span>{{name}}: </span><span>{{rate}}{{#notEqual rate 0}}%{{/notEqual}}</span></div>
+	    <div style="margin-top:5px"><span>Prior Period: {{value}}</span>{{#if startDate}}<span class="hoverdate">{{startDate}}&nbsp;-&nbsp;{{endDate}}</span>{{/if}}</div>
+	</div>
+</script>
+
+<script id="tmpl-sectionCampaignOverview-table-head" type="text/html">
+    <tr>
+        <th data-column="campaignName"><span class="icos">Campaign</span><span class="ico"></span></th>
+        <th data-column="totalSent"><span class="icos">Sent</span><span class="ico"></span></th>
+        <th data-column="deliveryRate"><span class="icos">Deliverability</span><span class="ico"></span></th>
+        <th data-column="uniqueOpenRate"><span class="icos">Open</span><span class="ico"></span></th>
+        <th data-column="uniqueClickRate"><span class="icos">Click</span><span class="ico"></span></th>
+        <th data-column="uniqueUnSubsRate"><span class="icos">Unsub</span><span class="ico"></span></th>
+        {{#if enabled}}
+        <th data-column="conversionRate"><span class="icos">Conversion</span><span class="ico"></span></th>
+        <th data-column="conversionRevenue"><span class="icos">Revenue</span><span class="ico"></span></th>
+        {{/if}}
+    </tr>
+</script>
+
+<script id="tmpl-sectionCampaignOverview-context-menu" type="text/html">
+    <div class="contextMenu">
+        <ul>
+            <li data-section="batch">
+            	{{#if isMock}}
+            		<a onclick="smr.showReport('#reports-container',smr.REPORT_TYPE.BATCH)">Batch</a>
+				{{else}}
+				<a href="javascript:smr.campiagnOverviewOpenTab('BATCH_MAILING_REPORT','campaignIds={{dataObj.id}}&sectionName=sectionOverview&startDate={{dataObj.startDate}}&endDate={{dataObj.endDate}}')">
+            		Batch
+				</a>
+				{{/if}}
+			</li>
+            <li data-section="transactional">
+            	{{#if isMock}}
+            		<a onclick="smr.showReport('#reports-container',smr.REPORT_TYPE.TRANSACTIONAL)">Transactional</a>
+				{{else}}
+            	<a href="javascript:smr.campiagnOverviewOpenTab('TRANSACTIONAL_MAILING_REPORT','campaignIds={{dataObj.id}}&sectionName=sectionOverview&startDate={{dataObj.startDate}}&endDate={{dataObj.endDate}}')">
+            		Transactional
+				</a>
+				{{/if}}
+			</li>
+			{{#if isProgramLicensed}}
+            <li data-section="program">
+            	{{#if isMock}}
+            		<a onclick="smr.showReport('#reports-container',smr.REPORT_TYPE.PROGRAM)">Lifecycle Marketing</a>
+				{{else}}
+            	<a href="javascript:smr.campiagnOverviewOpenTab('PROGRAM_REPORT','campaignIds={{dataObj.id}}&sectionName=sectionOverview&startDate={{dataObj.startDate}}&endDate={{dataObj.endDate}}')">
+            		Lifecycle Marketing
+				</a>
+				{{/if}}
+			</li>
+			{{/if}}
+        </ul>
+    </div>
+</script>

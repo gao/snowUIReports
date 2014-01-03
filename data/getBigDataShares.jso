@@ -1,0 +1,93 @@
+{
+    "identifier": 'id',
+    "itemsCommon":null,
+    "items":[{
+    	"data":[{
+		    "breakdowns":[{"name":"gender","value":"female"},{"name":"age","value":100},{"name":"mailing","value":"mailing1"}],
+		    "columnData":[
+			     { "columnName":"Mailing12",
+		          "sharers":400,
+				  "shareCount":20,
+				  "clicks":30
+				  },		  
+				 {
+				  "columnName":"Mailing13",
+				  "sharers":400,
+				  "shareCount":20,
+				  "clicks":30
+			     },
+			     { "columnName":"Mailing14",
+		          "sharers":600,
+				  "shareCount":70,
+				  "clicks":50
+				  },		  
+				 {
+				  "columnName":"Mailing15",
+				  "sharers":800,
+				  "shareCount":80,
+				  "clicks":30
+			     }
+		     ]
+		},
+		{
+		    "breakdowns":[{"name":"gender","value":"female"},{"name":"age","value":100},{"name":"mailing","value":"mailing1"}],
+		    "columnData":[
+			     { "columnName":"Mailing12",
+		          "sharers":600,
+				  "shareCount":90,
+				  "clicks":50
+				  },		  
+				 {
+				  "columnName":"Mailing13",
+				  "sharers":400,
+				  "shareCount":20,
+				  "clicks":30
+			     },
+			     { "columnName":"Mailing14",
+		          "sharers":600,
+				  "shareCount":70,
+				  "clicks":50
+				  },		  
+				 {
+				  "columnName":"Mailing15",
+				  "sharers":800,
+				  "shareCount":80,
+				  "clicks":30
+			     }
+		     ]
+		},
+		{
+		    "breakdowns":[{"name":"gender","value":"female"},{"name":"age","value":100},{"name":"mailing","value":"mailing1"}],
+		    "columnData":[
+			     { "columnName":"Mailing12",
+		          "sharers":900,
+				  "shareCount":200,
+				  "clicks":300
+				  },		  
+				 {
+				  "columnName":"Mailing13",
+				  "sharers":400,
+				  "shareCount":20,
+				  "clicks":30
+			     },
+			     { "columnName":"Mailing14",
+		          "sharers":600,
+				  "shareCount":70,
+				  "clicks":50
+				  },		  
+				 {
+				  "columnName":"Mailing15",
+				  "sharers":500,
+				  "shareCount":180,
+				  "clicks":130
+			     }
+		     ]
+		}
+		],
+	    "summary":{
+		      "sharers":400,
+			  "shareCount":20,
+			  "clicks":30	  
+	    }
+	}]
+}

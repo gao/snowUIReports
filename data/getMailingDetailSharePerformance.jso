@@ -1,0 +1,18 @@
+{"identifier": 'id',
+"itemsCommon":null,
+"items":[
+	 {
+	  "sharePanelviews":1000,
+	  "shares":500,
+	  "clicks":344,
+	  "clickRate":1.1,
+	  "shareOffers":[
+	   {"offerName":"myoffer1","shares":100,"clicks":200},
+	   {"offerName":"myoffer2","shares":200,"clicks":400}
+	  ],
+	  "shareChannels":[
+	  {"channelName":"facebook","shares":100,"clicks":200},
+	  {"channelName":"linkedIn","shares":400,"clicks":200}  
+	  ]
+	}]
+}

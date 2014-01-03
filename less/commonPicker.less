@@ -1,0 +1,358 @@
+.commonPicker{
+	position:absolute;
+	z-index:22;
+	left:300px;
+	top:150px;
+	min-width:700px;
+	*min-height:500px;
+	width:700px;
+	background-color:#f9f7f8;
+	color:#303030;
+	.border-radius(10px);
+	.box-shadow(5px 5px 5px rgba(0,0,0,.4));
+	font-family:Arial, Regular;
+	font-size: 8.5pt;
+}
+
+.commonPicker.old-picker{
+	min-height:540px;
+	color:#3c3c3c;
+	font-size:12px;
+}
+
+.commonPicker .clear{
+	clear:both;
+}
+
+.commonPicker .new-close .icoDiv{
+	position:absolute;
+	width:16px;
+	height:16px;
+	background-image:none;
+	text-align:center;
+	line-height:24px;
+	cursor:pointer;
+}
+
+.commonPicker .old-close .icoDiv{
+	position:absolute;
+	width:24px;
+	height:24px;
+	background-image:none;
+	text-align:center;
+	line-height:24px;
+	cursor:pointer;
+}
+
+.commonPicker .icoDiv.resizeHandler{
+	background-image: url("images/smr-sprites.png");
+	background-repeat: no-repeat;
+	background-position: 0px -96px;	
+	bottom:2px;
+	right:1px;
+	cursor:se-resize;
+}
+.commonPicker input[type="text"]:focus{
+	outline: 5px auto #518ec8;
+}
+.commonPicker .commonPicker-top{
+	cursor:move;
+	height:35px;
+	#gradient > .vertical(#E9E9E9,#D0D0D1);
+	.complex-border-radius(7px,7px,0,0);
+}
+
+.commonPicker .commonPicker-top.IE9PickerHeader-background{
+	filter:none;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQtdWNnZy1nZW5lcmF0ZWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U5ZTllOSIgc3RvcC1vcGFjaXR5PSIxIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZDBkMGQxIiBzdG9wLW9wYWNpdHk9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+PC9zdmc+);
+}
+
+.commonPicker .commonPicker-top.new-close .icoDiv .ico-close{
+	background-image: url("images/btn_close.png");
+	background-position: 0 0;
+	margin-left: 0;
+	width: 16px;
+	height: 16px;
+}
+
+.commonPicker .commonPicker-top .title{
+	font-size:9pt;
+	font-weight:bold;
+	font-family: Arial, Regular;
+	margin:10px 0 0 15px;
+	float:left;
+}
+.commonPicker .commonPicker-top.new-close .icoDiv.close{
+	top:10px;
+	right:10px;
+}
+
+.commonPicker .commonPicker-top.old-close .icoDiv.close{
+	top:4px;
+	right:10px;
+	#gradient > .vertical(#F6F5F3,#dddbdc);
+	border:1px solid #c2ccce;
+	.border-radius(5px);
+}
+
+.commonPicker .commonPicker-main{
+	padding: 15px 5px 0px 5px;
+}
+
+.commonPicker.old-picker .commonPicker-main{
+	padding:0 15px 10px 15px;
+}
+
+.commonPicker .commonPicker-header{
+	border:1px solid #d6d6d6;
+	height:25px;
+	padding:10px 0 0 0 ;
+	margin:20px 0 0 0 ;
+	background:#e6e4e5;
+	.complex-border-radius(7px,7px,0,0);
+}
+
+.commonPicker .commonPicker-header .header-label{
+	float:left;
+	margin: 2px 0 0 5px;
+	display:inline;
+}
+.commonPicker .commonPicker-header .smrTabs{
+	display:inline;
+}
+.commonPicker .commonPicker-header .smrTabs .tab{
+	float:left;
+	margin: 0 0 0 20px;
+	display:none;
+}
+
+.commonPicker .commonPicker-header .smrTabs .tab .tagspan{
+	cursor: pointer;
+}
+
+.commonPicker.old-picker .commonPicker-content {
+	border: solid 1px #d6d6d6;
+	border-top: 0px;
+	background:#f1f1f1;
+	.complex-border-radius(0,0,7px,7px);
+}
+
+.commonPicker.old-picker .commonPicker-content.notab{
+	border: solid 1px #d6d6d6;
+	margin-top:20px;
+	.border-radius(7px);
+}
+
+.commonPicker.new-picker .commonPicker-content {
+	.border-radius(7px);
+}
+
+.commonPicker .commonPicker-mailingView .commonPicker-selected{
+	margin: 5px 0 0px 0;
+	#gradient > .vertical(#F3F8FB,#CBE9F1);
+	.border-radius(10px);
+	border:1px solid #87b7c3;
+	color:#4792a7;
+}
+
+.commonPicker .commonPicker-mailingView .commonPicker-selected .selectedMailingLable .label{
+	float:left;
+	margin: 7px 5px 5px 15px;
+	font-weight:bolder;
+	cursor:pointer;
+}
+
+.commonPicker .commonPicker-mailingView .commonPicker-selected .limitDataTo{
+	margin:0 0 0 15px;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-selected .limitDataTo .limitDataToSec{
+	float: left;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-selected .limitDataTo .limitDataToSec .spanTitle{
+	margin-top: 4px;
+	display: block;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-selected .limitDataTo .message{
+	display:none;
+	margin:0 0 0 5px;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-selected .limitDataTo.disable {
+	color:#B7B7B7;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-selected .limitDataTo .dateInputs{
+	margin:0 0 0 5px;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-selected .limitDataTo input[type="text"]{
+	width:80px;
+}
+.commonPicker .commonPicker-mailingView .availableMailings{
+	margin:0 0 0 10px;
+	font-weight:bolder;
+}
+.commonPicker .commonPicker-mailingView .selectedMailingTable{
+	position:relative;
+	z-index: 1;
+	margin: 3px 5px 5px 5px;
+	min-height:10px;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-filter {
+	border:1px solid #a8a8a8;
+	#gradient > .vertical(#F4F4F4,#DEDEDE);
+	border-bottom:0px;
+	margin:5px 0 0 0;
+	padding:2px 0;
+	.complex-border-radius(10px,10px,0,0);
+}
+
+.commonPicker .commonPicker-mailingView .commonPicker-filter > .filter-label{
+	float:left;
+	margin: 9px 30px 0 5px;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-filter > .filter-fields{
+	float:left;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-filter .label-field{
+	width:570px;
+	margin: 5px 0 0 0;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-filter .label{
+	float: left;
+	width:100px;
+	padding:4px 0 0 0;
+	text-align: right;
+	display: block;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-filter .label.left{
+	text-align: left;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-filter .field{
+	margin: 0;
+	display: block;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-filter .field .sub-field{
+	margin: 0px 20px 0 0;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-filter .field .sub-field input[type='checkbox']{
+	vertical-align: middle;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-filter .field .sub-field select{
+	width: 155px;
+	margin-left: 0px;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-filter .field .sub-field.name{
+	position:relative;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-filter .field .sub-field.name .keyCancel{
+	position:absolute;
+	right:-24px;
+	top:-5px;
+	width:24px;
+	height:24px;
+	cursor:pointer;
+	display:none;
+}
+
+.commonPicker .commonPicker-mailingView .commonPicker-table{
+	border-right:1px solid #a8a8a8;
+	max-height: 240px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-table .dataTable{
+	margin:0px auto;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-table table{
+	background-color:#ffffff;
+	border-collapse:collapse;
+	margin:0 20px 0 20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	width:100%;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-table table th{
+	#gradient > .verticalNotIE(#eaeaea,#D8D8D8);
+	padding: 2px 0 2px 8px;
+	text-align: left;
+	border:1px solid #a8a8a8;
+	font-weight:normal;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-table table tr th:last-child{
+	width:auto;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-table table tr.checked{
+	background:#e8f2fe;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-table table th.sortable{
+	cursor:pointer;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-table table th.sortable .thSortName{
+	float:left;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-table table th .ico{
+	position:static;
+	float:right;
+	margin-right:5px;
+	line-height:16px;
+	height:16px;
+	width:16px;
+	background-image:none;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-table table td{
+	font-weight:normal;
+	text-align:left;
+	padding: 4px 0 4px 8px;
+	border:1px solid #a8a8a8;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-table table th.first{
+	width:5%;
+	padding:0px;
+	text-align:center;
+}
+.commonPicker .commonPicker-mailingView .commonPicker-table table td.first{
+	padding:0px;
+	text-align:center;
+}
+
+.commonPicker .commonPicker-mailingView .tags .tag-content{
+	padding:5px;
+	height:auto;
+	color: #3c3c3c;
+}
+
+.commonPicker .commonPicker-bottom{
+	text-align:center;
+}
+.commonPicker .commonPicker-bottom .btn {
+	#gradient > .vertical-three-colors(#F7F6F4,#D4D2D3,60%,#ebebeb);
+	border:1px solid #bfc3c4;
+	text-align:center;
+	width:50px;	
+	.border-radius(15px);
+	padding:3px 10px;
+	margin:10px;
+	cursor:pointer;
+	display:inline-block;
+}
+.commonPicker .commonPicker-bottom  .done{
+	margin-right:10px;
+	margin-bottom: 15px;
+	float:left;
+}
+.commonPicker .commonPicker-bottom .cancel{
+	float:left;
+}
+.commonPicker .commonPicker-bottom .btn:hover{
+	#gradient > .vertical-three-colors(#E1F4F8,#ADD9E2,50%,#d1edf1);
+}
+
+
+.commonPicker .commonPicker-bottom.old-layout  .done{
+    margin-left:230px;
+	margin-right:10px;
+	float:left;
+}
+.commonPicker .commonPicker-bottom.old-layout .cancel{
+	margin-right:230px;
+	float:right;
+}
+

@@ -1,0 +1,178 @@
+{
+	"identifier": 'id',
+	"itemsCommon": null,
+	"items": [
+		{
+			"data": [
+				{
+					"clickToOpen": 0.0,
+					"clicks": {
+						"count": 0,
+						"percent": 0.0,
+						"rate": 0.0,
+						"unique": 0,
+						"uniqueRate": 0.0
+					},
+					"complaints": {
+						"count": 0,
+						"percent": 0.0,
+						"rate": 0.0,
+						"unique": 0,
+						"uniqueRate": 0.0
+					},
+					"conversions": {
+						"count": 0,
+						"percent": 0.0,
+						"rate": 0.0,
+						"unique": 0,
+						"uniqueRate": 0.0
+					},
+					"convertToClick": 0.0,
+					"date": "Jul 2011",
+					"delivered": {
+						"count": 0,
+						"percent": 0.0,
+						"rate": 0.0,
+						"unique": 0,
+						"uniqueRate": 0.0
+					},
+					"domain": "",
+					"failed": {
+						"count": 3,
+						"percent": 0.0,
+						"rate": 100.0,
+						"unique": 0,
+						"uniqueRate": 0.0
+					},
+					"invalid": {
+						"count": 0,
+						"percent": 0.0,
+						"rate": 0.0,
+						"unique": 0,
+						"uniqueRate": 0.0
+					},
+					"mailing": "",
+					"opens": {
+						"count": 0,
+						"percent": 0.0,
+						"rate": 0.0,
+						"unique": 0,
+						"uniqueRate": 0.0
+					},
+					"revenue": {
+						"count": 0,
+						"percent": 0.0,
+						"rate": 0.0,
+						"unique": 0,
+						"uniqueRate": 0.0
+					},
+					"sent": {
+						"count": 3,
+						"percent": 0.0,
+						"rate": 100.0,
+						"unique": 0,
+						"uniqueRate": 0.0
+					},
+					"startDate": "01-Jul-11 12:00 AM PDT",
+					"target": "",
+					"targeted": {
+						"count": 3,
+						"percent": 0.0,
+						"rate": 0.0,
+						"unique": 0,
+						"uniqueRate": 0.0
+					},
+					"unsub": {
+						"count": 0,
+						"percent": 0.0,
+						"rate": 0.0,
+						"unique": 0,
+						"uniqueRate": 0.0
+					}
+				}
+			],
+			"summary": {
+				"clickToOpen": 0.0,
+				"clicks": {
+					"count": 0,
+					"percent": 0.0,
+					"rate": 0.0,
+					"unique": 0,
+					"uniqueRate": 0.0
+				},
+				"complaints": {
+					"count": 0,
+					"percent": 0.0,
+					"rate": 0.0,
+					"unique": 0,
+					"uniqueRate": 0.0
+				},
+				"conversions": {
+					"count": 0,
+					"percent": 0.0,
+					"rate": 0.0,
+					"unique": 0,
+					"uniqueRate": 0.0
+				},
+				"convertToClick": 0.0,
+				"delivered": {
+					"count": 0,
+					"percent": 0.0,
+					"rate": 0.0,
+					"unique": 0,
+					"uniqueRate": 0.0
+				},
+				"failed": {
+					"count": 3,
+					"percent": 0.0,
+					"rate": 0.0,
+					"unique": 0,
+					"uniqueRate": 0.0
+				},
+				"invalid": {
+					"count": 0,
+					"percent": 0.0,
+					"rate": 0.0,
+					"unique": 0,
+					"uniqueRate": 0.0
+				},
+				"opens": {
+					"count": 0,
+					"percent": 0.0,
+					"rate": 0.0,
+					"unique": 0,
+					"uniqueRate": 0.0
+				},
+				"revenue": {
+					"count": 0,
+					"percent": 0.0,
+					"rate": 0.0,
+					"unique": 0,
+					"uniqueRate": 0.0
+				},
+				"sent": {
+					"count": 3,
+					"percent": 0.0,
+					"rate": 0.0,
+					"unique": 0,
+					"uniqueRate": 0.0
+				},
+				"targeted": {
+					"count": 3,
+					"percent": 0.0,
+					"rate": 0.0,
+					"unique": 0,
+					"uniqueRate": 0.0
+				},
+				"threshold": 95.0,
+				"unsub": {
+					"count": 0,
+					"percent": 0.0,
+					"rate": 0.0,
+					"unique": 0,
+					"uniqueRate": 0.0
+				}
+			}
+		}
+	]
+}

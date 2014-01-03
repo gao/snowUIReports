@@ -1,0 +1,12 @@
+{
+    "identifier": 'id',
+    "itemsCommon": null,
+    "items": [
+        {
+            "name": "Product Name"
+        },
+        {
+            "name": "Product Type"
+        }
+    ]
+}

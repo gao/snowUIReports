@@ -1,0 +1,12 @@
+{"identifier": 'id',
+"itemsCommon":null,
+"items":[
+ {
+  "failures":1000,
+  "block":{"count":200,"rate":1.1},
+  "hardBounce":{"count":200,"rate":1.0},
+  "softBounce":{"count":200,"rate":1.0},
+  "technical":{"count":200,"rate":1.0},
+  "unknown":{"count":200,"rate":2.1}  
+}]
+}

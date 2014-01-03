@@ -1,0 +1,62 @@
+<script id="tmpl-sectionEngagement" type="text/html">
+	<div class="sectionEngagement"> 
+	</div>
+</script>
+
+<script id="tmpl-sectionEngagement-table" type="text/html">
+	<div class="sectionEngagementTable"> 
+		<div class="byTitle">Engagement by <span class="viewByValue"></span></div> 
+		<div class="SMA-REPORT-SUMMARYSTATISTICSTABLE statsSummary"></div>
+		<div class="sectionEngagement-table"></div>
+		<div class="versionHoverBoxContainer"></div>
+	</div>
+</script>
+
+<script id="tmpl-sectionEngagement-bar" type="text/html">
+	<div class="sectionEngagementBar"> 
+		<div class="byTitle">Engagement by <span class="viewByValue"></span></div> 
+		<div class="statsSummary"></div>
+		<div class="sectionEngagement-bar"></div>
+		<div class="versionHoverBoxContainer"></div>
+	</div>
+</script>
+
+<script id="tmpl-sectionEngagement-pie" type="text/html">
+	<div class="sectionEngagementPie"> 
+		<div class="byTitle">Engagement by <span class="viewByValue"></span></div> 
+		<div class="statsSummary"></div>
+		<div class="sectionEngagement-pie"></div>
+		<div class="versionHoverBoxContainer"></div>
+	</div>
+</script>
+
+<script id="tmpl-sectionEngagement-pivot" type="text/html">
+	<div class="sectionEngagementPivotTable">
+		<div class="byTitle">Summary Statistics</div> 
+		<div class="statsSummary"></div>
+		<div class="sectionEngagement-pivot"></div>
+	</div>
+</script>
+
+<script id="tmpl-sectionEngagement-versionSection-table-td-hover" type="text/html">
+	<div class="hoverDiv">
+		{{#if hasData}}
+			<table>
+			<tr class="head">
+				<td class="first">Version</td>
+				<td class="opens">Opens</td>
+				<td class="percent">% of {{name}}</td>
+			</tr>
+			{{#each versions}}
+			<tr>
+				<td class="first">{{client}}</td>
+				<td class="opens">{{opens}}</td>
+				<td class="percent">{{percent}}%</td>
+			</tr>
+			<table>
+			{{/each}}
+		{{else}}
+			<div class="no-version">No version</div>
+		{{/if}}
+	<div>
+</script>

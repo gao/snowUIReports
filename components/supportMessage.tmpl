@@ -1,0 +1,25 @@
+<script type="text/javascript">
+(function($){
+	brite.registerView("supportMessage", {
+	    parent: "#page",
+		emptyParent: true
+	}, {
+		build: function(){
+			return smr.render("tmpl-supportMessage",{});
+		}, 
+		postDisplay: function(){
+			
+		}
+	});
+
+})(jQuery);
+</script>
+
+<script id="tmpl-supportMessage" type="text/html">
+	<div class="notsupported">
+		<div class="message">
+			<p>During development the only supported browsers are Chrome and Safari.</p>
+			<p>We will add support for IE, Firefox once we have implemented the final look and feel.</p>
+		</div>
+	</div>
+</script>

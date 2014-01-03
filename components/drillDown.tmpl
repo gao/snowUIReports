@@ -1,0 +1,35 @@
+<script id="tmpl-drillDown" type="text/html">
+	<div id="drillDownDiv" class="drillDownDiv" style="right:{{right}}px;top:{{top}}px;">
+		<div class="drillDown-main">
+			<div class="drillDown-header">
+				Individual Records Drilldown
+			</div>
+			<div class="drillDown-content">
+				<div class="drillDown-items">
+					<div class="itemColumnLink" data-value="Failure">Failures</div>
+					<div class="itemColumnLink" data-value="Invalid">Invalid</div>
+					<div class="itemColumnLink" data-value="Open">Total Opens</div>
+					<div class="itemColumnLink" data-value="UniqOpen">Unique Opens</div>
+					<div class="itemColumnLink" data-value="Click">Total Clicks</div>
+					<div class="itemColumnLink" data-value="UniqClick">Unique Clicks</div>
+					
+					{{#if isNotTransactional}}
+					<div class="itemColumnLink" data-value="Unsubscribe">Total Unsubs</div>
+					<div class="itemColumnLink" data-value="UniqUnsubscribe">Unique Unsubs</div>
+					{{/if}}
+					
+					<div class="itemColumnLink" data-value="Complaint">Total Complaints</div>
+					<div class="itemColumnLink" data-value="UniqComplaint">Unique Complaints</div>
+					
+					{{#if isShowDelivered}}
+					<div class="itemColumnLink" data-value="Delivered">Delivered</div>
+					{{/if}}
+					
+					{{#if conversionEnabled}}
+					<div class="itemColumnLink" data-value="Conversions">Conversions</div>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
